@@ -1,15 +1,7 @@
 ---
 home: true
-heroImage: https://v1.vuepress.vuejs.org/hero.png
-tagline: bohyeon blog
-actionText: Quick Start →
-actionLink: /guide/
-features:
-- title: Feature 1 Title
-  details: Feature 1 Description
-- title: Feature 2 Title
-  details: Feature 2 Description
-- title: Feature 3 Title
-  details: Feature 3 Description
-footer: Made by bohyeon.seo with ❤️
+heroImage: profile.png
+tagline: 개발, 일상, 자유로운 생각을 기록합니다.
+actionText: GO →
+actionLink: /dev/
 ---

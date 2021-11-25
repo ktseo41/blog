@@ -5,7 +5,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Vuepress Docs Boilerplate',
+  title: 'bohyeon.dev',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -17,7 +17,7 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/config/#head
    */
   head: [
-    ['meta', { name: 'theme-color', content: '#3eaf7c' }],
+    ['meta', { name: 'theme-color', content: '#f28e1c' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
   ],
@@ -35,26 +35,23 @@ module.exports = {
     lastUpdated: false,
     nav: [
       {
-        text: 'Guide',
-        link: '/guide/',
+        text: 'Dev',
+        link: '/dev/'
       },
       {
-        text: 'Config',
-        link: '/config/'
-      },
-      {
-        text: 'VuePress',
-        link: 'https://v1.vuepress.vuejs.org'
+        text: 'Instagram',
+        link: 'https://instagram.com/ktseo41'
       }
     ],
     sidebar: {
-      '/guide/': [
+      '/dev/': [
         {
-          title: 'Guide',
+          title: 'Dev',
           collapsable: false,
           children: [
             '',
-            'using-vue',
+            'links',
+            'products'
           ]
         }
       ],
