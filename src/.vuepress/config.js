@@ -1,11 +1,11 @@
-const { description } = require('../../package')
+const { description } = require("../../package");
 
 module.exports = {
-  base: '/blog/',
+  base: "/blog/",
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'bohyeon.dev',
+  title: "bohyeon.dev",
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -17,9 +17,12 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/config/#head
    */
   head: [
-    ['meta', { name: 'theme-color', content: '#f28e1c' }],
-    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
-    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
+    ["meta", { name: "theme-color", content: "#f28e1c" }],
+    ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
+    [
+      "meta",
+      { name: "apple-mobile-web-app-status-bar-style", content: "black" },
+    ],
   ],
 
   /**
@@ -28,41 +31,34 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    repo: '',
+    repo: "",
     editLinks: false,
-    docsDir: '',
-    editLinkText: '',
+    docsDir: "",
+    editLinkText: "",
     lastUpdated: false,
     nav: [
       {
-        text: 'Dev',
-        link: '/dev/'
+        text: "Dev",
+        link: "/dev/",
       },
       {
-        text: 'Instagram',
-        link: 'https://instagram.com/ktseo41'
-      }
+        text: "Instagram",
+        link: "https://instagram.com/ktseo41",
+      },
     ],
     sidebar: {
-      '/dev/': [
+      "/dev/": [
         {
-          title: 'Dev',
+          title: "Dev",
           collapsable: false,
-          children: [
-            '',
-            'links',
-            'products'
-          ]
-        }
+          children: ["", "links", "debt", "products"],
+        },
       ],
-    }
+    },
   },
 
   /**
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */
-  plugins: [
-    '@vuepress/plugin-back-to-top',
-    '@vuepress/plugin-medium-zoom',
-  ]
-}
+  plugins: ["@vuepress/plugin-back-to-top", "@vuepress/plugin-medium-zoom"],
+};
