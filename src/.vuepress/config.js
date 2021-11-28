@@ -59,6 +59,10 @@ module.exports = {
         text: "Instagram",
         link: "https://instagram.com/ktseo41",
       },
+      {
+        text: "GitHub",
+        link: "https://github.com/ktseo41",
+      },
     ],
     sidebar: {
       "/dev/": [
