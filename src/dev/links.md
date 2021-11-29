@@ -11,5 +11,14 @@
 
 - [https://www.udemy.com/ko/topic/web-development/](https://www.udemy.com/ko/topic/web-development/)
 
+## 개발 소식
+
+- [GeekNews](https://news.hada.io/)
+
 ## 재밌는 서비스
+
 - [Can't Unsee](https://cantunsee.space/)
+- [JSIsWeird](https://jsisweird.com/)
+- [WtfJS](https://github.com/denysdovhan/wtfjs)
+- [JavaScript30](https://javascript30.com/)
+- [JavaScriptWtf](https://javascriptwtf.com/)
