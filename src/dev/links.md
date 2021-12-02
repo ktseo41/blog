@@ -14,6 +14,7 @@
 ## 개발 소식
 
 - [GeekNews](https://news.hada.io/)
+- [월간개발자스럽다](https://blog.gaerae.com/)
 
 ## 재밌는 서비스
 
