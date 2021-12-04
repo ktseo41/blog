@@ -10,6 +10,7 @@
 ## 강의
 
 - [https://www.udemy.com/ko/topic/web-development/](https://www.udemy.com/ko/topic/web-development/)
+- [https://www.inflearn.com/courses/it-programming/front-end](https://www.inflearn.com/courses/it-programming/front-end)
 
 ## 개발 소식
 
