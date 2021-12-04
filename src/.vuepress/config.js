@@ -69,7 +69,7 @@ module.exports = {
         {
           title: "Dev",
           collapsable: false,
-          children: ["", "links", "debt", "products"],
+          children: ["", "links", "vim", "debt", "products"],
         },
       ],
     },
