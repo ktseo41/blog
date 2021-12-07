@@ -64,15 +64,7 @@ module.exports = {
         link: "https://github.com/ktseo41/blog",
       },
     ],
-    sidebar: {
-      "/dev/": [
-        {
-          title: "Dev",
-          collapsable: false,
-          children: ["", "links", "vim", "debt", "products"],
-        },
-      ],
-    },
+    sidebar: ['links', 'debt', 'vim', 'products']
   },
 
   /**
