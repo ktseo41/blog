@@ -1,0 +1,34 @@
+<template>
+<div>
+  <label :for="`progress-${name}`">{{ label }}</label>
+  <progress :id="`progress-${name}`" :value="value" :max="max"> p.22 </progress>
+</div>
+</template>
+
+<script>
+export default {
+  name: 'ProgressBar',
+  props: {
+    name: {
+      type: String,
+      required: true
+    },
+    label: {
+      type: String,
+      default: '진행도'
+    },
+    value: {
+      type: Number,
+      default: 0
+    },
+    max: {
+      type: Number,
+      default: 100
+    }
+  },
+}
+</script>
+
+<style>
+
+</style>
