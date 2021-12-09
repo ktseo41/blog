@@ -57,22 +57,14 @@ module.exports = {
       },
       {
         text: "Instagram",
-        link: "https://instagram.com/ktseo41",
+        link: "https://instagram.com/ktseo41/",
       },
       {
         text: "GitHub",
-        link: "https://github.com/ktseo41",
+        link: "https://github.com/ktseo41/blog",
       },
     ],
-    sidebar: {
-      "/dev/": [
-        {
-          title: "Dev",
-          collapsable: false,
-          children: ["", "links", "debt", "products"],
-        },
-      ],
-    },
+    sidebar: ['links', 'debt', 'vim', 'study', 'products']
   },
 
   /**
