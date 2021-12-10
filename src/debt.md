@@ -13,3 +13,7 @@
 - [웹사이트에 구글 태그 매니저(GTM) 설치하기](https://nohze.com/mkt/gtm02_GTMInstall/)
 - [구글 태그매니저로 GA 설치하기](https://nohze.com/mkt/gtm03_GAInstall/)
 - [Google Analytics 4(GA4)를 구글태그매니저(GTM)와 연동하기 ](https://finedata.tistory.com/23)
+
+## 책
+
+- [TLS 구현으로 배우는 암호학](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791161754284&orderClick=LEa&Kc=) ([from](https://www.facebook.com/hika00/posts/5234521349896615))
