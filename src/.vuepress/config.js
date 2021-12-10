@@ -52,10 +52,6 @@ module.exports = {
     lastUpdated: false,
     nav: [
       {
-        text: "Dev",
-        link: "/dev/",
-      },
-      {
         text: "Instagram",
         link: "https://instagram.com/ktseo41/",
       },
