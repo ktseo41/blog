@@ -1,4 +1,4 @@
-# 🏛 기록
+# 🏛 보관소
 ## Products
 
 ### Headless CMS
