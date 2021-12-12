@@ -60,11 +60,15 @@ module.exports = {
         link: "https://github.com/ktseo41/blog",
       },
     ],
-    sidebar: ['links', 'debt', 'vim', 'study', 'archive']
+    sidebar: ["links", "debt", "vim", "study", "archive"],
   },
 
   /**
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */
-  plugins: ["@vuepress/plugin-back-to-top", "@vuepress/plugin-medium-zoom"],
+  plugins: [
+    "@vuepress/plugin-back-to-top",
+    "@vuepress/plugin-medium-zoom",
+    ["sitemap", { hostname: "https://ktseo41.github.io/blog/" }],
+  ],
 };
