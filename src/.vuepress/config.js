@@ -60,7 +60,7 @@ module.exports = {
         link: "https://github.com/ktseo41/blog",
       },
     ],
-    sidebar: ['links', 'debt', 'vim', 'study', 'products']
+    sidebar: ['links', 'debt', 'vim', 'study', 'archive']
   },
 
   /**
