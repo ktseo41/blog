@@ -60,7 +60,13 @@ module.exports = {
         link: "https://github.com/ktseo41/blog",
       },
     ],
-    sidebar: ["links", "debt", "vim", "study", "archive"],
+    sidebar: [
+      ["links", "🔗 링크 모음"],
+      ["debt", "🧱 부채"],
+      ["vim", "📟 Vim"],
+      ["study", "📚 공부"],
+      ["archive", "🏛 보관소"],
+    ],
   },
 
   /**
