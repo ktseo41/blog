@@ -18,6 +18,10 @@
 
 - [https://www.spacemacs.org/](https://www.spacemacs.org/)
 
+### Startups
+
+- [VERTICAH](https://verticah.com/kr.html)
+
 ## Articles
 
 - [아마존 CTO의 2022년부터 그 이후 기술 예측](https://news.hada.io/topic?id=5496&utm_source=slack&utm_medium=bot&utm_campaign=TLS6AUE2K)
@@ -26,6 +30,7 @@
 - [2021 Design tools Survey](https://uxtools.co/survey-2021)
 - [왜 Svelte를 좋아하나요?](https://velog.io/@teo/%EC%99%9C-Svelte%EC%8A%A4%EB%B2%A8%ED%8A%B8%EB%A5%BC-%EC%A2%8B%EC%95%84%ED%95%98%EB%82%98%EC%9A%94)
 - [Best of Awards 2021 | Google Play](https://www.youtube.com/watch?v=lJwxC5jNDJU)
+- [Tech in 2022: 미래를 향한 3단계](https://news.hada.io/topic?id=5543&utm_source=slack&utm_medium=bot&utm_campaign=TLS6AUE2K)
 
 ## Lecture
 
