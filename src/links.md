@@ -7,6 +7,12 @@
 - [https://www.inflearn.com/community/studies](https://www.inflearn.com/community/studies)
 - [https://holaworld.io/](https://holaworld.io/)
 
+### 공간
+
+- [SpaceCloud](https://www.spacecloud.kr/)
+- [시소](https://seeso.kr/solution) (🚧 2021.12.12 준비중)
+- [원루프랩](https://lab.oneroof.co.kr/)
+
 ## 강의
 
 - [https://www.udemy.com/ko/topic/web-development/](https://www.udemy.com/ko/topic/web-development/)
