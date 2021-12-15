@@ -52,6 +52,10 @@ module.exports = {
     lastUpdated: false,
     nav: [
       {
+        text: "2022",
+        link: "/2022/",
+      },
+      {
         text: "Instagram",
         link: "https://instagram.com/ktseo41/",
       },
