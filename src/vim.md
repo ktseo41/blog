@@ -1,5 +1,6 @@
 # 📟 Vim
 
+![THE FOOL...](https://i.redd.it/yffw4nzgv9a11.jpg)
 ## 링크
 -  [AdventOfCode Day1 Vim풀이](https://www.reddit.com/r/adventofcode/comments/r66vow/comment/hmrrmwr/?utm_source=share&utm_medium=web2x&context=3)
 -  [VimHelp](https://vimhelp.org/)
@@ -17,3 +18,9 @@
 
 -  [https://stackoverflow.com/questions/2946051/changing-case-in-vim](https://stackoverflow.com/questions/2946051/changing-case-in-vim)
 -  [https://vimhelp.org/change.txt.html#~](https://vimhelp.org/change.txt.html#~)
+
+## debt
+
+-  [My vim setup to speed up ...](https://www.youtube.com/watch?v=UZBjt04y4Oo)
+-  [neovim 설정 (CoC, Vim-Plug, treesitter, NERDTree)](https://velog.io/@mythos/Linux-neovim-%EC%84%A4%EC%A0%95-CoC-Vim-Plug-treesitter-NERDTree)
+-  [fzf](https://github.com/junegunn/fzf)
