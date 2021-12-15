@@ -2,7 +2,7 @@
 
 ## [함께 자라기](http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&ejkGb=KOR&barcode=9788966262335)
 
-<ProgressBar name="함께자라기" label="" max="220" value="37" />
+<ProgressBar name="함께자라기" max="220" value="37" />
 
 ### 머리말
 
@@ -55,4 +55,8 @@
 
 ## [객체지향 생활 체조 규칙](https://7942yongdae.tistory.com/8)
 
-<ProgressBar name="객체지향 생활 체조 규칙" label="" max="100" value="0" />
+<ProgressBar name="객체지향 생활 체조 규칙" max="100" value="0" />
+
+## [신경망 첫걸음](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9788968483509&orderClick=LEa&Kc=)
+
+<ProgressBar name="신경망 첫걸음" max="100" value="0" />
