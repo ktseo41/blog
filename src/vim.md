@@ -1,6 +1,10 @@
 # 📟 Vim
 
-![THE FOOL...](https://i.redd.it/yffw4nzgv9a11.jpg)
+<figure style="margin: 0 auto; width: 450px;">
+  <img src="https://i.redd.it/yffw4nzgv9a11.jpg" alt="THE FOOL...">
+  <figcaption style="font-size: 13px;"><a href="https://www.reddit.com/r/ProgrammerHumor/comments/8z99lf/vim_no_exit_d_d/" target="_blank">출처 : VIM! No EXIT !! :D :D</a></figcaption>
+</figure>
+
 ## 링크
 -  [AdventOfCode Day1 Vim풀이](https://www.reddit.com/r/adventofcode/comments/r66vow/comment/hmrrmwr/?utm_source=share&utm_medium=web2x&context=3)
 -  [VimHelp](https://vimhelp.org/)
