@@ -23,6 +23,13 @@
 
 - [HTML - og(open graph) 태그 란? / 카톡,sns 미리보기 지정](https://gocoder.tistory.com/315)
 
+### Vue.js use both inline and external SVGs
+- [How to use both inline and external SVGs](https://vue-svg-loader.js.org/faq.html#how-to-use-both-inline-and-external-svgs)
+- [https://github.com/visualfanatic/vue-svg-loader/issues/141](https://github.com/visualfanatic/vue-svg-loader/issues/141)
+- [Using SVG and Vue.js: A Complete Guide](https://blog.logrocket.com/using-svg-and-vue-js-a-complete-guide/)
+- [How load external svg in css section in Vue](https://stackoverflow.com/questions/59176312/how-load-external-svg-in-css-section-in-vue)
+- [https://stackoverflow.com/questions/44695560/how-can-i-import-a-svg-file-to-a-vue-component/56855843#56855843](https://stackoverflow.com/questions/44695560/how-can-i-import-a-svg-file-to-a-vue-component/56855843#56855843)
+
 ## 책
 
 - [TLS 구현으로 배우는 암호학](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791161754284&orderClick=LEa&Kc=) ([from](https://www.facebook.com/hika00/posts/5234521349896615))
