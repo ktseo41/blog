@@ -16,7 +16,8 @@ export default {
     },
     label: {
       type: String,
-      default: '진행도'
+      default: '',
+      required: false
     },
     value: {
       type: Number,

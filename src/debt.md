@@ -9,6 +9,7 @@
 - [프론트엔드에서 MV* 아키텍쳐란 무엇인가요?](https://velog.io/@teo/%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C%EC%97%90%EC%84%9C-MV-%EC%95%84%ED%82%A4%ED%85%8D%EC%B3%90%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94)
 - [카카오웹툰은 하드웨어 가속과 IntersectionObserver를 어떻게 사용했을까?](https://fe-developers.kakaoent.com/2021/211202-gpu-intersection-observer/?fbclid=IwAR24RhzOELcG2lm1JuVoA1VGsS1omARHM2Kv9bN0QW1eVea1CcoKU0LX3_Q)
 - [주석 분석기를 이용한 간단한 API 문서화 방법](https://engineering.linecorp.com/ko/blog/comments-parsing-api-documentation/)
+- [Defensive CSS](https://ishadeed.com/article/defensive-css/)
 
 ## 글감
 
