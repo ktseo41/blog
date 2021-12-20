@@ -50,6 +50,7 @@
 
 ## 서비스
 
+### 미분류
 
 - [Can't Unsee](https://cantunsee.space/)
 - [JSIsWeird](https://jsisweird.com/)
@@ -58,6 +59,15 @@
 - [JavaScriptWtf](https://javascriptwtf.com/)
 - [AdventOfCode](https://adventofcode.com/)
 - [gitmoji](https://gitmoji.dev/)
+
+### Illustration
+
+- [blush](https://blush.design/)
+
+### Editor
+
+- [https://www.spacemacs.org/](https://www.spacemacs.org/)
+
 ### Headless CMS
 
 - [Strapi](https://strapi.io/)
@@ -70,10 +80,6 @@
 ### AI
 
 - [Hugging Face](https://huggingface.co/)
-
-### Editor
-
-- [https://www.spacemacs.org/](https://www.spacemacs.org/)
 
 ### Startups
 
