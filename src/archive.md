@@ -28,6 +28,7 @@
 - [Best of Awards 2021 | Google Play](https://www.youtube.com/watch?v=lJwxC5jNDJU)
 - [Tech in 2022: 미래를 향한 3단계](https://news.hada.io/topic?id=5543&utm_source=slack&utm_medium=bot&utm_campaign=TLS6AUE2K)
 - [가디언의 2022년 기술 예측](https://news.hada.io/topic?id=5547&utm_source=slack&utm_medium=bot&utm_campaign=TLS6AUE2K)
+- [Tiobe index](https://www.tiobe.com/tiobe-index/)
 ## Web
 
 - [Web Almanac - state of the web 2021](https://almanac.httparchive.org/en/2021/)
