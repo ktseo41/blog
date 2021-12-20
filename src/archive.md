@@ -57,6 +57,7 @@
 - [JavaScript30](https://javascript30.com/)
 - [JavaScriptWtf](https://javascriptwtf.com/)
 - [AdventOfCode](https://adventofcode.com/)
+- [gitmoji](https://gitmoji.dev/)
 ### Headless CMS
 
 - [Strapi](https://strapi.io/)
