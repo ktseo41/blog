@@ -44,6 +44,13 @@
 - [삽질하기 싫으면 꼭 읽어봐야 할 Canvas 트러블 슈팅](https://meetup.toast.com/posts/297)
 - [Defensive CSS](https://ishadeed.com/article/defensive-css/)
 
+### Metaverse, Blockchain, Cryptocurrency, NFT, ...
+
+- [NFT가 궁금한 당신을 위한 꼼꼼 가이드](https://www.hani.co.kr/arti/economy/it/1022399.html)
+- [AvatarsInPixels](https://www.avatarsinpixels.com/)
+- [Remix](https://remix.ethereum.org/)
+- [Lightning Apps - The Complete Guide](https://hedgetrade.com/lightning-apps-complete-guide/)
+
 ## 강의
 
 - [https://www.udemy.com/ko/topic/web-development/](https://www.udemy.com/ko/topic/web-development/)
