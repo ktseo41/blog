@@ -59,6 +59,7 @@
 - [JavaScriptWtf](https://javascriptwtf.com/)
 - [AdventOfCode](https://adventofcode.com/)
 - [gitmoji](https://gitmoji.dev/)
+- [RSSHub](https://docs.rsshub.app/)
 
 ### Illustration
 
