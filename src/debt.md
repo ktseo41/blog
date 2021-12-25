@@ -30,6 +30,12 @@
 - [How load external svg in css section in Vue](https://stackoverflow.com/questions/59176312/how-load-external-svg-in-css-section-in-vue)
 - [https://stackoverflow.com/questions/44695560/how-can-i-import-a-svg-file-to-a-vue-component/56855843#56855843](https://stackoverflow.com/questions/44695560/how-can-i-import-a-svg-file-to-a-vue-component/56855843#56855843)
 
+### useEffect 훅에서 async await 문법을 어떻게 사용할지 결정하는 방법
+
+- [grep.app 검색](https://grep.app/search?q=useEffect%5C%28%28.%7C%5Cs%7C%5Cn%29%2A%3Fasync&regexp=true&case=true&filter[lang][0]=JSX&filter[lang][1]=TSX)
+- [microsoft/BotFramework-Composer/.../WebChatPanel.tsx](https://github.com/microsoft/BotFramework-Composer/blob/main/Composer/packages/client/src/components/WebChat/WebChatPanel.tsx)
+- [[react] useEffect 훅에서 async await 함수 사용하기](https://velog.io/@he0_077/useEffect-%ED%9B%85%EC%97%90%EC%84%9C-async-await-%ED%95%A8%EC%88%98-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0)
+
 ## 책
 
 - [TLS 구현으로 배우는 암호학](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791161754284&orderClick=LEa&Kc=) ([from](https://www.facebook.com/hika00/posts/5234521349896615))
