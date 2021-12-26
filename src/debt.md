@@ -36,6 +36,13 @@
 - [microsoft/BotFramework-Composer/.../WebChatPanel.tsx](https://github.com/microsoft/BotFramework-Composer/blob/main/Composer/packages/client/src/components/WebChat/WebChatPanel.tsx)
 - [[react] useEffect 훅에서 async await 함수 사용하기](https://velog.io/@he0_077/useEffect-%ED%9B%85%EC%97%90%EC%84%9C-async-await-%ED%95%A8%EC%88%98-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0)
 
+### iOS React Native Webview에서 캐시 갱신이 안되는 문제
+
+- [Expo ReactNative :  Webview cache setting](https://blog.naver.com/PostView.naver?blogId=zizimoos&logNo=222324680030&categoryNo=51&parentCategoryNo=0&viewDate=&currentPage=1&postListTopCurrentPage=1&from=postView&userTopListOpen=true&userTopListCount=5&userTopListManageOpen=false&userTopListCurrentPage=1)
+- [Cache Control Mdn](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control)
+- [알아둬야 할 HTTP 쿠키 & 캐시 헤더](https://www.zerocho.com/category/HTTP/post/5b594dd3c06fa2001b89feb9)
+- [웹 서비스 캐시 똑똑하게 다루기](https://toss.tech/article/smart-web-service-cache)
+
 ## 책
 
 - [TLS 구현으로 배우는 암호학](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791161754284&orderClick=LEa&Kc=) ([from](https://www.facebook.com/hika00/posts/5234521349896615))
