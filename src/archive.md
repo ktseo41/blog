@@ -34,6 +34,7 @@
 - [Tiobe index](https://www.tiobe.com/tiobe-index/)
 - [The Complete List Of Unicorn Companies](https://www.cbinsights.com/research-unicorn-companies)
 - [Cool Cats NFT를 구축하면서 배운 것(번역)](https://yozm.wishket.com/magazine/detail/1196/)
+- [컨슈머 트렌드 2022 보고서](https://news.hada.io/topic?id=5596&utm_source=slack&utm_medium=bot&utm_campaign=TLS6AUE2K)
 
 ### Web
 
