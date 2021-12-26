@@ -96,10 +96,6 @@ A 작업을 개선하려면 두 가지 질문을 해 봐야 합니다. 첫 번�
 지금 자신의 상황 '때문에' 학습 프레임을 갖는 것이 힘들다는 생각이 든다면, 이 우즤 어딘가의 누구는 비슷한 상황 '덕분에' 학습 프레임을 가질 수 있었다고 생각하고 있다고 상상해 보면 어떨까요?
 
 
-## [객체지향 생활 체조 규칙](https://7942yongdae.tistory.com/8)
-
-<ProgressBar name="객체지향 생활 체조 규칙" max="100" value="0" />
-
 ## [신경망 첫걸음](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9788968483509&orderClick=LEa&Kc=)
 
 <ProgressBar name="신경망 첫걸음" max="100" value="0" />
