@@ -51,6 +51,8 @@
 - [AvatarsInPixels](https://www.avatarsinpixels.com/)
 - [Remix](https://remix.ethereum.org/)
 - [Lightning Apps - The Complete Guide](https://hedgetrade.com/lightning-apps-complete-guide/)
+- [알기 쉬운 메사리 2022년 가상자산 리포트 요약본](https://brunch.co.kr/@jypthemiracle/21)
+- [코빗 - 2022년 가상자산 투자 테마](https://korbitblog.tumblr.com/post/670802352790454272/%EA%B3%B5%EC%A7%80-%EC%BD%94%EB%B9%97-%EB%A6%AC%EC%84%9C%EC%B9%98-%EB%B0%9C%EA%B0%84-%EC%95%88%EB%82%B4-2022%EB%85%84-%EA%B0%80%EC%83%81%EC%9E%90%EC%82%B0-%ED%88%AC%EC%9E%90-%ED%85%8C%EB%A7%88-crypto)
 
 ## 강의
 
