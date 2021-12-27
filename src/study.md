@@ -2,7 +2,7 @@
 
 ## [함께 자라기](http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&ejkGb=KOR&barcode=9788966262335)
 
-<ProgressBar name="함께자라기" max="220" value="56" />
+<ProgressBar name="함께자라기" max="220" value="75" />
 
 ### 머리말
 
