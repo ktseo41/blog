@@ -9,7 +9,7 @@
 - [프론트엔드에서 MV* 아키텍쳐란 무엇인가요?](https://velog.io/@teo/%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C%EC%97%90%EC%84%9C-MV-%EC%95%84%ED%82%A4%ED%85%8D%EC%B3%90%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94)
 - [카카오웹툰은 하드웨어 가속과 IntersectionObserver를 어떻게 사용했을까?](https://fe-developers.kakaoent.com/2021/211202-gpu-intersection-observer/?fbclid=IwAR24RhzOELcG2lm1JuVoA1VGsS1omARHM2Kv9bN0QW1eVea1CcoKU0LX3_Q)
 - [주석 분석기를 이용한 간단한 API 문서화 방법](https://engineering.linecorp.com/ko/blog/comments-parsing-api-documentation/)
-- [Defensive CSS](https://ishadeed.com/article/defensive-css/)
+- [자바스크립트는 왜 프로토타입을 선택했을까](https://medium.com/@limsungmook/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EB%8A%94-%EC%99%9C-%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85%EC%9D%84-%EC%84%A0%ED%83%9D%ED%96%88%EC%9D%84%EA%B9%8C-997f985adb42)
 
 ## 글감
 
@@ -22,6 +22,39 @@
 ### 카톡 썸네일, 설명 적용하기
 
 - [HTML - og(open graph) 태그 란? / 카톡,sns 미리보기 지정](https://gocoder.tistory.com/315)
+
+### Vue.js use both inline and external SVGs
+- [How to use both inline and external SVGs](https://vue-svg-loader.js.org/faq.html#how-to-use-both-inline-and-external-svgs)
+- [https://github.com/visualfanatic/vue-svg-loader/issues/141](https://github.com/visualfanatic/vue-svg-loader/issues/141)
+- [Using SVG and Vue.js: A Complete Guide](https://blog.logrocket.com/using-svg-and-vue-js-a-complete-guide/)
+- [How load external svg in css section in Vue](https://stackoverflow.com/questions/59176312/how-load-external-svg-in-css-section-in-vue)
+- [https://stackoverflow.com/questions/44695560/how-can-i-import-a-svg-file-to-a-vue-component/56855843#56855843](https://stackoverflow.com/questions/44695560/how-can-i-import-a-svg-file-to-a-vue-component/56855843#56855843)
+
+### useEffect 훅에서 async await 문법을 어떻게 사용할지 결정하는 방법
+
+- [grep.app 검색](https://grep.app/search?q=useEffect%5C%28%28.%7C%5Cs%7C%5Cn%29%2A%3Fasync&regexp=true&case=true&filter[lang][0]=JSX&filter[lang][1]=TSX)
+- [microsoft/BotFramework-Composer/.../WebChatPanel.tsx](https://github.com/microsoft/BotFramework-Composer/blob/main/Composer/packages/client/src/components/WebChat/WebChatPanel.tsx)
+- [[react] useEffect 훅에서 async await 함수 사용하기](https://velog.io/@he0_077/useEffect-%ED%9B%85%EC%97%90%EC%84%9C-async-await-%ED%95%A8%EC%88%98-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0)
+
+### iOS React Native Webview에서 캐시 갱신이 안되는 문제
+
+- [Expo ReactNative :  Webview cache setting](https://blog.naver.com/PostView.naver?blogId=zizimoos&logNo=222324680030&categoryNo=51&parentCategoryNo=0&viewDate=&currentPage=1&postListTopCurrentPage=1&from=postView&userTopListOpen=true&userTopListCount=5&userTopListManageOpen=false&userTopListCurrentPage=1)
+- [Cache Control Mdn](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control)
+- [알아둬야 할 HTTP 쿠키 & 캐시 헤더](https://www.zerocho.com/category/HTTP/post/5b594dd3c06fa2001b89feb9)
+- [웹 서비스 캐시 똑똑하게 다루기](https://toss.tech/article/smart-web-service-cache)
+
+### @media print로 페이지를 프린트에 적합하도록 하기
+
+- [[CSS] 웹페이지 프린트 설정](https://studyhardgogo.tistory.com/148)
+- [Force print preview mode](https://developer.chrome.com/docs/devtools/css/print-preview/)
+- [scale html table before printing using css](https://stackoverflow.com/questions/28757370/scale-html-table-before-printing-using-css)
+- [내가 편하려고 정리하는 - 웹 인쇄, @media print, @page](https://velog.io/@may54ther/%EB%82%B4%EA%B0%80-%ED%8E%B8%ED%95%98%EB%A0%A4%EA%B3%A0-%EC%A0%95%EB%A6%AC%ED%95%98%EB%8A%94-%EC%9D%B8%EC%87%84-%EA%B4%80%EB%A0%A8-CSS)
+
+### Vue.js + prettier에서 의도치 않게 생성되는 공백 제거하기 (WhitespaceSensitivity)
+
+- [Prettier - HTML Whitespace Sensitivity](https://prettier.io/docs/en/options.html#html-whitespace-sensitivity)
+- [Prettier - Prettier 1.15: HTML, Vue, Angular and MDX Support](https://prettier.io/blog/2018/11/07/1.15.0.html#whitespace-sensitive-formatting)
+- [eslint - vue/html-closing-bracket-newline](https://eslint.vuejs.org/rules/html-closing-bracket-newline.html)
 
 ## 책
 
