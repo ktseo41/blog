@@ -50,6 +50,12 @@
 - [scale html table before printing using css](https://stackoverflow.com/questions/28757370/scale-html-table-before-printing-using-css)
 - [내가 편하려고 정리하는 - 웹 인쇄, @media print, @page](https://velog.io/@may54ther/%EB%82%B4%EA%B0%80-%ED%8E%B8%ED%95%98%EB%A0%A4%EA%B3%A0-%EC%A0%95%EB%A6%AC%ED%95%98%EB%8A%94-%EC%9D%B8%EC%87%84-%EA%B4%80%EB%A0%A8-CSS)
 
+### Vue.js + prettier에서 의도치 않게 생성되는 공백 제거하기 (WhitespaceSensitivity)
+
+- [Prettier - HTML Whitespace Sensitivity](https://prettier.io/docs/en/options.html#html-whitespace-sensitivity)
+- [Prettier - Prettier 1.15: HTML, Vue, Angular and MDX Support](https://prettier.io/blog/2018/11/07/1.15.0.html#whitespace-sensitive-formatting)
+- [eslint - vue/html-closing-bracket-newline](https://eslint.vuejs.org/rules/html-closing-bracket-newline.html)
+
 ## 책
 
 - [TLS 구현으로 배우는 암호학](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791161754284&orderClick=LEa&Kc=) ([from](https://www.facebook.com/hika00/posts/5234521349896615))
