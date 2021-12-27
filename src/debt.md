@@ -43,6 +43,13 @@
 - [알아둬야 할 HTTP 쿠키 & 캐시 헤더](https://www.zerocho.com/category/HTTP/post/5b594dd3c06fa2001b89feb9)
 - [웹 서비스 캐시 똑똑하게 다루기](https://toss.tech/article/smart-web-service-cache)
 
+### @media print로 페이지를 프린트에 적합하도록 하기
+
+- [[CSS] 웹페이지 프린트 설정](https://studyhardgogo.tistory.com/148)
+- [Force print preview mode](https://developer.chrome.com/docs/devtools/css/print-preview/)
+- [scale html table before printing using css](https://stackoverflow.com/questions/28757370/scale-html-table-before-printing-using-css)
+- [내가 편하려고 정리하는 - 웹 인쇄, @media print, @page](https://velog.io/@may54ther/%EB%82%B4%EA%B0%80-%ED%8E%B8%ED%95%98%EB%A0%A4%EA%B3%A0-%EC%A0%95%EB%A6%AC%ED%95%98%EB%8A%94-%EC%9D%B8%EC%87%84-%EA%B4%80%EB%A0%A8-CSS)
+
 ## 책
 
 - [TLS 구현으로 배우는 암호학](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791161754284&orderClick=LEa&Kc=) ([from](https://www.facebook.com/hika00/posts/5234521349896615))
