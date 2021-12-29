@@ -74,6 +74,7 @@
 - [RSSHub](https://docs.rsshub.app/)
 - [grep.app](https://grep.app/)
 - [utterances](https://utteranc.es/)
+- [return true to win](https://alf.nu/ReturnTrue)
 
 ### Illustration
 
