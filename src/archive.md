@@ -92,6 +92,7 @@
 - [return true to win](https://alf.nu/ReturnTrue)
 - [exploringjs](https://exploringjs.com/impatient-js/toc.html)
 - [Animate.css](https://animate.style/)
+- [LottieFiles](https://lottiefiles.com/)
 
 ### Illustration
 
