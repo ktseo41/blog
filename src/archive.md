@@ -54,6 +54,14 @@
 - [알기 쉬운 메사리 2022년 가상자산 리포트 요약본](https://brunch.co.kr/@jypthemiracle/21)
 - [코빗 - 2022년 가상자산 투자 테마](https://korbitblog.tumblr.com/post/670802352790454272/%EA%B3%B5%EC%A7%80-%EC%BD%94%EB%B9%97-%EB%A6%AC%EC%84%9C%EC%B9%98-%EB%B0%9C%EA%B0%84-%EC%95%88%EB%82%B4-2022%EB%85%84-%EA%B0%80%EC%83%81%EC%9E%90%EC%82%B0-%ED%88%AC%EC%9E%90-%ED%85%8C%EB%A7%88-crypto)
 
+### Science
+
+- 남극 빙하 밑에서 발견된 동물군
+  - [Breaking All the Rules: The First Recorded Hard Substrate Sessile Benthic Community Far Beneath an Antarctic Ice Shelf](https://www.frontiersin.org/articles/10.3389/fmars.2021.642040/full)
+  - [남극 빙하 밑에서 발견된 동물군](http://jjy0501.blogspot.com/2021/02/blog-post_30.html)
+  - [남극 얼음 밑에 동물이 살고 있다](https://www.sciencetimes.co.kr/news/%EB%82%A8%EA%B7%B9-%EC%96%BC%EC%9D%8C-%EB%B0%91%EC%97%90-%EB%8F%99%EB%AC%BC%EC%9D%B4-%EC%82%B4%EA%B3%A0-%EC%9E%88%EB%8B%A4/)
+  - [남극 얼음 아래에서 미지의 생명체 발견](https://www.thedailypost.kr/news/articleView.html?idxno=79480)
+
 ## 강의
 
 - [https://www.udemy.com/ko/topic/web-development/](https://www.udemy.com/ko/topic/web-development/)
