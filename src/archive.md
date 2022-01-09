@@ -1,6 +1,6 @@
 # 🏛 보관소
 
-## 개발 뉴스
+## 개발 소식지
 
 - [GeekNews](https://news.hada.io/)
 - [월간개발자스럽다](https://blog.gaerae.com/)
@@ -62,6 +62,10 @@
   - [남극 빙하 밑에서 발견된 동물군](http://jjy0501.blogspot.com/2021/02/blog-post_30.html)
   - [남극 얼음 밑에 동물이 살고 있다](https://www.sciencetimes.co.kr/news/%EB%82%A8%EA%B7%B9-%EC%96%BC%EC%9D%8C-%EB%B0%91%EC%97%90-%EB%8F%99%EB%AC%BC%EC%9D%B4-%EC%82%B4%EA%B3%A0-%EC%9E%88%EB%8B%A4/)
   - [남극 얼음 아래에서 미지의 생명체 발견](https://www.thedailypost.kr/news/articleView.html?idxno=79480)
+  
+### Etc (미분류 포함)
+
+- [왜 Nodejs ORM을 쓰지 말아야 할까](https://yceffort.kr/2021/07/dont-use-nodjs-orm)
 
 ## 강의
 
