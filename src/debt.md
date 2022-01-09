@@ -10,6 +10,9 @@
 - [카카오웹툰은 하드웨어 가속과 IntersectionObserver를 어떻게 사용했을까?](https://fe-developers.kakaoent.com/2021/211202-gpu-intersection-observer/?fbclid=IwAR24RhzOELcG2lm1JuVoA1VGsS1omARHM2Kv9bN0QW1eVea1CcoKU0LX3_Q)
 - [주석 분석기를 이용한 간단한 API 문서화 방법](https://engineering.linecorp.com/ko/blog/comments-parsing-api-documentation/)
 - [자바스크립트는 왜 프로토타입을 선택했을까](https://medium.com/@limsungmook/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EB%8A%94-%EC%99%9C-%ED%94%84%EB%A1%9C%ED%86%A0%ED%83%80%EC%9E%85%EC%9D%84-%EC%84%A0%ED%83%9D%ED%96%88%EC%9D%84%EA%B9%8C-997f985adb42)
+- 다형성
+  - [다형성이란?](https://tecoble.techcourse.co.kr/post/2020-10-27-polymorphism/)
+  - [다형성의 개념](http://www.tcpschool.com/java/java_polymorphism_concept)
 
 ## 글감
 
