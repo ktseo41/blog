@@ -36,6 +36,7 @@
 - [Cool Cats NFT를 구축하면서 배운 것(번역)](https://yozm.wishket.com/magazine/detail/1196/)
 - [컨슈머 트렌드 2022 보고서](https://news.hada.io/topic?id=5596&utm_source=slack&utm_medium=bot&utm_campaign=TLS6AUE2K)
 - [WebGPT: Improving the factual accuracy of language models through web browsing](https://openai.com/blog/improving-factual-accuracy/)
+- [2022년 우리의 커리어를 형성할 트렌드들](https://news.hada.io/topic?id=5672)
 
 ### Web
 
