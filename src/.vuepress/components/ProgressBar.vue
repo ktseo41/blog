@@ -1,5 +1,5 @@
 <template>
-<div>
+<div :style="$attrs.inline === '' ? { display: 'inline' } : {}">
   <label :for="`progress-${name}`">{{ label }}</label>
   <progress :id="`progress-${name}`" :value="value" :max="max">{{ value }}</progress>
   <small>{{ (value / max * 100).toFixed(0) }} %</small>
