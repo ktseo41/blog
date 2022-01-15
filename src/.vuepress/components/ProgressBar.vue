@@ -2,7 +2,7 @@
 <div>
   <label :for="`progress-${name}`">{{ label }}</label>
   <progress :id="`progress-${name}`" :value="value" :max="max">{{ value }}</progress>
-  <small>{{ (value / max).toFixed(2) * 100 }} %</small>
+  <small>{{ (value / max * 100).toFixed(0) }} %</small>
 </div>
 </template>
 
