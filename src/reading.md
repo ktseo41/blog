@@ -41,3 +41,7 @@
 <ProgressBar inline name="눈물을 마시는 새 3" :max="100" :value="100" /> ( 2021-01 )
 <br>
 <ProgressBar name="눈물을 마시는 새 4" :max="100" :value="88" />
+
+## 실격당한 자들을 위한 변론
+
+<ProgressBar name="실격당한 자들을 위한 변론" :max="317" :value="36" />
