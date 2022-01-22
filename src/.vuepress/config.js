@@ -69,11 +69,15 @@ module.exports = {
       ["archive", "🏛 보관소"],
       {
         title: "🔎 공부",
-        children: ['study/함께자라기', 'study/신경망 첫걸음']
+        children: ["study/함께자라기", "study/신경망 첫걸음"],
       },
       ["vim", "📟 Vim"],
       ["log", "📝️ 글"],
       ["reading", "📚 책"],
+      {
+        title: "💰 주식",
+        children: ["stock/시나리오"],
+      },
     ],
   },
 

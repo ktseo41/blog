@@ -35,6 +35,7 @@
 - [컨슈머 트렌드 2022 보고서](https://news.hada.io/topic?id=5596&utm_source=slack&utm_medium=bot&utm_campaign=TLS6AUE2K)
 - [WebGPT: Improving the factual accuracy of language models through web browsing](https://openai.com/blog/improving-factual-accuracy/)
 - [2022년 우리의 커리어를 형성할 트렌드들](https://news.hada.io/topic?id=5672)
+- [마이크로소프트 - 액티비전 거래의 시사점](https://news.hada.io/topic?id=5784&utm_source=slack&utm_medium=bot&utm_campaign=TLS6AUE2K)
 
 ### Web
 
@@ -44,6 +45,7 @@
 - [stateofcss 2021](https://2021.stateofcss.com/en-US/)
 - [삽질하기 싫으면 꼭 읽어봐야 할 Canvas 트러블 슈팅](https://meetup.toast.com/posts/297)
 - [Defensive CSS](https://ishadeed.com/article/defensive-css/)
+- [Retry 전략에 대해서](https://jungseob86.tistory.com/12)
 
 ### Metaverse, Blockchain, Cryptocurrency, NFT, ...
 

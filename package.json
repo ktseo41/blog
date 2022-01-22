@@ -14,7 +14,9 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "vue-google-charts": "^0.3.3",
     "vuepress": "^1.5.3",
-    "vuepress-plugin-sitemap": "^2.3.1"
+    "vuepress-plugin-sitemap": "^2.3.1",
+    "yahoo-finance": "^0.3.7"
   }
 }
