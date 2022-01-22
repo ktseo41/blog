@@ -22,8 +22,6 @@
 - [로컬스티치](https://localstitch.kr/)
 - [집무실](https://www.jibmusil.com/)
 
-
-
 ## 글, 기사
 ### Tech
 
@@ -68,6 +66,7 @@
 ### Etc (미분류 포함)
 
 - [왜 Nodejs ORM을 쓰지 말아야 할까](https://yceffort.kr/2021/07/dont-use-nodjs-orm)
+- [월 $500 이상 버는 사이드 프로젝트가 있나요?](https://news.hada.io/topic?id=5787)
 
 ## 강의
 
