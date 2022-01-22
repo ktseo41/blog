@@ -30,7 +30,7 @@
 
 ## 함께 자라기 - 애자일로 가는 길
 
-<ProgressBar name="함께자라기" :max="220" :value="128" />
+<ProgressBar name="함께자라기" :max="220" :value="178" />
 
 ## 눈물을 마시는 새
 
