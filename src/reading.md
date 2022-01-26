@@ -45,3 +45,7 @@
 ## 실격당한 자들을 위한 변론
 
 <ProgressBar name="실격당한 자들을 위한 변론" :max="317" :value="88" />
+
+## 신호와 소음
+
+<ProgressBar name="신호와 소음" :max="731" :value="84" />
