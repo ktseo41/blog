@@ -69,6 +69,7 @@
 
 - [왜 Nodejs ORM을 쓰지 말아야 할까](https://yceffort.kr/2021/07/dont-use-nodjs-orm)
 - [월 $500 이상 버는 사이드 프로젝트가 있나요?](https://news.hada.io/topic?id=5787)
+- [스큐어모피즘부터 뉴모피즘까지, 스마트폰 UI의 역사](https://yozm.wishket.com/magazine/detail/1281/)
 
 ## 강의
 
