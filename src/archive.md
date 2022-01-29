@@ -94,6 +94,7 @@
 - [exploringjs](https://exploringjs.com/impatient-js/toc.html)
 - [Animate.css](https://animate.style/)
 - [LottieFiles](https://lottiefiles.com/)
+- [The Vanilla JavaScript Repository](https://vanillalist.top/)
 
 ### Illustration
 
