@@ -59,7 +59,7 @@
 - [Prettier - Prettier 1.15: HTML, Vue, Angular and MDX Support](https://prettier.io/blog/2018/11/07/1.15.0.html#whitespace-sensitive-formatting)
 - [eslint - vue/html-closing-bracket-newline](https://eslint.vuejs.org/rules/html-closing-bracket-newline.html)
 
-### heroku + node.js app + google chart로 실시간 주식 차트 만들기
+### heroku + node.js app + google chart로 Vuepress 블로그에 실시간 주식 차트 그리기
 
 - [마이크로소프트 블리자드 인수](https://news.hada.io/topic?id=5784&utm_source=slack&utm_medium=bot&utm_campaign=TLS6AUE2K)
 - [node-yahoo-finance2](https://github.com/gadicc/node-yahoo-finance2)
