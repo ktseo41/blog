@@ -77,12 +77,15 @@
   - 참고
     - [Heroku + node.js error (Web process failed to bind to $PORT within 60 seconds of launch)](https://stackoverflow.com/questions/15693192/heroku-node-js-error-web-process-failed-to-bind-to-port-within-60-seconds-of)
     - [express/node.js 를 이용해 서버를 만들어 heroku에 올리는 방법](https://medium.com/@yoobi55/express-node-js-%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%B4-%EC%84%9C%EB%B2%84%EB%A5%BC-%EB%A7%8C%EB%93%A4%EC%96%B4-heroku%EC%97%90-%EC%98%AC%EB%A6%AC%EB%8A%94-%EB%B0%A9%EB%B2%95-3a5134fc8743)
+    - [express - hello world](https://expressjs.com/en/starter/hello-world.html)
     - [Express res.json과 res.send 비교](https://haeguri.github.io/2018/12/30/compare-response-json-send-func/)
 - google chart
   - 왜?
-    - 다양한 예제, 자세한 문서 (https://developers.google.com/chart/interactive/docs/gallery/linechart?hl=en)
+    - 다양한 예제, 자세한 문서 ([chart documentation - linechart](https://developers.google.com/chart/interactive/docs/gallery/linechart?hl=en))
     - 구글이 만들었으니까 다양한 고려가 미리 돼있을 것이라는 믿..음..
-    - 향후 비교 차트 형태 추가 필요 : https://www.google.com/finance/quote/AAPL:NASDAQ?comparison=NASDAQ%3ATSLA%2CNASDAQ%3AAMZN
+    - 심플한 차트를 지향하는 것 같아보였음
+    - 향후 비교 차트 형태 추가 필요 : [google finance - 비교 차트](https://www.google.com/finance/quote/AAPL:NASDAQ?comparison=NASDAQ%3ATSLA%2CNASDAQ%3AAMZN)
+    
 
 
 ## 책
