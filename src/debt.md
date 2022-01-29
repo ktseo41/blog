@@ -59,6 +59,32 @@
 - [Prettier - Prettier 1.15: HTML, Vue, Angular and MDX Support](https://prettier.io/blog/2018/11/07/1.15.0.html#whitespace-sensitive-formatting)
 - [eslint - vue/html-closing-bracket-newline](https://eslint.vuejs.org/rules/html-closing-bracket-newline.html)
 
+### heroku + node.js app + google chart로 실시간 주식 차트 만들기
+
+- [마이크로소프트 블리자드 인수](https://news.hada.io/topic?id=5784&utm_source=slack&utm_medium=bot&utm_campaign=TLS6AUE2K)
+- [node-yahoo-finance2](https://github.com/gadicc/node-yahoo-finance2)
+- heroku + express
+  - heroku github connect
+  - 에러 로그 확인
+    - heroku cli 설치
+    - login, `heroku logs -a <app> -tail`
+  - 왜 heroku?
+    - 무료
+    - 귀찮은 설정 없이 빠르게 할 수 있을 것으로 봤음 -> 맞았음, 특히 github 연동
+    - cors anywhere app 사용 경험
+  - 향후
+    - web dyno 아닌 app으로 변경하는 방법?
+  - 참고
+    - [Heroku + node.js error (Web process failed to bind to $PORT within 60 seconds of launch)](https://stackoverflow.com/questions/15693192/heroku-node-js-error-web-process-failed-to-bind-to-port-within-60-seconds-of)
+    - [express/node.js 를 이용해 서버를 만들어 heroku에 올리는 방법](https://medium.com/@yoobi55/express-node-js-%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%B4-%EC%84%9C%EB%B2%84%EB%A5%BC-%EB%A7%8C%EB%93%A4%EC%96%B4-heroku%EC%97%90-%EC%98%AC%EB%A6%AC%EB%8A%94-%EB%B0%A9%EB%B2%95-3a5134fc8743)
+    - [Express res.json과 res.send 비교](https://haeguri.github.io/2018/12/30/compare-response-json-send-func/)
+- google chart
+  - 왜?
+    - 다양한 예제, 자세한 문서 (https://developers.google.com/chart/interactive/docs/gallery/linechart?hl=en)
+    - 구글이 만들었으니까 다양한 고려가 미리 돼있을 것이라는 믿..음..
+    - 향후 비교 차트 형태 추가 필요 : https://www.google.com/finance/quote/AAPL:NASDAQ?comparison=NASDAQ%3ATSLA%2CNASDAQ%3AAMZN
+
+
 ## 책
 
 - [TLS 구현으로 배우는 암호학](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791161754284&orderClick=LEa&Kc=) ([from](https://www.facebook.com/hika00/posts/5234521349896615))
