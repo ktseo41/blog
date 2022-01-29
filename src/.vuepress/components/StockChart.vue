@@ -19,6 +19,11 @@ export default {
     GChart
   },
   props: {
+    type: {
+      type: String,
+      required: false,
+      default: 'rateOfChange'
+    },
     ticker: {
       type: String,
       required: true
