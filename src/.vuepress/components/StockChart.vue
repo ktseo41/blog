@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3>{{ ticker }}</h3>
+    <h4>{{ title || ticker }}</h4>
     <g-chart
       type="LineChart"
       :data="chartData"
@@ -33,6 +33,10 @@ export default {
       required: false
     },
     endDate: {
+      type: String,
+      required: false
+    },
+    title: {
       type: String,
       required: false
     }
