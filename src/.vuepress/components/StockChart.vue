@@ -1,11 +1,12 @@
 <template>
   <div>
-    <h4>{{ title || ticker }}</h4>
+    <h4>{{ title || tickers.join('|') }}</h4>
     <g-chart
       v-if="!loading && chartData.length !== 0"
       type="LineChart"
       :data="chartData"
       :options="chartOptions"
+      :style="{ height: '400px' }"
     />
     <img width="100" height="100" v-else :src="$withBase('/spinner-1s-200px.svg')" alt="로딩중" />
   </div>
@@ -26,8 +27,8 @@ export default {
       required: false,
       default: 'rateOfChange'
     },
-    ticker: {
-      type: String,
+    tickers: {
+      type: Array,
       required: true
     },
     startDate: {
@@ -47,35 +48,42 @@ export default {
     (async () => {
       this.loading = true;
 
-      const { data: stockPrices } = await this.getStockPrices()
+      const stocksPrices = await Promise.all(this.tickers.map(async ticker => await this.getStockPrices(ticker, this.startDate, this.endDate)))
 
       this.loading = false;
 
-      this.chartData = this.getChartData(stockPrices)
-    })();
+      this.chartData = this.getChartData(stocksPrices)
+    })()
   },
   methods: {
-    async getStockPrices(){
-      const _startDate = this.startDate || new Date(new Date().setDate(new Date().getDate() - 7)).toISOString().slice(0, 10)
-      const _endDate = this.endDate || new Date().toISOString().slice(0,10)
+    async getStockPrices(ticker, startDate, endDate) {
+      const _startDate = startDate || new Date(new Date().setDate(new Date().getDate() - 7)).toISOString().slice(0, 10)
+      const _endDate = endDate || new Date().toISOString().slice(0,10)
       const baseUrl = process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : 'https://yahoo-finance-for-blog.herokuapp.com'
-      const url = baseUrl + `/historical/${this.ticker}?period1=${_startDate}&period2=${_endDate}`
+      const url = baseUrl + `/historical/${ticker}?period1=${_startDate}&period2=${_endDate}`
 
       return await axios.get(url)
     },
-    getChartData(stockPrices){
+    getChartData(stocksPrices){
       const data = [
-        ['Date', 'rate']
+        ['Date'].concat(this.tickers)
       ]
 
-      const { close: firstClose } = stockPrices[0]
+      stocksPrices.forEach((stockPrices, idx) => {
+        const { data: stockPricesData } = stockPrices
+        const { close: firstClose } = stockPricesData[0]
 
-      stockPrices.forEach(stockPrice => {
-        const date = new Date(stockPrice.date)
-        const dateString = `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}`
-        const closeRate = ((stockPrice.close - firstClose) / firstClose * 100).toFixed(2)
+        stockPricesData.forEach(({ close, date }) => {
+          const _date = new Date(date)
+          const dateString = `${_date.getMonth() + 1}/${_date.getDate()}/${_date.getFullYear()}`
+          const closeRate = Number(((close - firstClose) / firstClose * 100).toFixed(2))
 
-        data.push([dateString, Number(closeRate)])
+          if(data.find(row => row[0] === dateString)){
+            data.find(row => row[0] === dateString)[idx + 1] = closeRate
+          } else {
+            data.push([dateString, closeRate])
+          }
+        })
       })
 
       return data
@@ -85,14 +93,15 @@ export default {
     return {
       chartData: [],
       chartOptions: {
-        legend:  { position: 'none' },
+        legend:  { position: 'bottom' },
+        chartArea: {
+          left: 40,
+          right: 0,
+          top: 20
+        }
       },
       loading: false,
     }
   }
 }
 </script>
-
-<style scoped>
-
-</style>
