@@ -86,7 +86,11 @@
     - 심플한 차트를 지향하는 것 같아보였음
     - 향후 비교 차트 형태 추가 필요 : [google finance - 비교 차트](https://www.google.com/finance/quote/AAPL:NASDAQ?comparison=NASDAQ%3ATSLA%2CNASDAQ%3AAMZN)
     
+### Promise, async await등 ES6이상 문법들의 ES5 polyfill과 성능 측정
 
+- [Promise와 async await은 ES5에서 어떻게 바뀔까?](https://velog.io/@ansrjsdn/Promise%EC%99%80-async-await%EC%9D%80-ES5%EC%97%90%EC%84%9C-%EC%96%B4%EB%96%BB%EA%B2%8C-%EB%B0%94%EB%80%94%EA%B9%8C)
+- [Polyfills might slow down code](https://doctorderek.medium.com/polyfills-might-slow-down-code-5c7dfe6c7e40)
+- [Polyfills: everything you ever wanted to know, or maybe a bit less](https://medium.com/hackernoon/polyfills-everything-you-ever-wanted-to-know-or-maybe-a-bit-less-7c8de164e423)
 
 ## 책
 
