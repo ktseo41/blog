@@ -2,10 +2,12 @@
   <div>
     <h4>{{ title || ticker }}</h4>
     <g-chart
+      v-if="!loading && chartData.length !== 0"
       type="LineChart"
       :data="chartData"
       :options="chartOptions"
     />
+    <img width="100" height="100" v-else :src="$withBase('/spinner-1s-200px.svg')" alt="로딩중" />
   </div>
 </template>
 
@@ -43,7 +45,11 @@ export default {
   },
   created() {
     (async () => {
+      this.loading = true;
+
       const { data: stockPrices } = await this.getStockPrices()
+
+      this.loading = false;
 
       this.chartData = this.getChartData(stockPrices)
     })();
@@ -73,14 +79,15 @@ export default {
       })
 
       return data
-    },
+    }
   },
   data () {
     return {
       chartData: [],
       chartOptions: {
         legend:  { position: 'none' },
-      }
+      },
+      loading: false,
     }
   }
 }
