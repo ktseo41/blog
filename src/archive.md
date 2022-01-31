@@ -100,6 +100,7 @@
 - [LottieFiles](https://lottiefiles.com/)
 - [The Vanilla JavaScript Repository](https://vanillalist.top/)
 - [Six Speed (Performance of ES6 features relative to the ES5)](http://incaseofstairs.com/six-speed/#)
+- [프론트엔드 Awesome - by 한솔님](https://east-quotation-430.notion.site/Awesome-e81ff327aec445ac980a89ca3b62df9f)
 
 ### Illustration
 
