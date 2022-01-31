@@ -23,6 +23,17 @@
 -  [https://stackoverflow.com/questions/2946051/changing-case-in-vim](https://stackoverflow.com/questions/2946051/changing-case-in-vim)
 -  [https://vimhelp.org/change.txt.html#~](https://vimhelp.org/change.txt.html#~)
 
+### Indentation
+
+- `{Visual}[count]>` : 현재 line count 수 만큼 오른쪽으로 indent (shiftwidth)
+- `>%` : curly-braces block 오른쪽으로 indent
+- `>iB` : block을 오른쪽으로 indent
+
+#### 참고
+
+- [https://stackoverflow.com/questions/235839/indent-multiple-lines-quickly-in-vi/235841#:~:text=Use%20the%20%3E%20command.,inside%20block%20use%20%3E%20i%20B%20.](https://stackoverflow.com/questions/235839/indent-multiple-lines-quickly-in-vi/235841#:~:text=Use%20the%20%3E%20command.,inside%20block%20use%20%3E%20i%20B%20.)
+- [https://vimhelp.org/change.txt.html#%3E](https://vimhelp.org/change.txt.html#%3E)
+
 ## debt
 
 -  [My vim setup to speed up ...](https://www.youtube.com/watch?v=UZBjt04y4Oo)
