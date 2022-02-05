@@ -17,6 +17,7 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/config/#head
    */
   head: [
+    ["link", { rel: "icon", href: "/favicon.ico" }],
     ["meta", { name: "theme-color", content: "#f28e1c" }],
     ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
     [
@@ -39,18 +40,20 @@ module.exports = {
     ],
   ],
 
+  // use default theme
+  theme: "@vuepress/theme-default",
   /**
    * Theme configuration, here is the default theme configuration for VuePress.
    *
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    repo: "",
-    editLinks: false,
+    repo: "ktseo41/blog",
+    editLink: false,
     docsDir: "",
-    editLinkText: "",
-    lastUpdated: false,
-    nav: [
+    lastUpdated: true,
+    contributors: false,
+    navBar: [
       {
         text: "2022",
         link: "/2022/",
@@ -65,24 +68,25 @@ module.exports = {
       },
     ],
     sidebar: [
-      ["debt", "🧱 부채"],
-      ["archive", "🏛 보관소"],
+      { text: "🧱 부채", link: "/debt/" },
+      { text: "🏛 보관소", link: "/archive/" },
       {
-        title: "🔎 공부",
+        text: "🔎 공부",
         children: [
-          "study/함께자라기",
-          "study/신경망 첫걸음",
-          "study/자바스크립트 알고리즘 문제풀이",
+          "/study/함께자라기.md",
+          "/study/신경망 첫걸음.md",
+          "/study/자바스크립트 알고리즘 문제풀이.md",
         ],
       },
-      ["vim", "📟 Vim"],
-      ["log", "📝️ 글"],
-      ["reading", "📚 책"],
+      { text: "📟 Vim", link: "/vim/" },
+      { text: "📝️ 글", link: "/log/" },
+      { text: "📚 책", link: "/reading/" },
       {
-        title: "💰 주식",
-        children: ["stock/시나리오"],
+        text: "💰 주식",
+        children: ["/stock/시나리오.md"],
       },
     ],
+    sidebarDepth: 1,
   },
 
   /**
