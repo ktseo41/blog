@@ -1,26 +1,17 @@
 <template>
   <div>
     <h4>{{ title || tickers.join('|') }}</h4>
-    <g-chart
-      v-if="!loading && chartData.length !== 0"
-      type="LineChart"
-      :data="chartData"
-      :options="chartOptions"
-      :style="{ height: '400px' }"
-    />
-    <img width="100" height="100" v-else :src="$withBase('/spinner-1s-200px.svg')" alt="로딩중" />
+    <div ref="chart"></div>
+    <img width="100" height="100" v-if="loading || chartData.length === 0" :src="$withBase('/spinner-1s-200px.svg')" alt="로딩중" />
   </div>
 </template>
 
 <script>
-import { GChart } from 'vue-google-charts'
 import axios from 'axios'
+import { GoogleCharts } from 'google-charts';
 
 export default {
   name: "StockChart",
-  components: {
-    GChart
-  },
   props: {
     type: {
       type: String,
@@ -54,6 +45,19 @@ export default {
 
       this.chartData = this.getChartData(stocksPrices)
     })()
+  },
+  watch: {
+    chartData: function(newChartData) {
+      if (newChartData.length === 0) {
+        return;
+      }
+
+      GoogleCharts.load(() => {
+        const data = GoogleCharts.api.visualization.arrayToDataTable(this.chartData);
+        const chart = new GoogleCharts.api.visualization.LineChart(this.$refs.chart);
+        chart.draw(data, this.chartOptions);
+      });
+    }
   },
   methods: {
     async getStockPrices(ticker, startDate, endDate) {
