@@ -53,7 +53,7 @@ module.exports = {
     docsDir: "",
     lastUpdated: true,
     contributors: false,
-    navBar: [
+    navbar: [
       {
         text: "2022",
         link: "/2022/",
@@ -61,10 +61,6 @@ module.exports = {
       {
         text: "Instagram",
         link: "https://instagram.com/ktseo41/",
-      },
-      {
-        text: "GitHub",
-        link: "https://github.com/ktseo41/blog",
       },
     ],
     sidebar: [
