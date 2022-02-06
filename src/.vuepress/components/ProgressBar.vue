@@ -1,3 +1,24 @@
+<script setup>
+defineProps({
+  name: {
+    type: String,
+    required: true
+  },
+  label: {
+    type: String,
+    default: '',
+    required: false
+  },
+  value: {
+    type: Number,
+    default: 0
+  },
+  max: {
+    type: Number,
+    default: 100
+  }
+})
+</script>
 <template>
 <div :style="$attrs.inline === '' ? { display: 'inline' } : {}">
   <label :for="`progress-${name}`">{{ label }}</label>
@@ -5,32 +26,9 @@
   <small>{{ (value / max * 100).toFixed(0) }} %</small>
 </div>
 </template>
-
-<script>
-export default {
-  name: 'ProgressBar',
-  props: {
-    name: {
-      type: String,
-      required: true
-    },
-    label: {
-      type: String,
-      default: '',
-      required: false
-    },
-    value: {
-      type: Number,
-      default: 0
-    },
-    max: {
-      type: Number,
-      default: 100
-    }
-  },
+<style scoped>
+small {
+  display: inline-block;
+  margin-left: 5px;
 }
-</script>
-
-<style>
-
 </style>
