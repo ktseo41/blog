@@ -44,7 +44,7 @@
 
 ## 실격당한 자들을 위한 변론
 
-<ProgressBar name="실격당한 자들을 위한 변론" :max="317" :value="226" />
+<ProgressBar name="실격당한 자들을 위한 변론" :max="317" :value="288" />
 
 ## 산책과 연애
 
