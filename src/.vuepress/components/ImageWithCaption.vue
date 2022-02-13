@@ -31,16 +31,5 @@ export default {
 <style scoped>
 figure {
   margin: 0 auto;
-  width: 450px;
-}
-
-figcaption {
-  font-size: 13px;
-}
-
-@media (min-width: 799px){
-  figure {
-    width: auto;
-  }
 }
 </style>
