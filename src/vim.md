@@ -1,7 +1,9 @@
 # 📟 Vim
 
 <ImageWithCaption src="https://i.redd.it/yffw4nzgv9a11.jpg" alt="The FOOL...">
-    <a href="https://www.reddit.com/r/ProgrammerHumor/comments/8z99lf/vim_no_exit_d_d/" target="_blank">출처 : VIM! No EXIT !! :D :D</a>
+    <template v-slot:figcaption>
+        <a href="https://www.reddit.com/r/ProgrammerHumor/comments/8z99lf/vim_no_exit_d_d/" target="_blank">출처 : VIM! No EXIT !! :D :D</a>
+    </template>
 </ImageWithCaption>
 
 ## 링크
