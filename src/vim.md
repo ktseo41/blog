@@ -34,6 +34,18 @@
 - [https://stackoverflow.com/questions/235839/indent-multiple-lines-quickly-in-vi/235841#:~:text=Use%20the%20%3E%20command.,inside%20block%20use%20%3E%20i%20B%20.](https://stackoverflow.com/questions/235839/indent-multiple-lines-quickly-in-vi/235841#:~:text=Use%20the%20%3E%20command.,inside%20block%20use%20%3E%20i%20B%20.)
 - [https://vimhelp.org/change.txt.html#%3E](https://vimhelp.org/change.txt.html#%3E)
 
+### Substitution
+
+`:[range]substitution/from/to/[flags]`
+
+- `:%s/from/to/[flags]` : 전체 파일을 탐색하면서 substitution을 수행. %`는 전체 문자열을 의미, `s`는 substitution을 의미
+- `:.,$s/from/to/[flags]` : 현재라인부터 파일의 끝까지 탐색하면서 substitution을 수행
+
+#### 참고
+
+- [https://vimhelp.org/usr_10.txt.html#10.2](https://vimhelp.org/usr_10.txt.html#10.2)
+
+
 ## debt
 
 -  [My vim setup to speed up ...](https://www.youtube.com/watch?v=UZBjt04y4Oo)
