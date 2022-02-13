@@ -1,9 +1,8 @@
 # 📟 Vim
 
-<figure style="margin: 0 auto; width: 450px;">
-  <img src="https://i.redd.it/yffw4nzgv9a11.jpg" alt="THE FOOL...">
-  <figcaption style="font-size: 13px;"><a href="https://www.reddit.com/r/ProgrammerHumor/comments/8z99lf/vim_no_exit_d_d/" target="_blank">출처 : VIM! No EXIT !! :D :D</a></figcaption>
-</figure>
+<ImageWithCaption src="https://i.redd.it/yffw4nzgv9a11.jpg" alt="The FOOL...">
+    <a href="https://www.reddit.com/r/ProgrammerHumor/comments/8z99lf/vim_no_exit_d_d/" target="_blank">출처 : VIM! No EXIT !! :D :D</a>
+</ImageWithCaption>
 
 ## 링크
 -  [AdventOfCode Day1 Vim풀이](https://www.reddit.com/r/adventofcode/comments/r66vow/comment/hmrrmwr/?utm_source=share&utm_medium=web2x&context=3)
@@ -52,3 +51,10 @@
 -  [neovim 설정 (CoC, Vim-Plug, treesitter, NERDTree)](https://velog.io/@mythos/Linux-neovim-%EC%84%A4%EC%A0%95-CoC-Vim-Plug-treesitter-NERDTree)
 -  [fzf](https://github.com/junegunn/fzf)
 -  [vim-surround](https://github.com/tpope/vim-surround)
+
+<style scoped>
+.figure {
+  margin: 0 auto;
+  width: 450px;
+}
+</style>
