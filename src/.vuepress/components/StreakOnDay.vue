@@ -3,28 +3,27 @@
     <div class="streak-on-day__ring">
       {{ streak }}
       <img width="20" height="20" src="../assets/emoji-zap.svg" alt="zap">
-      <!-- <zap-emoji /> -->
     </div>  
     <div class="streak-on-day__progress-text">
       {{ streak }}일 연속 진행중
+      <div class="streak-on-day__progress-subtext">총 {{ complete }}개 강의 완료</div>
     </div>
-    <slot></slot>
   </div>
 </template>
 
 <script>
-// import ZapEmoji from '../assets/emoji-zap.svg'
 
 export default {
   name: 'streak-on-day',
-  components: {
-    // ZapEmoji
-  },
   props: {
     streak: {
       type: Number,
       required: true
     },
+    complete: {
+      type: Number,
+      required: false
+    }
   }
 }
 </script>
@@ -50,5 +49,10 @@ export default {
   margin-left: 10px;
   font-weight: bold;
   font-size: 18px;
+}
+.streak-on-day__progress-subtext {
+  margin-top: 10px;
+  font-size: 11px;
+  color: #555;
 }
 </style>
