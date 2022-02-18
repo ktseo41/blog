@@ -40,6 +40,7 @@
 `:[range]substitution/from/to/[flags]`
 
 - `:%s/from/to/[flags]` : 전체 파일을 탐색하면서 substitution을 수행. %`는 전체 문자열을 의미, `s`는 substitution을 의미
+- `:.s/from/to/[flags]` : 현재라인에서 substitution을 수행
 - `:.,$s/from/to/[flags]` : 현재라인부터 파일의 끝까지 탐색하면서 substitution을 수행
 
 #### 참고
