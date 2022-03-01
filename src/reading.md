@@ -44,12 +44,16 @@
 
 ## 실격당한 자들을 위한 변론
 
-<ProgressBar name="실격당한 자들을 위한 변론" :max="317" :value="288" />
+<ProgressBar name="실격당한 자들을 위한 변론" :max="317" :value="317" /> ( 2022-01 )
 
 ## 산책과 연애
 
-<ProgressBar name="산책과 연애" :max="100" :value="100" /> (2022-01)
+<ProgressBar name="산책과 연애" :max="100" :value="100" /> ( 2022-01 )
 
 ## 신호와 소음
 
-<ProgressBar name="신호와 소음" :max="731" :value="100" />
+<ProgressBar name="신호와 소음" :max="731" :value="100" /> ( 2022-02 ✘ )
+
+## 멀고도 가까운
+
+<ProgressBar name="멀고도 가까운" :max="370" :value="31" /> ( 2022-03 )
