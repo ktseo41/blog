@@ -52,7 +52,7 @@
 
 ## 신호와 소음
 
-<ProgressBar name="신호와 소음" :max="731" :value="100" /> ( 2022-02 ✘ )
+<ProgressBar name="신호와 소음" :max="731" :value="180" /> ( 2022-02 ✘ )
 
 ## 멀고도 가까운
 
