@@ -92,6 +92,20 @@
 - [Polyfills might slow down code](https://doctorderek.medium.com/polyfills-might-slow-down-code-5c7dfe6c7e40)
 - [Polyfills: everything you ever wanted to know, or maybe a bit less](https://medium.com/hackernoon/polyfills-everything-you-ever-wanted-to-know-or-maybe-a-bit-less-7c8de164e423)
 
+### git alias를 이용한 빠른 핫픽스 브랜치 생성 및 package.json, package-lock.json 버전 업데이트
+
+**[alias]**
+
+`hf = "!function hf(){ git checkout master && v=$(cat package.json | grep -m 1 version | sed 's/[^0-9.]//g'); p=${v##*.}; uP=$((p+1)); mV=${v%.*}.$uP; sed -i '' 's/\"version\": \"'$v'\"/\"version\": \"'$mV'\"/g' package*.json; git checkout -b hotfix/$mV;}; hf"`
+
+- 사내에서 반복적으로 사용하는 hotfix 브랜치 생성 및 package.json 버전 수정을 스크립트화
+
+##### 참고
+
+- [Parameter Expansion](https://mug896.github.io/bash-shell/exp_and_sub/parameter_expansion.html)
+- [npm package version](https://gist.github.com/DarrenN/8c6a5b969481725a4413?permalink_comment_id=3772203#gistcomment-3772203)
+- [update version number stored in json file](https://stackoverflow.com/questions/36402167/update-version-number-stored-in-json-file/36404244#36404244)
+
 ## 책
 
 - [TLS 구현으로 배우는 암호학](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791161754284&orderClick=LEa&Kc=) ([from](https://www.facebook.com/hika00/posts/5234521349896615))
