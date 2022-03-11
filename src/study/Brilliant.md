@@ -1,6 +1,6 @@
 # [Brilliant](https://brilliant.org/home/)
 
-<StreakOnDay :streak="1" :complete="19"></StreakOnDay>
+<StreakOnDay :streak="2" :complete="21"></StreakOnDay>
 
 ## [Computer Science Foundations](https://brilliant.org/paths/computer-science-foundations/)
 
@@ -8,7 +8,7 @@
 
 ### Computer Science Fundamentals
 
-<ProgressBar name="Computer Science Fundamentals" :max="15" :value="12" />
+<ProgressBar name="Computer Science Fundamentals" :max="15" :value="15" />
 
 #### Order and Search
 ##### Ancient Search Technology
