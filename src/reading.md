@@ -56,4 +56,4 @@
 
 ## 멀고도 가까운
 
-<ProgressBar name="멀고도 가까운" :max="370" :value="31" /> ( 2022-03 )
+<ProgressBar name="멀고도 가까운" :max="370" :value="60" /> ( 2022-03 )
