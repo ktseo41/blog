@@ -1,6 +1,6 @@
 # [Brilliant](https://brilliant.org/home/)
 
-<StreakOnDay :streak="4" :complete="22"></StreakOnDay>
+<StreakOnDay :streak="5" :complete="22"></StreakOnDay>
 
 ## [Computer Science Foundations](https://brilliant.org/paths/computer-science-foundations/)
 
