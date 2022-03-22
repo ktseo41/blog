@@ -49,6 +49,7 @@
 - [Retry 전략에 대해서](https://jungseob86.tistory.com/12)
 - [HTML이 당신의 생각보다 더 중요한 이유](https://xo.dev/why-html-is-important-than-you-think/)
 - [New in ECMAScript 2022](https://exploringjs.com/impatient-js/ch_new-javascript-features.html#new-in-es2022)
+- [Learn Temporal API In 17 Minutes](https://www.youtube.com/watch?v=oOK3UzLJ_Cs)
 
 ### Metaverse, Blockchain, Cryptocurrency, NFT, ...
 
