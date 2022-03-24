@@ -74,6 +74,10 @@
 - [왜 Nodejs ORM을 쓰지 말아야 할까](https://yceffort.kr/2021/07/dont-use-nodjs-orm)
 - [월 $500 이상 버는 사이드 프로젝트가 있나요?](https://news.hada.io/topic?id=5787)
 - [스큐어모피즘부터 뉴모피즘까지, 스마트폰 UI의 역사](https://yozm.wishket.com/magazine/detail/1281/)
+- [그림으로 보는 awk](https://twitter.com/b0rk/status/1000604334026055681?s=20&t=Bf3QoJsycqe4sshh3agQcQ)
+- [그림으로 보는 grep](https://twitter.com/b0rk/status/991880504805871616?s=20&t=gFrieA8AzklPXVEU7laPFw)
+- [그림으로 보는 find](https://twitter.com/b0rk/status/993862211964735488?s=20&t=LlRKxV1ZHwvAYQ5ItPRcgA)
+- [그림으로 보는 sed](https://twitter.com/b0rk/status/1000773086155804672?s=20&t=UtrCHDxlOSPw-rZSQqzveQ)
 
 ## 강의
 
