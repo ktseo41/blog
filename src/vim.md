@@ -48,6 +48,9 @@
 
 - [https://vimhelp.org/usr_10.txt.html#10.2](https://vimhelp.org/usr_10.txt.html#10.2)
 
+### Writing and Quiting
+
+`:x` : Like ":wq", but write only when changes have been made.
 
 ## debt
 
