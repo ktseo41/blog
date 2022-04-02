@@ -78,6 +78,8 @@
 - [그림으로 보는 grep](https://twitter.com/b0rk/status/991880504805871616?s=20&t=gFrieA8AzklPXVEU7laPFw)
 - [그림으로 보는 find](https://twitter.com/b0rk/status/993862211964735488?s=20&t=LlRKxV1ZHwvAYQ5ItPRcgA)
 - [그림으로 보는 sed](https://twitter.com/b0rk/status/1000773086155804672?s=20&t=UtrCHDxlOSPw-rZSQqzveQ)
+- [📰 개발자로서 읽어야 할 책 8권](https://careerly.co.kr/comments/53721?utm_campaign=self-share)
+  - 실용주의 프로그래머, 리팩토링, 코드 컴플리트2, 피플웨어, 헤드 퍼스트 디자인 패턴, 클린 코드, 레거시 코드 활용 전략, A Philosophy of Software Design
 
 ## 강의
 
@@ -107,6 +109,11 @@
 - [The Vanilla JavaScript Repository](https://vanillalist.top/)
 - [Six Speed (Performance of ES6 features relative to the ES5)](http://incaseofstairs.com/six-speed/#)
 - [프론트엔드 Awesome - by 한솔님](https://east-quotation-430.notion.site/Awesome-e81ff327aec445ac980a89ca3b62df9f)
+- [Fluent Icons - by https://news.hada.io/topic?id=6248](https://fluenticons.co/)
+
+### Color
+
+- [Panton - Color Of The Year 2022](https://www.pantone.com/color-of-the-year-2022-palette-exploration)
 
 ### Illustration
 
