@@ -1,6 +1,6 @@
 # [Brilliant](https://brilliant.org/home/)
 
-<StreakOnDay :streak="8" :complete="23"></StreakOnDay>
+<StreakOnDay :streak="2" :complete="26"></StreakOnDay>
 
 ## [Computer Science Foundations](https://brilliant.org/paths/computer-science-foundations/)
 
@@ -70,7 +70,7 @@ Jing 시장에게서 감춰진 영역이 있어서 신경쓰이게 하지 않고
 
 ### Algorithm Fundamentals
 
-<ProgressBar name="Algorithm Fundamentals" :max="23" :value="4" />
+<ProgressBar name="Algorithm Fundamentals" :max="23" :value="7" />
 
 ### Data Structures
 
