@@ -53,6 +53,18 @@
 `:x` : Like ":wq", but write only when changes have been made.
 `ZZ` : Write current file, if modified, and close the current window (same as ":x").
 
+#### 참고
+
+- [https://vimhelp.org/editing.txt.html#write-quit](https://vimhelp.org/editing.txt.html#write-quit)
+
+### simple-change
+
+`v_g_CTRL-X`({Visual}g CTRL-X) : Subtract [count] from the number or alphabetic character in the highlighted text. If several lines are highlighted, each value will be decremented by an additional [count] (so effectively creating a [count] decrementing sequence).
+
+#### 참고
+
+- [https://vimhelp.org/change.txt.html#v_g_CTRL-X](https://vimhelp.org/change.txt.html#v_g_CTRL-X)
+
 ## debt
 
 -  [My vim setup to speed up ...](https://www.youtube.com/watch?v=UZBjt04y4Oo)
