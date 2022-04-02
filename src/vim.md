@@ -51,6 +51,7 @@
 ### Writing and Quiting
 
 `:x` : Like ":wq", but write only when changes have been made.
+`ZZ` : Write current file, if modified, and close the current window (same as ":x").
 
 ## debt
 
