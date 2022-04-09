@@ -116,3 +116,4 @@
 
 - [TLS 구현으로 배우는 암호학](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791161754284&orderClick=LEa&Kc=) ([from](https://www.facebook.com/hika00/posts/5234521349896615))
 - [테스트 주도 개발로 배우는 객체 지향 설계와 실천](http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&ejkGb=KOR&barcode=9788966260836) (from 한재님)
+- [쏙쏙 들어오는 함수형 코딩](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791191600759&orderClick=LAG&Kc=) (from 테오의 프론트엔드)
