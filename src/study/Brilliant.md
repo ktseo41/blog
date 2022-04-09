@@ -1,6 +1,6 @@
 # [Brilliant](https://brilliant.org/home/)
 
-<StreakOnDay :streak="2" :complete="26"></StreakOnDay>
+<StreakOnDay :streak="6" :complete="29"></StreakOnDay>
 
 ## [Computer Science Foundations](https://brilliant.org/paths/computer-science-foundations/)
 
@@ -70,7 +70,13 @@ Jing 시장에게서 감춰진 영역이 있어서 신경쓰이게 하지 않고
 
 ### Algorithm Fundamentals
 
-<ProgressBar name="Algorithm Fundamentals" :max="23" :value="7" />
+<ProgressBar name="Algorithm Fundamentals" :max="23" :value="9" />
+
+#### Insertion Sort
+
+Selection Sort는 정렬되지 않은 영역을 반복적으로 스캔해 swap을 최소화 합니다.
+
+Insertion Sort는 필요하지 않은 스캔을 줄이고 대신 swap 횟수를 늘립니다
 
 ### Data Structures
 
