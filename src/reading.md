@@ -66,6 +66,10 @@
 
 <ProgressBar name="쥐" :max="100" :value="100" /> ( 2022-03 )
 
+## 아무튼, 메모
+
+<ProgressBar name="아무튼, 메모" :max="100" :value="100" /> ( 2022-03 )
+
 ## 거의 모든 것의 역사
 
 <ProgressBar name="거의 모든 것의 역사" :max="537" :value="58" /> ( 2022-04 )
