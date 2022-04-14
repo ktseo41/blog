@@ -112,6 +112,11 @@
 - [Vite - Github Pages](https://vitejs.dev/guide/static-deploy.html#github-pages)
 - [github page에 배포하기](https://junilhwang.github.io/TIL/Vuepress/Deploy/#github-page%E1%84%8B%E1%85%A6-%E1%84%87%E1%85%A2%E1%84%91%E1%85%A9%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5)
 
+### multiline truncate + `with more` text
+
+- [Line Clampin’ (Truncating Multiple Line Text)](https://css-tricks.com/line-clampin/)
+- [vue-clamp](https://github.com/Justineo/vue-clamp)
+
 ## 책
 
 - [TLS 구현으로 배우는 암호학](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791161754284&orderClick=LEa&Kc=) ([from](https://www.facebook.com/hika00/posts/5234521349896615))
