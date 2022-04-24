@@ -14,6 +14,7 @@
   - [다형성이란?](https://tecoble.techcourse.co.kr/post/2020-10-27-polymorphism/)
   - [다형성의 개념](http://www.tcpschool.com/java/java_polymorphism_concept)
 - [3분 모나드](https://overcurried.com/3%EB%B6%84%20%EB%AA%A8%EB%82%98%EB%93%9C/)
+- [사용자 입력 텍스트를 바이트(byte) 길이로 제한하는 Vue 컴포넌트 만들기](https://meetup.toast.com/posts/319)
 
 ## 글감
 
