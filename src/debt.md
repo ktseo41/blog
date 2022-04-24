@@ -119,6 +119,27 @@
 - [Line Clampin’ (Truncating Multiple Line Text)](https://css-tricks.com/line-clampin/)
 - [vue-clamp](https://github.com/Justineo/vue-clamp)
 
+### 수량 입력 input Vue 컴포넌트 만들기
+
+- input event 활용
+- DOM에 직접 접근, 값이 변경된 후 발생하는 input 이벤트에서 변경된 값을 덮어주는 방식
+- 실제 데이터, 보여지는 값 2가지 상태를 정의
+
+#### checklist
+
+- [ ] 입력되어 있는 값을 지울 수 있다.
+- [ ] 0으로 시작하지 않는 숫자, 빈 값만 입력 가능하다.
+- [ ] 변경 중에는 데이터에 반영되지 않는다.
+- [ ] focus가 벗어날 때 데이터에 반영된다.
+- [ ] 최대 구매 수량을 초과한 경우, 최소 구매 수량 미만인 경우 tooltip message 를 띄우도록 한다.
+- [ ] 최대 구매 수량을 초과한 경우 focus를 벗어날 때 최대 구매 수량으로 변경된다.
+- [ ] 최소 구매 수량 미만인 경우 focus를 벗어날 때 최소 구매 수량으로 변경된다.
+
+#### 참고
+
+- https://maxkim-j.github.io/posts/keyboard-input
+- https://developer.mozilla.org/en-US/docs/Web/API/Document/keydown_event#ignoring_keydown_during_ime_composition
+
 ## 책
 
 - [TLS 구현으로 배우는 암호학](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791161754284&orderClick=LEa&Kc=) ([from](https://www.facebook.com/hika00/posts/5234521349896615))
