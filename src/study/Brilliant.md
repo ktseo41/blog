@@ -1,6 +1,6 @@
 # [Brilliant](https://brilliant.org/home/)
 
-<StreakOnDay :streak="15" :complete="32"></StreakOnDay>
+<StreakOnDay :streak="1" :complete="36"></StreakOnDay>
 
 ## [Computer Science Foundations](https://brilliant.org/paths/computer-science-foundations/)
 
@@ -70,13 +70,53 @@ Jing 시장에게서 감춰진 영역이 있어서 신경쓰이게 하지 않고
 
 ### Algorithm Fundamentals
 
-<ProgressBar name="Algorithm Fundamentals" :max="23" :value="9" />
+<ProgressBar name="Algorithm Fundamentals" :max="23" :value="17" />
 
-#### Insertion Sort
+#### Building Blocks
+
+##### Pseudocode
+
+##### Conditional Algorithms
+
+##### Manipulating Numbers
+
+##### Repetition
+
+##### Arrays
+
+#### Array Algorithms
+
+##### Searching an Array
+
+##### Binary Search
+
+##### Sorting an Array
+
+##### Insertion Sort
 
 Selection Sort는 정렬되지 않은 영역을 반복적으로 스캔해 swap을 최소화 합니다.
 
 Insertion Sort는 필요하지 않은 스캔을 줄이고 대신 swap 횟수를 늘립니다
+
+#### The Speed of Algorithms
+
+##### Timing Programs with a Stopwatch
+
+##### Counting Operations
+
+##### Best, Worst and Average Case
+
+##### Comparing Algorithms
+
+##### Understanding Big O
+
+##### The Mathmatcis of Big O
+
+#### Stable Matching
+
+##### The Stable Matching Problem
+
+##### Using Greediness
 
 ### Data Structures
 
