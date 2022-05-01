@@ -56,11 +56,11 @@
 
 ## 멀고도 가까운
 
-<ProgressBar name="멀고도 가까운" :max="370" :value="60" /> ( 2022-03 )
+<ProgressBar name="멀고도 가까운" :max="370" :value="129" /> ( 2022-03 ~ 2022-04 ✘ )
 
 ## 세상을 바꾸는 행동경제학
 
-<ProgressBar name="세상을 바꾸는 행동경제학" :max="100" :value="11" /> ( 2022-03 )
+<ProgressBar name="세상을 바꾸는 행동경제학" :max="100" :value="11" /> ( 2022-03 ✘ )
 
 ## 쥐
 
@@ -72,4 +72,4 @@
 
 ## 거의 모든 것의 역사
 
-<ProgressBar name="거의 모든 것의 역사" :max="537" :value="58" /> ( 2022-04 )
+<ProgressBar name="거의 모든 것의 역사" :max="537" :value="58" /> ( 2022-04 ✘ )
