@@ -78,6 +78,10 @@
 
 <ProgressBar name="거의 모든 것의 역사" :max="537" :value="58" /> ( 2022-04 ✘ )
 
+## 책 읽는 삶
+
+<ProgressBar name="책 읽는 삶" :max="100" :value="78" /> ( 2022-04 )
+
 ## 작별인사
 
 <ProgressBar name="작별인사" :max="100" :value="100" /> ( 2022-05 )
