@@ -52,6 +52,9 @@
 - [Learn Temporal API In 17 Minutes](https://www.youtube.com/watch?v=oOK3UzLJ_Cs)
 - [Four Eras of JavaScript Frameworks](https://www.pzuraq.com/blog/four-eras-of-javascript-frameworks)
   -  [(번역)네 시대의 자바스크립트 프레임워크](https://junghan92.medium.com/%EB%B2%88%EC%97%AD-%EB%84%A4-%EC%8B%9C%EB%8C%80%EC%9D%98-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%ED%94%84%EB%A0%88%EC%9E%84%EC%9B%8C%ED%81%AC-1f075bac9995)
+- [토스ㅣSLASH 22 - 잃어버린 유저의 시간을 찾아서 : 100년을 아껴준 SSR 이야기](https://www.youtube.com/watch?v=IKyA8BKxpXc&ab_channel=%ED%86%A0%EC%8A%A4)
+  -  서버사이드렌더링의 이점, 클라이언트사이드렌더링과 시각적 비교
+  -  프론트엔드 서버와 API 서버 물리적 거리, LCP 75, 마이그레이션시 인터페이스 변경의 비용
 
 ### Metaverse, Blockchain, Cryptocurrency, NFT, ...
 
