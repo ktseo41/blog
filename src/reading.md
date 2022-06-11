@@ -120,6 +120,21 @@ const books = [
     startedAt: new Date('2022-05'),
     progressValue: 100,
   },
+  {
+    name: '오직 두사람',
+    startedAt: new Date('2022-06'),
+    progressValue: 100,
+  },
+  {
+    name: '읽지 않은 책에 대해 말하는 법',
+    startedAt: new Date('2022-06'),
+    progressValue: 10,
+  },
+  {
+    name: '깨끗한 존경',
+    startedAt: new Date('2022-06'),
+    progressValue: 35,
+  }
 ]
 
 defineExpose({
