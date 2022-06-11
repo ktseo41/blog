@@ -5,6 +5,7 @@ import {
   StockChart,
   ImageWithCaption,
   StreakOnDay,
+  BookAndProgress,
 } from "./components";
 
 export default defineClientAppEnhance(({ app, router, siteData }) => {
@@ -13,4 +14,5 @@ export default defineClientAppEnhance(({ app, router, siteData }) => {
   app.component("StockChart", StockChart);
   app.component("ImageWithCaption", ImageWithCaption);
   app.component("StreakOnDay", StreakOnDay);
+  app.component("BookAndProgress", BookAndProgress);
 });

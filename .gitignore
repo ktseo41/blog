@@ -13,3 +13,5 @@ basement_dist
 .idea
 .temp
 .cache
+.env
+.env.*

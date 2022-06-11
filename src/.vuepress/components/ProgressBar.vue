@@ -31,4 +31,7 @@ small {
   display: inline-block;
   margin-left: 5px;
 }
+progress {
+  accent-color: #4abf8a;
+}
 </style>
