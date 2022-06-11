@@ -48,15 +48,18 @@ const { data: { documents: [book] } } = await axios({
   }
 })
 
-const { authors: _authors = [], thumbnail, url } = book || {}
-const authors = _authors.join(", ")
+
+
+const { authors: _au, thumbnail: _th, url: _u } = book || {}
+const authors = _au ? _au.join(", ") : ''
+const thumbnail = _th ? _th : `https://via.placeholder.com/120x174?text=책`
+const url = _u ? _u : `https://google.com/search?q=${name}`
 
 defineExpose({
   authors,
   thumbnail,
   url
 })
-
 </script>
 <template>
   <figure>
