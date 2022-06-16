@@ -17,7 +17,6 @@
 ### 공간
 
 - [SpaceCloud](https://www.spacecloud.kr/)
-- [시소](https://seeso.kr/solution) (🚧 2021.12.12 준비중)
 - [원루프랩](https://lab.oneroof.co.kr/)
 - [로컬스티치](https://localstitch.kr/)
 - [집무실](https://www.jibmusil.com/)
