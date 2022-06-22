@@ -54,6 +54,33 @@
 - [토스ㅣSLASH 22 - 잃어버린 유저의 시간을 찾아서 : 100년을 아껴준 SSR 이야기](https://www.youtube.com/watch?v=IKyA8BKxpXc&ab_channel=%ED%86%A0%EC%8A%A4)
   -  서버사이드렌더링의 이점, 클라이언트사이드렌더링과 시각적 비교
   -  프론트엔드 서버와 API 서버 물리적 거리, LCP 75, 마이그레이션시 인터페이스 변경의 비용
+- [state of vue 2022 amsterdam recap](https://dev.to/strift/state-of-vue-2022-amsterdam-recap-36jp)
+  -  Vue 2.x
+      -  Vue 2.7에서는 Vue 3의 Composition API, `<script setup>`을 백포팅하는데 집중중
+      -  Vue 2.7이 마지막 minor version 업그레이드가 될 것
+  -  Vue 3.x
+      -  Vue 3.3에서 `<Suspense>` 안정화될 것
+          -  Nuxt 3에서 문제없도록 테스트 중
+      -  reactivity transform API도 안정화
+      -  SSR 강화
+  -  Vite
+      -  Vite 3 메이저 버전 업데이트 예정
+          -  대부분의 사람들은 변화를 못느낄 것
+          -  직접 Vite를 사용하는 라이브러리(Nuxt, Vitest)는 업데이트가 필요
+          -  가장 큰 변화는 내부적으로 완전 ESM으로 전환 -> node.js 12 지원 중단
+  - ️ ⚠Experimental
+      -  새로운 compliation 전략을 실험중
+          -  실제 적용될지는 미지수
+          -  SolidJS에 영감을 받았고, no-virtual DOM로 옮겨가는 아이디어
+          -  적용된다면 메모리 사용에 큰 이득이 예상됨
+      ---
+  -  Nuxt 3
+      -  안정화에 가까워짐. 마이그레이션을 시작해도 무방할듯. 이번 여름에 릴리즈 예정
+  -  Vuetify 3
+      -  아직 베타. 2주 후 다음 릴리즈 예정
+  -  Vitepress 1
+      -  1 버전 릴리즈를 위해 노력중
+      -  Vue3 기반 Static Site Generation 도구로 권장하고 있음
 
 ### Metaverse, Blockchain, Cryptocurrency, NFT, ...
 
