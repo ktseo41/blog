@@ -1,6 +1,6 @@
 # [Brilliant](https://brilliant.org/home/)
 
-<StreakOnDay :streak="1" :complete="36"></StreakOnDay>
+<StreakOnDay :streak="1" :complete="42"></StreakOnDay>
 
 ## [Computer Science Foundations](https://brilliant.org/paths/computer-science-foundations/)
 
@@ -117,6 +117,24 @@ Insertion Sort는 필요하지 않은 스캔을 줄이고 대신 swap 횟수를 
 ##### The Stable Matching Problem
 
 ##### Using Greediness
+
+#### Deferred Acceptance Algorithm
+
+#### Correctness
+
+#### Termination
+
+#### Running Time
+
+#### Variants
+
+-  Gale-Shapley 알고리즘을 현실적인 문제에 맞춰 수정
+    -  자리가 2개 이상인 병원
+    -  자리와 후보의 수가 불일치
+
+*  이상적인 조건에서 우선적으로 알고리즘을 만들고 현실에 맞춰 수정하는 과정
+
+#### Who Benefits?
 
 ### Data Structures
 
