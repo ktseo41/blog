@@ -197,6 +197,8 @@
 - [프론트엔드 Awesome - by 한솔님](https://east-quotation-430.notion.site/Awesome-e81ff327aec445ac980a89ca3b62df9f)
 - [Fluent Icons - by https://news.hada.io/topic?id=6248](https://fluenticons.co/)
 - [keycastr](https://github.com/keycastr/keycastr)
+- [pocketbase](https://github.com/pocketbase/pocketbase)
+  -  firebase의 대안이 될 수도 있는 backend framework written by Go
 
 ### Color
 
