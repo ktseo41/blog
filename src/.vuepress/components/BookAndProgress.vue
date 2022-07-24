@@ -73,9 +73,9 @@ defineExpose({
       </div>
       <div>
         <div class="time-progress">
-          <time :datetime="startedAt">{{ startedAt.toLocaleDateString().replace(/([\d]{1,2})\/([\d]{1,2})\/([\d]{4})/, "$3" + "." + "$1") }}</time>
+          <time :datetime="startedAt">{{ startedAt.toLocaleDateString().replace(/([\d]{4})\. ([\d]{1,2})\. ([\d]{1,2})\./, "$1" + ". " + "$2") }}</time>
           <span v-if="endAt"> ~ </span>
-          <time v-if="endAt" :datetime="endAt">{{ endAt.toLocaleDateString().replace(/([\d]{1,2})\/([\d]{1,2})\/([\d]{4})/, "$3" + "." + "$1") }}</time>
+          <time v-if="endAt" :datetime="endAt">{{ endAt.toLocaleDateString().replace(/([\d]{4})\. ([\d]{1,2})\. ([\d]{1,2})\./, "$1" + ". " + "$2") }}</time>
           <span v-if="!inProgress"> ✘</span>
         </div>
         <ProgressBar :name="name" :max="progressMaxValue" :value="progressValue" />

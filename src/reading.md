@@ -47,7 +47,7 @@ const books = [
   {
     name: '함께자라기',
     startedAt: new Date('2020-07'),
-    progressValue: 189/220 * 100,
+    progressValue: 100,
   },
   {
     name: '눈물을 마시는 새',
@@ -128,12 +128,17 @@ const books = [
   {
     name: '읽지 않은 책에 대해 말하는 법',
     startedAt: new Date('2022-06'),
-    progressValue: 10,
+    progressValue: 118 / 237 * 100,
   },
   {
     name: '깨끗한 존경',
     startedAt: new Date('2022-06'),
-    progressValue: 35,
+    progressValue: (153 / 243) * 100,
+  },
+  {
+    name: 'H마트에서 울다',
+    startedAt: new Date('2022-07'),
+    progressValue: 100,
   }
 ]
 
