@@ -81,6 +81,7 @@
   -  Vitepress 1
       -  1 버전 릴리즈를 위해 노력중
       -  Vue3 기반 Static Site Generation 도구로 권장하고 있음
+- [dl, dt, dd 태그를 남용하지 마세요.](https://aoa.gitbook.io/skymimo/aoa-2019/tips-2/dl-dt-dd-.)
 
 ### Metaverse, Blockchain, Cryptocurrency, NFT, ...
 
