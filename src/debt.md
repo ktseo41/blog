@@ -146,6 +146,12 @@ ec2, postgres rds, s3 bucket
 
 - [Amazon Aws](https://docs.strapi.io/developer-docs/latest/setup-deployment-guides/deployment/hosting-guides/amazon-aws.html)
 
+### mix-blend-mode 속성 사용하기
+
+- [react joyride](https://react-joyride.com/)
+- [mix-blend-mode](https://css-tricks.com/almanac/properties/m/mix-blend-mode/)
+- [MDN mix-blend-mode](https://developer.mozilla.org/en-US/docs/Web/CSS/blend-mode)
+
 ## 책
 
 - [TLS 구현으로 배우는 암호학](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791161754284&orderClick=LEa&Kc=) ([from](https://www.facebook.com/hika00/posts/5234521349896615))
