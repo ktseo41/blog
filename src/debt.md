@@ -152,6 +152,11 @@ ec2, postgres rds, s3 bucket
 - [mix-blend-mode](https://css-tricks.com/almanac/properties/m/mix-blend-mode/)
 - [MDN mix-blend-mode](https://developer.mozilla.org/en-US/docs/Web/CSS/blend-mode)
 
+### svg에 gradient 색상 적용하기
+
+- [Gradient fills for SVG icons](https://fvsch.com/svg-gradient-fill)
+- [MDN linearGradient](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/linearGradient)
+
 ## 책
 
 - [TLS 구현으로 배우는 암호학](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791161754284&orderClick=LEa&Kc=) ([from](https://www.facebook.com/hika00/posts/5234521349896615))
