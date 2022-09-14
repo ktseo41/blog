@@ -36,6 +36,7 @@
 - [2022년 우리의 커리어를 형성할 트렌드들](https://news.hada.io/topic?id=5672)
 - [마이크로소프트 - 액티비전 거래의 시사점](https://news.hada.io/topic?id=5784&utm_source=slack&utm_medium=bot&utm_campaign=TLS6AUE2K)
 - [어떤 기술이 2022년 Cutting Edge 라고 생각하나요?](https://news.hada.io/topic?id=5831)
+- [McKinsey 기술 동향 전망 2022](https://www.mckinsey.com/business-functions/mckinsey-digital/our-insights/the-top-trends-in-tech)
 
 ### Web
 
