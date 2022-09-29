@@ -16,6 +16,7 @@
 - [3분 모나드](https://overcurried.com/3%EB%B6%84%20%EB%AA%A8%EB%82%98%EB%93%9C/)
 - [사용자 입력 텍스트를 바이트(byte) 길이로 제한하는 Vue 컴포넌트 만들기](https://meetup.toast.com/posts/319)
 - [demystifying-memory-management-in-modern-programming-languages](https://dev.to/deepu105/demystifying-memory-management-in-modern-programming-languages-ddd)
+- [A crash course in just-in-time (JIT) compilers](https://hacks.mozilla.org/2017/02/a-crash-course-in-just-in-time-jit-compilers/)
 
 ## 글감
 
