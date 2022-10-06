@@ -55,34 +55,143 @@
 - [토스ㅣSLASH 22 - 잃어버린 유저의 시간을 찾아서 : 100년을 아껴준 SSR 이야기](https://www.youtube.com/watch?v=IKyA8BKxpXc&ab_channel=%ED%86%A0%EC%8A%A4)
   -  서버사이드렌더링의 이점, 클라이언트사이드렌더링과 시각적 비교
   -  프론트엔드 서버와 API 서버 물리적 거리, LCP 75, 마이그레이션시 인터페이스 변경의 비용
-- [state of vue 2022 amsterdam recap](https://dev.to/strift/state-of-vue-2022-amsterdam-recap-36jp)
-  -  Vue 2.x
-      -  Vue 2.7에서는 Vue 3의 Composition API, `<script setup>`을 백포팅하는데 집중중
-      -  Vue 2.7이 마지막 minor version 업그레이드가 될 것
-  -  Vue 3.x
-      -  Vue 3.3에서 `<Suspense>` 안정화될 것
-          -  Nuxt 3에서 문제없도록 테스트 중
-      -  reactivity transform API도 안정화
-      -  SSR 강화
-  -  Vite
-      -  Vite 3 메이저 버전 업데이트 예정
-          -  대부분의 사람들은 변화를 못느낄 것
-          -  직접 Vite를 사용하는 라이브러리(Nuxt, Vitest)는 업데이트가 필요
-          -  가장 큰 변화는 내부적으로 완전 ESM으로 전환 -> node.js 12 지원 중단
-  - ️ ⚠Experimental
-      -  새로운 compliation 전략을 실험중
-          -  실제 적용될지는 미지수
-          -  SolidJS에 영감을 받았고, no-virtual DOM로 옮겨가는 아이디어
-          -  적용된다면 메모리 사용에 큰 이득이 예상됨
-      ---
-  -  Nuxt 3
-      -  안정화에 가까워짐. 마이그레이션을 시작해도 무방할듯. 이번 여름에 릴리즈 예정
-  -  Vuetify 3
-      -  아직 베타. 2주 후 다음 릴리즈 예정
-  -  Vitepress 1
-      -  1 버전 릴리즈를 위해 노력중
-      -  Vue3 기반 Static Site Generation 도구로 권장하고 있음
+<details>
+  <summary>
+    <a href="https://dev.to/strift/state-of-vue-2022-amsterdam-recap-36jp">state of vue 2022 amsterdam recap</a>
+  </summary>
+  <ul>
+    <li>Vue 2.x
+      <ul>
+        <li>Vue 2.7에서는 Vue 3의 Composition API, <code>script setup</code>을 백포팅하는데 집중중</li>
+        <li>Vue 2.7이 마지막 minor version 업그레이드가 될 것</li>
+      </ul>
+    </li>
+    <li>Vue 3.x
+      <ul>
+        <li>Vue 3.3에서 <code>Suspense</code> 안정화될 것
+          <ul>
+            <li>Nuxt 3에서 문제없도록 테스트 중</li>
+          </ul>
+        </li>
+        <li>reactivity transform API도 안정화</li>
+        <li>SSR 강화</li>
+      </ul>
+    </li>
+    <li>Vite
+      <ul>
+        <li>Vite 3 메이저 버전 업데이트 예정
+        <ul>
+          <li>대부분의 사람들은 변화를 못느낄 것</li>
+          <li>직접 Vite를 사용하는 라이브러리(Nuxt, Vitest)는 업데이트가 필요</li>
+          <li>가장 큰 변화는 내부적으로 완전 ESM으로 전환 -> node.js 12 지원 중단</li>
+        </ul>
+        </li>
+      </ul>
+    </li>
+    <li>⚠Experimental
+      <ul>
+        <li>새로운 compliation 전략을 실험중
+        <ul>
+          <li>실제 적용될지는 미지수</li>
+          <li>SolidJS에 영감을 받았고, no-virtual DOM로 옮겨가는 아이디어</li>
+          <li>적용된다면 메모리 사용에 큰 이득이 예상됨</li>
+        </ul>
+        </li>
+      </ul>
+    </li>
+    <hr>
+    <li>Nuxt 3
+      <ul>
+        <li>안정화에 가까워짐. 마이그레이션을 시작해도 무방할듯. 이번 여름에 릴리즈 예정</li>
+      </ul>
+    </li>
+    <li>Vuetify 3
+      <ul>
+        <li>아직 베타. 2주 후 다음 릴리즈 예정</li>
+      </ul>
+    </li>
+    <li>Vitepress 1
+      <ul>
+        <li>1 버전 릴리즈를 위해 노력중</li>
+        <li>Vue3 기반 Static Site Generation 도구로 권장하고 있음</li>
+      </ul>
+    </li>
+  </ul>
+</details>
+
 - [dl, dt, dd 태그를 남용하지 마세요.](https://aoa.gitbook.io/skymimo/aoa-2019/tips-2/dl-dt-dd-.)
+
+<details>
+  <summary>
+    <a href="https://toss.im/slash-22/sessions/1-2">토스 | Slash 22 - 미친 생산성을 위한 React Native</a>
+  </summary>
+  <ul>
+    <li>기존 앱의 문제점
+      <ul>
+        <li>느린 배포 속도, 적은 개발 리소스</li>
+        <li>iOS 빌드 속도 - 하루 1/3 침대, 1/3 지하철, 1/3 빌드</li>
+        <li>배포 심사 - 느리고 불규칙적, 1일 ~ 4주</li>
+        <li>앱 업데이트 - 동남아의 느린 네트워크, 자동 업데이트를 꺼둔 유저들도 많다.</li>
+      </ul>
+    </li>
+    <li>Flutter vs React Native
+      <table>
+        <th>
+          <td>장점</td>
+          <td>단점</td>
+        </th>
+        <tr>
+          <td>Flutter</td>
+          <td>
+            <div>훌륭한 공식 라이브러리 생태계</div>
+            <div>React Native보다 더 많이 사용됨</div>
+          </td>
+          <td>높은 학습 비용</td>
+        </tr>
+        <tr>
+          <td>React Native</td>
+          <td>
+            <div>Codepush 기능 사용 가능</div>
+            <div>채용에 용이한 풍부한 개발자 풀</div>
+          </td>
+          <td>빈약한 공식 라이브러리 생태계</td>
+        </tr>
+      </table>
+      <ul>
+        <li>+ Code Push (React Native) - 앱 내에 JavaScript 번들을 포함할 수 있고, 해당 번들을 업데이트해서 앱 업데이트 없이 최신 기능을 전달 가능</li>
+      </ul>
+    </li>
+    <li>
+      <ul>
+        <li>앱을 완전히 다시 만들기로 하고, 병렬적으로 기존앱은 부분적으로 React Native를 적용</li>
+        <li>Native API가 필요한 기존 앱 기능을 구현해보면서 테스트</li>
+        <li>비싼 그래픽 연산과 같은 높은 성능이 필요한 작업은 부분적으로 Native View를 띄워 해결</li>
+      </ul>
+    </li>
+    <li>Native 코드를 건드려야 하는 작업과 JavaScript로만 완료할 수 있는 태스크 2가지로 분류</li>
+    <li>기존 앱 사용자의 경험을 해치지 않기 위해 꼼꼼하고 많은 테스트를 수행</li>
+    <li>메인 로직이 아닌 숨어있는 로직을 코드레벨에서 발견하며 옮김. 광고 마케팅 툴, 푸시, 로그 등</li>
+    <li>3개월간 200번에 달하는 Code Push를 통한 업데이트가 가능했음</li>
+    <li>React Native 사용 후기 - iOS 개발자
+      <ul>
+        <li>개발 속도 - 핫 리로딩. Swift로 개발시 3달, 미숙한 TypeScript로도 2주</li>
+        <li>커리어적인 고민 - 전문성 포기하는건 아닐지? 기술은 이미 6 ~ 7년 지났고 Object C에서 Swift로 넘어갈 때 느꼈던 기분. 역량 확장이라고 생각하고 고민을 하지 않기로 결정</li>
+      </ul>
+    </li>
+    <li>React Native 사용 후기 - 프론트엔드 개발자
+      <ul>
+        <li>저렴한 학습 비용</li>
+        <li>역할 확장 - 앱의 모든 flow에 관여</li>
+      </ul>
+    </li>
+    <li>팀 관점에서
+      <ul>
+        <li>빠르게 실패, 개선 반복 가능</li>
+        <li>채용이 어려운 초기 스타트업에 유용할 것</li>
+      </ul>
+    </li>
+  </ul>
+</details>
 
 ### Metaverse, Blockchain, Cryptocurrency, NFT, ...
 
