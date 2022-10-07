@@ -21,7 +21,7 @@ const books = [
   {
     name: '불안의 책',
     startedAt: new Date('2020-11'),
-    progressValue: 5
+    progressValue: 13
   },
   {
     name: '리얼리티 버블',
@@ -104,6 +104,7 @@ const books = [
     name: '책 읽는 삶',
     startedAt: new Date('2022-04'),
     progressValue: 78,
+    inProgress: false
   },
   {
     name: '작별인사',
@@ -114,6 +115,7 @@ const books = [
     name: '게으름에 대한 찬양',
     startedAt: new Date('2022-05'),
     progressValue: 12,
+    inProgress: false
   },
   {
     name: '쓰고 싶다 쓰고 싶지 않다',
@@ -128,7 +130,8 @@ const books = [
   {
     name: '읽지 않은 책에 대해 말하는 법',
     startedAt: new Date('2022-06'),
-    progressValue: 118 / 237 * 100,
+    progressValue: 196 / 237 * 100,
+    inProgress: false
   },
   {
     name: '깨끗한 존경',
@@ -139,7 +142,28 @@ const books = [
     name: 'H마트에서 울다',
     startedAt: new Date('2022-07'),
     progressValue: 100,
-  }
+  },
+  {
+    name: '시드 마이어',
+    startedAt: new Date('2022-08'),
+    progressValue: 13,
+    inProgress: false
+  },
+  {
+    name: '가벼운 책임',
+    startedAt: new Date('2022-09'),
+    progressValue: 152 / 198 * 100
+  },
+  {
+    name: '누구나 자료구조와 알고리즘',
+    startedAt: new Date('2022-09'),
+    progressValue: 20
+  },
+  {
+    name: '가벼운 마음',
+    startedAt: new Date('2022-10'),
+    progressValue: 136 / 193 * 100
+  },
 ]
 
 defineExpose({
