@@ -73,6 +73,7 @@ module.exports = {
           "/study/신경망 첫걸음.md",
           "/study/자바스크립트 알고리즘 문제풀이.md",
           "/study/Brilliant.md",
+          "/study/클린 코드.md",
         ],
       },
       { text: "📟 Vim", link: "/vim/" },
