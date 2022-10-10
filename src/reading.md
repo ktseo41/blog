@@ -162,7 +162,8 @@ const books = [
   {
     name: '가벼운 마음',
     startedAt: new Date('2022-10'),
-    progressValue: 136 / 193 * 100
+    endAt: new Date('2022-10'),
+    progressValue: 193 / 193 * 100
   },
 ]
 
