@@ -165,6 +165,16 @@ const books = [
     endAt: new Date('2022-10'),
     progressValue: 193 / 193 * 100
   },
+  {
+    name: '나의 아름다운 할머니',
+    startedAt: new Date('2022-10'),
+    progressValue: 86 / 220 * 100
+  },
+  {
+    name: '시선으로부터',
+    startedAt: new Date('2022-10'),
+    progressValue: 13 / 335 * 100
+  }
 ]
 
 defineExpose({
