@@ -1,6 +1,10 @@
-# [Brilliant](https://brilliant.org/home/)
+# [Brilliant](https://brilliant.org/home/) (✘)
 
-<StreakOnDay :streak="1" :complete="42"></StreakOnDay>
+> 중단
+
+<br />
+
+<StreakOnDay :streak="0" :complete="42"></StreakOnDay>
 
 ## [Computer Science Foundations](https://brilliant.org/paths/computer-science-foundations/)
 
