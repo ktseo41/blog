@@ -152,7 +152,8 @@ const books = [
   {
     name: '가벼운 책임',
     startedAt: new Date('2022-09'),
-    progressValue: 152 / 198 * 100
+    progressValue: 152 / 198 * 100,
+    inProgress: false
   },
   {
     name: '누구나 자료구조와 알고리즘',
