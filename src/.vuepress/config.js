@@ -76,7 +76,10 @@ module.exports = {
         ],
       },
       { text: "📟 Vim", link: "/vim/" },
-      { text: "📝️ 글", link: "/log/" },
+      { text: "📝️ 글", children: [
+        "/log/짧은글.md",
+        "/log/Why Use Composition API.md"
+      ] },
       { text: "📚 책", link: "/reading/" },
       {
         text: "💰 주식",
