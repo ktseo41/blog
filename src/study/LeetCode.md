@@ -87,3 +87,11 @@ var search = function(nums, target) {
   return nums[mid] === target ? mid : -1;
 };
 ```
+
+binary search 룰:
+
+-  lo, hi를 초기화할 때 모든 답이 포함되도록 한다
+-  mid 계산시 overflow 조심
+-  범위를 축소시킬 때 mid가 제외되도록 한다.
+-  mid 선택과 범위 축소 로직 적용시 infinite loop 조심
+-  항상 2개의 값만 남았을 때의 케이스를 생각해라
