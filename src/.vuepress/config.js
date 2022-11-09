@@ -73,13 +73,14 @@ module.exports = {
           "/study/자바스크립트 알고리즘 문제풀이.md",
           "/study/Brilliant.md",
           "/study/클린 코드.md",
+          "/study/LeetCode.md",
         ],
       },
       { text: "📟 Vim", link: "/vim/" },
-      { text: "📝️ 글", children: [
-        "/log/짧은글.md",
-        "/log/Why Use Composition API.md"
-      ] },
+      {
+        text: "📝️ 글",
+        children: ["/log/짧은글.md", "/log/Why Use Composition API.md"],
+      },
       { text: "📚 책", link: "/reading/" },
       {
         text: "💰 주식",
