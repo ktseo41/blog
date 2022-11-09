@@ -145,3 +145,48 @@ var solution = function(isBadVersion) {
 ```
 
 -  탈출 조건과 범위 축소에 주의했더니 첫번째 풀이에 풀렸다.
+
+#### 두번째 풀이
+
+```javascript
+/**
+ * Definition for isBadVersion()
+ * 
+ * @param {integer} version number
+ * @return {boolean} whether the version is bad
+ * isBadVersion = function(version) {
+ *     ...
+ * };
+ */
+
+/**
+ * @param {function} isBadVersion()
+ * @return {function}
+ */
+var solution = function(isBadVersion) {
+    /**
+     * @param {integer} n Total versions
+     * @return {integer} The first bad version
+     */
+    return function(n) {
+      let low = 0;
+      let high = n;
+      let mid = Math.floor((low + high)/2);
+
+      while (low < high) {
+        if (isBadVersion(mid)) {
+          high = mid;
+        } else {
+          low = mid + 1;
+        }
+
+        mid = Math.floor((low + high)/2);
+      }
+
+      return mid;
+    };
+};
+```
+
+-  다른 풀이들을 보니 단순 Binary Search만으로도 풀 수 있어서 축소 조건을 주의하며 풀었다.
+-  범위 축소와 mid 배제에 관한 학습 내용이 포함돼있어 오히려 704 Binary Search 이전에 풀었으면 더 좋았을 문제
