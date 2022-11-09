@@ -95,3 +95,53 @@ binary search 룰:
 -  범위를 축소시킬 때 mid가 제외되도록 한다.
 -  mid 선택과 범위 축소 로직 적용시 infinite loop 조심
 -  항상 2개의 값만 남았을 때의 케이스를 생각해라
+
+### 278. First Bad Version
+
+#### 첫번째 풀이
+
+```javascript
+/**
+ * Definition for isBadVersion()
+ * 
+ * @param {integer} version number
+ * @return {boolean} whether the version is bad
+ * isBadVersion = function(version) {
+ *     ...
+ * };
+ */
+
+/**
+ * @param {function} isBadVersion()
+ * @return {function}
+ */
+var solution = function(isBadVersion) {
+    /**
+     * @param {integer} n Total versions
+     * @return {integer} The first bad version
+     */
+    return function(n) {
+      let nonBadHigh = 0;
+      let badLow = n;
+      let low = 0;
+      let high = n;
+      let mid = Math.floor((low + high)/2);
+
+      while(badLow - nonBadHigh > 1) {
+        if (isBadVersion(mid)) {
+          badLow = mid;
+          high = mid - 1;
+        } else {
+          nonBadHigh = mid;
+          low = mid + 1;
+        }
+
+        mid = Math.floor((low + high)/2);
+      }
+
+      return badLow;
+    };
+};
+```
+
+-  탈출 조건과 범위 축소에 주의했더니 첫번째 풀이에 풀렸다.
