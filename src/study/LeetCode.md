@@ -190,3 +190,42 @@ var solution = function(isBadVersion) {
 
 -  다른 풀이들을 보니 단순 Binary Search만으로도 풀 수 있어서 축소 조건을 주의하며 풀었다.
 -  범위 축소와 mid 배제에 관한 학습 내용이 포함돼있어 오히려 704 Binary Search 이전에 풀었으면 더 좋았을 문제
+
+### 35. Search Insert Position
+
+#### 첫번째 풀이
+
+```javascript
+/**
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number}
+ */
+var searchInsert = function(nums, target) {
+  let low = 0;
+  let high = nums.length - 1;
+  let mid = Math.floor((low + high) / 2);
+
+  while (low < high) {
+    if (nums[mid] > target) {
+      high = mid - 1;
+    } else if (nums[mid] < target) {
+      low = mid + 1;
+    } else {
+      return mid
+    }
+
+    mid = Math.floor((low + high) / 2);
+  }
+
+  if (nums[mid] === target) {
+    return mid
+  }
+
+  if (nums[mid] > target) {
+    return mid
+  } else {
+    return mid + 1
+  }
+};
+```
