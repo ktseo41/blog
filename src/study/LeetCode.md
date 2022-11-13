@@ -229,3 +229,129 @@ var searchInsert = function(nums, target) {
   }
 };
 ```
+
+### 977. Squares of a Sorted Array
+
+#### 첫번째 풀이
+
+```javascript
+/**
+ * @param {number[]} nums
+ * @return {number[]}
+ */
+var sortedSquares = function(nums) {
+  const results = [];
+
+  for (let i = 0; i < nums.length; i++) {
+    const target = Math.pow(nums[i], 2);
+    const indexToInsert = findIndexToInsert(results, target);
+    results.splice(indexToInsert, 0, target);
+  }
+
+  return results;
+};
+
+var findIndexToInsert = function(nums, target) {
+  let low = 0;
+  let high = nums.length;
+
+  while (low < high) {
+    let mid = low + Math.floor((high - low) / 2);
+
+    if (nums[mid] < target) {
+      low = mid + 1;
+    } else {
+      high = mid;
+    }
+  }
+
+  return low;
+}
+```
+
+-  Binary Search를 풀던 후유증(?)으로 Binary Search를 사용했다. 그랬더니 Runtime 하위 18.20%, 메모리 하위 68.13% 였다.
+
+#### 두번째 풀이
+
+```javascript
+/**
+ * @param {number[]} nums
+ * @return {number[]}
+ */
+var sortedSquares = function(nums) {
+  const result = [];
+  let low = 0;
+  let high = nums.length - 1;
+  let idx = nums.length - 1;
+
+  while (low <= high) {
+    if (Math.pow(nums[low], 2) > Math.pow(nums[high], 2)) {
+      result[idx] = Math.pow(nums[low], 2);
+      low += 1;
+      idx -= 1;
+    } else {
+      result[idx] = Math.pow(nums[high], 2);
+      high -= 1;
+      idx -=1;
+    }
+  }
+
+  return result;
+};
+```
+
+-  더 출제 의도에 부합하는 풀이같지만, Runtime 하위 39.97%, 메모리 하위 16.11% 로 조금 아쉽다.
+
+#### 세번째 풀이
+
+```javascript
+/**
+ * @param {number[]} nums
+ * @return {number[]}
+ */
+var sortedSquares = function(nums) {
+  const x = [];
+  let l = 0;
+  let h = nums.length - 1;
+
+  while (l <= h) {
+    if (nums[l]**2 > nums[h]**2) {
+      x.unshift((nums[l++])**2);
+    } else {
+      x.unshift((nums[h--])**2);
+    }
+  }
+
+  return x;
+};
+```
+
+-  Runtime 하위 5.54%, 메모리 16.11%. unshift 연산이 그냥 인덱스 할당이 O(1)일 것에 비해 훨씬 비효율적이었을 것 같다.
+
+
+#### 네번째 풀이
+
+```javascript
+/**
+ * @param {number[]} nums
+ * @return {number[]}
+ */
+var sortedSquares = function(nums) {
+  const result = [];
+  let low = 0;
+  let high = nums.length -1;
+  let pointer = high;
+
+  while(low <= high) {
+    if(nums[low]**2 > nums[high]**2) {
+      result[pointer--] = nums[low++]**2;
+    } else {
+      result[pointer--] = nums[high--]**2;
+    }
+  }
+
+  return result;
+};
+```
+
+-  Runtime 하위 78.34%, 메모리 39.78% 로 그나마 만족스러운 결과. 다른 사람 풀이를 참고해야할 것 같다.
