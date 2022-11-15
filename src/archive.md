@@ -193,6 +193,8 @@
   </ul>
 </details>
 
+- [animate.style](https://animate.style/)
+
 ### Metaverse, Blockchain, Cryptocurrency, NFT, ...
 
 - [NFT가 궁금한 당신을 위한 꼼꼼 가이드](https://www.hani.co.kr/arti/economy/it/1022399.html)
