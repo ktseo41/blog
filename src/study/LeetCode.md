@@ -355,3 +355,4 @@ var sortedSquares = function(nums) {
 ```
 
 -  Runtime 하위 78.34%, 메모리 39.78% 로 그나마 만족스러운 결과. 다른 사람 풀이를 참고해야할 것 같다.
+-  `const result = new Array(nums.length)`로 변경하니 Runtime 97.16%, 메모리 89.43%로 대폭 증가했다. 길이가 특정되지 않은 배열인 경우 메모리 공간 및 후연산 같은 것들이 더 있는 것 같다.
