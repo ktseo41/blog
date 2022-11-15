@@ -193,7 +193,7 @@
   </ul>
 </details>
 
-- [animate.style](https://animate.style/)
+- [css-tricks: css-animation-libraries](https://css-tricks.com/css-animation-libraries/)
 
 ### Metaverse, Blockchain, Cryptocurrency, NFT, ...
 
@@ -313,6 +313,12 @@
 - [pocketbase](https://github.com/pocketbase/pocketbase)
   -  firebase의 대안이 될 수도 있는 backend framework written by Go
 - [gradientify](https://gradientify.com/)
+- [animista](https://animista.net/)
+- [magic animations](https://www.minimamente.com/project/magic/)
+- [hover.css](http://ianlunn.github.io/Hover/)
+- [textillate](https://textillate.js.org/)
+- [animejs](https://animejs.com/)
+- [micron](https://webkul.github.io/micron/)
 
 ### Color
 
