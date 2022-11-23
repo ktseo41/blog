@@ -158,7 +158,7 @@ const books = [
   {
     name: '누구나 자료구조와 알고리즘',
     startedAt: new Date('2022-09'),
-    progressValue: 20
+    progressValue: 66
   },
   {
     name: '가벼운 마음',
