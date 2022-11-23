@@ -161,6 +161,18 @@ ec2, postgres rds, s3 bucket
 
 ### Vue 3 프로덕션 적용기
 
+### AWS Lambda + Puppteeer (with Serverless Framework)로 주기적인 Scraping하기
+
+- chrome-aws-lambda로 chrome binary 탑재
+- puppeteer-core를 사용해 lambda 용량 제한을 피함
+- serverless-offline plugin으로 로컬에서 테스트, 로컬 테스트를 위해 puppeteer 사용, puppeteer를 devDependencies로 설치
+
+- [[Node.js] serverless computing with AWS Lambda (feat.puppeteer)](https://sohyun-lee.tistory.com/14)
+- [chrome-aws-lambda](https://github.com/alixaxel/chrome-aws-lambda)
+- [Flexible Environment Variable Support for AWS Lambda - Serverless Framework V1.2](https://www.serverless.com/blog/serverless-v1.2.0/)
+- [serverless-managing-environment-variables-efficiently-with-stages-part-1](https://medium.com/@HussainAliAkbar/serverless-managing-environment-variables-efficiently-with-stages-part-1-90c4465d2e64)
+- [ktseo41/aws-lambda-puppeteer](https://github.com/ktseo41/aws-lambda-puppeteer)
+
 ## 책
 
 - [TLS 구현으로 배우는 암호학](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791161754284&orderClick=LEa&Kc=) ([from](https://www.facebook.com/hika00/posts/5234521349896615))
