@@ -169,12 +169,25 @@ const books = [
   {
     name: '나의 아름다운 할머니',
     startedAt: new Date('2022-10'),
-    progressValue: 86 / 220 * 100
+    progressValue: 86 / 220 * 100,
+    inProgress: false
   },
   {
     name: '시선으로부터',
     startedAt: new Date('2022-10'),
-    progressValue: 13 / 335 * 100
+    progressValue: 13 / 335 * 100,
+    inProgress: false
+  },
+  {
+    name: '재수사1',
+    startedAt: new Date('2022-11'),
+    endAt: new Date('2022-11'),
+    progressValue: 100
+  },
+  {
+    name: '재수사2',
+    startedAt: new Date('2022-11'),
+    progressValue: 48 / 400 * 100
   }
 ]
 

@@ -1,8 +1,7 @@
 <script setup>
 import axios from 'axios'
-import ProgressBar from './ProgressBar.vue';
 
-const { name, startedAt } = defineProps({
+const { name } = defineProps({
   name: {
     type: String,
     required: true
@@ -55,11 +54,11 @@ const authors = _au ? _au.join(", ") : ''
 const thumbnail = _th ? _th : `https://via.placeholder.com/120x174?text=책`
 const url = _u ? _u : `https://google.com/search?q=${name}`
 
-defineExpose({
-  authors,
-  thumbnail,
-  url
-})
+function formatDate(date) {
+  const year = date.getFullYear()
+  const month = date.getMonth() + 1
+  return `${year}년 ${month}월`
+}
 </script>
 <template>
   <figure>
@@ -73,9 +72,9 @@ defineExpose({
       </div>
       <div>
         <div class="time-progress">
-          <time :datetime="startedAt">{{ startedAt.toLocaleDateString().replace(/([\d]{4})\. ([\d]{1,2})\. ([\d]{1,2})\./, "$1" + ". " + "$2") }}</time>
+          <time :datetime="startedAt">{{ formatDate(startedAt) }}</time>
           <span v-if="endAt"> ~ </span>
-          <time v-if="endAt" :datetime="endAt">{{ endAt.toLocaleDateString().replace(/([\d]{4})\. ([\d]{1,2})\. ([\d]{1,2})\./, "$1" + ". " + "$2") }}</time>
+          <time v-if="endAt" :datetime="endAt">{{ formatDate(endAt) }}</time>
           <span v-if="!inProgress"> ✘</span>
         </div>
         <ProgressBar :name="name" :max="progressMaxValue" :value="progressValue" />
@@ -99,7 +98,7 @@ figure {
     margin-top: 0;
     margin-bottom: 10px;
   }
-  
+
   .author {
     font-size: 14px;
     color: #999;
@@ -109,5 +108,4 @@ figure {
     font-size: 13px;
   }
 }
-
 </style>
