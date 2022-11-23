@@ -1,0 +1,1 @@
+const t={key:"v-6379a89a",path:"/log/Why%20Use%20Composition%20API.html",title:"Why Use Composition API?",lang:"en-US",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1669215387e3},filePathRelative:"log/Why Use Composition API.md"};export{t as data};

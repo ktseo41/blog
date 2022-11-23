@@ -1,0 +1,1 @@
+const e={key:"v-8daa1a0e",path:"/",title:"\u{1F4BB} bohyeon.dev",lang:"en-US",frontmatter:{home:!1,heroImage:"profile.png",tagline:"\uAC1C\uBC1C, \uC77C\uC0C1, \uC790\uC720\uB85C\uC6B4 \uC0DD\uAC01\uC744 \uAE30\uB85D\uD569\uB2C8\uB2E4.",actionText:"GO \u2192",actionLink:"/dev/"},excerpt:"",headers:[],git:{updatedTime:1669215387e3},filePathRelative:"index.md"};export{e as data};
