@@ -187,7 +187,13 @@ const books = [
   {
     name: '재수사2',
     startedAt: new Date('2022-11'),
-    progressValue: 48 / 400 * 100
+    endAt: new Date('2022-11'),
+    progressValue: 400 / 400 * 100
+  },
+  {
+    name: '당신 인생의 이야기',
+    startedAt: new Date('2022-12'),
+    progressValue: 117 / 424 * 100
   }
 ]
 
