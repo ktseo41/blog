@@ -194,6 +194,8 @@
 </details>
 
 - [css-tricks: css-animation-libraries](https://css-tricks.com/css-animation-libraries/)
+- [Coverage: Find unused JavaScript and CSS](https://developer.chrome.com/docs/devtools/coverage/)
+- [Changes: Track your HTML, CSS, and JavaScript changes](https://developer.chrome.com/docs/devtools/changes/)
 
 ### Metaverse, Blockchain, Cryptocurrency, NFT, ...
 
