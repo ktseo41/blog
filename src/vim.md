@@ -51,6 +51,7 @@
 ### Writing and Quiting
 
 `:x` : Like ":wq", but write only when changes have been made.
+
 `ZZ` : Write current file, if modified, and close the current window (same as ":x").
 
 #### 참고
@@ -64,6 +65,16 @@
 #### 참고
 
 - [https://vimhelp.org/change.txt.html#v_g_CTRL-X](https://vimhelp.org/change.txt.html#v_g_CTRL-X)
+
+### 원하는 열로 이동
+
+`N|`: N번째 열로 이동
+
+- `80A=<ESC>d80|`: `=`를 80번 반복 입력한 후 80번째 열까지 삭제
+
+#### 참고
+
+- [cursor movment in vim](https://vim.works/2019/03/03/cursor-movement-in-vim/)
 
 ## debt
 
