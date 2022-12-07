@@ -1,5 +1,7 @@
 const { description } = require("../../package");
 
+console.log(process.env);
+
 module.exports = {
   base: "/blog/",
   /**

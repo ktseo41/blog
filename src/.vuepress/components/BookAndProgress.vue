@@ -47,6 +47,7 @@ const { data: { documents: [book] } } = await axios({
   }
 })
 
+console.log(import.meta?.env)
 
 
 const { authors: _au, thumbnail: _th, url: _u } = book || {}
