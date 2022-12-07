@@ -20,12 +20,13 @@ jobs:
 
     - name: vite build
       run: npm run build
+      env:
+        VITE_KAKAO_API_KEY: ${{ secrets.VITE_KAKAO_API_KEY }}
 
     - name: vuepress-deploy
       uses: jenkey2011/vuepress-deploy@master
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        VITE_KAKAO_API_KEY: ${{ secrets.VITE_KAKAO_API_KEY }}
         TARGET_BRANCH: gh-pages
         BUILD_SCRIPT: npm install && npm run build
         BUILD_DIR: src/.vuepress/dist/
