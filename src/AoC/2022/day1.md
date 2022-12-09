@@ -28,7 +28,7 @@ fn main(){
     let mut max_calory = 0;
 
     for char in contents.chars() {
-        if char != 0xA as char {
+        if char != '\n' {
             current_string.push(char);
             continue;
         }
