@@ -321,6 +321,7 @@
 - [textillate](https://textillate.js.org/)
 - [animejs](https://animejs.com/)
 - [micron](https://webkul.github.io/micron/)
+- [motion](https://motion.dev/)
 
 ### Color
 
