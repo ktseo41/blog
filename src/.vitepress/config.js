@@ -70,9 +70,13 @@ export default {
       },
       { text: "📟 Vim", items: [{ text: 'vim', link: "/vim" }] },
       {
-        text: "", items: [{
+        text: "Etc", items: [{
           text: "📚 책",
           link: "/reading"
+        },
+        {
+          text: "🎁 Advent Of Code",
+          link: "/AoC/2022/",
         }]
       },
     ],
