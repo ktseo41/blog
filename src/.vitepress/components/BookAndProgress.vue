@@ -47,9 +47,6 @@ const { data: { documents: [book] } } = await axios({
   }
 })
 
-console.log(import.meta?.env)
-
-
 const { authors: _au, thumbnail: _th, url: _u } = book || {}
 const authors = _au ? _au.join(", ") : ''
 const thumbnail = _th ? _th : `https://via.placeholder.com/120x174?text=책`
