@@ -1,3 +1,6 @@
+---
+# sidebar depth
+---
 # day 1
 
 ## javascript

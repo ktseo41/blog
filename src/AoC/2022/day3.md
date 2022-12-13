@@ -35,4 +35,3 @@ $('pre').textContent.match(/([a-zA-Z]*?\n){3}/g).map(s => s.trim().split('\n').r
     return c.match(new RegExp(`[${a}]`, 'g')).join('')
 })).map(s => s[0]).map(getScore).reduce((a, b) => a + b)
 ```
-```
