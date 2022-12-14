@@ -39,7 +39,7 @@ export default {
       },
       {
         icon: "linkedin",
-        link: "https://www.linkedin.com/in/ktseo41/",
+        link: "https://www.linkedin.com/in/bo-hyeon-seo/",
       }
     ],
     sidebar: [
