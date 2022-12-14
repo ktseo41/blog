@@ -5,9 +5,6 @@ export default {
   title: "bohyeon.dev",
   description,
   lastUpdated: true,
-  socialLinks: [
-    { icon: 'github', link: 'https://github.com/ktseo41/blog' }
-  ],
   head: [
     ["meta", { name: "theme-color", content: "#f28e1c" }],
     ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
@@ -32,10 +29,10 @@ export default {
   ],
   themeConfig: {
     contributors: false,
+    nav: [
+      { text: "GitHub", link: 'https://github.com/ktseo41/blog' }
+    ],
     socialLinks: [
-      {
-        icon: 'github', link: 'https://github.com/ktseo41/blog/'
-      },
       {
         icon: "instagram",
         link: "https://instagram.com/ktseo41/",
