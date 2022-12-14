@@ -135,6 +135,7 @@
 - [animejs](https://animejs.com/)
 - [micron](https://webkul.github.io/micron/)
 - [motion](https://motion.dev/)
+- [Simple Icons](https://simpleicons.org/)
 
 ### Color
 
