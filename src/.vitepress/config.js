@@ -9,7 +9,6 @@ export default {
     { icon: 'github', link: 'https://github.com/ktseo41/blog' }
   ],
   head: [
-    ["link", { rel: "icon", href: "/favicon.ico" }],
     ["meta", { name: "theme-color", content: "#f28e1c" }],
     ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
     [
