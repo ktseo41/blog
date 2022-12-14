@@ -10,3 +10,4 @@ outline: 1
 -  [day 3](/AoC/2022/day3.md)
 -  [day 4](/AoC/2022/day4.md)
 -  [day 5](/AoC/2022/day5.md)
+-  [day 6](/AoC/2022/day6.md)
