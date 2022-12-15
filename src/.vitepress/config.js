@@ -52,7 +52,7 @@ export default {
       {
         text: "📝️ 글",
         items: [
-          { text: "짧은글", link: "/log/짧은글" },
+          { text: "짧은 글들", link: "/log/짧은 글들" },
           { text: "Why Use Composition API", link: "/log/Why Use Composition API" },
           { text: "웹어셈블리에서 자바스크립트를 빠르게 실행하는 방법", link: "/log/making-javascript-run-fast-on-webassembly" },
         ]
