@@ -256,3 +256,10 @@ JIT가 사용하는 한 가지 최적화 기술은 인라인 캐싱(Inline Cachi
 Python, Ruby, Lua 등과 같은 언어 커뮤니티의 일원이라면 해당 언어에 대한 버전도 빌드할 수 있습니다.
 
 먼저, 앞서 SpiderMonkey를 이용했던 것처럼, 시스템 호출에는 WASI를 사용하여 런타임을 웹어셈블리로 컴파일해야 합니다. 그런 다음 스냅샷으로 빠른 시작 시간을 얻으려면 역시 앞서 설명한 것처럼 [Wizer를 빌드 도구에 통합](https://github.com/bytecodealliance/wizer#using-wizer-as-a-library)해 메모리 스냅샷을 생성할 수 있습니다.
+
+<br>
+<br>
+<br>
+
+
+> 🚀 한국어로 된 프런트엔드 아티클을 빠르게 받아보고 싶다면 [Korean FE Article](https://kofearticle.substack.com/)을 구독해주세요.
