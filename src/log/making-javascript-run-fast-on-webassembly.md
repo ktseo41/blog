@@ -8,7 +8,7 @@
 
 오늘 우리는 다른 규칙이 적용되는, 완전히 다른 환경에서 자바스크립트 성능을 최적화하는 작업을 시작합니다. 그리고 이것은 웹어셈블리 덕에 가능합니다.
 
-일단 확실히 해야 할 것이 있습니다. 브라우저에서 자바스크립트를 실행하는 경우 간단히 자바스크립트를 배포하는 것이 여전히 가장 합리적입니다. 브라우저 내의 자바스크립트 엔진(JS 엔진)은 탑재된 자바스크립트를 실행하기 위해 고도로 조정되어 있습니다.
+먼저 확실히 해야 할 것이 있습니다. 브라우저에서 자바스크립트를 실행할 때는 간단히 자바스크립트를 배포하는 것이 가장 합리적인 선택입니다. 브라우저 내의 자바스크립트 엔진(JS 엔진)은 탑재된 자바스크립트를 실행하기 위해 고도로 조정되어 있기 때문입니다.
 
 하지만 만약 서버리스 함수에서 자바스크립트를 실행하고 있다면 어떨까요? 또는 iOS나 게임 콘솔과 같이 일반적인 JIT(Just-In-Time) 컴파일을 허용하지 않는 환경에서 자바스크립트를 실행하고 싶다면요?
 
@@ -18,11 +18,11 @@
 
 ## 어떻게 작동하나요?
 
-자바스크립트를 실행하려면, 자바스크립트 소스 코드는 어떤 방법을 통해서든 기계어로 번역돼 실행되어야 합니다. 이는 인터프리터 및 JIT 컴파일러와 같은 다양한 기술을 사용해 JS 엔진에서 수행됩니다. (자세한 사항은 [JIT(Just-In-Time) 컴파일러 집중 과정](https://hacks.mozilla.org/2017/02/a-crash-course-in-just-in-time-jit-compilers/)를 참조하세요.)
+자바스크립트를 실행하려면, 자바스크립트 소스 코드는 어떤 방법으로든 기계어로 번역돼 실행되어야 합니다. 번역된 기계어는 인터프리터나 JIT 컴파일러와 같은, 다양한 기술을 사용하는 JS 엔진에서 수행됩니다. (자세한 사항은 [JIT(Just-In-Time) 컴파일러 집중 과정](https://hacks.mozilla.org/2017/02/a-crash-course-in-just-in-time-jit-compilers/)를 참조하세요.)
 
 ![Personified JS engine looking at JS source code and speaking the equivalent bytes of machine code out loud](https://bytecodealliance.org/articles/img/2021-06-02-js-on-wasm/02-02-interp02.png)
 
-그러나 만약 실행하려는 플랫폼에 JS 엔진이 없다면 어떨까요? 그럼 코드와 함께 JS 엔진을 배포해야 합니다.
+그러나 만약 실행하려는 플랫폼에 JS 엔진이 없다면 어떻게 해야할까요? 코드와 함께 JS 엔진을 배포해야 합니다.
 
 이를 위해 JS 엔진을 웹어셈블리 모듈로 배포해 다양한 종류의 머신 아키텍처에서 이식될 수 있도록 했습니다. 그리고 WASI(웹어셈블리 시스템 인터페이스)를 사용하면 다른 운영 체제에도 이식될 수 있습니다.
 
@@ -66,7 +66,7 @@ JIT를 통해 브라우저가 자바스크립트를 빠르게 실행할 수 있�
 
 ### 서버리스를 위한 즉각적인 콜드 스타트
 
-JIT가 문제가 아니지만 서버리스 함수와 같이 시작 시간이 문제인 다른 곳이 있습니다. 바로 한 번쯤은 들어봤을 콜드 스타트 문제입니다.
+JIT가 문제가 아니지만 서버리스 함수와 같이 시작 시간이 문제인 것들도 있습니다. 여러분들도 한 번쯤은 들어봤을 콜드 스타트(cold-start) 지연 문제입니다.
 
 ![A picture of a cloud with lots of edge network nodes around it](https://bytecodealliance.org/articles/img/2021-06-02-js-on-wasm/02-03-cloud.png)
 
@@ -80,7 +80,7 @@ JIT가 문제가 아니지만 서버리스 함수와 같이 시작 시간이 문
 
 ![On the left, a cartoon captioned "Risk between requests". It shows burgalers in a room filled with papers saying "Oooh payday... check out what they left behind!" On the right, a cartoon captioned "Risk between modules". It shows a tree of modules with a module at the bottom being exploded and other modules in the tree getting hit by shrapnel.](https://bytecodealliance.org/articles/img/2021-06-02-js-on-wasm/02-04-serverless-at-risk.png)
 
-그러나 이런 상황에서 자바스크립트 시작 시간을 충분히 빠르게 할 수 있다면, 갖가지 방법으로 시작 시간을 숨길 필요가 없습니다. 대신 그저 마이크로초 안에 인스턴스를 시작할 수 있습니다.
+그러나 이런 상황에서 자바스크립트 시작 시간을 충분히 빠르게 할 수 있다면, 갖가지 방법으로 시작 시간을 숨길 필요가 없습니다. 그저 마이크로초 안에 인스턴스를 시작하면 됩니다.
 
 결과적으로 각 요청마다 새 인스턴스를 사용할 수 있습니다. 즉, 여러 요청 사이에 공유되는 상태가 존재하지 않습니다.
 
@@ -88,7 +88,7 @@ JIT가 문제가 아니지만 서버리스 함수와 같이 시작 시간이 문
 
 ![On the left, a cartoon captioed "isolation between requests". It shows the same bugalers, but in a totally clean room saying "Nuthin'... they didn't leave nuthin' behind." On the right, a cartoon captioned "isolation between modules". It shows a module graph with each module having its own box around it, and the explosion from the exploding module being contained to its own box](https://bytecodealliance.org/articles/img/2021-06-02-js-on-wasm/02-05-serverless-protected.png)
 
-이 접근 방식에는 또 다른 보안 이점이 있습니다. 단순히 가볍고 분리된 격리를 가능하게 하는 것 외에도, Wasm 엔진의 보안 경계는 더 신뢰할 수 있습니다.
+이 접근 방식에는 또 다른 보안 이점이 있습니다. 단순히 경량화되고 세분화된 격리를 가능하게 하는 것 외에도, Wasm 엔진의 보안 경계는 더 신뢰할 수 있습니다.
 
 격리를 생성하는 데 사용되는 기존 JS 엔진은 매우 복잡한 최적화를 수행하는 많은 저수준 코드를 포함하는 대규모 코드 베이스입니다. 때문에, 공격자가 VM을 탈출하고 VM이 실행 중인 시스템에 액세스 할 수 있도록 허용하는 버그가 발견되기도 쉽습니다. 이것이 바로 [Chrome](https://www.chromium.org/Home/chromium-security/site-isolation) 및 [Firefox](https://blog.mozilla.org/security/2021/05/18/introducing-site-isolation-in-firefox/)에서 각 사이트가 완전히 분리된 프로세스에서 실행되도록 최대한 노력하는 이유입니다.
 
@@ -128,11 +128,11 @@ JS 엔진의 경우 이 작업은 소스 코드의 최상위 레벨을 읽어가
 
 바로 엔진 초기화입니다. 먼저 JS 엔진 자체를 시작해야 하고 내장 함수들을 환경에 추가해야 합니다.
 
-이는 작업을 시작하기 전에 이케아 의자와 테이블을 조립하는 것 처럼 사무실 자체를 세팅하는 것과 비슷하다고 생각합니다.
+이는 작업을 시작하기 전에 이케아 의자와 테이블을 조립하는 것처럼 사무실 자체를 세팅하는 것과 비슷하다고 생각합니다.
 
 ![The JS engine building the IKEA table for its office](https://bytecodealliance.org/articles/img/2021-06-02-js-on-wasm/03-02-office-ikea.png)
 
-이것은 상당한 시간이 걸릴 수 있으며 서버리스 사용 사례에서 콜드 스타트 문제를 만들 수 있는 부분입니다.
+이 작업은 상당한 시간이 걸릴 수 있으며 서버리스 사용 사례에서 콜드 스타트 문제를 만드는 원인이기도 합니다.
 
 ### 런타임 단계
 
@@ -232,8 +232,6 @@ JIT가 사용하는 한 가지 최적화 기술은 인라인 캐싱(Inline Cachi
 그러나 JIT가 가지고 있는 것과 같은 종류의 프로파일링 정보에 접근할 수 있다면 어떨까요? 그럼 코드를 완전히 최적화할 수 있습니다.
 
 다만 여기에는 문제가 있습니다. 개발자는 종종 자신의 코드를 프로파일링하는 데 어려움을 겪습니다. 대표적인 샘플 워크로드를 찾는 건 어렵습니다. 따라서 좋은 프로파일링 데이터를 얻을 수 있을지 확신할 수 없습니다.
-
-<!-- 개발자는? -->
 
 프로파일링을 위해 좋은 도구를 사용할 수 있는 방법을 알아낼 수만 있다면, 자바스크립트를 오늘날의 JIT만큼 빠르게 실행할 수도 있습니다 (그리고 이 방식에는 예열 시간도 필요 없습니다!).
 
