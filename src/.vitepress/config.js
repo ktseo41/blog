@@ -1,6 +1,6 @@
 import { description } from '../../package.json';
 
-const untilSpring = new Date().getMonth() < 2 || new Date().getMonth() >= 11;
+// const untilSpring = new Date().getMonth() < 2 || new Date().getMonth() >= 11;
 
 export default {
   base: "/blog/",
@@ -21,13 +21,13 @@ export default {
         src: "https://www.googletagmanager.com/gtag/js?id=G-5N3ZZ9JCCH",
       },
     ],
-    untilSpring ? [
-      "script",
-      {
-        async: true,
-        src: "https://app.embed.im/snow.js"
-      }
-    ] : [],
+    // untilSpring ? [
+    //   "script",
+    //   {
+    //     async: true,
+    //     src: "https://app.embed.im/snow.js"
+    //   }
+    // ] : [],
     // [
     //   "script",
     //   {},
