@@ -1,5 +1,7 @@
 import { description } from '../../package.json';
 
+const isOverFive = new Date().getHours() >= 17;
+
 export default {
   base: "/blog/",
   title: "bohyeon.dev",
@@ -19,6 +21,13 @@ export default {
         src: "https://www.googletagmanager.com/gtag/js?id=G-5N3ZZ9JCCH",
       },
     ],
+    isOverFive ? [
+      "script",
+      {
+        async: true,
+        src: "https://app.embed.im/snow.js"
+      }
+    ] : null,
     // [
     //   "script",
     //   {},

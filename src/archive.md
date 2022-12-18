@@ -136,6 +136,7 @@
 - [micron](https://webkul.github.io/micron/)
 - [motion](https://motion.dev/)
 - [Simple Icons](https://simpleicons.org/)
+- [Snow Effect](https://embed.im/snow/)
 
 ### Color
 
