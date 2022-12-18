@@ -1,6 +1,6 @@
 import { description } from '../../package.json';
 
-const isAlmostDark = new Date().getHours() >= 17;
+const untilSpring = new Date().getMonth() < 2 || new Date().getMonth() >= 11;
 
 export default {
   base: "/blog/",
@@ -21,7 +21,7 @@ export default {
         src: "https://www.googletagmanager.com/gtag/js?id=G-5N3ZZ9JCCH",
       },
     ],
-    isAlmostDark ? [
+    untilSpring ? [
       "script",
       {
         async: true,
