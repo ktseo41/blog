@@ -1,6 +1,6 @@
 import { description } from '../../package.json';
 
-const isOverFive = new Date().getHours() >= 17;
+const isAlmostDark = new Date().getHours() >= 17;
 
 export default {
   base: "/blog/",
@@ -21,13 +21,13 @@ export default {
         src: "https://www.googletagmanager.com/gtag/js?id=G-5N3ZZ9JCCH",
       },
     ],
-    isOverFive ? [
+    isAlmostDark ? [
       "script",
       {
         async: true,
         src: "https://app.embed.im/snow.js"
       }
-    ] : null,
+    ] : [],
     // [
     //   "script",
     //   {},
