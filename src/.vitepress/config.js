@@ -28,13 +28,13 @@ export default {
     //     src: "https://app.embed.im/snow.js"
     //   }
     // ] : [],
-    // [
-    //   "script",
-    //   {},
-    //   [
-    //     "window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-5N3ZZ9JCCH');",
-    //   ],
-    // ],
+    [
+      "script",
+      {},
+      [
+        "window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-5N3ZZ9JCCH');",
+      ],
+    ],
   ],
   themeConfig: {
     contributors: false,
