@@ -21,13 +21,6 @@ export default {
         src: "https://www.googletagmanager.com/gtag/js?id=G-5N3ZZ9JCCH",
       },
     ],
-    // untilSpring ? [
-    //   "script",
-    //   {
-    //     async: true,
-    //     src: "https://app.embed.im/snow.js"
-    //   }
-    // ] : [],
     [
       "script",
       {},
@@ -35,6 +28,21 @@ export default {
         "window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-5N3ZZ9JCCH');",
       ],
     ],
+    [
+      "link",
+      {
+        rel: "icon",
+        type: "image/x-icon",
+        href: "/blog/favicon.ico",
+      }
+    ],
+    // untilSpring ? [
+    //   "script",
+    //   {
+    //     async: true,
+    //     src: "https://app.embed.im/snow.js"
+    //   }
+    // ] : [],
   ],
   themeConfig: {
     contributors: false,
