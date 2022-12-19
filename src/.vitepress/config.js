@@ -24,9 +24,7 @@ export default {
     [
       "script",
       {},
-      [
-        "window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-5N3ZZ9JCCH');",
-      ],
+      "window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', 'G-5N3ZZ9JCCH');"
     ],
     [
       "link",
