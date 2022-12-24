@@ -1,6 +1,6 @@
 # 🧱 부채
 
-## 기술글 `== '언젠가 읽어야지'`
+## 기술글
 - [JavaScript Proxy. 근데 이제 Reflect를 곁들인](https://meetup.toast.com/posts/302)
 - [BEM](http://getbem.com/naming/)
 - [CloudFront + CloudFront functions 이용해 Next.js 번들파일 효율적으로 서빙하기](https://medium.com/wantedjobs/cloudfront-cloudfront-functions-%EC%9D%B4%EC%9A%A9%ED%95%98%EC%97%AC-next-js-%EB%B2%88%EB%93%A4%ED%8C%8C%EC%9D%BC-%ED%9A%A8%EC%9C%A8%EC%A0%81%EC%9C%BC%EB%A1%9C-%EC%84%9C%EB%B9%99%ED%95%98%EA%B8%B0-9ccc0541e406)
@@ -172,6 +172,70 @@ ec2, postgres rds, s3 bucket
 - [Flexible Environment Variable Support for AWS Lambda - Serverless Framework V1.2](https://www.serverless.com/blog/serverless-v1.2.0/)
 - [serverless-managing-environment-variables-efficiently-with-stages-part-1](https://medium.com/@HussainAliAkbar/serverless-managing-environment-variables-efficiently-with-stages-part-1-90c4465d2e64)
 - [ktseo41/aws-lambda-puppeteer](https://github.com/ktseo41/aws-lambda-puppeteer)
+
+### How to apply utterances to Vitepress (Vitepress 블로그에 utterances 댓글 적용하는 방법)
+
+1. Access https://utteranc.es/ and follow the instructions
+
+2. extend default theme layout (using [theme-introduction#layout-slots](https://vitepress.vuejs.org/guide/theme-introduction#layout-slots))
+
+```html
+<!--.vitepress/theme/MyLayout.vue-->
+<script setup>
+import DefaultTheme from 'vitepress/theme'
+
+const { Layout } = DefaultTheme
+</script>
+
+<template>
+  <Layout>
+    <template #doc-footer-before>
+      <component :is="'script'" src="https://utteranc.es/client.js"
+        repo="[ENTER REPO HERE]"
+        issue-term="pathname"
+        theme="preferred-color-scheme"
+        crossorigin="anonymous"
+        async>
+      </component>
+    </template>
+  </Layout>
+</template>
+```
+
+```javascript
+// .vitepress/theme/index.js
+import DefaultTheme from 'vitepress/theme'
+import MyLayout from './MyLayout.vue'
+
+export default {
+  ...DefaultTheme,
+  // override the Layout with a wrapper component that
+  // injects the slots
+  Layout: MyLayout
+}
+```
+
+3. (optional) use frontmatter to hide comment
+
+```html{3,5,11}
+<!--.vitepress/theme/MyLayout.vue-->
+<script setup>
+import { useData } from 'vitepress'
+import DefaultTheme from 'vitepress/theme'
+const { frontmatter } = useData()
+const { Layout } = DefaultTheme
+</script>
+
+<template>
+  <Layout>
+    <template v-if="!frontmatter.disableComment" #doc-footer-before>
+      <component :is="'script'" src="https://utteranc.es/client.js" repo="[ENTER REPO HERE]" issue-term="pathname"
+        label="Comment" theme="preferred-color-scheme" crossorigin="anonymous" async>
+      </component>
+    </template>
+  </Layout>
+</template>
+```
 
 ## 책
 
