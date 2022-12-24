@@ -11,7 +11,7 @@ const { Layout } = DefaultTheme
     <template v-if="!frontmatter.disableComment" #doc-footer-before>
       comment
       <component :is="'script'" src="https://utteranc.es/client.js" repo="ktseo41/blog" issue-term="pathname"
-        label="Comment" theme="github-light" crossorigin="anonymous" async>
+        label="Comment" theme="preferred-color-scheme" crossorigin="anonymous" async>
       </component>
     </template>
   </Layout>
