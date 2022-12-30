@@ -239,6 +239,8 @@ const { Layout } = DefaultTheme
 
 ### How to generate sitemap.xml for Vitepress (Vitepress 블로그에 sitemap.xml 생성하는 방법)
 
+> https://github.com/vuejs/vitepress/issues/520
+
 ```bash
 # install sitemap
 npm i -D sitemap
@@ -270,12 +272,6 @@ export default {
   // ...
 }
 ```
-
-
-#### 참고 링크
-
--  https://github.com/vuejs/vitepress/issues/520
-
 
 ## 책
 
