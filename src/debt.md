@@ -263,7 +263,7 @@ export default {
       })
   },
   buildEnd: ({ outDir }) => {
-    const sitemap = new SitemapStream({ hostname: 'https://example.com' })
+    const sitemap = new SitemapStream({ hostname: 'https://example.com/foo' })
     const writeStream = createWriteStream(resolve(outDir, 'sitemap.xml'))
     sitemap.pipe(writeStream)
     links.forEach((link) => sitemap.write(link))
