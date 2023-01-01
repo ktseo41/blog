@@ -83,6 +83,7 @@ export default {
           },
           { text: "Why Use Composition API", link: "/log/Why Use Composition API" },
           { text: "웹어셈블리에서 자바스크립트를 빠르게 실행하는 방법", link: "/log/making-javascript-run-fast-on-webassembly" },
+          { text: "Avoid These Common Pitfalls Of React useState", link: "/log/avoid-these-common-pitfalls-of-react-usestate" },
         ]
       },
       {
