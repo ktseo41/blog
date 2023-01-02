@@ -1,39 +1,42 @@
-# Avoid These Common Pitfalls of React `useState`
+# 리액트에서 useState를 사용하면서 저지를 수 있는 흔한 실수들
 
-`useState` is the React hook that you use most often. It's everywhere. But so are some common mistakes.
+> 원문: https://profy.dev/article/react-usestate-pitfalls
 
-You probably have experienced some of them (even if you didn't realize it): redundant, duplicate, or contradicting state. Some of those may force you to have a useEffect that is actually obsolete. And all this combined can become a big trap of unmaintainable and hard-to-read code.
+`useState`는 가장 자주 사용하는 리액트 훅입니다. 어디에나 있습니다. 그러나 그렇기 때문에 몇 가지 흔한 실수들도 있습니다.
 
-Knowing about these pitfalls helps you
+당신은 아마도 그 중 일부를 경험했을 것입니다 (심지어 깨닫지 못했을지라도). 불필요하거나, 중복되거나, 모순되는 상태를요. 이 때문에 실제로는 쓸모없는 useEffect가 존재할 수도 있습니다. 그리고 이 모든 결합은 유지 관리가 불가능하고 읽기 어려운 코드로 만드는 큰 함정이 될 수 있습니다.
 
--   make your code easier to read and maintain
--   produce code that’s less prone to bugs
--   get rid of a lot of code complexity.
+이런 함정들에 대해 알면 다음과 같은 도움이 됩니다.
 
-Not to forget, you won’t easily fall into an embarrassing trap in one of those coding assignments in the hiring process. **The problem is: you first need to become aware of the potential problems around `useState` in order to avoid them.**
+- 코드를 더 쉽게 읽고 유지 관리할 수 있습니다.
+- 버그가 덜 발생하는 코드 생성를 생성할 수 있습니다.
+- 많은 코드 복잡성을 제거할 수 있습니다.
 
-So on this page, let's have a look at the most common pitfalls when it comes to state in React. For each of them, you'll see
+<!-- 번역 약간 어렵 -->
+잊지 마세요. 채용 과정의 코딩 과제에서 난처한 함정에 쉽게 빠진다는 의미는 아닙니다. **문제는 `useState`와 관련된 잠재적인 문제들을 피하기 위해서는 먼저 그에 대해 인식하고 있어야 한다는 점입니다.**
 
--   a code example
--   a detailed problem description
--   the solution and
--   an interactive refactoring exercise.
+따라서 이 페이지에서는 리액트에서 상태와 관련하여 가장 일반적인 함정을 살펴보겠습니다. 그들 각각에 대해 아래와 같이 내용을 구성했습니다.
 
-After reading this article and working through the exercises, you'll likely look at your own code in a different way.
+- 코드 예제
+- 자세한 문제 설명
+- 해결책 및
+- 대화식 리팩토링 연습
 
-## Redundant State
+이 글을 읽고 연습을 거친 후에는 자신의 코드를 다른 방식으로 보게 될 것입니다.
 
-State variables that aren’t necessary are one of the most common problems in code written by Junior developers. You can typically find them whenever one state depends on other state variables.
+## 불필요한 상태
 
-A simple example is probably the best way to explain the situation. So let’s dive right in.
+필요하지 않은 상태 변수는 주니어 개발자가 작성한 코드에서 가장 흔한 문제 중 하나입니다. 일반적으로 하나의 상태가 다른 상태 변수에 종속될 때 주로 문제가 발생할 수 있습니다.
 
-### The Code Example
+간단한 예시를 드는 것이 상황을 설명하는 가장 좋은 방법일 것입니다. 그럼 바로 들어가 보겠습니다.
 
-Here is a simple component that allows a user to edit their first and last name. Based on the input values their full name is rendered.
+### 코드 예제
+
+다음은 사용자가 이름과 성을 편집할 수 있는 간단한 컴포넌트입니다. 입력 값에 따라 전체 이름이 렌더링됩니다.
 
 ![](https://ik.imagekit.io/87wct6jq4ql/tr:w-720/https://media.graphassets.com/OdtUSovSTm6pAp1PQGyb)
 
-Can you spot the redundant state?
+불필요한 상태를 발견하셨나요?
 ```jsx
 import { useState } from "react";
 
@@ -72,9 +75,9 @@ function RedundantState() {
 }
 ```
 
-### The Problem
+### 문제점
 
-Your first instinct might say: By updating e.g. the `firstName` and `fullName` states directly after one another we cause an additional render cycle.
+첫 번째로 본능적으로 다음과 같이 말할 수 있습니다. `firstName` 및 `fullName` 상태 업데이트가 이어져 곧바로 일어나기 때문에 추가 렌더링 주기를 야기할 수 있습니다.
 
 ```jsx
 const onChangeFirstName = (event) => {
@@ -83,13 +86,13 @@ const onChangeFirstName = (event) => {
 };
 ```
 
-But as of React 18 state updates are batched. So you don’t see separate renders for each state update.
+그러나 리액트 18버전부터 상태 업데이트는 일괄적으로 처리됩니다. 따라서 각 상태 업데이트에 따라 별도의 렌더링이 일어나지는 않습니다.
 
-> Note: the additional render in the screenshot below happens only in development.
+> 참고: 아래 스크린샷의 추가 렌더링은 개발 단계에서만 발생합니다.
 
 ![](https://ik.imagekit.io/87wct6jq4ql/tr:w-720/https://media.graphassets.com/aGGWImVZQq436UakjS4s)
 
-So in most cases, there isn’t much of a difference performance-wise. The problem is rather the maintainability and risk of introducing bugs. For example, look at the change handlers again:
+따라서 대부분의 경우 성능 면에서 큰 차이가 없습니다. 진짜 문제는 유지 관리 가능성과 버그 도입의 위험입니다. 예를 들어 변경 핸들러를 다시 살펴보십시오.
 
 ```jsx
 const onChangeFirstName = (event) => {
@@ -102,13 +105,13 @@ const onChangeLastName = (event) => {
 };
 ```
 
-Each time we update either the first or last name we have to remember to update `fullName` as well. In a more complex scenario that can easily be missed. Thus the code is harder to refactor and the risk of introducing bugs is increased.
+이름이나 성을 업데이트할 때마다 `fullName`도 업데이트해야 합니다. 더 복잡한 시나리오에서는 쉽게 놓칠 수 있습니다. 따라서 코드를 리팩토링하기가 더 어려우며 버그 도입 위험이 증가합니다.
 
-As mentioned, in most cases you don’t need to worry about performance. But if you have to derive a variable from state that involves large arrays or heavy calculations, you can simply reach for the [useMemo](https://reactjs.org/docs/hooks-reference.html#usememo) hook.
+언급했듯이 대부분의 경우 성능에 대해 걱정할 필요가 없습니다. 다만 큰 배열이나 무거운 계산이 포함된 상태로부터 변수를 만들어내야 하는 경우 [useMemo](https://reactjs.org/docs/hooks-reference.html#usememo) 훅을 사용하면 됩니다.
 
-### The Solution
+### 해결책
 
-The `fullName` state is simply the first and last name combined. We can directly build it from the `firstName` and `lastName` state variables.
+ `fullName` 상태는 단순히 이름과 성을 결합한 것입니다. `firstName` 및 `lastName` 상태 변수에서 직접 만들 수 있습니다.
 
 ```jsx
 export function RedundantState() {
@@ -130,7 +133,7 @@ export function RedundantState() {
 }
 ```
 
-We don’t even need the temporary variable here but can directly render the `firstName` and `lastName` into the JSX.
+심지어는 여기에는 임시 변수가 필요하지 않고, `firstName` 및 `lastName`을 JSX로 직접 렌더링할 수 있습니다.
 
 ```jsx
 export function RedundantState() {
@@ -152,30 +155,34 @@ export function RedundantState() {
 }
 ```
 
-Ok, got it. We should watch out for redundant state that we can replace with simple variables derived from other state. But what’s the problem here?
+좋습니다. 다른 상태에서 만들 수 있는 변수로 간단히 대체할 수 있는 불필요한 상태에 주의해야 합니다. 그러나 여기서 문제는 무엇입니까?
 
-#### Exercise Time
+<!-- ok got it, what's the problem here 해석 -->
+
+#### 연습해보기
 
 <br >
 
-<iframe src="https://codesandbox.io/embed/eager-black-bui7ol?view=split,preview&editorsize=60&codemirror=1&fontsize=14&hidenavigation=1&module=/Challenge-1.jsx,/Challenge-2.jsx,/Solution-1.jsx,/Solution-2.jsx&theme=dark"
+<iframe src="https://codesandbox.io/embed/eager-black-bui7ol?view=split,preview&editorsize=50&codemirror=1&fontsize=14&hidenavigation=1&module=/Challenge-1.jsx,/Challenge-2.jsx,/Solution-1.jsx,/Solution-2.jsx&theme=dark"
      style="width:calc(100% + 100px); height:500px; margin: 0 -50px; border:0; border-radius: 4px; overflow:hidden;"
      title="eager-black-bui7ol"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
 
-## Duplicate State
+## 중복 상태
 
-Data that is duplicated in multiple state variables is another problem. You typically encounter it when transforming, sorting, or filtering (API) data. Another common case is selecting items as in the example below.
+여러 상태 변수에 중복된 데이터는 또 다른 문제입니다. 일반적으로 데이터를 변환, 정렬 또는 필터링(API)할 때 발생합니다. 또 다른 흔한 경우는 아래 예와 같이 항목을 선택할 때 입니다.
 
-### The Code Example
+<!-- 항목? 아이템? -->
 
-Here’s a simple component that renders a list of items. The user can open an item in an (imaginary) modal by clicking on the corresponding button.
+### 코드 예제
+
+다음은 항목 목록을 렌더링하는 간단한 컴포넌트입니다. 사용자는 해당 버튼을 클릭하여 (가상의) 모달에서 항목을 열 수 있습니다.
 
 ![](https://ik.imagekit.io/87wct6jq4ql/tr:w-720/https://media.graphassets.com/W3W2iGhBTi6WuungHpWv)
 
-The code below contains a typical mistake that you can often see. Can you find it?
+아래 코드에는 자주 볼 수 있는 일반적인 실수가 포함되어 있습니다. 찾을 수 있나요?
 
 ```jsx
 import { useState } from "react";
@@ -211,29 +218,29 @@ function DuplicateState({ items }) {
 }
 ```
 
-The problem is that the complete item is copied into the state.
+문제는 한 항목이 완전히 상태로 복사된다는 것입니다.
 
-### The Problem
+### 문제점
 
-This again doesn’t seem like a big change. So what’s the deal?
+이것 역시 큰 변화처럼 보이지 않습니다. 그럼 문제가 뭘까요?
 
-The problem with the duplicated data in the original code is that it violates the [Single Source Of Truth](https://en.wikipedia.org/wiki/Single_source_of_truth) principle. In fact, we have two sources of truth once the user selects any of the items: The `selectedItem` state and the corresponding entry in the `items` array.
+원본 코드의 중복 데이터 문제는 [단 하나의 진실의 근원(Single Source Of Truth)](https://en.wikipedia.org/wiki/Single_source_of_truth) 원칙을 위반한다는 것입니다. 실제로 사용자가 항목 중 하나를 선택하면 `selectedItem` 상태와 `items` 배열의 해당 항목이라는 두 진실의 근원이 존재하게 됩니다.
 
-Now imagine that the user should be able to edit the item inside the modal. This could look like this:
+이제 사용자가 모달 내에서 항목을 편집할 수 있다고 상상해 보십시오. 그럼 다음과 같은 일이 벌어질 수 있습니다.
 
-1.  The user changes the data in the modal and submits it.
-2.  A request is sent to the server and updates the item in the database.
-3.  The frontend updates the item data (either with the response of the server or by refetching the items array).
-4.  The frontend re-renders with the new `items` array.
-5.  Now the question is: what happens inside the `DuplicateState` component?
+1. 사용자가 모달에서 데이터를 변경해 제출합니다.
+2. 요청이 서버로 전송되고 데이터베이스의 항목이 업데이트됩니다.
+3. 프런트엔드는 항목 데이터를 업데이트합니다 (서버의 응답을 통해서든 또는 항목 배열을 다시 요청해서든).
+4. 프런트엔드가 새로운 `items` 배열로 다시 렌더링됩니다.
+5. 이제 질문은, `DuplicateState` 컴포넌트 내부에서 어떤 일이 발생할까요? 입니다.
 
-This is where the problem starts. The `selectedItem` state would still contain the old data. It would be out of sync. You can imagine that this can become a nasty bug in a more complex situation.
+여기서 문제가 시작됩니다. `selectedItem` 상태에는 여전히 이전 데이터가 포함됩니다. 그것은 동기화되지 않을 것입니다. 더 복잡한 상황에서 이것이 상당히 풀기 어려운 버그가 될 수 있을거라 예상할 수 있습니다.
 
-Of course, we can keep the `selectedItem` state in sync. But we would need to listen to changes in the `items` array with a `useEffect`. And that brings us to the next section.
+물론 `selectedItem` 상태를 동기화 상태로 유지할 수 있습니다. 하지만 `useEffect`를 사용하여 `items` 배열의 변경사항을 지켜봐야 합니다. 그럼 다음 섹션으로 넘어가겠습니다.
 
-### The Solution
+### 해결책
 
-A simpler solution is to only track the selected id. As you can see the solution is pretty similar to the one in the “Redundant State” section: We simply derive the `selectedItem` variable from its id.
+더 간단한 해결책은 선택한 id만 추적하는 것입니다. 보시다시피 해결책은 '중복 상태' 섹션의 해결책과 매우 유사합니다. 단순히 id에서 `selectedItem` 변수를 만듭니다.
 
 ```jsx
 // const items = [
@@ -268,19 +275,28 @@ function DuplicateState({ items }) {
 }
 ```
 
-#### Exercise Time
+#### 연습해보기
 
-## Updating State Via useEffect
+<br >
 
-Another common problem with state in React is listening to changes of variables with `useEffect`. It’s so easy to forget that [a fellow developer had to point out to me that I made this mistake myself](https://www.reddit.com/r/reactjs/comments/xak8x3/comment/invrwvr/?utm_source=share&utm_medium=web2x&context=3).
+<iframe src="https://codesandbox.io/embed/proud-wave-xgnc8g?view=split,preview&fontsize=14&editorsize=50&codemirror=1&module=/Challenge.jsx,/Solution.jsx&hidenavigation=1&theme=dark"
+     style="width:calc(100% + 100px); height:500px; margin: 0 -50px; border:0; border-radius: 4px; overflow:hidden;"
+     title="proud-wave-xgnc8g"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
 
-### The Code Example
+## useEffect를 통한 상태 업데이트
 
-Let’s take the (slightly adjusted) example from the previous section.
+리액트에서 상태와 관련된 또 다른 일반적인 문제는 `useEffect`로 변수의 변경 사항을 관찰하는 것입니다. 이는 너무 잊기 쉬워 [동료 개발자가 제가 이 실수를 저질렀다고 지적해야 했습니다](https://www.reddit.com/r/reactjs/comments/xak8x3/comment/invrwvr).
+
+### 코드 예제
+
+이전 섹션에서 (약간 조정된) 예제를 살펴보겠습니다.
 
 ![](https://ik.imagekit.io/87wct6jq4ql/tr:w-720/https://media.graphassets.com/cc5xbXPFSHymLobDMQ9n)
 
-As you can see the component has now a `useEffect` to sync the `selectedItem` state when the `items` array changes.
+보시다시피 컴포넌트에서 이제 `items` 배열이 변경될 때 `selectedItem` 상태를 동기화하는 `useEffect`가 있습니다.
 
 ```jsx
 import { useEffect, useState } from "react";
@@ -321,16 +337,16 @@ function DuplicateState({ items }) {
   );
 }
 ```
-This code should work properly and keep the `selectedItem` state in sync. But doesn’t it feel hacky?
+이 코드는 제대로 작동하고 `selectedItem` 상태를 동기화 상태로 유지합니다. 하지만 어딘가 부족한 느낌이 들지 않나요?
 
-### The Problem
+### 문제점
 
-There are multiple problems with this approach:
+이 접근 방식에는 여러 가지 문제가 있습니다.
 
-1.  `useEffect` isn’t easy to read and understand. So the fewer of them we have the better.
-2.  Updating state inside a `useEffect` causes an additional render. This usually isn’t a big problem performance-wise but needs to be considered.
-3.  In the original code, we introduced a somewhat hidden relationship between the `selectedItem` state and the `items` prop. This is easy to miss when reading or changing the code.
-4.  It can be hard to trigger the code inside the `useEffect` at the right time. You can often see other workarounds with this pattern e.g. to avoid running the code on the first render. Here is an example:
+1. `useEffect`는 읽고 이해하기 쉽지 않습니다. 따라서 적을수록 더 좋습니다.
+2. `useEffect` 내에서 상태를 업데이트하면 추가 렌더링이 발생합니다. 이는 일반적으로 성능 측면에서 큰 문제는 아니지만 고려해야 할 사항입니다.
+3. 원래 코드에서는 `selectedItem` 상태와 `items` prop 사이에 다소 숨겨진 관계가 있었습니다. 이는 코드를 읽거나 변경할 때 놓치기 쉽습니다.
+4. 적시에 `useEffect` 내부의 코드를 작동시키기 어려울 수 있습니다. 첫 번째 렌더링에서 코드를 실행하지 않도록 하는 다른 해결 방법을 종종 볼 수 있습니다. 다음은 그 예시입니다.
 
 ```jsx
 function DuplicateState({ items }) {
@@ -348,11 +364,11 @@ function DuplicateState({ items }) {
   ...
 ```
 
-The takeaway here: If you want to use a `useEffect` or see it in another dev’s code ask yourself if it’s really required. Maybe it can be avoided by de-duplicating or deriving state as shown in the previous sections.
+요점은 `useEffect`를 사용하고 싶거나 다른 개발자의 코드에서 보고 싶다면 이것이 정말로 필요한지 스스로에게 물어보세요. 이전 섹션에서 설명한대로 중복 제거 또는 다른 상태로부터 변수를 만들어 피할 수 있습니다.
 
-### The Solution
+### 해결책
 
-You might have guessed: The solution from the previous section also helps us to remove the `useEffect`. If we only store the selected item's ID instead of the whole object there’s nothing to be synced.
+짐작하셨겠지만 이전 섹션의 해결책은 `useEffect`를 제거하는 데도 도움이 됩니다. 전체 객체 대신 선택한 항목의 ID만 저장하면 동기화할 항목이 없습니다.
 
 ```jsx
 import { useState } from "react";
@@ -389,15 +405,24 @@ function DuplicateState({ items }) {
 }
 ```
 
-#### Exercise Time
+#### 연습해보기
 
-## Listening To State Changes Via useEffect
+<br >
 
-A common problem related to the previous section is reacting to changes in a state variable with `useEffect`. The solution is slightly different though.
+<iframe src="https://codesandbox.io/embed/beautiful-meninsky-zql3zs?view=split,preview&fontsize=14&editorsize=50&codemirror=1&module=/Challenge.jsx,/Solution.jsx&hidenavigation=1&theme=dark"
+     style="width:calc(100% + 100px); height:500px; margin: 0 -50px; border:0; border-radius: 4px; overflow:hidden;"
+     title="beautiful-meninsky-zql3zs"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
 
-### The Code Example
+## useEffect를 통해 상태 변경 관찰
 
-Here is a component that shows a product. The user can show or hide the product details by clicking a button. Whenever the details are shown or hidden we trigger an action (in this case tracking an event in our imaginary analytics tool).
+이전 섹션과 관련된 또 다른 흔한 문제는 `useEffect`를 사용해 상태 변수의 변경에 반응하는 것입니다. 하지만 해결책은 약간 다릅니다.
+
+### 코드 예제
+
+다음은 제품을 보여주는 컴포넌트입니다. 사용자는 버튼을 클릭해 제품 세부 정보를 보거나 숨길 수 있습니다. 세부 정보가 표시되거나 숨겨질 때마다 우리는 액션을 실행합니다(이 경우에서는 가상의 분석 도구에서 이벤트를 추적합니다).
 
 ```jsx
 import { useEffect, useState } from "react";
@@ -423,22 +448,23 @@ function ProductView({ name, details }) {
 }
 ```
 
-The `useEffect` in this case listens to changes in the `isDetailsVisible` variable and runs the tracking code accordingly.
+이 경우 `useEffect`는 `isDetailsVisible` 변수의 변경사항을 관찰하고 그에 따라 추적 코드를 실행합니다.
 
-> By the way, the above code contains a bug. It’s really easy to overlook. You can find an explanation in “The Problem” section below.
+> 그나저나 위 코드에는 버그가 있습니다. 정말 간과하기 쉽습니다. 아래의 "문제점" 섹션에서 설명을 찾을 수 있습니다.
 
-### The Problem
+### 문제점
 
-Just like in the previous section, there are a few problems:
+이전 섹션과 마찬가지로 몇 가지 문제가 있습니다.
 
-1.  `useEffect` often isn’t easy to understand.
-2.  It can cause unnecessary render cycles (if a state is updated inside the effect).
-3.  It’s easy to introduce bugs that are related to the render lifecycle. In fact, the original code contains a bug as it runs `trackEvent` during the initial render.
-4.  It separates the effect from the actual cause. In the original code, we see `trackEvent` being run because `isDetailsVisible` changes. But the real cause is that the user pressed the “Show details” button.
+1. `useEffect`는 이해하기 쉽지 않은 경우가 많습니다.
+2. 불필요한 렌더링 주기를 유발할 수 있습니다 (상태가 effect 내에서 업데이트되는 경우).
+3. 렌더링 생명 주기와 관련된 버그를 도입하기 쉽습니다. 사실 원래 코드는 초기 렌더링 중에 `trackEvent`를 실행하기 때문에 버그가 있습니다.
+4. 실제 원인에서 결과를 분리합니다. 원래 코드에서는 `isDetailsVisible`이 변경되기 때문에 `trackEvent`가 실행되는 것을 볼 수 있습니다. 하지만 진짜 원인은 사용자가 "세부정보 보기" 버튼을 눌렀기 때문입니다.
+<!-- effect 내에서 => useEffect 내에서? 부수효과 -->
 
-### The Solution
+### 해결책
 
-In many cases, a `useEffect` that listens to changes in a state variable can be removed. Often, we can place the effect next to the code that updates the state in the first place. Here we move `trackEvent(...)` inside the `toggleDetails` function.
+대부분의 경우 상태 변수의 변경사항을 관찰하는 `useEffect`는 제거할 수 있습니다. 종종 우리는 처음 상태를 업데이트하는 코드 바로 다음에 효과를 배치할 수 있습니다. 여기서는 `toggleDetails` 함수 내로 `trackEvent(...)`를 이동합니다.
 
 ```jsx
 function ProductView({ name, details }) {
@@ -459,15 +485,24 @@ function ProductView({ name, details }) {
 }
 ```
 
-#### Exercise Time
+#### 연습해보기
 
-## Contradicting State
+<br >
 
-When you work with multiple state variables that depend on each other you can easily produce an overall component state that shouldn’t be allowed. It’s probably easier to show this in code.
+<iframe src="https://codesandbox.io/embed/dry-wildflower-8fm07i?view=split,preview&fontsize=14&editorsize=50&codemirror=1&module=/Challenge.jsx,/Solution.jsx&hidenavigation=1&theme=dark"
+     style="width:calc(100% + 100px); height:500px; margin: 0 -50px; border:0; border-radius: 4px; overflow:hidden;"
+     title="dry-wildflower-8fm07i"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
 
-### The Code Example
+## 모순되는 상태
 
-Here we have a basic data fetching example. The component can be in different states: either it’s loading data, an error occurred, or the data was fetched successfully.
+서로 의존하는 여러 상태 변수로 작업할 때, 허용되어서는 안 되는 컴포넌트 상태를 쉽게 생성할 수 있습니다. 코드를 통해 살펴봅시다.
+
+### 코드 예제
+
+여기 기본적인 데이터 가져오기 예제가 있습니다. 컴포넌트는 데이터를 로드 중이거나, 오류가 발생했거나, 데이터를 성공적으로 가져온 등 다양한 상태에 있을 수 있습니다.
 
 ```jsx
 export function ContradictingState() {
@@ -494,17 +529,17 @@ export function ContradictingState() {
   ...
 ```
 
-### The Problem
+### 문제점
 
-The problem with this approach is that we can end up in a contradicting state if we’re not careful. In the above example, we e.g. might forget to set `isLoading` to `false` when an error occurs.
+이 접근 방식의 문제는 주의하지 않으면 모순된 상태에 빠질 수 있다는 것입니다. 예를들어 위의 예에서 오류가 발생할 때 `isLoading`을 `false`로 설정하는 것을 잊을 수 있습니다.
 
-It’s also hard to understand, what combinations of state variables are allowed. In the above example, we could have 8 different component states in theory. But you can’t really see immediately what state combinations really exist.
+또한 어떤 상태 변수의 조합이 허용되는지 이해하기 어렵습니다. 위의 예에서 이론적으로 8개의 서로 다른 컴포넌트 상태를 가질 수 있습니다. 그러나 어떤 상태 조합이 실제로 존재하는지 즉시 알 수는 없습니다.
 
-> Just in case you’re wondering where the 8 state combinations come from: `data` could be `null` or an object, `isLoading` could be `true` or `false`, and `error` could also be `null` or an object. So 2 _2_ 2 = 8.
+> 8가지 상태 조합의 출처가 궁금하신 경우를 대비해 `data`는 `null` 또는 객체, `isLoading`은 `true` 또는 `false`, 그리고 `error`는 `null`또는 객체일 수 있습니다. 따라서 2 _2_ 2 = 8입니다.
 
-### The Solution
+### 해결책
 
-Multiple state variables depending on each other is a common scenario to introduce `useReducer` instead of `useState`.
+서로 의존하는 여러 상태 변수는 `useState` 대신 `useReducer`를 도입하게되는 일반적인 시나리오입니다.
 
 ```jsx
 const initialState = {
@@ -556,17 +591,26 @@ export function NonContradictingState() {
   ...
 ```
 
-This is a lot less overhead on our brains. We can immediately see that we have 3 actions and 4 possible component states (for “FETCH”, “SUCCESS”, “ERROR”, and the initial state).
+이 방법은 우리 두뇌의 오버헤드가 훨씬 적습니다. 3개의 동작과 4개의 가능한 컴포넌트 상태("FETCH", "SUCCESS", "ERROR" 및 초기 상태)가 있음을 즉시 알 수 있습니다.
 
-#### Exercise Time
+#### 연습해보기
 
-## Deeply Nested State
+<br >
 
-The final common problem we mention here is a state of (deeply) nested objects. If you simply render the data it might not be a problem at all. But as soon as you start updating nested items you’re in for some trouble.
+<iframe src="https://codesandbox.io/embed/gallant-orla-1nbt4l?view=split,preview&fontsize=14&editorsize=50&codemirror=1&module=/Challenge.jsx,/Solution.jsx&hidenavigation=1&theme=dark"
+     style="width:calc(100% + 100px); height:500px; margin: 0 -50px; border:0; border-radius: 4px; overflow:hidden;"
+     title="gallant-orla-1nbt4l"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
 
-### The Code Example
+## 깊게 중첩된 상태
 
-Here we have a component that renders deeply nested comments. The JSX doesn’t matter much here but imagine the `updateComment` callback being attached to a button or input.
+마지막 흔한 문제는 (깊이) 중첩된 객체의 상태입니다. 단순히 데이터를 렌더링하는 경우에는 전혀 문제가 되지 않을 수 있습니다. 그러나 중첩 항목 업데이트를 시작하자마자 문제가 발생합니다.
+
+### 코드 예제
+
+여기에 깊게 중첩된 댓글을 렌더링하는 구성 요소가 있습니다. 여기서 JSX는 그다지 중요하지 않지만 `updateComment` 콜백이 버튼이나 인풋에 연결되어 있다고 상상해 보세요.
 
 ```jsx
 function NestedComments() {
@@ -608,17 +652,17 @@ function NestedComments() {
   ]);
 
   const updateComment = (id, text) => {
-    // this gets complicated
+    // 여기가 복잡해질겁니다.
   };
 
   ...
 ```
 
-### The Problem
+### 문제점
 
-The problem with nested state in React is that we have to update it in an immutable way otherwise the component doesn’t re-render.
+리액트에서 중첩된 상태의 문제는 불변(immutable) 방식으로 업데이트해야 한다는 것입니다. 그렇지 않으면 구성 요소가 다시 렌더링되지 않습니다.
 
-The hard-coded update logic for a deeply nested comment in the above example would look something like this.
+위의 예에서 깊게 중첩된 댓글에 대한 하드 코딩된 업데이트 로직은 다음과 같습니다.
 
 ```jsx
 const updateComment = (id, text) => {
@@ -642,11 +686,12 @@ const updateComment = (id, text) => {
 };
 ```
 
-But making this dynamic gets really complicated.
+그러나 이 역학을 만드는 것은 정말 복잡해집니다.
+<!-- 약간 복잡 -->
 
-### The Solution
+### 해결책
 
-Instead of a deeply nested state, it’s much easier to work with a flat data structure. We can reference the items to each other via their IDs. This could look like this.
+깊이 중첩된 상태 대신 평탄한 데이터 구조로 작업하는 것이 훨씬 쉽습니다. ID를 통해 항목을 서로 참조할 수 있습니다. 그럼 아래처럼 변경할 수 있습니다.
 
 ```jsx
 function FlatCommentsRoot() {
@@ -700,7 +745,15 @@ function FlatCommentsRoot() {
   ...
 ```
 
-Now it’s as easy as finding the correct item by its ID and replacing it in the array.
+이제 ID로 올바른 항목을 찾고 배열에서 교체하는 것은 쉽습니다.
 
-#### Exercise Time
+#### 연습해보기
 
+<br >
+
+<iframe src="https://codesandbox.io/embed/cool-torvalds-3gw1o1?view=split,preview&fontsize=14&editorsize=50&codemirror=1&module=/Challenge.jsx,/Solution.jsx&hidenavigation=1&theme=dark"
+     style="width:calc(100% + 100px); height:500px; margin: 0 -50px; border:0; border-radius: 4px; overflow:hidden;"
+     title="cool-torvalds-3gw1o1"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
