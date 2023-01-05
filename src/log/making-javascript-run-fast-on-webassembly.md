@@ -1,3 +1,7 @@
+---
+feArticle: true
+---
+
 # 웹어셈블리에서 자바스크립트를 빠르게 실행하는 방법
 
 > 원문 : https://bytecodealliance.org/articles/making-javascript-run-fast-on-webassembly
@@ -257,7 +261,3 @@ Python, Ruby, Lua 등과 같은 언어 커뮤니티의 일원이라면 해당 �
 
 <br>
 <br>
-<br>
-
-
-> 🚀 한국어로 된 프런트엔드 아티클을 빠르게 받아보고 싶다면 [Korean FE Article](https://kofearticle.substack.com/)을 구독해주세요.
