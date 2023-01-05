@@ -256,6 +256,8 @@ export function RedundantState() {
 
 #### 연습 문제
 
+<br >
+
 <iframe src="https://codesandbox.io/embed/eager-black-bui7ol?view=split,preview&editorsize=50&codemirror=1&fontsize=14&hidenavigation=1&module=/Challenge-1.jsx,/Challenge-2.jsx,/Solution-1.jsx,/Solution-2.jsx&theme=dark"
      title="eager-black-bui7ol"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
@@ -366,6 +368,8 @@ function DuplicateState({ items }) {
 ```
 
 #### 연습 문제
+
+<br >
 
 <iframe src="https://codesandbox.io/embed/proud-wave-xgnc8g?view=split,preview&fontsize=14&editorsize=50&codemirror=1&module=/Challenge.jsx,/Solution.jsx&hidenavigation=1&theme=dark"
      title="proud-wave-xgnc8g"
@@ -495,6 +499,8 @@ function DuplicateState({ items }) {
 
 #### 연습 문제
 
+<br >
+
 <iframe src="https://codesandbox.io/embed/beautiful-meninsky-zql3zs?view=split,preview&fontsize=14&editorsize=50&codemirror=1&module=/Challenge.jsx,/Solution.jsx&hidenavigation=1&theme=dark"
      title="beautiful-meninsky-zql3zs"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
@@ -570,6 +576,8 @@ function ProductView({ name, details }) {
 ```
 
 #### 연습 문제
+
+<br >
 
 <iframe src="https://codesandbox.io/embed/dry-wildflower-8fm07i?view=split,preview&fontsize=14&editorsize=50&codemirror=1&module=/Challenge.jsx,/Solution.jsx&hidenavigation=1&theme=dark"
      title="dry-wildflower-8fm07i"
@@ -675,6 +683,8 @@ export function NonContradictingState() {
 이 방법은 우리 두뇌의 오버헤드가 훨씬 적습니다. 3개의 동작과 4개의 가능한 컴포넌트 상태("FETCH", "SUCCESS", "ERROR" 및 초기 상태)가 있음을 즉시 알 수 있습니다.
 
 #### 연습 문제
+
+<br >
 
 <iframe src="https://codesandbox.io/embed/gallant-orla-1nbt4l?view=split,preview&fontsize=14&editorsize=50&codemirror=1&module=/Challenge.jsx,/Solution.jsx&hidenavigation=1&theme=dark"
      title="gallant-orla-1nbt4l"
@@ -825,6 +835,8 @@ function FlatCommentsRoot() {
 이제 ID로 올바른 항목을 찾고 배열에서 교체하기는 쉽습니다.
 
 #### 연습 문제
+
+<br >
 
 <iframe src="https://codesandbox.io/embed/cool-torvalds-3gw1o1?view=split,preview&fontsize=14&editorsize=50&codemirror=1&module=/Challenge.jsx,/Solution.jsx&hidenavigation=1&theme=dark"
      title="cool-torvalds-3gw1o1"
