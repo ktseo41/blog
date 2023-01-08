@@ -273,6 +273,101 @@ export default {
 }
 ```
 
+### How to deploy fastify server to fly.io (fly.io에 fastify 서버 배포하는 방법)
+
+#### follow the instructions
+
+1. install flyctl
+
+> https://fly.io/docs/hands-on/install-flyctl/
+
+```bash
+curl -L https://fly.io/install.sh | sh
+```
+
+or (Mac OS)
+
+```bash
+brew install flyctl
+```
+
+2. create or login to fly.io account
+
+> https://fly.io/docs/speedrun/
+
+```bash
+fly auth signup
+```
+
+or
+
+```bash
+fly auth login
+```
+
+3. launch
+
+```bash
+flyctl launch
+```
+
+you can choose app name, region.
+
+```bash
+? Choose an app name (leave blank to generate one): [your-app-name]
+automatically selected personal organization: [your-username]
+? Choose a region for deployment:  [Use arrows to move, type to filter]
+  Ashburn, Virginia (US) (iad)
+  Johannesburg, South Africa (jnb)
+  Los Angeles, California (US) (lax)
+  London, United Kingdom (lhr)
+  Chennai (Madras), India (maa)
+  Madrid, Spain (mad)
+  Miami, Florida (US) (mia)
+> Tokyo, Japan (nrt)
+  Chicago, Illinois (US) (ord)
+  Bucharest, Romania (otp)
+? Would you like to set up a Postgresql database now? No
+? Would you like to set up an Upstash Redis database now? No
+? Would you like to deploy now? No
+```
+
+:sparkles: ready to deploy
+
+#### deploy
+
+1. (optional) define node version in `fly.toml`
+
+> https://fly.io/docs/laravel/the-basics/php-node-version/
+
+```toml
+[build]
+  [build.args]
+    PHP_VERSION = "8.1"
+    NODE_VERSION = "14"
+```
+
+2. check host and port
+
+> https://fly.io/docs/getting-started/troubleshooting/#host-checking
+
+>  The problem is that no one else can talk to the localhost so although the app may have the right port, it's on the wrong network interface. The Rule of thumb to fix this is to get the app to open up port 8080 on the IP address 0.0.0.0. That's anyone outside the system
+
+```js
+...
+const start = async () => {
+  try {
+    await fastify.listen(8080,"0.0.0.0")
+...
+
+```
+
+3. :tada: deploy
+
+```
+flyctl deploy
+```
+
 ## 책
 
 - [TLS 구현으로 배우는 암호학](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791161754284&orderClick=LEa&Kc=) ([from](https://www.facebook.com/hika00/posts/5234521349896615))
