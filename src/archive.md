@@ -140,6 +140,8 @@
 - [Simple Icons](https://simpleicons.org/)
 - [Snow Effect](https://embed.im/snow/)
 - [Dynaboard](https://dynaboard.com/features) - full stack app builder
+- [visualgo](https://visualgo.net/en) - 시각화된 알고리즘 학습, 실습 사이트
+- [Code Catalog](https://codecatalog.org/) - 오픈 소스 코드를 통해 공부. 다양한 언어 지원
 
 ### Color
 
