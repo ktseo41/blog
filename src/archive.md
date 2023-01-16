@@ -61,6 +61,8 @@
 - [css-tricks: css-animation-libraries](https://css-tricks.com/css-animation-libraries/)
 - [Coverage: Find unused JavaScript and CSS](https://developer.chrome.com/docs/devtools/coverage/)
 - [Changes: Track your HTML, CSS, and JavaScript changes](https://developer.chrome.com/docs/devtools/changes/)
+- [Edge Computing으로 가져올 웹 개발의 변화](https://www.youtube.com/watch?v=YImV7OfPqSo)
+  - [요약 - Edge Computing으로 가져올 웹 개발의 변화](https://careerly.co.kr/comments/72950)
 
 ### Metaverse, Blockchain, Cryptocurrency, NFT, ...
 
@@ -154,6 +156,14 @@
 
 - [Strapi](https://strapi.io/)
 - [Sanity](https://www.sanity.io/)
+
+### No Code, Low Code
+
+- [softr](https://www.softr.io/)
+- [Typedream](https://typedream.com/)
+- [Webflow](https://webflow.com/)
+- [.bubble](https://bubble.io/home)
+- [Carrd](https://carrd.co/) - one page (no code인지는 불명확한듯)
 
 ### Data
 
