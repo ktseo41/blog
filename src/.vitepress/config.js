@@ -79,6 +79,7 @@ export default {
               { text: "요약: NDC [키노트] 블록체인과 가상세계의 진화", link: "/log/short/ndc-keynotes-evolution-of-blockchain-and-virtual-reality" },
               { text: "요약: 토스 | Slash 22 - 미친 생산성을 위한 React Native", link: "/log/short/toss-slash22-react-native-for-super-high-productivity" },
               { text: "번역: Vercel Edge Functions - 사용 사례 - OG 이미지 생성", link: "/log/short/og-image-generation" },
+              { text: "번역: OAuth 2.0 상태 매개변수로 공격 방지 및 사용자 리디렉션하기", link: "/log/short/prevent-attacks-and-redirect-users-with-oauth-2_0-state-parameters" },
             ]
           },
           { text: "Why Use Composition API", link: "/log/Why Use Composition API" },
