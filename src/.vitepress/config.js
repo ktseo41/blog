@@ -82,9 +82,10 @@ export default {
               { text: "번역: OAuth 2.0 상태 매개변수로 공격 방지 및 사용자 리디렉션하기", link: "/log/short/prevent-attacks-and-redirect-users-with-oauth-2_0-state-parameters" },
             ]
           },
-          { text: "Why Use Composition API", link: "/log/Why Use Composition API" },
+          { text: "컴포지션 API를 만든 이유", link: "/log/why-we-create-the-composition-api" },
           { text: "웹어셈블리에서 자바스크립트를 빠르게 실행하는 방법", link: "/log/making-javascript-run-fast-on-webassembly" },
           { text: "리액트에서 useState를 사용하면서 저지를 수 있는 흔한 실수들", link: "/log/avoid-these-common-pitfalls-of-react-usestate" },
+          { text: "뷰의 새로운 컴포지션 API를 사용해야 하는 이유", link: "/log/why-you-should-be-using-vue-new-composition-api" },
         ]
       },
       {

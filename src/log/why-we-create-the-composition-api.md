@@ -1,4 +1,4 @@
-# Why Use Composition API?
+# Why We Created the Composition API
 
 > 원문: [Function-based component API (extended discussion)](https://github.com/vuejs/rfcs/issues/55#)
 
