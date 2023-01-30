@@ -54,10 +54,6 @@ export default {
     ],
     socialLinks: [
       {
-        icon: "instagram",
-        link: "https://instagram.com/ktseo41/",
-      },
-      {
         icon: "linkedin",
         link: "https://www.linkedin.com/in/bo-hyeon-seo/",
       }
