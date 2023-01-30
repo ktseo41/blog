@@ -19,6 +19,7 @@
 - [A crash course in just-in-time (JIT) compilers](https://hacks.mozilla.org/2017/02/a-crash-course-in-just-in-time-jit-compilers/)
     - [[번역] 저스트-인-타임(JIT) 컴파일러 집중 코스](https://dongwoo.blog/2017/06/06/%EB%B2%88%EC%97%AD-%EC%A0%80%EC%8A%A4%ED%8A%B8-%EC%9D%B8-%ED%83%80%EC%9E%84jit-%EC%BB%B4%ED%8C%8C%EC%9D%BC%EB%9F%AC-%EC%A7%91%EC%A4%91-%EC%BD%94%EC%8A%A4/)
 - [WebAssembly: Docker without containers!](https://wasmlabs.dev/articles/docker-without-containers/)
+- [Tweet: list of fundamentals you think every web developer should know (Kent C. Dodds)](https://twitter.com/kentcdodds/status/1619522703417036800)
 
 ## 글감
 
