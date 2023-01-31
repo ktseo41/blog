@@ -2,7 +2,8 @@
 <script setup>
 import { useData } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
-const { frontmatter } = useData()
+import Comment from '../components/Comment.vue';
+const { frontmatter, page } = useData()
 const { Layout } = DefaultTheme
 </script>
 
@@ -16,10 +17,7 @@ const { Layout } = DefaultTheme
               rel="noreferrer">Korean FE Article</a>을 구독해주세요.</p>
         </blockquote>
       </template>
-      <component v-if="!frontmatter.disableComment" :is="'script'" src="https://utteranc.es/client.js"
-        repo="ktseo41/blog" issue-term="pathname" label="Comment" theme="preferred-color-scheme" crossorigin="anonymous"
-        async>
-      </component>
+      <Comment v-if="!frontmatter.disableComment" :key="page.relativePath"></Comment>
     </template>
   </Layout>
 </template>
