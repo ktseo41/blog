@@ -76,7 +76,7 @@ export default {
               { text: "요약: 토스 | Slash 22 - 미친 생산성을 위한 React Native", link: "/log/short/toss-slash22-react-native-for-super-high-productivity" },
               { text: "번역: Vercel Edge Functions - 사용 사례 - OG 이미지 생성", link: "/log/short/og-image-generation" },
               { text: "번역: OAuth 2.0 상태 매개변수로 공격 방지 및 사용자 리디렉션하기", link: "/log/short/prevent-attacks-and-redirect-users-with-oauth-2_0-state-parameters" },
-              { text: "How to apply utternaces in VitePress (VitePress 블로그에 utternaces 적용하기)", link: "/log/short/how-to-apply-utternaces-on-vitepress" },
+              { text: "VitePress 블로그에 utternaces 적용하기", link: "/log/short/how-to-apply-utterances-on-vitepress" },
             ]
           },
           { text: "컴포지션 API를 만든 이유", link: "/log/why-we-create-the-composition-api" },
