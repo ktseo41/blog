@@ -83,6 +83,7 @@ export default {
           { text: "웹어셈블리에서 자바스크립트를 빠르게 실행하는 방법", link: "/log/making-javascript-run-fast-on-webassembly" },
           { text: "리액트에서 useState를 사용하면서 저지를 수 있는 흔한 실수들", link: "/log/avoid-these-common-pitfalls-of-react-usestate" },
           { text: "뷰의 새로운 컴포지션 API를 사용해야 하는 이유", link: "/log/why-you-should-be-using-vue-new-composition-api" },
+          { text: "완전한 타입 안정성을 가진 웹 애플리케이션", link: "/log/fully-typed-web-apps" },
         ]
       },
       {
