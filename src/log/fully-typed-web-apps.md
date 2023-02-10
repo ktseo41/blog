@@ -2,7 +2,7 @@
 
 > 원문: https://www.epicweb.dev/fully-typed-web-apps
 
-타입스크립트는 웹 산업에서 큰 비중을 차지하고 있고 그럴 만한 이유가 있다고 생각합니다. 타입스크립트는 놀랍습니다. 그리고 저는 아래와 같은 경우에 대해서만 이야기하려는 것이 아닙니다.
+타입스크립트는 웹 산업에서 큰 비중을 차지하고 있고 그럴 만한 이유가 있다고 생각합니다. 타입스크립트는 놀랍습니다. 타입 검사에 대한 이야기만 하려는 것이 아닙니다.
 
 ```typescript
 function add(a: number, b: number) {
@@ -185,7 +185,7 @@ zod를 활용하여 완전한 타입 검증을 가진 웹 애플리케이션에 
 
 ## 타입 생성
 
-앞서 Remix 기존 라우트에 대한 타입을 생성하는 두 가지 도구에 대해 이야기했는데, 이는 종단 간 타입 안전성 문제를 해결하는 데 도움이 되는 유형 생성의 한 형태입니다. 이 해결 방법의 또 다른 인기 있는 예는 [프리즈마](https://www.prisma.io/)(제가 가장 좋아하는 ORM)입니다. 많은 GraphQL 도구도 이 작업을 수행합니다. 아이디어는 사용자가 스키마를 정의할 수 있도록 허용하고 프리즈마는 데이터베이스 테이블이 해당 스키마와 일치하는지 확인하는 것입니다. 그런 다음 스키마와 일치하는 타입스크립트 타입 정의도 생성합니다. 타입과 데이터베이스를 효과적으로 동기화합니다. 예를 들어
+앞서 Remix 기존 라우트에 대한 타입을 생성하는 두 가지 도구에 대해 이야기했는데, 이는 종단 간 타입 안전성 문제를 해결하는 데 도움이 되는 타입 생성의 한 형태입니다. 이 해결 방법의 또 다른 인기 있는 예는 [프리즈마](https://www.prisma.io/)(제가 가장 좋아하는 ORM)입니다. 많은 GraphQL 도구도 이 작업을 수행합니다. 이 아이디어는 사용자가 스키마를 정의할 수 있도록 허용하고 프리즈마는 데이터베이스 테이블이 해당 스키마와 일치하는지 확인하는 것입니다. 그런 다음 스키마와 일치하는 타입스크립트 타입 정의도 생성합니다. 타입과 데이터베이스를 효과적으로 동기화합니다. 예를 들어
 
 ```typescript
 const workshop = await prisma.user.findFirst({
@@ -301,13 +301,13 @@ export default function WorkshopRoute() {
 
 `useLoaderData` 함수는 Remix `loader` 함수 타입을 받아들이고 가능한 모든 JSON 응답을 결정할 수 있는 제네릭입니다(이 공헌에 대해 zod의 창시자 [Colin McDonnell](https://twitter.com/colinhacks)에게 큰 감사를 표합니다). `loader`는 서버에서 실행되고 `WorkshopRoute` 함수는 서버와 클라이언트 모두에서 실행되지만, 네트워크 경계를 넘어 타입을 가져오는 것은 Remix의 로더 규칙을 이해하는 제네릭을 통해서만 일어날 수 있습니다. Remix는 로더에서 반환된 데이터가 결국 `useLoaderData`에 의해 반환되도록 합니다. 이 모든 것이 하나의 파일에 있습니다. API 경로가 필요하지 않습니다 🥳.
 
-아직 경험해보지 않으셨다면, 이것이 _놀라운_ 경험이라는 것을 믿으셔야 합니다. UI에 `price` 필드를 표시하고 싶다고 가정해 봅시다. 간단히 데이터베이스 쿼리의  `select`를 업데이트하면 됩니다. 그러면 다른 것을 변경하지 않고도 UI 코드에서 갑자기 이를 사용할 수 있습니다. 완전히 타입 안정적입니다! 그리고 더 이상 `description`이 필요하지 않다고 판단하면 `select`에서 제거하기만 하면 이전에 `description`을 사용하던 모든 곳에서 빨간색 물방울(및 유형 검사 오류)이 표시되므로 리팩토링에 도움이 됩니다.
+아직 경험해보지 않으셨다면, 이것이 _놀라운_ 경험이라는 것을 믿으셔야 합니다. UI에 `price` 필드를 표시하고 싶다고 가정해 봅시다. 간단히 데이터베이스 쿼리의 `select`를 업데이트하면 됩니다. 그러면 다른 것을 변경하지 않고도 UI 코드에서 갑자기 이를 사용할 수 있습니다. 완전히 타입 안정적입니다! 그리고 더 이상 `description`이 필요하지 않다고 판단하면 `select`에서 제거하기만 하면 이전에 `description`을 사용하던 모든 곳에서 빨간색 물방울(및 유형 검사 오류)이 표시되므로 리팩토링에 도움이 됩니다.
 
 **망할 네트워크 경계**를 넘나들며 말이죠.
 
 UI 코드의 `date` 속성이 실제로는 백엔드에서 `Date`임에도 불구하고 `string` 타입인 것을 눈치채셨을 것입니다. 이는 데이터가 네트워크 경계를 통과해야 하고 그 과정에서 모든 것이 문자열로 직렬화되기 때문입니다(JSON은 `Date`를 지원하지 않죠). 타입 유틸리티는 이 동작을 매우 훌륭하게 구현합니다.
 
-해당 `Date`를 표시하려는 경우 사용자 컴퓨터에서 앱이 수화될 때 시간대가 이상해지는 것을 방지하기 위해 전송하기 전에 `로더`에서 날짜를 하는 것이 좋습니다. 이 방법이 마음에 들지 않는다면 [Matt Mueller](https://twitter.com/mattmueller)와 [Simon Knott](https://twitter.com/skn0tt)의 [superjson](https://github.com/blitz-js/superjson) 또는 [Michael Carter](https://twitter.com/kiliman)의 [remix-typedjson](https://github.com/kiliman/remix-typedjson) 같은 도구를 사용하여 해당 데이터 타입을 UI에서 복원할 수 있습니다.
+해당 `Date`를 표시하려는 경우 사용자 컴퓨터에서 앱이 수화될 때 시간대가 이상해지는 것을 방지하기 위해 전송하기 전에 `로더`에서 날짜 포맷으로 지정하는 것이 좋습니다. 이 방법이 마음에 들지 않는다면 [Matt Mueller](https://twitter.com/mattmueller)와 [Simon Knott](https://twitter.com/skn0tt)의 [superjson](https://github.com/blitz-js/superjson) 또는 [Michael Carter](https://twitter.com/kiliman)의 [remix-typedjson](https://github.com/kiliman/remix-typedjson) 같은 도구를 사용하여 해당 데이터 타입을 UI에서 복원할 수 있습니다.
 
 리믹스에서는 `action`을 통해서도 타입 안전성을 확보할 수 있습니다. 다음은 그 예시입니다.
 
