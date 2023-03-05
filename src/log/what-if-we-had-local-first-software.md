@@ -1,109 +1,191 @@
-# What if we had Local-First Software?
+# 로컬 우선 소프트웨어가 있다면 어떨까요?
 
-![gray crt tv turned on in a dark room](https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Feb0c163e-07af-400c-9abb-135b578fa7e6_1000x1500.jpeg)
+> 원문: https://adlrocha.substack.com/p/adlrocha-what-if-we-had-local-first
 
-For this first publication on a Thursday I want to do a _“what if”_ exercise with you all. They say this _“what if”_ technique was the one used by companies such as Spotify (_“what if you didn’t have to own your music library?”_) and Uber (_“what if every car could potentially become a taxi”_) to reach their current models.
+![gray crt tv turned on in a dark room](https://user-images.githubusercontent.com/6429885/222964857-0d036927-81c2-45d5-81f6-47fc513d5cc2.jpg)
 
-So let’s try this same thing. Let’s ask ourselves: _**“what if the Internet was offline first? And what if we had local-first software paving the way into an offline SaaS model?”**_ Actually, the authors of this paper (_[“Local-First Software: You Own Your Data, in spite of the Cloud”](https://storage.googleapis.com/jellyposter-store/16620200e730651d20d1a25d315508c7.pdf)_) raise these exact same questions in their work, and it’ll be our matter at hand today. **How would an offline-first Internet look like?**
+목요일에 진행되는 첫 번째 게시글에서는 여러분과 함께 "만약에" 연습을 해보고자 합니다. 이 "만약에"라는 기법은 Spotify(_"음악 라이브러리를 소유할 필요가 없다면?"_)나 Uber(_"모든 자동차가 잠재적으로 택시가 될 수 있다면?"_) 같은 회사들이 현재 사업 모델에 도달하기 위해 사용했던 기법이라고 합니다.
 
-## The principles behind the vision
+저희도 한 번 스스로에게 비슷한 질문해 보죠. _**"만약 인터넷이 오프라인 우선이라면? 그리고 로컬 우선 소프트웨어가 오프라인 SaaS 모델로 가는 길을 열어준다면 어떨까요?"**_ 실제로 이 논문([_"로컬 우선 소프트웨어: 클라우드임에도 불구하고 데이터를 소유하는 방법"_](https://storage.googleapis.com/jellyposter-store/16620200e730651d20d1a25d315508c7.pdf))의 저자들은 이 논문에서 이와 똑같은 질문을 제기했으며, 오늘 우리가 다루고자 하는 질문도 같습니다. **오프라인 우선 인터넷은 어떤 모습일까요?**
 
-> _“It’s amazing how easily we can collaborate online nowadays. We use Google Docs to collaborate on documents, spreadsheets and presentations; in Figma we work together on user interface designs; we communicate with colleagues using Slack; we track tasks in Trello; and so on. We depend on these and many other online services, e.g. for taking notes, planning projects or events, remembering contacts, and a whole raft of business uses.”_
+## 비전 뒤에 숨은 원칙
 
-We all agree that cloud apps have made our lives way easier. **Efficient remote working wouldn’t have been possible without all of these real-time collaborative cloud apps** we have today. In spite of this, all of these applications still pose several inconveniences and threats. To name a few: you are not the owner of the data you generate in these services, what happens if the companies behind these services go bankrupt and switch off their servers? Even more, they all rely on a centralized infrastructure, which are prone to attacks, security breaches and outages.
+> _"요즘 온라인에서 얼마나 쉽게 협업하는지를 보면 놀랍습니다. 구글 문서 도구를 사용해 문서, 스프레드시트, 프레젠테이션을 공동 작업하고, 피그마에서 사용자 인터페이스 디자인을 함께 작업합니다. 또한 슬랙을 사용하여 동료와 소통하고, 트렐로에서 작업을 추적하는 등 다양한 서비스를 이용합니다. 메모를 작성하고, 프로젝트나 이벤트를 계획하고, 연락처를 기억하는 등 다양한 업무 용도로 이러한 서비스와 기타 여러 온라인 서비스에 의존하고 있습니다."_
 
-Imagine that you are feeling creative and you are almost done with your _“opera prima”_ when the server fails and you realize all your work is lost. Or even worse (and a more probable scenario), what if you lose your home connection and you can’t even blame the cloud service for your lost work? Better not to mention the user experience of trying to work with these tools in a plane or somewhere without a stable Internet connection. **So real-time collaboration has significantly improved our lives, but it could probably be even better.**
+클라우드 앱이 우리의 삶을 훨씬 더 편리하게 만들었다는 데 모두 동의합니다. **오늘날 우리가 사용하는 이러한 실시간 협업 클라우드 앱**이 없었다면 효율적인 원격 근무는 불가능했을 것입니다. 그럼에도 불구하고 이러한 모든 애플리케이션은 여전히 몇 가지 불편함과 위협을 안고 있습니다. 몇 가지 예를 들면, 이러한 서비스에서 생성한 데이터의 소유자는 사용자가 아닙니다. 이러한 서비스를 제공하는 회사가 파산해 서버를 중단하면 어떻게 될까요? 게다가 이러한 서비스들은 모두 중앙 집중식 인프라에 의존하기 때문에 공격, 보안 침해, 서비스 중단에 취약합니다.
 
-> _“To sum up: **the cloud gives us collaboration, but old-fashioned apps give us ownership.** Can’t we have the best of both worlds? We would like both the convenient cross-device access and real-time collaboration provided by cloud apps, and also the personal ownership of your own data embodied by “old-fashioned” software.”_
+창의력을 발휘해 "_오페라 프리마_(역자 주: 문학, 영화 등 예술 분야에서 작가의 첫 작품을 의미)"를 거의 완성한 상태에서 서버에 장애가 발생해 모든 작업이 사라진다고 상상해 보세요. 또는 더 나쁜 경우(더 가능성이 높은 시나리오)로, 집에서 연결이 끊겨서 클라우드 서비스를 탓할 수도 없는 상황이라면 어떻게 될까요? 비행기나 인터넷 연결이 안정적이지 않은 곳에서 이러한 도구로 작업하는 사용자 경험은 말할 것도 없습니다. **실시간 협업은 우리의 삶을 크게 개선해 주었지만, 아마도 더 나아질 수 있을 것입니다.**
 
-This is the rationale behind “local-first software,” which **prioritizes the use of local storage (inside your devices) and local networks (like your home WiFi) over servers in remote data centers.** Building this vision is not easy, and servers (or decentralized storages plus relays _— you know where I am going with this, right? ;) —_) would most definitely still be needed for backup and interconnection purposes.
+> _"요약하자면, **클라우드는 협업을 제공하지만, 구식 앱은 소유권을 제공합니다.** 두 가지 장점을 모두 누릴 수는 없을까요? 클라우드 앱이 제공하는 편리한 기기 간 액세스 및 실시간 협업과 '구식' 소프트웨어가 가지는 데이터에 대한 개인 소유권을 모두를요."_
 
-So to evaluate the implications of having “local-first software”, in the paper the authors **define seven ideals to strive for:**
+이것이 바로 **원격 데이터 센터의 서버보다 로컬 스토리지(디바이스 내부)와 로컬 네트워크(가정용 Wi-Fi 등)를 우선적으로 사용하는** "로컬 우선 소프트웨어"의 근거입니다. 이러한 비전을 구축하는 것은 쉽지 않으며, 서버(또는 분산 스토리지와 릴레이. _무슨 말인지 아시겠죠? 😉_)는 백업 및 상호 연결 목적으로 여전히 필요할 것입니다.
 
--   **No Spinners, Your Work at Your Fingertips:** I guess we can all agree that even though we have more powerful devices than years ago, **software feels increasingly slow and error prone.** “Local-first software” should benefit from a lower reliance on the Internet and the use of local storage to be faster than current software.
+따라서 "로컬 우선 소프트웨어"의 의미를 평가하기 위해 이 논문에서 저자들은 다음과 같은 **7가지 이상을 추구해야 한다고 정의합니다.**
+
+- **로딩 스피너 없이, 바로 작업 가능합니다:** 몇 년 전보다 더 강력한 디바이스를 사용하지만 **소프트웨어는 점점 더 느려지고 오류가 발생하기 쉽다는 것을 모두 동의할 것입니다.** "로컬 우선 소프트웨어"는 인터넷 의존도를 낮추고 로컬 스토리지를 사용하여 현재 소프트웨어보다 더 빨라져야 합니다.  
+  
+- **작업이 하나의 기기에 갇히지 않아야 합니다:** 이건 어려운 문제입니다. 현재의 클라우드 앱이 모든 기기에서 원활하게 작업할 수 있게 해주는 것과 마찬가지로 "로컬 우선 소프트웨어"도 이를 가능하게 해야 합니다. 더 나아가 다른 사람(및 다른 사람의 기기)과 협업할 수 있어야 하므로 데이터가 내 기기에만 머물러서는 안 됩니다. 이를 실현하기 위해서는 장치 간의 안정적인 동기화 시스템이 필요합니다.  
+  
+- **물론 네트워크는 선택 사항입니다:** 로컬 우선 애플리케이션은 데이터의 기본 복사본을 각 장치의 로컬 파일 시스템에 저장하기 때문에 **사용자는 오프라인 상태에서도 언제든지 이 데이터를 읽고 쓸 수 있습니다.** 나중에 네트워크 연결이 가능할 때 다른 장치와 동기화됩니다. 데이터 동기화가 반드시 인터넷을 통해 이루어질 필요는 없습니다: **로컬 우선 앱은 블루투스 또는 로컬 WiFi를 사용하여 주변 장치와 데이터를 동기화할 수도 있습니다.** 또한, 원활한 오프라인 지원을 위해서는 소프트웨어가 웹 브라우저의 탭이 아닌 장치에 로컬로 설치된 실행 파일로 실행되는 것이 바람직합니다. 웹 앱이 오프라인에서 작동하도록 설정하는 것은 가능하지만, 사용자가 애플리케이션에 필요한 모든 코드와 데이터가 다운로드되었는지 여부를 알기는 어려울 수 있습니다. 모바일 앱의 경우 앱을 사용하기 전에 전체 앱을 다운로드하여 설치하는 것이 이미 표준입니다.  
    
--   **Your Work Is Not Trapped on One Device:** This is a hard one. The same way current cloud apps allow you to work seamlessly from every device, “local-first software” should also enable this. Even more, it should allow you to collaborate with others (and their devices), so data shouldn’t stay exclusively in your device. A reliable synchronization system between devices will be needed to make this a reality.
-   
--   **The Network Is Optional, obviously:** Since local-first applications store the primary copy of their data in each device’s local filesystem, **the user can read and write this data anytime, even while offline.** It is then synchronized with other devices sometime later, when a network connection is available. The data synchronization need not necessarily go via the Internet: **local-first apps could also use Bluetooth or local WiFi to sync data to nearby devices.** Moreover, for good offline support it is desirable for the software to run as a locally installed executable on your device, rather than a tab in a web browser. Although it is possible to make web apps work offline. It can be difficult for a user to know whether all the necessary code and data for an application have been downloaded. For mobile apps it is already standard that the whole app is downloaded and installed before it is used.
-   
--   **Seamless collaboration:** Let’s illustrate this principle with a few compelling images from the paper: in short, **conflicts, conflicts and more conflicts**. Who hasn’t experienced this before?
-   
+- **원활한 협업이 가능해야 합니다:** 이 원칙을 논문에 있는 몇 가지 매력적인 이미지로 설명해 보겠습니다. 간단히 말하면, **충돌, 충돌, 그리고 더 많은 충돌**입니다. 이런 경험을 해보지 않은 사람이 있을까요?
 
 ![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F19d010f1-7dc2-4499-86cf-0deb71a22838_996x640.png)
 ![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F0ffddb6d-67b6-453e-b5ba-324a9d30908f_1016x430.png)
 
-The collaboration approach that I personally like the most (and the one I feel could be embedded in “local-first applications”) is the one used by git. Y**ou work in your own local version of the code, and you periodically push the changes to the repository to make them available to everyone.** This is currently done manually by developers, but it could be automated in the application base code so that devices push new changes whenever a network is available. Of course, this doesn’t prevent from the appearance of conflicts, but we’ll figure out ways of solving it ,right?
+개인적으로 가장 마음에 드는(그리고 "로컬 우선 애플리케이션"에 포함할 수 있다고 생각하는) 협업 방식은 git 방식입니다. **로컬 버전의 코드에서 작업하고 주기적으로 변경 사항을 저장소에 푸시하여 모든 사람이 사용할 수 있도록 합니다.** 현재 이 작업은 개발자가 수동으로 수행하지만 애플리케이션 기본 코드에서 자동화하여 네트워크에 연결할 수 있을 때마다 디바이스가 새로운 변경 사항을 푸시하도록 할 수 있습니다. 물론 이렇게 한다고 해서 충돌이 발생하지 않는 것은 아니지만, 해결할 수 있는 방법을 우리는 이미 알고 있습니다.
 
--   **The Long Now:** Your data should be long-lasting. And the fact that it is stored in your local device (and potentially synchronized with other devices) can really make local-first apps perfect for this.
-    
--   **Security and Privacy by Default**: i.e. your data in your device (and the ones you interact with), and the channel encrypted. 
-    
--   **You Retain Ultimate Ownership and Control:** This is a responsibility that in many cases users do not want to assume. And this is the reason why **fallback systems such as centralized backup servers, decentralized storages, etc. should exist,** so users not comfortable being responsible for their digital life can delegate their custody to others.
-    
+- **데이터를 장기 보관할 수 있어야 합니다:** 데이터는 오래 보관되어야 합니다. 로컬 디바이스에 저장되고 다른 디바이스에도 동기화될 수 있으니 로컬 우선 앱이 완벽하다고 할 수 있습니다.
+   
+- **기본적으로 보안 및 개인정보가 보호되어야 합니다:** 즉, 내 기기(및 내가 상호작용하는 기기)의 데이터와 채널이 암호화됩니다. 
+   
+- **사용자가 최종 소유권 및 통제권을 보유해야 합니다:** 많은 경우 사용자가 원하지 않는 책임입니다. 그렇기 때문에 **중앙집중식 백업 서버, 분산형 스토리지 등과 같은 폴백 시스템**이 존재해야 하며, 디지털 생활에 대한 책임이 부담스러운 사용자는 자신의 소유권을 다른 사람에게 위임할 수 있습니다.
 
-All this being said, **how much do our current cloud applications fulfill these aspirational principles?**
+그렇다면 **현재 클라우드 애플리케이션들은 이러한 원칙을 얼마나 충족하고 있을까요?**
 
 ![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fd4646f2d-9e99-40a6-b43e-0513ccd6d17b_1145x626.png)
 
-_Not great…_
+_좋지는 않습니다.._
 
-## The technology to make it possible
+## 이를 가능하게 하는 기술
 
-> _“Despite many efforts to make web browsers more offline friendly (manifests , localStorage , service workers, and Progressive Web Apps, among others ), the architecture of web apps remains fundamentally server centric. Offline support is an afterthought in most web apps, and the result is accordingly fragile. In many web browsers, if the user clears their cookies, all data in local storage is also deleted; while this is not a problem for a cache, it makes the browser’s local storage unsuitable for storing data of any long-term importance.”_
+> _"웹 브라우저를 오프라인 친화적으로 만들기 위한 많은 노력(매니페스트, 로컬 스토리지, 서비스 워커, 프로그레시브 웹 앱 등)에도 불구하고 웹 앱의 아키텍처는 여전히 근본적으로 서버 중심적입니다. 대부분의 웹 앱에서 오프라인 지원은 나중에 고려해야 할 사항이며, 따라서 그 결과도 취약합니다. 많은 웹 브라우저에서 사용자가 쿠키를 지우면 로컬 저장소의 모든 데이터도 삭제되는데, 이는 캐시에는 문제가 되지 않지만 브라우저의 로컬 스토리지는 장기적으로 중요한 데이터를 저장하는 데 부적합합니다."_
 
-Do you remember my publication on [“How to make your web app work offline?”](https://adlrocha.substack.com/p/adlrocha-how-to-make-your-web-app). Well, unfortunately, the “offline” designs I shared in the publication are still too “server-centric” to build a local-first application. It could make things better, but they don’t suffice to reach our goal (and fullfil the seven principles).
+저의 글 ["웹 앱을 오프라인에서 작동하게 만드는 방법"](https://adlrocha.substack.com/p/adlrocha-how-to-make-your-web-app)을 기억하시나요? 안타깝게도 제가 이 글에서 공유한 "오프라인" 설계는 로컬 우선 애플리케이션을 구축하기에는 여전히 너무 "서버 중심적"입니다. 상황을 개선할 수는 있지만, 우리의 목표를 달성하고 7가지 원칙을 모두 충족하기에는 충분하지 않습니다.
 
-Then we have technologies that philosophically are already helping on the **implementation of offline synchronized storage between different devices such as CouchDB/PouchDB**:
+그런 의미에서 **CouchDB/PouchDB와 같이 서로 다른 장치 간에 오프라인 동기화 스토리지를 구현하는 데** 철학적으로 이미 도움이 되는 기술이 있습니다.
 
-> _“[CouchDB](https://couchdb.apache.org/) is a database that is notable for pioneering a multi-master replication approach: several machines each have a fully-fledged copy of the database, each replica can independently make changes to the data, and any pair of replicas can synchronize with each other to exchange the latest changes. CouchDB is designed for use on servers; Cloudant provides a hosted version; [PouchDB](https://pouchdb.com/) and Hoodie are sibling projects that use the same sync protocol but are designed to run on end-user devices.”_
+> _"[CouchDB](https://couchdb.apache.org/)는 다중 마스터 복제 방식을 개척한 것으로 유명한 데이터베이스입니다. 여러 대의 컴퓨터가 각각 데이터베이스의 완전한 복사본을 가지고 있고, 각 복제본이 독립적으로 데이터를 변경할 수 있으며, 모든 복제본 쌍이 서로 동기화하여 최신 변경 사항을 교환할 수 있습니다. CouchDB는 서버에서 사용하도록 설계되었으며, Cloudant는 호스팅 버전을 제공하고, [PouchDB](https://pouchdb.com/)와 Hoodie는 동일한 동기화 프로토콜을 사용하지만 최종 사용자 장치에서 실행되도록 설계된 형제 프로젝트입니다."_
 
-This doesn’t suffice either to fulfill all of our principles. In CouchDB you need to explicitly resolve conflicts through your application’s code (not an easy task in certain scenarios).
+하지만, 이것만으로 우리의 모든 원칙을 충족시키기에 충분하지 않습니다. CouchDB에서는 애플리케이션 코드를 통해 충돌을 명시적으로 해결해야 합니다.(특정 시나리오에서는 쉬운 일이 아닙니다.)
 
-**So is there currently any technology capable of offering the collaboration and conflict-resolution properties we need for our system?** Fortunately there is, let me introduce you to **Conflict-free Replicated DataTypes (a.k.a CRDTs).**
+**그렇다면 현재 우리 고민 지점에 필요한 협업 및 충돌 해결을 제공할 수 있는 기술이 있을까요?** 다행히도 있습니다. **충돌 없는 복제 데이터 유형(일명 CRDT)** 을 소개해 드리겠습니다.
 
-CRDTs are general-purpose data structures, like hash maps and lists, but with the special feature that they are multi-user from the ground up.
+CRDT는 해시 맵이나 리스트 같은 범용 데이터 구조이지만, 처음부터 다중 사용자를 가정했다는 특별한 특징이 있습니다.
 
 ![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fceffa288-0589-4764-9ec9-a493889177ac_904x363.png)
 
-Let’s illustrate CRDTs with the image above. We have two devices with their data storage in the same initial state. Each of them perform independent updates over the data. The CRDT structure registers these changes as an update operation, so that when there is a network communication available between the two devices they can **exchange their corresponding updates and merge them to reach a common state of their data structure.** The only type of change that a CRDT cannot automatically resolve is when multiple users concurrently update the same property of the same object; in this case, the **CRDT keeps track of the conflicting values, and leaves it to be resolved by the application or the user.** So in the end the way of avoiding conflicts is designing your CRDT data structure smartly to prevent as much as possible these multi-user modifications.
+위의 이미지로 CRDT를 설명해 보겠습니다. 데이터 저장소가 동일한 초기 상태인 두 개의 디바이스가 있습니다. 각각의 디바이스는 데이터에 대해 독립적인 업데이트를 수행합니다. CRDT 구조는 이러한 변경 사항을 업데이트 작업으로 등록하여 두 장치 간에 네트워크 통신이 가능하면 **해당 업데이트를 교환하고 병합하여 데이터 구조의 공통 상태에 도달할 수 있도록 합니다.** CRDT가 자동으로 해결할 수 없는 유일한 변경 유형은 여러 사용자가 동시에 동일한 객체의 동일한 속성을 업데이트하는 경우이며, 이 경우 **CRDT는 충돌하는 값을 추적하고 애플리케이션이나 사용자가 해결하도록 남겨 둡니다.** 따라서 결국 충돌을 피하는 방법은 이러한 다중 사용자 수정을 최대한 방지하도록 CRDT 데이터 구조를 현명하게 설계하는 것입니다.
 
-> _“CRDTs have some similarity to version control systems like Git, except that they operate on richer data types than text files. CRDTs can sync their state via any communication channel (e.g. via a server, over a peer-to-peer connection, by Bluetooth between local devices, or even on a USB stick). The changes tracked by a CRDT can be as small as a single keystroke, enabling Google Docs-style realtime collaboration. But you could also collect a larger set of changes and send them to collaborators as a batch, more like a pull request in Git. Because the data structures are general-purpose, we can develop general-purpose tools for storage, communication, and management of CRDTs, saving us from having to re-implement those things in every single app.”_
+> _"CRDT는 텍스트 파일보다 더 다양한 데이터 유형에서 작동한다는 점을 제외하면 Git과 같은 버전 관리 시스템과 어느 정도 유사합니다. CRDT는 모든 통신 채널 (예: 서버, P2P 연결, 로컬 장치 간 블루투스, USB 스틱 등)을 통해 상태를 동기화할 수 있습니다. CRDT가 추적하는 변경 사항은 한 번의 키 입력만큼 작을 수 있으므로 구글 문서 도구 스타일의 실시간 협업이 가능합니다. 하지만 더 큰 변경 집합을 수집하여 Git의 풀 리퀘스트처럼 공동 작업자에게 일괄적으로 보낼 수도 있습니다. 데이터 구조가 범용이기 때문에 CRDT의 저장, 통신 및 관리를 위한 범용 도구를 개발할 수 있어 모든 앱에서 이러한 기능을 다시 구현할 필요가 없습니다."_
 
-CRDTs are a field that really excites me, and there are already applications exploring their use such as [Atom’s Teletype](https://github.com/atom/teletype-crdt) (for p2p code collaboration). I highly recommend watching this video from one of the authors of the paper to have a grasp on CRDTs. Expect a newsletter publication on CRDTs in the short term.
+CRDT는 제가 열광하는 분야이며, 이미 Atom 에디터의 [Teletype](https://github.com/atom/teletype-crdt)(P2P 코드 협업용)과 같이 그 활용을 탐구하는 애플리케이션이 있습니다. 논문 저자 중 한 명이 만든 이 동영상을 통해 CRDT에 대해 알아보는 것을 적극 추천합니다. 조만간 CRDT에 대한 뉴스레터 발행을 기대해 주세요.
 
+<div class="video-container"><iframe src="https://www.youtube.com/embed/x7drE24geUw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
 
-[![](https://img.youtube.com/vi/x7drE24geUw/0.jpg)](https://youtu.be/x7drE24geUw)
+## 몇 가지 개념 증명
 
-## Some Proofs of Concept
-
-The paper shares some PoC of “local-first application” implementations such as a collaborative Kanban board, or a collaborative drawing app. 
+이 논문에서는 협업 칸반 보드 또는 협업 드로잉 앱과 같은 "로컬 우선 애플리케이션" 구현에 대한 몇 가지 PoC를 공유합니다.
 
 ![](https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fb7d2e6f8-a4e7-4926-89f7-9499f0d4d24c_699x489.png)
 
-From the implementation and the use of these apps they draw the following conclusions:
+이러한 앱의 구현과 사용을 통해 다음과 같은 결론을 도출했습니다.
 
-> -   _CRDT technology works_
-> -   _The user experience with offline work is splendid_
-> -   _Developer experience is viable when combined with Functional Reactive Programming_
-> -   _Conflicts are not as significant a problem as we feared_
-> -   _Visualizing document history is important_
-> -   _URLs are a good mechanism for sharing_
-> -   _Peer-to-peer systems are never fully “online” or “offline” and it can be hard to reason about how data moves in them_
-> -   _CRDTs accumulate a large change history, which creates performance problems._
-> -   _Cloud servers still have their place for discovery, backup, and burst compute_
-> -   _Network communication remains an unsolved problem_
+> - _CRDT 기술은 작동합니다._
+> - _오프라인 작업에 대한 사용자 경험은 훌륭합니다._
+> - _함수형 반응형 프로그래밍과 결합하면 개발자 경험을 향상할 수 있습니다._
+> - _충돌은 우려했던 것만큼 큰 문제가 되지 않습니다._
+> - _문서 히스토리를 시각화하는 것이 중요합니다._
+> - _URL은 공유를 위한 좋은 메커니즘입니다._
+> - _P2P 시스템은 완전한 "온라인"이나 "오프라인"이 아니며, 그 안에서 데이터가 어떻게 이동하는지 추론하기 어려울 수 있습니다._
+> - _CRDT는 대량의 변경 이력을 축적하여 성능 문제를 일으킵니다._
+> - _클라우드 서버는 여전히 검색, 백업, 버스트 컴퓨팅을 위한 최적의 장소입니다._
+> - _네트워크 통신은 여전히 해결되지 않은 문제로 남아 있습니다._
 > 
-> _CRDTs do not require a peer-to-peer networking layer; using a server for communication is fine for CRDTs. However, **to fully realize the longevity goal of local-first software, we want applications to outlive any backend services managed by their vendors, so a decentralized solution is the logical end goal.**_
+> _CRDT에는 P2P 네트워킹 계층이 필요하지 않으며, 통신을 위해 서버를 사용하는 것도 괜찮습니다. 하지만 **로컬 우선 소프트웨어의 장기 목표를 완전히 실현하려면 애플리케이션이 공급업체가 관리하는 모든 백엔드 서비스보다 오래 지속되기를 원하므로 분산형 솔루션이 논리적 최종 목표입니다.**_
 
-> _The **use of P2P technologies** in our prototypes yielded mixed results. On one hand, these technologies are nowhere near production-ready: NAT traversal_ (another interesting field of research and exploration)_, in particular, is unreliable depending on the particular router or network topology where the user is currently connected. But **the promise suggested by P2P protocols and the Decentralized Web community is substantial.** Live collaboration between computers without Internet access feels like magic in a world that has come to depend on centralized APIs._
+> _프로토타입에 **P2P 기술을 사용한 것**은 엇갈린 결과를 얻었습니다. 한편으로는 이러한 기술들이 아직 프로덕션에 적용할 수 있는 단계에 이르지 못했습니다. 특히 또 다른 흥미로운 연구 및 탐색 분야인 NAT 통과는 사용자가 현재 연결되어 있는 특정 라우터나 네트워크 토폴로지에 따라 불안정할 수 있습니다. 하지만 **P2P 프로토콜과 분산형 웹 커뮤니티가 제시하는 약속은 상당합니다.** 인터넷에 접속할 수 없는 컴퓨터 간의 실시간 협업은 중앙화된 API에 의존하게 된 세상에서 마법처럼 느껴집니다._
 
-## Looking into the future
+## 미래를 내다보며
 
-So now is when I take this “what if” exercise to the extreme and build upon [my vision of a new Internet](https://adlrocha.substack.com/p/adlrocha-my-vision-for-a-new-internet) from a few weeks ago. “Local-first applications” seem like the leap forward to the Internet that we deserve in terms of UX, security and privacy. According to the authors of the paper network communication remains an unsolved problem, or does it? **Within the field of web3 a lot of the solutions for the problems posed by “local-first applications” are being tackled** (and many of them may be already solved).
+이제 몇 주 전에 제가 발행한 글 [새로운 인터넷에 대한 저의 비전](https://adlrocha.substack.com/p/adlrocha-my-vision-for-a-new-internet)을 바탕으로 "만약에"라는 상상을 극단적으로 확장해 보겠습니다. "로컬 우선 애플리케이션"은 UX, 보안 및 개인 정보 보호 측면에서 우리가 마땅히 누려야 할 인터넷으로의 도약처럼 보입니다. 논문 저자에 따르면 네트워크 통신은 여전히 해결되지 않은 문제로 남아있습니다. 하지만.. 해결이 될 수도 있지 않을까요? **web3 분야에서는 "로컬 우선 애플리케이션"이 제기하는 문제에 대한 많은 해결책을 모색하고 있습니다**(그리고 그중 상당수는 이미 해결되었을 수도 있습니다).
 
--   _What if I don’t want to be responsible for the storage of my data?_ Use a decentralized storage ([Filecoin](https://filecoin.io/)).
--   _What if my device doesn’t have enough computation to run certain tasks?_ Offload to a decentralized computing service ([Golem](https://golem.network/))
--   _How can we communicate with devices behind a NAT?_ libp2p, NAT traversal, incentivized relays, etc. This may actually be one of the least active “works in progress” as far as I know.
--   _How can we communicate without an Internet connection through home connections?_ Wifi offloading, mesh networks, etc..
+- _데이터 저장에 대한 책임을 지고 싶지 않다면 어떻게 해야 하나요?_ 분산형 스토리지([Filecoin](https://filecoin.io/))를 이용하면 됩니다.
+- _내 기기에 특정 작업을 실행하기에 충분한 연산 능력이 없다면 어떻게 하나요?_ 탈중앙화 컴퓨팅 서비스([Golem](https://golem.network/))으로 시작하세요.
+- _NAT 뒤에 있는 장치와 통신하려면 어떻게 해야 하나요?_ libp2p, NAT 통과, 인센티브 릴레이 등을 사용합니다. 이것은 제가 아는 한 가장 활발하지 않은 "진행 중인 작업" 중 하나 일 수 있습니다.
+- _홈 연결을 통해 인터넷 연결 없이 어떻게 통신할 수 있을까요?_ 와이파이 오프로딩, 메시 네트워크 등..이 있습니다.
 
-So citing a recent tweet I came across: _“so so so much of the decentralized web stuff out there makes NO SENSE at all, and the tiny percentage that does is so precious and wonderful.”_ **Let’s pave the way to a new Internet with these precious and wonderful pieces of software we are building.**
+최근에 본 트윗을 인용하며 마치겠습니다. _"탈중앙화된 웹의 대부분은 '전혀' 말이 되지 않으며, 말이 되는 극히 일부분은 매우 소중하고 훌륭합니다."_ **우리가 만들고 있는 이 소중하고 멋진 소프트웨어로 새로운 인터넷으로 가는 길을 닦아봅시다.**
+
+<div class="tweet"><a class="tweet-link-top" href="https://twitter.com/scanlime/status/1316091347632185344?s=20" target="_blank" rel=""><div class="tweet-header"><img class="tweet-header-avatar" src="https://substackcdn.com/image/twitter_name/w_96/scanlime.jpg" alt="Twitter avatar for @scanlime" loading="lazy"><div class="tweet-header-text"><span class="tweet-author-name">micah 'lime with barcode' elizabeth </span><span class="tweet-author-handle">@scanlime</span></div></div><div class="tweet-text">탈중앙화된 웹의 대부분은 '전혀' 말이 되지 않으며, 말이 되는 극히 일부분은 매우 소중하고 훌륭합니다.</div></a><a class="tweet-link-bottom" href="https://twitter.com/scanlime/status/1316091347632185344?s=20" target="_blank" rel=""><div class="tweet-footer"><span class="tweet-date">7:00 PM ∙ Oct 13, 2020</span></div></a></div>
+
+<style scoped lang="scss">
+.video-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.tweet {
+  padding: 16px 16px 12px;
+  font-size: 14px;
+  line-height: 20px;
+  border: 1px solid var(--vp-c-divider-light);
+  border-radius: 8px;
+  margin: 32px auto;
+  max-width: 550px;
+  gap: 12px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  .tweet-link-top {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    color: var(--vp-c-text-1);
+
+    .tweet-header {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      gap: 12px;
+
+      img {
+        width: 48px;
+        height: 48px;
+      }
+
+      .tweet-author-handle {
+        color: var(--vp-c-text-2);
+      }
+    }
+
+    .tweet-header-text {
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  .tweet-text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .tweet-link-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-decoration: none;
+    white-space: pre-wrap;
+    color: var(--vp-c-text-2);
+  }
+
+  &:hover {
+    background-color: var(--vp-c-bg-soft);
+  }
+}
+</style>
