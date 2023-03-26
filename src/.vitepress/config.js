@@ -124,6 +124,10 @@ export default {
             text: "로컬 우선 소프트웨어가 있다면 어떨까요?",
             link: "/log/what-if-we-had-local-first-software",
           },
+          {
+            text: "iOS 및 iPadOS의 웹 앱용 웹 푸시",
+            link: "/log/web-push-for-web-apps-on-ios-and-ipados",
+          },
         ],
       },
       {
