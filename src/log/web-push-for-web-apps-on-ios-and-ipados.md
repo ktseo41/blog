@@ -14,7 +14,7 @@
 
 웹 개발자는 [매니페스트 파일](https://developer.mozilla.org/en-US/docs/Web/Manifest)([`display`](https://developer.mozilla.org/en-US/docs/Web/Manifest/display) 멤버를 `standalone` 또는 `fullscreen`으로 설정해야 합니다.)을 생성하여 웹사이트와 함께 제공할 수 있습니다. 그렇게 하면 해당 사이트는 홈 화면 웹 앱이 됩니다. 그런 다음 해당 아이콘을 탭 하면 웹 앱이 브라우저에서 열리지 않고 iOS 또는 iPadOS의 다른 앱처럼 열립니다. 사파리나 다른 브라우저와는 별도로 [앱 스위처](https://support.apple.com/en-us/HT202070)에서 앱 미리보기를 볼 수 있습니다.
 
-## **홈 화면에 웹 앱용 웹 푸시 추가**
+## **홈 화면 웹 앱용 웹 푸시 추가**
 
 iOS 및 iPadOS 16.4 베타 1에서 홈 화면 웹 앱에 웹 푸시 기능이 추가되었습니다. 웹 푸시는 웹 개발자가 [푸시 API](https://developer.mozilla.org/en-US/docs/Web/API/Push_API), [알림 API](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API), [서비스 워커](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API)를 모두 연동하여 사용자에게 푸시 알림을 보낼 수 있도록 해줍니다.
 
