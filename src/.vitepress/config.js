@@ -73,12 +73,17 @@ export default {
             link: "/log/short/how-to-apply-utterances-on-vitepress",
           },
           {
-            text: "요약: 토스 | Slash 22 - 미친 생산성을 위한 React Native",
-            link: "/log/short/toss-slash22-react-native-for-super-high-productivity",
-          },
-          {
-            text: "요약: NDC [키노트] 블록체인과 가상세계의 진화",
-            link: "/log/short/ndc-keynotes-evolution-of-blockchain-and-virtual-reality",
+            text: "요약",
+            items: [
+              {
+                text: "토스 | Slash 22 - 미친 생산성을 위한 React Native",
+                link: "/log/short/toss-slash22-react-native-for-super-high-productivity",
+              },
+              {
+                text: "NDC [키노트] 블록체인과 가상세계의 진화",
+                link: "/log/short/ndc-keynotes-evolution-of-blockchain-and-virtual-reality",
+              },
+            ],
           },
         ],
       },
