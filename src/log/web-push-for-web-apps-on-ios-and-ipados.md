@@ -1,3 +1,7 @@
+---
+feArticle: true
+---
+
 # iOS 및 iPadOS의 웹 앱용 웹 푸시
 
 > 원문: https://webkit.org/blog/13878/web-push-for-web-apps-on-ios-and-ipados/

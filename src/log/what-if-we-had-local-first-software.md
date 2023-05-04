@@ -1,3 +1,7 @@
+---
+feArticle: true
+---
+
 # 로컬 우선 소프트웨어가 있다면 어떨까요?
 
 > 원문: https://adlrocha.substack.com/p/adlrocha-what-if-we-had-local-first

@@ -1,3 +1,7 @@
+---
+feArticle: true
+---
+
 # 완전한 타입 안정성을 가진 웹 애플리케이션
 
 > 원문: https://www.epicweb.dev/fully-typed-web-apps
