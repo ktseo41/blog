@@ -1,4 +1,5 @@
 import { description } from "../../package.json";
+import { fileURLToPath, URL } from "node:url";
 import { SitemapStream } from "sitemap";
 import { createWriteStream } from "node:fs";
 import { resolve } from "node:path";
@@ -140,6 +141,18 @@ export default {
       },
       { text: "📟 Vim", items: [{ text: "vim", link: "/vim" }] },
     ],
+  },
+  vite: {
+    resolve: {
+      alias: [
+        {
+          find: /^.*\/VPSidebarItem\.vue$/,
+          replacement: fileURLToPath(
+            new URL("./components/CustomSideBarItem.vue", import.meta.url)
+          ),
+        },
+      ],
+    },
   },
   // sitemap 생성: https://github.com/vuejs/vitepress/issues/520
   transformHtml: (_, id, { pageData }) => {
