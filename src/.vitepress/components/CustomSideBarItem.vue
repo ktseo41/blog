@@ -1,12 +1,17 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import type { DefaultTheme } from 'vitepress/theme'
-import { useSidebarControl } from '../composables/sidebar'
-import VPIconChevronRight from './icons/VPIconChevronRight.vue'
-import VPLink from './VPLink.vue'
+import { withBase } from 'vitepress'
+import { useSidebarControl } from 'vitepress/dist/client/theme-default/composables/sidebar'
+import VPIconChevronRight from 'vitepress/dist/client/theme-default/components/icons/VPIconChevronRight.vue'
+import VPLink from 'vitepress/dist/client/theme-default/components/VPLink.vue'
+
+type CustomSideBarItem  = DefaultTheme.SidebarItem & {
+  imageUrl?: string
+}
 
 const props = defineProps<{
-  item: DefaultTheme.SidebarItem
+  item: CustomSideBarItem
   depth: number
 }>()
 
@@ -66,6 +71,10 @@ function onCaretClick() {
       <VPLink v-if="item.link" :tag="linkTag" class="link" :href="item.link">
         <component :is="textTag" class="text" v-html="item.text" />
       </VPLink>
+      <template v-else-if="item.imageUrl">
+        <img class="text-icon" :src="withBase(item.imageUrl)" :alt="item.text" />
+        <component :is="textTag" class="text" v-html="item.text" />
+      </template>
       <component v-else :is="textTag" class="text" v-html="item.text" />
 
       <div v-if="item.collapsed != null"
@@ -82,7 +91,7 @@ function onCaretClick() {
 
     <div v-if="item.items && item.items.length" class="items">
       <template v-if="depth < 5">
-        <VPSidebarItem
+        <CustomSideBarItem
           v-for="i in item.items"
           :key="i.text"
           :item="i"
@@ -106,6 +115,13 @@ function onCaretClick() {
   position: relative;
   display: flex;
   width: 100%;
+  align-items: center;
+}
+
+.item img {
+  height: 14px;
+  width: 14px;
+  margin-right: 2px;
 }
 
 .VPSidebarItem.collapsible > .item {
