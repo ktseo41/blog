@@ -73,6 +73,10 @@ export default {
             link: "/log/short/how-to-apply-utterances-on-vitepress",
           },
           {
+            text: "Vitepress 블로그에 sitemap.xml 생성하는 방법",
+            link: "/posts/how-to-generate-sitemap-xml-for-vitepress",
+          },
+          {
             text: "요약",
             items: [
               {

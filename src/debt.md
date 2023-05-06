@@ -175,42 +175,6 @@ ec2, postgres rds, s3 bucket
 - [serverless-managing-environment-variables-efficiently-with-stages-part-1](https://medium.com/@HussainAliAkbar/serverless-managing-environment-variables-efficiently-with-stages-part-1-90c4465d2e64)
 - [ktseo41/aws-lambda-puppeteer](https://github.com/ktseo41/aws-lambda-puppeteer)
 
-### How to generate sitemap.xml for Vitepress (Vitepress 블로그에 sitemap.xml 생성하는 방법)
-
-> https://github.com/vuejs/vitepress/issues/520
-
-```bash
-# install sitemap
-npm i -D sitemap
-```
-
-```javascript
-// .vitepress/config.js
-import { SitemapStream } from 'sitemap';
-import { createWriteStream } from 'fs'
-import { resolve } from 'path'
-// ...
-export default {
-  // ...
-  transformHtml: (_, id, { pageData }) => {
-    if (!/[\\/]404\.html$/.test(id))
-      links.push({
-        // you might need to change this if not using clean urls mode
-        url: pageData.relativePath.replace(/((^|\/)index)?\.md$/, '$2'),
-        lastmod: pageData.lastUpdated
-      })
-  },
-  buildEnd: ({ outDir }) => {
-    const sitemap = new SitemapStream({ hostname: 'https://example.com/foo' })
-    const writeStream = createWriteStream(resolve(outDir, 'sitemap.xml'))
-    sitemap.pipe(writeStream)
-    links.forEach((link) => sitemap.write(link))
-    sitemap.end()
-  }
-  // ...
-}
-```
-
 ### How to deploy fastify server to fly.io (fly.io에 fastify 서버 배포하는 방법)
 
 #### follow the instructions
