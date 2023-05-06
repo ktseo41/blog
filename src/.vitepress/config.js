@@ -89,6 +89,7 @@ export default {
       },
       {
         text: "📝 번역",
+        collapsed: true,
         items: [
           {
             text: "Vercel Edge Functions - 사용 사례 - OG 이미지 생성",
