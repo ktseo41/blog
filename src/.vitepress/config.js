@@ -151,6 +151,10 @@ export default {
             text: "iOS 및 iPadOS의 웹 앱용 웹 푸시",
             link: "/log/web-push-for-web-apps-on-ios-and-ipados",
           },
+          {
+            text: "2023년 Vue에게 기대할 수 있는 점과 React와의 차이점",
+            link: "/log/what-to-expect-from-vue-in-2023-and-how-it-differs-from-react",
+          },
         ],
       },
       {
