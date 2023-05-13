@@ -1,4 +1,4 @@
-# 요약: State of Vue 2022 Amsterdam Recap
+# 요약: State of Vue 2022 암스테르담
 
 > 원문: [State of Vue 2022 Amsterdam Recap](https://dev.to/strift/state-of-vue-2022-amsterdam-recap-36jp)
 
