@@ -27,7 +27,7 @@ const months = monthDiffs % 12;
 <div id="years-of-experience">
 <span>{{ years }}</span>년
 <span>{{ months }}</span>개월
-</div>동안 웹 프론트엔드 개발자로 일했습니다. 프로덕트가 현실의 문제를 해결해주는걸 좋아합니다. 성장하기 위해 꾸준히 노력하며 스스로 동기를 부여합니다. 책과 게임을 좋아합니다.
+</div>동안 웹 프론트엔드 개발자로 일했습니다. 프로덕트가 현실의 문제를 해결해주는걸 좋아합니다. 책과 게임을 좋아합니다.
 
 <style scoped>
 #years-of-experience {
