@@ -70,7 +70,7 @@ export default {
         items: [
           {
             text: "VitePress 블로그에 utternaces 적용하기",
-            link: "/log/short/how-to-apply-utterances-on-vitepress",
+            link: "/posts/how-to-apply-utterances-on-vitepress",
           },
           {
             text: "Vitepress 블로그에 sitemap.xml 생성하는 방법",
