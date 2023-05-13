@@ -1,3 +1,7 @@
+---
+feArticle: true
+---
+
 # 2023년 Vue에게 기대할 수 있는 점과 React와의 차이점
 
 > 원문: https://thenewstack.io/vue-2023/
