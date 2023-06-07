@@ -158,6 +158,24 @@ export default {
         ],
       },
       {
+        text: "🕺🏻 프로젝트",
+        collapsed: false,
+        items: [
+          {
+            text: "Iron Branch",
+            link: "https://github.com/ktseo41/iron-branch",
+          },
+          {
+            text: "문장 공유기",
+            link: "https://github.com/ktseo41/quotes-sharer",
+          },
+          {
+            text: "일랜시아 루트 계산기",
+            link: "https://github.com/ktseo41/route-calculator",
+          },
+        ],
+      },
+      {
         text: "🔎 공부",
         items: [
           { text: "함께자라기", link: "/study/함께자라기" },
