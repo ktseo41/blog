@@ -155,6 +155,10 @@ export default {
             text: "2023년 Vue에게 기대할 수 있는 점과 React와의 차이점",
             link: "/log/what-to-expect-from-vue-in-2023-and-how-it-differs-from-react",
           },
+          {
+            text: "Cloudflare를 웹 애플리케이션을 위한 최고의 장소로 만들기",
+            link: "/log/making-cloudflare-for-web",
+          },
         ],
       },
       {
