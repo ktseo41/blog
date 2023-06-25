@@ -159,6 +159,10 @@ export default {
             text: "Cloudflare를 웹 애플리케이션을 위한 최고의 장소로 만들기",
             link: "/log/making-cloudflare-for-web",
           },
+          {
+            text: "가상 DOM: 블록으로 돌아가기",
+            link: "/log/virtual-dom-back-in-block",
+          },
         ],
       },
       {
