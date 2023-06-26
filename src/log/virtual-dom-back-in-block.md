@@ -277,7 +277,7 @@ function Component() {
 }
 ```
 
-"목록과 같은" 형태를 따르는 비결정적/불안정적인 반환을 사용해야 하는 경우, [`<For />`](/docs/quickstart#for-) 컴포넌트를 사용하면 도움이 될 수 있습니다.
+"목록과 같은" 형태를 따르는 비결정적/불안정적인 반환을 사용해야 하는 경우, [`<For />`](https://million.dev/docs/quickstart#for-) 컴포넌트를 사용하면 도움이 될 수 있습니다.
 
 ```jsx
 function Component() {
