@@ -12,7 +12,7 @@ const { type } = toRefs(props)
 </script>
 <template>
   <div class="callout">
-    <img width="20" height="20" src="../../assets/info.svg" alt="info">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" width="20" height="20" class="nx-mt-1"><path fill-rule="evenodd" clip-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"></path></svg>
     <div class="content">
       <slot></slot>
     </div>
@@ -24,17 +24,19 @@ const { type } = toRefs(props)
   align-items: flex-start;
   margin-top: 24px;
   padding: 8px 16px 8px 0;
-  color: rgb(191, 219, 254);
-  background-color: rgba(30, 58, 138, 0.3);
-  border: 1px solid rgba(191, 219, 254, 0.3);
+  background-color: var(--vp-c-green-dimm-2);
+  border: 1px solid var(--vp-c-green-dimm-3);
   border-radius: 8px;
 
-  img {
+  svg {
+    min-width: 20px;
+    min-height: 20px;
     margin: 4px 8px 0 12px;
+    color: var(--vp-c-green);
   }
 
   :slotted(a) {
-    color: rgb(0, 138, 230);
+    color: var(--vp-c-brand);
   }
 
   :slotted(p) {
