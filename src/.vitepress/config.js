@@ -189,6 +189,10 @@ export default {
           { text: "함께자라기", link: "/study/함께자라기" },
           { text: "Brilliant", link: "/study/Brilliant" },
           { text: "클린 코드", link: "/study/클린 코드" },
+          {
+            text: "리팩터링",
+            items: [{ text: "들어가며", link: "/study/refactoring/intro" }],
+          },
         ],
       },
       { text: "📟 Vim", items: [{ text: "vim", link: "/vim" }] },
