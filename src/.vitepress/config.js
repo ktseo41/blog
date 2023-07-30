@@ -191,7 +191,16 @@ export default {
           { text: "클린 코드", link: "/study/클린 코드" },
           {
             text: "리팩터링",
-            items: [{ text: "들어가며", link: "/study/refactoring/intro" }],
+            items: [
+              {
+                text: "들어가며",
+                link: "/study/refactoring/intro",
+              },
+              {
+                text: "챕터 1 - 리팩터링: 첫번째 예시",
+                link: "/study/refactoring/chapter1",
+              }
+            ],
           },
         ],
       },
