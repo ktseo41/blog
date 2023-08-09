@@ -199,6 +199,10 @@ export default {
               {
                 text: "챕터 1 - 리팩터링: 첫번째 예시",
                 link: "/study/refactoring/chapter1",
+              },
+              {
+                text: "챕터 2 - 리팩터링 원칙",
+                link: "/study/refactoring/chapter2",
               }
             ],
           },
