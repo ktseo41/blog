@@ -203,6 +203,10 @@ export default {
               {
                 text: "챕터 2 - 리팩터링 원칙",
                 link: "/study/refactoring/chapter2",
+              },
+              {
+                text: "챕터 6 - 기본적인 리팩터링",
+                link: "/study/refactoring/chapter6",
               }
             ],
           },
