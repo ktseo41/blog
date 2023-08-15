@@ -163,6 +163,10 @@ export default {
             text: "가상 DOM: 블록으로 돌아가기",
             link: "/log/virtual-dom-back-in-block",
           },
+          {
+            text: "리액트로 인해 잊었거나 전혀 몰랐던 것들",
+            link: "/log/things-you-forgot-or-never-knew-because-of-react",
+          },
         ],
       },
       {
