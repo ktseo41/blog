@@ -18,7 +18,7 @@ CSRF 공격은 공격자가 위조된 요청에 대한 응답을 볼 방법이 �
 
 1. IdP(Identity Provider)로 요청을 리디렉션하기 전에 앱에서 임의의 문자열을 생성하도록 합니다. 예를 들어:
 
-```text
+```txt
 xyzABC123
 ```
 
@@ -26,20 +26,20 @@ xyzABC123
  
 2. 문자열을 로컬에 저장합니다. 예를 들어:
 
-```text
+```txt
 storeStateLocally(xyzABC123)
 ```
 
 3. 요청에 `state` 매개변수를 추가합니다(필요한 경우 URL 인코딩). 예를 들어:
 
-```text
+```txt
 // 문자열을 인코딩
 tenant.auth0.com/authorize?...&state=xyzABC123
 ```
 
 요청이 전송된 후 사용자는 Auth0에 의해 애플리케이션으로 다시 리디렉션됩니다. `state` 값이 이 리디렉션에 포함됩니다. 사용된 연결 유형에 따라 이 값은 요청 본문 또는 쿼리 문자열에 있을 수 있습니다.
 
-```text
+```txt
 /callback?...&state=xyzABC123
 ```
 
