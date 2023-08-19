@@ -16,3 +16,4 @@ basement_dist
 .env
 .env.*
 cache
+test
