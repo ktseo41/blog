@@ -602,4 +602,8 @@ ul {
         display: none;
     }
 }
+
+.gradient-underbar {
+  padding-left: 1rem;
+}
 </style>

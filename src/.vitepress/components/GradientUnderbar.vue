@@ -9,7 +9,6 @@
 
 .gradient-underbar {
   color: var(--vp-c-neutral);
-  font-size: 18px;
   --brandToYellow: var(--vp-c-brand), var(--vp-c-brand-light), var(--vp-c-yellow-lighter), var(--vp-c-yellow), rgba(255, 255, 255, 0.1);
 
   .gradient-underbar__inner {
@@ -17,6 +16,10 @@
     background: linear-gradient(to right, var(--brandToYellow));
     height: 2px;
     width: 35%;
+
+    @media (max-width: 1280px) {
+      width: 50%;
+    }
   }
 }
 </style>
