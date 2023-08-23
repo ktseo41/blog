@@ -211,6 +211,10 @@ export default {
               {
                 text: "챕터 6 - 기본적인 리팩터링",
                 link: "/study/refactoring/chapter6",
+              },
+              {
+                text: "챕터 7 - 캡슐화",
+                link: "/study/refactoring/chapter7",
               }
             ],
           },
