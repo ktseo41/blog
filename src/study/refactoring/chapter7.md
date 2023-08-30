@@ -343,61 +343,57 @@ class TelephoneNumber {
 
 - 역할을 옮기는 리팩터링을 하고나니 특정 클래스에 남은 역할이 거의 없을 때 이런 현상이 자주 생긴다.
 
-
 ## 느낀 점
 
-### 레코드? 딕셔너리? 해시맵?
+- 레코드? 딕셔너리? 해시맵?
 
-```ts
-```
+- 가변 데이터를 저장하는 용도로 레코드보다 객체를 선호하는 이유
 
-### 가변 데이터를 저장하는 용도로 레코드보다 객체를 선호하는 이유
+    - "어떻게 저장했는지를 숨긴 채 세 가지 값을 각각의 메서드로 제공할 수 있다."는 부분과 비슷한 예제를 만들어봤다.
+    - Vue의 `computed`와 비슷한 개념으로 느껴졌다. => 컴포넌트를 잘 나누기만해도 이미 가독성이 좋은 코드를 작성하는 한 걸음일 것 같다.
 
-- "어떻게 저장했는지를 숨긴 채 세 가지 값을 각각의 메서드로 제공할 수 있다."는 부분과 비슷한 예제를 만들어봤다.
-- Vue의 `computed`와 비슷한 개념으로 느껴졌다. => 컴포넌트를 잘 나누기만해도 이미 가독성이 좋은 코드를 작성하는 한 걸음일 것 같다.
-
-```js
-// ---- 레코드로 가변 데이터를 저장하는 경우
-const priceDetail = {
-    priceTotal: 10000,
-    shippingPrice: 3000,
-    cashA: 3000,
-    cashB: 2000
-}
-
-const paymentAmount = priceDetail.priceTotal + priceDetail.shippingPrice - priceDetail.cashA - priceDetail.cashB
-const cashTotal = priceDetail.cashA + priceDetail.cashB
-
-// ---- 객체로 가변 데이터를 저장하는 경우
-class Price {
-    constructor(priceTotal, shippingPrice, cashA, cashB) {
-        this._priceTotal = priceTotal
-        this._shippingPrice = shippingPrice
-        this._cashA = cashA
-        this._cashB = cashB
+    ```js
+    // ---- 레코드로 가변 데이터를 저장하는 경우
+    const priceDetail = {
+        priceTotal: 10000,
+        shippingPrice: 3000,
+        cashA: 3000,
+        cashB: 2000
     }
 
-    get paymentAmount() {
-        return this._priceTotal + this._shippingPrice - this._cashA - this._cashB
+    const paymentAmount = priceDetail.priceTotal + priceDetail.shippingPrice - priceDetail.cashA - priceDetail.cashB
+    const cashTotal = priceDetail.cashA + priceDetail.cashB
+
+    // ---- 객체로 가변 데이터를 저장하는 경우
+    class Price {
+        constructor(priceTotal, shippingPrice, cashA, cashB) {
+            this._priceTotal = priceTotal
+            this._shippingPrice = shippingPrice
+            this._cashA = cashA
+            this._cashB = cashB
+        }
+
+        get paymentAmount() {
+            return this._priceTotal + this._shippingPrice - this._cashA - this._cashB
+        }
+
+        get cashTotal() {
+            return this._cashA + this._cashB
+        }
     }
+    ```
 
-    get cashTotal() {
-        return this._cashA + this._cashB
-    }
-}
-```
+- 중첩된 레코드를 다루는 일은 아주 많다. 처음부터 캡슐화를 잘했다면, 클래스나 객체 지향이 낯설었어도 더 깔끔한 코드를 만들 수 있었을까?
 
-### 중첩된 레코드를 다루는 일은 아주 많다. 처음부터 캡슐화를 잘했다면, 클래스나 객체 지향이 낯설었어도 더 깔끔한 코드를 만들 수 있었을까?
+- 원본 데이터를 제공할 필요는 어떤 것때문에 있을까?
 
-### 원본 데이터를 제공할 필요는 어떤 것때문에 있을까?
+    - 우리 서비스에서 이용 중인 오픈소스 마켓 서비스는 서버와 클라이언트 패키지를 모두 제공한다. 서버를 커스터마이징할 일이 생겼는데 클라이언트 커스터마이징하기 어려운 상황이라 변경을 하지 않았다. 그래서 대신 직접 API를 호출해서 사용해야 했다. 비슷한 경우일까?
 
-- 우리 서비스에서 이용 중인 오픈소스 마켓 서비스는 서버와 클라이언트 패키지를 모두 제공한다. 서버를 커스터마이징할 일이 생겼는데 클라이언트 커스터마이징하기 어려운 상황이라 변경을 하지 않았다. 그래서 대신 직접 API를 호출해서 사용해야 했다. 비슷한 경우일까?
+- 컬렉션 캡슐화하기는 프런트엔드에서 어떤 경우에 주로 발생할까?
 
-### 컬렉션 캡슐화하기는 프런트엔드에서 어떤 경우에 주로 발생할까?
+    - 한 배열이 있고, 그 배열 데이터를 prop으로 자식, 손자, 그 아래까지 drilling해서 사용한다고 가정해보자. 그리고 시간에 쫓기는 개발자 혹은 스파게티 코드에서 해당 배열을 다른 개발자가 사용한다면? 원본 배열을 변경하려는 시도를 할 확률이 높아진다. 다만 Vue에서는 다행히 prop을 직접 변경한다면 warning을 띄워준다.
 
-- 한 배열이 있고, 그 배열 데이터를 prop으로 자식, 손자, 그 아래까지 drilling해서 사용한다고 가정해보자. 그리고 시간에 쫓기는 개발자 혹은 스파게티 코드에서 해당 배열을 다른 개발자가 사용한다면? 원본 배열을 변경하려는 시도를 할 확률이 높아진다. 다만 Vue에서는 다행히 prop을 직접 변경한다면 warning을 띄워준다.
+- 클래스 추출하기는 컴포넌트 분리하기에서도 적용할 개념이 느껴진다
 
-### 클래스 추출하기는 컴포넌트 분리하기에서도 적용할 개념이 느껴진다
-
-- 메서드와 데이터가 너무 많은 클래스는 이해하기가 쉽지 않으니 잘 살펴보고 적절히 분리하는 것이 좋다. 
-- `methods`, `computed`, lifeCycle 메서드 등등이 총 10개가 넘어가면 분리한다면?
+    - 메서드와 데이터가 너무 많은 클래스는 이해하기가 쉽지 않으니 잘 살펴보고 적절히 분리하는 것이 좋다. 
+    - `methods`, `computed`, lifeCycle 메서드 등등이 총 10개가 넘어가면 분리한다면?
