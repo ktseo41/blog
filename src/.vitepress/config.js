@@ -209,6 +209,10 @@ export default {
                 link: "/study/refactoring/chapter2",
               },
               {
+                text: "챕터 3 - 코드에서 나는 악취",
+                link: "/study/refactoring/chapter3",
+              },
+              {
                 text: "챕터 6 - 기본적인 리팩터링",
                 link: "/study/refactoring/chapter6",
               },
