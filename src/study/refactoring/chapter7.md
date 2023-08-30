@@ -343,6 +343,51 @@ class TelephoneNumber {
 
 - 역할을 옮기는 리팩터링을 하고나니 특정 클래스에 남은 역할이 거의 없을 때 이런 현상이 자주 생긴다.
 
+### 7.7 위임 숨기기
+
+```js
+manager = aPerson.department.manager;
+```
+->
+```js
+manager = aPerson.manager;
+
+class Person {
+    get manager() { return this.department.manager; }
+}
+```
+
+### 7.8 중개자 제거하기
+
+- 클라이언트가 위임 객체의 또 다른 기능을 사용하고 싶을 때마다 서버에 위임 메서드를 추가해야 하는데, 이렇게 기능을 추가하다 보면 ... 서버 클래스는 그저 중개자 역할로 전락하여, 차라리 클라이언트가 위임 객체를 직접 호출하는 게 나을 수 있다.
+- 6개월 전에는 바람직했던 캡슐화가 이제는 어색할 수 있다. 리팩터링은 결코 미안하다고 말하지 않는다.
+
+### 7.9 알고리즘 교체하기
+
+```js
+function foundPerson(people) {
+    for (let i = 0; i < people.length; i++) {
+        if (people[i] === "Don") {
+            return "Don";
+        }
+        if (people[i] === "John") {
+            return "John";
+        }
+        if (people[i] === "Kent") {
+            return "Kent";
+        }
+    }
+    return "";
+}
+```
+->
+```js
+function foundPerson(people) {
+    const candidates = ["Don", "John", "Kent"];
+    return people.find(p => candidates.includes(p)) || "";
+}
+```
+
 ## 느낀 점
 
 - 레코드? 딕셔너리? 해시맵?
