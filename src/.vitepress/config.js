@@ -219,6 +219,10 @@ export default {
               {
                 text: "챕터 7 - 캡슐화",
                 link: "/study/refactoring/chapter7",
+              },
+              {
+                text: "챕터 8 - 기능 이동",
+                link: "/study/refactoring/chapter8",
               }
             ],
           },
