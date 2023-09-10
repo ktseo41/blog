@@ -167,6 +167,10 @@ export default {
             text: "리액트로 인해 잊었거나 전혀 몰랐던 것들",
             link: "/log/things-you-forgot-or-never-knew-because-of-react",
           },
+          {
+            text: "모던 자바스크립트로 본 반응성을 구현하는 패턴",
+            link: "/log/patterns-for-reactivity-with-modern-vanilla-javascript",
+          },
         ],
       },
       {
