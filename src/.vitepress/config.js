@@ -217,6 +217,10 @@ export default {
                 link: "/study/refactoring/chapter3",
               },
               {
+                text: "챕터 4 - 테스트 구축하기",
+                link: "/study/refactoring/chapter4",
+              },
+              {
                 text: "챕터 6 - 기본적인 리팩터링",
                 link: "/study/refactoring/chapter6",
               },
@@ -227,7 +231,11 @@ export default {
               {
                 text: "챕터 8 - 기능 이동",
                 link: "/study/refactoring/chapter8",
-              }
+              },
+              {
+                text: "챕터 12 - 상속 다루기",
+                link: "/study/refactoring/chapter12",
+              },
             ],
           },
         ],
