@@ -233,6 +233,14 @@ export default {
                 link: "/study/refactoring/chapter8",
               },
               {
+                text: "챕터 10 - 조건부 로직 간소화",
+                link: "/study/refactoring/chapter10",
+              },
+              {
+                text: "챕터 11 - API 리팩터링",
+                link: "/study/refactoring/chapter11",
+              },
+              {
                 text: "챕터 12 - 상속 다루기",
                 link: "/study/refactoring/chapter12",
               },
