@@ -171,6 +171,10 @@ export default {
             text: "모던 자바스크립트로 본 반응성을 구현하는 패턴",
             link: "/log/patterns-for-reactivity-with-modern-vanilla-javascript",
           },
+          {
+            text: "클로저 컴파일러의 역사, 그리고 타입스크립트가 승리한 이유",
+            link: "/log/the-saga-of-the-closure-compiler-and-why-typescript-won",
+          },
         ],
       },
       {
