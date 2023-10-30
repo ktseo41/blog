@@ -1,3 +1,7 @@
+---
+feArticle: true
+---
+
 # 클로저 컴파일러의 역사, 그리고 타입스크립트가 승리한 이유
 
 > 원문: https://effectivetypescript.com/2023/09/27/closure-compiler/
