@@ -175,6 +175,10 @@ export default {
             text: "클로저 컴파일러의 역사, 그리고 타입스크립트가 승리한 이유",
             link: "/log/the-saga-of-the-closure-compiler-and-why-typescript-won",
           },
+          {
+            text: "hi",
+            link: "/log/experimenting-with-measuring-soft-navigations",
+          },
         ],
       },
       {
