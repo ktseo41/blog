@@ -76,6 +76,24 @@
 
 - [cursor movment in vim](https://vim.works/2019/03/03/cursor-movement-in-vim/)
 
+### Open command in editor in zsh (Ctrl + x + e 대체)
+
+```bash
+# .zshrc 마지막에 추가
+autoload edit-command-line
+zle -N edit-command-line
+bindkey -M vicmd v edit-command-line
+```
+
+`v`
+
+- bash vi mode에서는 `v`를 입력하면 editor에서 command를 입력할 수 있도록 창이 열린다. 같은 keybind를 해주는 듯
+
+#### 참고
+
+- https://superuser.com/questions/592831/edit-current-command-in-zsh-vi-mode/592857#592857?newreg=ba6c5a36d6b34bbd817d2e124a5f9866
+- https://apple.stackexchange.com/questions/347742/what-is-the-ctrlxe-equivalent-for-macoss-terminal
+
 ## debt
 
 -  [My vim setup to speed up ...](https://www.youtube.com/watch?v=UZBjt04y4Oo)
