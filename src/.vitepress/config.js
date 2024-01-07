@@ -179,6 +179,10 @@ export default {
             text: "소프트 내비게이션 측정 실험하기",
             link: "/log/experimenting-with-measuring-soft-navigations",
           },
+          {
+            text: "Vue 3.4 발표",
+            link: "/log/announcing-vue-3-4",
+          },
         ],
       },
       {
