@@ -183,6 +183,10 @@ export default {
             text: "Vue 3.4 발표",
             link: "/log/announcing-vue-3-4",
           },
+          {
+            text: "코어 웹 바이탈이 SEO에 미치는 영향",
+            link: "/log/how-core-web-vital-affect-seo",
+          },
         ],
       },
       {
