@@ -14,17 +14,17 @@ feArticle: true
 
 ---
 
-- [필요한 조치](#potential-actions-needed)
-- [핵심 변경 사항](#feature-highlights)
-  - [2배 빨라진 구문 분석기 및 향상된 SFC 빌드 성능](#2x-faster-parser-and-improved-sfc-build-performance)
-  - [더 효율적인 반응형 시스템](#more-efficient-reactivity-system)
-  - [`defineModel` 안정화](#definemodel-is-now-stable)
-  - [`v-bind` 동일 명칭 축약어](#v-bind-same-name-shorthand)
-  - [하이드레이션 불일치 오류 개선](#improved-hydration-mismatch-errors)
-  - [오류 코드 및 컴파일 시간 플래그 참조](#error-code-and-compile-time-flag-reference)
-- [사용되지 않는 기능 제거](#removed-deprecated-features)
-  - [전역 JSX 네임스페이스](#global-jsx-namespace)
-  - [기타 제거된 기능](#other-removed-features)
+- [필요한 조치](#필요한-조치)
+- [핵심 변경 사항](#핵심-변경-사항)
+  - [2배 빨라진 구문 분석기 및 향상된 SFC 빌드 성능](#_2배-빨라진-구문-분석기-및-향상된-sfc-빌드-성능)
+  - [더 효율적인 반응형 시스템](#더-효율적인-반응형-시스템)
+  - [`defineModel` 안정화](#definemodel이-안정화되었습니다)
+  - [`v-bind` 동일 명칭 축약어](#v-bind-동일-명칭-축약어)
+  - [하이드레이션 불일치 오류 개선](#하이드레이션-불일치-오류-개선)
+  - [오류 코드 및 컴파일 시간 플래그 참조](#오류-코드-및-컴파일-시간-플래그-참조)
+- [사용되지 않는 기능 제거](#사용되지-않는-기능-제거)
+  - [전역 JSX 네임스페이스](#전역-jsx-네임스페이스)
+  - [기타 제거된 기능](#기타-제거된-기능)
 
 ## 필요한 조치
 
