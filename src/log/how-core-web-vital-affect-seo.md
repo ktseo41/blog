@@ -1,4 +1,10 @@
+---
+feArticle: true
+---
+
 # **코어 웹 바이탈이 SEO에 미치는 영향**
+
+> 원문: https://vercel.com/blog/how-core-web-vitals-affect-seo
 
 애플리케이션의 구글 페이지 경험 순위와 라이트하우스 점수 이해하기
 
