@@ -25,17 +25,20 @@ const months = monthDiffs % 12;
 <br>
 
 <div id="years-of-experience">
-<span>{{ years }}</span>년
-<span>{{ months }}</span>개월
-</div>동안 웹 프론트엔드 개발자로 일했습니다. 프로덕트가 현실의 문제를 해결해주는걸 좋아합니다. 책과 게임을 좋아합니다.
+<span class="em">{{ years }}</span>년
+<span class="em">{{ months }}</span>개월
+</div>동안 웹 프론트엔드 개발자로 일했습니다.
+
+진지하고 깊이 고민하는 성격입니다. 길게 성공하는 서비스에는 좋은 개발환경이 필요하다고 믿습니다.
+
+책과 영화, 게임을 좋아합니다.
 
 <style scoped>
 #years-of-experience {
     display: inline-block;
-    margin-left: 0.5em;
 }
 
-span {
+.em {
     font-size: 1.1em;
 }
 </style>
