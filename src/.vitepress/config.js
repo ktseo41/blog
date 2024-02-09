@@ -265,6 +265,7 @@ export default {
         ],
       },
       { text: "📟 Vim", items: [{ text: "vim", link: "/vim" }] },
+      { text: "📚 책", items: [{ text: "책", link: "/reading" }] },
     ],
   },
   vite: {

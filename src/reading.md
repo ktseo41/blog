@@ -193,24 +193,127 @@ const books = [
   {
     name: '당신 인생의 이야기',
     startedAt: new Date('2022-12'),
-    progressValue: 117 / 424 * 100
+    progressValue: 424 / 424 * 100
+  },
+  {
+    name: '이토록 평범한 미래',
+    startedAt: new Date('2023-1'),
+    progressValue: 100 / 100 * 100
+  },
+  {
+    name: '호밀밭의 파수꾼',
+    startedAt: new Date('2023-3'),
+    progressValue: 100 / 100 * 100
+  },
+  {
+    name: '스토너',
+    startedAt: new Date('2023-5'),
+    endAt: new Date('2023-8'),
+    progressValue: 100 / 100 * 100
+  },
+  {
+    name: '가난의 문법',
+    startedAt: new Date('2023-5'),
+    progressValue: 53 / 100 * 100,
+    inProgress: false
+  },
+  {
+    name: '너무나 많은 여름이',
+    startedAt: new Date('2023-6'),
+    endAt: new Date('2023-7'),
+    progressValue: 100 / 100 * 100,
+  },
+  {
+    name: '리팩터링',
+    startedAt: new Date('2023-8'),
+    endAt: new Date('2023-10'),
+    progressValue: 100 / 100 * 100,
+  },
+  {
+    name: '무의미의 축제',
+    startedAt: new Date('2023-10'),
+    endAt: new Date('2023-10'),
+    progressValue: 100 / 100 * 100,
+  },
+  {
+    name: '아무튼, 계속',
+    startedAt: new Date('2023-10'),
+    endAt: new Date('2023-10'),
+    progressValue: 100 / 100 * 100,
+  },
+  {
+    name: '모순',
+    startedAt: new Date('2023-10'),
+    endAt: new Date('2023-12'),
+    progressValue: 100 / 100 * 100,
+  },
+  {
+    name: '0원으로 사는 삶',
+    startedAt: new Date('2023-12'),
+    progressValue: 60 / 100 * 100,
+  },
+  {
+    name: '소크라테스 익스프레스',
+    startedAt: new Date('2023-12'),
+    progressValue: 60 / 100 * 100,
+  },
+  {
+    name: '잘 그리기 금지',
+    startedAt: new Date('2023-12'),
+    startedAt: new Date('2024-01'),
+    progressValue: 100 / 100 * 100,
+  },
+  {
+    name: '개발자 원칙',
+    startedAt: new Date('2024-01'),
+    progressValue: 60 / 100 * 100,
+  },
+  {
+    name: '소프트 스킬',
+    startedAt: new Date('2024-01'),
+    progressValue: 0 / 100 * 100,
   }
 ]
 
-defineExpose({
-  books
-})
+const groupByYear = books.slice()
+  .reduce((acc, book) => {
+    const year = book.startedAt.getFullYear()
+    if (!acc[year]) {
+      acc[year] = []
+    }
+    acc[year].push(book)
+    return acc
+  }, {})
+
+const dateDescSorted = Object.entries(groupByYear)
+  .sort(([year1], [year2]) => year2 - year1)
+  .map(([year, books]) => [year, books.sort((a, b) => { 
+    const bAt = b.endAt || b.startedAt
+    const aAt = a.endAt || a.startedAt
+
+    return bAt - aAt
+  })])
 </script>
 
 # 📚 책
 
 <Suspense>
-  <section class="reading">
+  <section class="reading" v-for="([year, books], idx) in dateDescSorted">
+    <hr v-if="idx !== 0" />
+    <h1>{{ year }}년</h1>
     <BookAndProgress v-for="({ name, startedAt, endAt, progressValue, inProgress }) in books" :key="name" :name="name" :startedAt="startedAt" :endAt="endAt" :progressValue="progressValue" :inProgress="inProgress" />
   </section>
 </Suspense>
 
 <style lang="scss" scoped>
+h1 {
+  margin-bottom: 20px;
+}
+
+hr {
+  grid-column: 1 / -1;
+}
+
 .reading {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
