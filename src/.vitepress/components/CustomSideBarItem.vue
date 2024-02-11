@@ -119,9 +119,10 @@ function onCaretClick() {
 }
 
 .item img {
-  height: 14px;
-  width: 14px;
-  margin-right: 2px;
+  height: 15px;
+  width: 15px;
+  margin-right: 5px;
+  margin-left: 2px;
 }
 
 .VPSidebarItem.collapsible > .item {
