@@ -197,35 +197,35 @@ const books = [
   },
   {
     name: '이토록 평범한 미래',
-    startedAt: new Date('2023-1'),
+    startedAt: new Date('2023-01'),
     progressValue: 100 / 100 * 100
   },
   {
     name: '호밀밭의 파수꾼',
-    startedAt: new Date('2023-3'),
+    startedAt: new Date('2023-03'),
     progressValue: 100 / 100 * 100
   },
   {
     name: '스토너',
-    startedAt: new Date('2023-5'),
-    endAt: new Date('2023-8'),
+    startedAt: new Date('2023-05'),
+    endAt: new Date('2023-08'),
     progressValue: 100 / 100 * 100
   },
   {
     name: '가난의 문법',
-    startedAt: new Date('2023-5'),
+    startedAt: new Date('2023-05'),
     progressValue: 53 / 100 * 100,
     inProgress: false
   },
   {
     name: '너무나 많은 여름이',
-    startedAt: new Date('2023-6'),
-    endAt: new Date('2023-7'),
+    startedAt: new Date('2023-06'),
+    endAt: new Date('2023-07'),
     progressValue: 100 / 100 * 100,
   },
   {
     name: '리팩터링',
-    startedAt: new Date('2023-8'),
+    startedAt: new Date('2023-08'),
     endAt: new Date('2023-10'),
     progressValue: 100 / 100 * 100,
   },
