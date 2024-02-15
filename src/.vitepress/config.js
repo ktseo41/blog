@@ -52,11 +52,8 @@ export default {
     ],
     sidebar: [
       {
-        text: "☀",
-        items: [
-          { text: "🧱 부채", link: "/debt" },
-          { text: "🏛 보관소", link: "/archive" },
-        ],
+        text: "이력서",
+        link: "https://www.rallit.com/hub/resumes/13429/%EC%84%9C%EB%B3%B4%ED%98%84",
       },
       {
         text: "📝️ 글",
@@ -259,6 +256,13 @@ export default {
       },
       { text: "📟 Vim", items: [{ text: "vim", link: "/vim" }] },
       { text: "📚 책", items: [{ text: "책", link: "/reading" }] },
+      {
+        text: "☀",
+        items: [
+          { text: "🧱 부채", link: "/debt" },
+          { text: "🏛 보관소", link: "/archive" },
+        ],
+      },
     ],
   },
   vite: {
