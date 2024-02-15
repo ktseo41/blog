@@ -40,13 +40,6 @@ export default {
         href: "/blog/favicon.ico",
       },
     ],
-    // untilSpring ? [
-    //   "script",
-    //   {
-    //     async: true,
-    //     src: "https://app.embed.im/snow.js"
-    //   }
-    // ] : [],
   ],
   themeConfig: {
     contributors: false,
