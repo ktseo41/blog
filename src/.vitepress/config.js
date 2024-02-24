@@ -56,63 +56,6 @@ export default {
         link: "https://www.rallit.com/hub/resumes/13429/%EC%84%9C%EB%B3%B4%ED%98%84",
       },
       {
-        text: "📝️ 글",
-        items: [
-          {
-            text: "VitePress 블로그에 utternaces 적용하기",
-            link: "/posts/how-to-apply-utterances-on-vitepress",
-          },
-          {
-            text: "Vitepress 블로그에 sitemap.xml 생성하는 방법",
-            link: "/posts/how-to-generate-sitemap-xml-for-vitepress",
-          },
-          {
-            text: "요약",
-            items: [
-              {
-                text: "토스 | Slash 22 - 미친 생산성을 위한 React Native",
-                link: "/log/short/toss-slash22-react-native-for-super-high-productivity",
-              },
-              {
-                text: "NDC [키노트] 블록체인과 가상세계의 진화",
-                link: "/log/short/ndc-keynotes-evolution-of-blockchain-and-virtual-reality",
-              },
-            ],
-          },
-        ],
-      },
-      {
-        text: "📝 번역",
-        collapsed: true,
-        items: [
-          {
-            text: "Vercel Edge Functions - 사용 사례 - OG 이미지 생성",
-            link: "/log/short/og-image-generation",
-          },
-          {
-            text: "컴포지션 API를 만든 이유",
-            link: "/log/why-we-create-the-composition-api",
-          },
-          {
-            text: "OAuth 2.0 상태 매개변수로 공격 방지 및 사용자 리디렉션하기",
-            link: "/log/short/prevent-attacks-and-redirect-users-with-oauth-2_0-state-parameters",
-          },
-          {
-            text: "요약",
-            items: [
-              {
-                text: "네 시대의 자바스크립트 프레임워크",
-                link: "/log/short/four-eras-of-javascript-frameworks",
-              },
-              {
-                text: "State of Vue 2022 암스테르담",
-                link: "/log/short/state-of-vue-2022-amsterdam-recap",
-              },
-            ],
-          },
-        ],
-      },
-      {
         text: "FEArticle",
         imageUrl: "fearticle.png",
         collapsed: true,
@@ -176,6 +119,63 @@ export default {
           {
             text: "코어 웹 바이탈이 SEO에 미치는 영향",
             link: "/log/how-core-web-vital-affect-seo",
+          },
+        ],
+      },
+      {
+        text: "📝️ 글",
+        items: [
+          {
+            text: "VitePress 블로그에 utternaces 적용하기",
+            link: "/posts/how-to-apply-utterances-on-vitepress",
+          },
+          {
+            text: "Vitepress 블로그에 sitemap.xml 생성하는 방법",
+            link: "/posts/how-to-generate-sitemap-xml-for-vitepress",
+          },
+          {
+            text: "요약",
+            items: [
+              {
+                text: "토스 | Slash 22 - 미친 생산성을 위한 React Native",
+                link: "/log/short/toss-slash22-react-native-for-super-high-productivity",
+              },
+              {
+                text: "NDC [키노트] 블록체인과 가상세계의 진화",
+                link: "/log/short/ndc-keynotes-evolution-of-blockchain-and-virtual-reality",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        text: "📝 번역",
+        collapsed: true,
+        items: [
+          {
+            text: "Vercel Edge Functions - 사용 사례 - OG 이미지 생성",
+            link: "/log/short/og-image-generation",
+          },
+          {
+            text: "컴포지션 API를 만든 이유",
+            link: "/log/why-we-create-the-composition-api",
+          },
+          {
+            text: "OAuth 2.0 상태 매개변수로 공격 방지 및 사용자 리디렉션하기",
+            link: "/log/short/prevent-attacks-and-redirect-users-with-oauth-2_0-state-parameters",
+          },
+          {
+            text: "요약",
+            items: [
+              {
+                text: "네 시대의 자바스크립트 프레임워크",
+                link: "/log/short/four-eras-of-javascript-frameworks",
+              },
+              {
+                text: "State of Vue 2022 암스테르담",
+                link: "/log/short/state-of-vue-2022-amsterdam-recap",
+              },
+            ],
           },
         ],
       },
