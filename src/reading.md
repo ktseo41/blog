@@ -266,12 +266,12 @@ const books = [
   {
     name: '개발자 원칙',
     startedAt: new Date('2024-01'),
-    progressValue: 60 / 100 * 100,
+    progressValue: 100 / 100 * 100,
   },
   {
     name: '소프트 스킬',
     startedAt: new Date('2024-01'),
-    progressValue: 0 / 100 * 100,
+    progressValue: 15 / 100 * 100,
   }
 ]
 
