@@ -120,6 +120,10 @@ export default {
             text: "코어 웹 바이탈이 SEO에 미치는 영향",
             link: "/log/how-core-web-vital-affect-seo",
           },
+          {
+            text: "Next.js 앱 라우터 마이그레이션: 좋은 점, 나쁜 점, 그리고 최악인 점",
+            link: "/log/nextjs-app-router-migration-the-good-bad-and-ugly",
+          },
         ],
       },
       {
