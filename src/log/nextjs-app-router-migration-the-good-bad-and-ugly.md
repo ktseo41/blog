@@ -1,5 +1,6 @@
 ---
 feArticle: true
+outline: [2, 3]
 ---
 
 # Next.js 앱 라우터 마이그레이션: 좋은 점, 나쁜 점, 그리고 최악인 점
