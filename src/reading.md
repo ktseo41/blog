@@ -250,12 +250,13 @@ const books = [
   {
     name: '0원으로 사는 삶',
     startedAt: new Date('2023-12'),
+    inProgress: false,
     progressValue: 60 / 100 * 100,
   },
   {
     name: '소크라테스 익스프레스',
     startedAt: new Date('2023-12'),
-    progressValue: 60 / 100 * 100,
+    progressValue: 90 / 100 * 100,
   },
   {
     name: '잘 그리기 금지',
@@ -271,7 +272,17 @@ const books = [
   {
     name: '소프트 스킬',
     startedAt: new Date('2024-01'),
-    progressValue: 15 / 100 * 100,
+    progressValue: 35 / 100 * 100,
+  },
+  {
+    name: '일곱 해의 마지막',
+    startedAt: new Date('2024-02'),
+    progressValue: 50 / 100 * 100,
+  },
+  {
+    name: '세상을 어떻게 이해할 것인가',
+    startedAt: new Date('2024-03'),
+    progressValue: 10 / 100 * 100,
   }
 ]
 
