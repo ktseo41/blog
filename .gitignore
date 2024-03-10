@@ -16,3 +16,7 @@ basement_dist
 .env
 .env.*
 cache
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+.pnp.*
