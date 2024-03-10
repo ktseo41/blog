@@ -20,7 +20,7 @@ jobs:
       - name: Build
         run: yarn build
         env:
-          VITE_KAKAO_API_KEY: ${{ secrets.VITE_KAKAO_API_KEY }}
+          VITE_APP_KAKAO_API_KEY: ${{ secrets.VITE_APP_KAKAO_API_KEY }}
 
 
       - name: Deploy

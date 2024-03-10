@@ -43,7 +43,7 @@ const { data: { documents: [book] } } = await axios({
     query: `"${name}"`
   },
   headers: {
-    Authorization: `KakaoAK ${import.meta.env.VITE_KAKAO_API_KEY}`
+    Authorization: `KakaoAK ${import.meta.env.VITE_APP_KAKAO_API_KEY}`
   }
 })
 
