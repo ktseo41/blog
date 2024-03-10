@@ -256,7 +256,8 @@ const books = [
   {
     name: '소크라테스 익스프레스',
     startedAt: new Date('2023-12'),
-    progressValue: 90 / 100 * 100,
+    endAt: new Date('2024-03'),
+    progressValue: 100 / 100 * 100,
   },
   {
     name: '잘 그리기 금지',
