@@ -807,7 +807,7 @@ if (this.isConnected && !this.element) {
 
 경고는 콘솔에 표시됩니다. `show-warnings`를 제거하면 사라집니다.
 
-`BaseCustomElement`는 많은 것처럼 보이지만 주석을 제외하면 코드 길이가 67줄(https://github.com/davetron5000/ghola/blob/main/src/js/brutaldom/BaseCustomElement.js)에 불과합니다. 저는 "재료에 대한 진실"을 고수하는 건축 양식인 브루탈리즘을 오마주하여 폴더 이름을 `brutaldom`으로 지었습니다.
+`BaseCustomElement`는 많은 것처럼 보이지만 주석을 제외하면 [코드 길이가 67줄](https://github.com/davetron5000/ghola/blob/main/src/js/brutaldom/BaseCustomElement.js)에 불과합니다. 저는 "재료에 대한 진실"을 고수하는 건축 양식인 브루탈리즘을 오마주하여 폴더 이름을 `brutaldom`으로 지었습니다.
 
 ![엘리베이터의 위치가 디자인에서 극명하게 드러나는 브루탈리즘 건물인 런던의 트렐릭 타워 사진](https://naildrivin5.com/images/trellick.jpg)
 
