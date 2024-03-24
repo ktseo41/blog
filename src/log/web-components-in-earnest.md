@@ -45,7 +45,7 @@ Ghola의 설계와 구축에 대해 자세히 살펴보겠습니다. 원하는 �
 1.  [컴포넌트 개요](#components-of-ghola) - 제가 만든 모든 컴포넌트를 보여드리고 그 기능과 작동 방식에 대한 일반적인 개요를 제공합니다.
 2.  [코드 실습](#code-walkthrough) - 컴포넌트의 실제 코드를 자세히 살펴보고 트레이드오프, 디자인 문제 등에 대해 이야기합니다.
 3.  [테스트](#test) - 테스트에 대한 제 생각과 이를 달성한 방법에 대해 설명합니다. 저는 지금(또는 앞으로도) Capybara, Cypress, Playwright를 사용할 정신적, 정서적 에너지가 충분하지 않기 때문에 저만의 (300줄짜리) 라이브러리를 만들었습니다.
-4.  [개발 환경](#dev-environment) - HTML 및 JavaScript 앱이므로 HTML 생성 방식이 중요하며, 앱을 빌드할 때 사용한 전반적인 워크플로우를 설명합니다. 미리 스포일러하자면 대부분 `make`와 EJS입니다.
+4.  [개발 환경](#dev-environment) - HTML 및 JavaScript 앱이므로 HTML 생성 방식이 중요하며, 앱을 빌드할 때 사용한 전반적인 워크플로를 설명합니다. 미리 스포일러하자면 대부분 `make`와 EJS입니다.
 5.  [첫 번째 시도의 문제점](#my-first-attempt) - `ghola.dev`에서 볼 수 있는 Ghola 버전은 웹 컴포넌트를 사용한 두 번째 시도입니다. 첫 번째는 콘텐츠를 렌더링 하는 React 스타일의 컴포넌트를 만드는 데 더 집중했는데 잘 되지 않았습니다.
 
 ## Ghola의 컴포넌트 살펴보기
@@ -350,7 +350,7 @@ Ghola의 미리 보기 UI 및 사용자 정의 요소 ([클릭해서 크게 보�
 
 대비 컴포넌트도 비슷하게 작동합니다.
 
-#### `<g-preview-colors-contrast>` Element
+#### `<g-preview-colors-contrast>` 요소
 
 이 컴포넌트는 `<g-preview-text>`와 비슷하게 작동하지만 두 값 사이의 WCAG 대비 비율을 계산합니다. 이 컴포넌트는 `data-ratio` 요소를 찾아서 그 `textContent`를 비율로 설정합니다. 그런 다음 `data-enhanced`, `data-minimal`, `data-insufficient` 속성을 가진 요소를 찾아서 비율에 따라 표시하거나 숨깁니다.
 
@@ -1442,7 +1442,7 @@ Docker는 생각만큼 반복성이 뛰어나지는 않지만 나중에 Docker �
 *   `dx/start`는 개발 환경을 시작합니다.
 *   `dx/exec`은 개발 환경 내에서 명령을 실행합니다. 물론 `dx/exec bash`를 사용하여 "로그인"할 수도 있지만, 이 방법으로도 모든 명령을 실행할 수 있습니다.
 
-개발 워크플로우는 `Makefile`과 `bin`의 스크립트로 관리합니다.
+개발 워크플로는 `Makefile`과 `bin`의 스크립트로 관리합니다.
 
 ## 개발 워크플로
 
@@ -1507,9 +1507,9 @@ default: $(JS_DEST_FILE) $(HTML_DEST_FILES)
 
 개발용과 프로덕션용에서 모두 작동해야 하므로 몇 가지 세부 사항을 [`bin/build`](https://github.com/davetron5000/ghola/blob/main/bin/build)에 래핑 했습니다. 따라서 `dx/exec bin/build`를 실행하여 개발용으로 필요한 것을 빌드하거나, `dx/exec bin/build production`을 실행하여 프로덕션용으로 빌드할 수 있습니다.
 
-### 개발 워크플로우의 결과물 그리기
+### 개발 워크플로의 결과물 그리기
 
-`Makefile`은 개발 워크플로우의 핵심 로직이지만, 웹 서버를 실행하고 파일이 변경되면 모든 것을 자동으로 다시 빌드하는 것이 이상적입니다. [`bin/run`](https://github.com/davetron5000/ghola/blob/main/bin/run)은 웹 서버 실행을 처리하며, 개발용 또는 프로덕션용으로 실행할 수 있습니다(이는 GitHub 페이지에서 호스팅 되므로 `docs/`가 없습니다).
+`Makefile`은 개발 워크플로의 핵심 로직이지만, 웹 서버를 실행하고 파일이 변경되면 모든 것을 자동으로 다시 빌드하는 것이 이상적입니다. [`bin/run`](https://github.com/davetron5000/ghola/blob/main/bin/run)은 웹 서버 실행을 처리하며, 개발용 또는 프로덕션용으로 실행할 수 있습니다(이는 GitHub 페이지에서 호스팅 되므로 `docs/`가 없습니다).
 
 [`bin/dev`](https://github.com/davetron5000/ghola/blob/main/bin/dev)는 `bin/run`과 `bin/build`를 모두 가져옵니다. 이 명령은 `src`의 파일이 변경된 경우 Chokidar를 사용하여 `bin/build`를 실행합니다.
 
