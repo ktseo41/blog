@@ -4,8 +4,6 @@ import { SitemapStream } from "sitemap";
 import { createWriteStream } from "node:fs";
 import { resolve } from "node:path";
 
-// const untilSpring = new Date().getMonth() < 2 || new Date().getMonth() >= 11;
-
 const links = [];
 
 export default {
