@@ -55,7 +55,7 @@ export default {
       },
       {
         text: "FEArticle",
-        imageUrl: "fearticle.png",
+        imageUrl: "/fearticle.png",
         collapsed: true,
         items: [
           {
