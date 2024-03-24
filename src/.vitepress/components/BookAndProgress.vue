@@ -1,9 +1,22 @@
 <script setup>
-import axios from 'axios'
-
 const { name } = defineProps({
   name: {
     type: String,
+    required: true
+  },
+  authors: {
+    type: String,
+    default: '',
+    required: true
+  },
+  thumbnail: {
+    type: String,
+    default: '',
+    required: true
+  },
+  url: {
+    type: String,
+    default: '',
     required: true
   },
   startedAt: {
@@ -36,23 +49,9 @@ const { name } = defineProps({
   },
 })
 
-const { data: { documents: [book] } } = await axios({
-  method: 'get',
-  url: 'https://dapi.kakao.com/v3/search/book',
-  params: {
-    query: `"${name}"`
-  },
-  headers: {
-    Authorization: `KakaoAK ${import.meta.env.VITE_APP_KAKAO_API_KEY}`
-  }
-})
+function formatDate(_date) {
+  const date = new Date(_date)
 
-const { authors: _au, thumbnail: _th, url: _u } = book || {}
-const authors = _au ? _au.join(", ") : ''
-const thumbnail = _th ? _th : `https://via.placeholder.com/120x174?text=책`
-const url = _u ? _u : `https://google.com/search?q=${name}`
-
-function formatDate(date) {
   const year = date.getFullYear()
   const month = date.getMonth() + 1
   return `${year}년 ${month}월`
@@ -70,9 +69,9 @@ function formatDate(date) {
       </div>
       <div>
         <div class="time-progress">
-          <time :datetime="startedAt">{{ formatDate(startedAt) }}</time>
+          <time :datetime="startedAt">{{ formatDate(startedAt, name) }}</time>
           <span v-if="endAt"> ~ </span>
-          <time v-if="endAt" :datetime="endAt">{{ formatDate(endAt) }}</time>
+          <time v-if="endAt" :datetime="endAt">{{ formatDate(endAt, name) }}</time>
           <span v-if="!inProgress"> ✘</span>
         </div>
         <ProgressBar :name="name" :max="progressMaxValue" :value="progressValue" />
