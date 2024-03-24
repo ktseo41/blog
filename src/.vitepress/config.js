@@ -59,68 +59,69 @@ export default {
         collapsed: true,
         items: [
           {
-            text: "웹어셈블리에서 자바스크립트를 빠르게 실행하는 방법",
-            link: "/log/making-javascript-run-fast-on-webassembly",
+            text: "웹 컴포넌트 본격적으로 사용하기",
+            link: "/log/web-components-in-earnest",
           },
           {
-            text: "리액트에서 useState를 사용하면서 저지를 수 있는 흔한 실수들",
-            link: "/log/avoid-these-common-pitfalls-of-react-usestate",
+            text: "Next.js 앱 라우터 마이그레이션: 좋은 점, 나쁜 점, 그리고 최악인 점",
+            link: "/log/nextjs-app-router-migration-the-good-bad-and-ugly",
           },
           {
-            text: "뷰의 새로운 컴포지션 API를 사용해야 하는 이유",
-            link: "/log/why-you-should-be-using-vue-new-composition-api",
+            text: "코어 웹 바이탈이 SEO에 미치는 영향",
+            link: "/log/how-core-web-vital-affect-seo",
           },
+          { text: "Vue 3.4 발표", link: "/log/announcing-vue-3-4" },
           {
-            text: "완전한 타입 안정성을 가진 웹 애플리케이션",
-            link: "/log/fully-typed-web-apps",
-          },
-          {
-            text: "로컬 우선 소프트웨어가 있다면 어떨까요?",
-            link: "/log/what-if-we-had-local-first-software",
-          },
-          {
-            text: "iOS 및 iPadOS의 웹 앱용 웹 푸시",
-            link: "/log/web-push-for-web-apps-on-ios-and-ipados",
-          },
-          {
-            text: "2023년 Vue에게 기대할 수 있는 점과 React와의 차이점",
-            link: "/log/what-to-expect-from-vue-in-2023-and-how-it-differs-from-react",
-          },
-          {
-            text: "Cloudflare를 웹 애플리케이션을 위한 최고의 장소로 만들기",
-            link: "/log/making-cloudflare-for-web",
-          },
-          {
-            text: "가상 DOM: 블록으로 돌아가기",
-            link: "/log/virtual-dom-back-in-block",
-          },
-          {
-            text: "리액트로 인해 잊었거나 전혀 몰랐던 것들",
-            link: "/log/things-you-forgot-or-never-knew-because-of-react",
-          },
-          {
-            text: "모던 자바스크립트로 본 반응성을 구현하는 패턴",
-            link: "/log/patterns-for-reactivity-with-modern-vanilla-javascript",
+            text: "소프트 내비게이션 측정 실험하기",
+            link: "/log/experimenting-with-measuring-soft-navigations",
           },
           {
             text: "클로저 컴파일러의 역사, 그리고 타입스크립트가 승리한 이유",
             link: "/log/the-saga-of-the-closure-compiler-and-why-typescript-won",
           },
           {
-            text: "소프트 내비게이션 측정 실험하기",
-            link: "/log/experimenting-with-measuring-soft-navigations",
+            text: "모던 자바스크립트로 본 반응성을 구현하는 패턴",
+            link: "/log/patterns-for-reactivity-with-modern-vanilla-javascript",
           },
           {
-            text: "Vue 3.4 발표",
-            link: "/log/announcing-vue-3-4",
+            text: "리액트로 인해 잊었거나 전혀 몰랐던 것들",
+            link: "/log/things-you-forgot-or-never-knew-because-of-react",
           },
           {
-            text: "코어 웹 바이탈이 SEO에 미치는 영향",
-            link: "/log/how-core-web-vital-affect-seo",
+            text: "가상 DOM: 블록으로 돌아가기",
+            link: "/log/virtual-dom-back-in-block",
           },
           {
-            text: "Next.js 앱 라우터 마이그레이션: 좋은 점, 나쁜 점, 그리고 최악인 점",
-            link: "/log/nextjs-app-router-migration-the-good-bad-and-ugly",
+            text: "Cloudflare를 웹 애플리케이션을 위한 최고의 장소로 만들기",
+            link: "/log/making-cloudflare-for-web",
+          },
+          {
+            text: "2023년 Vue에게 기대할 수 있는 점과 React와의 차이점",
+            link: "/log/what-to-expect-from-vue-in-2023-and-how-it-differs-from-react",
+          },
+          {
+            text: "iOS 및 iPadOS의 웹 앱용 웹 푸시",
+            link: "/log/web-push-for-web-apps-on-ios-and-ipados",
+          },
+          {
+            text: "로컬 우선 소프트웨어가 있다면 어떨까요?",
+            link: "/log/what-if-we-had-local-first-software",
+          },
+          {
+            text: "완전한 타입 안정성을 가진 웹 애플리케이션",
+            link: "/log/fully-typed-web-apps",
+          },
+          {
+            text: "뷰의 새로운 컴포지션 API를 사용해야 하는 이유",
+            link: "/log/why-you-should-be-using-vue-new-composition-api",
+          },
+          {
+            text: "리액트에서 useState를 사용하면서 저지를 수 있는 흔한 실수들",
+            link: "/log/avoid-these-common-pitfalls-of-react-usestate",
+          },
+          {
+            text: "웹어셈블리에서 자바스크립트를 빠르게 실행하는 방법",
+            link: "/log/making-javascript-run-fast-on-webassembly",
           },
         ],
       },
