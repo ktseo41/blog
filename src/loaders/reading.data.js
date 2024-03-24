@@ -275,17 +275,33 @@ const books = [
   {
     name: "소프트 스킬",
     startedAt: "2024-01",
-    progressValue: (35 / 100) * 100,
+    progressValue: (40 / 100) * 100,
   },
   {
     name: "일곱 해의 마지막",
     startedAt: "2024-02",
-    progressValue: (50 / 100) * 100,
+    endAt: "2024-03",
+    progressValue: (100 / 100) * 100,
   },
   {
     name: "세상을 어떻게 이해할 것인가",
     startedAt: "2024-03",
     progressValue: (10 / 100) * 100,
+  },
+  {
+    name: "우리 본성의 선한 천사",
+    startedAt: "2024-03",
+    progressValue: (5 / 100) * 100,
+  },
+  {
+    name: "그렇게 작가가 된다",
+    startedAt: "2024-03",
+    progressValue: (46 / 241) * 100,
+  },
+  {
+    name: "10개의 시점으로 보는 영화감상법",
+    startedAt: "2024-03",
+    progressValue: (84 / 237) * 100,
   },
 ];
 
