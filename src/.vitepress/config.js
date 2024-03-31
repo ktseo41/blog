@@ -129,7 +129,7 @@ export default {
         text: "📝️ 글",
         items: [
           {
-            text: "4년 전 웹 개발을 시도하게 된 이유",
+            text: "4년전 웹 개발을 해보기로 결심한 이유",
             link: "/posts/why-i-decided-to-try-web-development-four-years-ago",
           },
           {
