@@ -129,6 +129,10 @@ export default {
         text: "📝️ 글",
         items: [
           {
+            text: "4년 전 웹 개발을 시도하게 된 이유",
+            link: "/posts/why-i-decided-to-try-web-development-four-years-ago",
+          },
+          {
             text: "VitePress 블로그에 utternaces 적용하기",
             link: "/posts/how-to-apply-utterances-on-vitepress",
           },
