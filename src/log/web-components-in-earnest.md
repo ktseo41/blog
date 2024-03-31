@@ -42,31 +42,31 @@ feArticle: true
 
 Ghola의 설계와 구축에 대해 자세히 살펴보겠습니다. 원하는 경우 [소스 보기](https://github.com/davetron5000/ghola)를 통해 로컬에서 실행해 볼 수 있습니다. 다음과 같은 항목으로 나눠서 설명하겠습니다.
 
-1.  [컴포넌트 개요](#components-of-ghola) - 제가 만든 모든 컴포넌트를 보여드리고 그 기능과 작동 방식에 대한 일반적인 개요를 제공합니다.
-2.  [코드 실습](#code-walkthrough) - 컴포넌트의 실제 코드를 자세히 살펴보고 트레이드오프, 디자인 문제 등에 대해 이야기합니다.
-3.  [테스트](#test) - 테스트에 대한 제 생각과 이를 달성한 방법에 대해 설명합니다. 저는 지금(또는 앞으로도) Capybara, Cypress, Playwright를 사용할 정신적, 정서적 에너지가 충분하지 않기 때문에 저만의 (300줄짜리) 라이브러리를 만들었습니다.
-4.  [개발 환경](#dev-environment) - HTML 및 JavaScript 앱이므로 HTML 생성 방식이 중요하며, 앱을 빌드할 때 사용한 전반적인 워크플로를 설명합니다. 미리 스포일러하자면 대부분 `make`와 EJS입니다.
-5.  [첫 번째 시도의 문제점](#my-first-attempt) - `ghola.dev`에서 볼 수 있는 Ghola 버전은 웹 컴포넌트를 사용한 두 번째 시도입니다. 첫 번째는 콘텐츠를 렌더링 하는 React 스타일의 컴포넌트를 만드는 데 더 집중했는데 잘 되지 않았습니다.
+1.  [컴포넌트 개요](#ghola의-컴포넌트-살펴보기) - 제가 만든 모든 컴포넌트를 보여드리고 그 기능과 작동 방식에 대한 일반적인 개요를 제공합니다.
+2.  [코드 실습](#코드-실습) - 컴포넌트의 실제 코드를 자세히 살펴보고 트레이드오프, 디자인 문제 등에 대해 이야기합니다.
+3.  [테스트](#테스트) - 테스트에 대한 제 생각과 이를 달성한 방법에 대해 설명합니다. 저는 지금(또는 앞으로도) Capybara, Cypress, Playwright를 사용할 정신적, 정서적 에너지가 충분하지 않기 때문에 저만의 (300줄짜리) 라이브러리를 만들었습니다.
+4.  [개발 환경](#개발-환경) - HTML 및 JavaScript 앱이므로 HTML 생성 방식이 중요하며, 앱을 빌드할 때 사용한 전반적인 워크플로를 설명합니다. 미리 스포일러하자면 대부분 `make`와 EJS입니다.
+5.  [첫 번째 시도의 문제점](#제-첫-시도) - `ghola.dev`에서 볼 수 있는 Ghola 버전은 웹 컴포넌트를 사용한 두 번째 시도입니다. 첫 번째는 콘텐츠를 렌더링 하는 React 스타일의 컴포넌트를 만드는 데 더 집중했는데 잘 되지 않았습니다.
 
 ## Ghola의 컴포넌트 살펴보기
 
 Ghola는 컬러 팔레트를 만드는 방법 중 하나입니다. 이 섹션에서는 제가 생각해 낸 기본 용어에 대해 설명하고 사용자 정의 요소에 대해 설명하고 시연해 보겠습니다. 이러한 요소의 *코드*는 [다음 섹션](#code-walkthrough)에서 설명합니다.
 
-*   [도메인](#domain) - Ghola의 용어
-*   [메인 화면 요소](#main-screen-custom-elements)
-    *   [`<g-color-swatch>` 요소](#g-color-swatch-element)
-    *   [`<g-color-name>` 요소](#g-color-name-element)
-    *   [`<g-palette-color-scale>` 요소](#g-palette-color-scale-element)
-    *   [`<g-palette>` 요소](#g-palette-element)
-    *   [`<g-add-color-scale-button>` 요소](#g-add-color-scale-button-element)
-    *   [`<g-download-palette>` 요소](#g-download-palette-element)
-    *   [`<g-attribute-checkbox>` 요소](#g-attribute-checkbox-element)
-*   [미리보기 화면 요소](#custom-elements-for-previewing)
-    *   [`<g-preview>` 요소](#g-preview-element)
-    *   [`<g-preview-color-selection>` 요소](#g-preview-color-selection-element)
-    *   [`<g-preview-text>` 요소](#g-preview-text-element)
-    *   [`<g-preview-colors-contrast>` 요소](#g-preview-colors-contrast-element)
-*   [저장 상태](#saving-state)
+*   [도메인](#도메인) - Ghola의 용어
+*   [메인 화면 요소](#메인-화면-사용자-정의-요소)
+    *   [`<g-color-swatch>` 요소](#g-color-swatch-요소)
+    *   [`<g-color-name>` 요소](#g-color-name-요소)
+    *   [`<g-palette-color-scale>` 요소](#g-palette-color-scale-요소)
+    *   [`<g-palette>` 요소](#g-palette-요소)
+    *   [`<g-add-color-scale-button>` 요소](#g-add-color-scale-button-요)
+    *   [`<g-download-palette>` 요소](#g-download-palette-요소)
+    *   [`<g-attribute-checkbox>` 요소](#g-attribute-checkbox-요소)
+*   [미리보기 화면 요소](#미리-보기용-사용자-정의-요소)
+    *   [`<g-preview>` 요소](#g-preview-요소)
+    *   [`<g-preview-color-selection>` 요소](#g-preview-color-selection-요소)
+    *   [`<g-preview-text>` 요소](#g-preview-text-요소)
+    *   [`<g-preview-colors-contrast>` 요소](#g-preview-colors-contrast-요소)
+*   [저장 상태](#저장-상태)
 
 ### 도메인
 
