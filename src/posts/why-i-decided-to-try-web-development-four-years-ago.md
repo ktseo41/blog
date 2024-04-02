@@ -3,7 +3,7 @@
 <small>작성일: 2024. 03. 31.</small>
 
 <iframe width="100%" height="350" src="https://www.youtube.com/embed/K0bpwnYxgAY?si=sIbXXXhUitxwHzPb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-<small class="dull">감사한 기회를 제공받은 부스트캠프</small>
+<small class="dull caption">감사한 기회를 제공받은 부스트캠프</small>
 
 ## 그 당시의 생각들
 > 나는 왜 한의사 면허증을 두고 개발자를, 그것도 웹 개발자를 해보기로 결심했을까?
@@ -33,5 +33,10 @@
 <style scoped lang="scss">
 .dull {
   color: rgba(128, 128, 128, 0.8);
+}
+
+.caption {
+  display: flex;
+  justify-content: center;
 }
 </style>
