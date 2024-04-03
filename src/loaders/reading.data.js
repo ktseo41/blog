@@ -303,6 +303,11 @@ const books = [
     startedAt: "2024-03",
     progressValue: (84 / 237) * 100,
   },
+  {
+    name: "슬픈 세상의 기쁜 말",
+    startedAt: "2024-03",
+    progressValue: (20 / 100) * 100,
+  },
 ];
 
 const loadBook = async (bookName) => {
