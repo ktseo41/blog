@@ -28,6 +28,8 @@
 
 ## 앞으로는
 
+- 무언가를 조금씩 만들어보고 싶다. 거기서부터 재미를 붙이고 싶다.
+
 <div class="dull">(고민중)</div>
 
 <style scoped lang="scss">
