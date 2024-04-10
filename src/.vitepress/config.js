@@ -59,6 +59,10 @@ export default {
         collapsed: true,
         items: [
           {
+            text: "웹의 흥망성쇠",
+            link: "/fe-article/the-wax-and-the-wane-of-the-web",
+          },
+          {
             text: "웹 컴포넌트 본격적으로 사용하기",
             link: "/log/web-components-in-earnest",
           },
