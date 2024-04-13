@@ -20,13 +20,19 @@ defineProps({
 })
 </script>
 <template>
-<div :style="$attrs.block === '' ? {} : { display: 'inline' }">
+<div class="progress-bar">
   <label :for="`progress-${name}`">{{ label }}</label>
   <progress :id="`progress-${name}`" :value="value" :max="max">{{ value }}</progress>
   <small>{{ (value / max * 100).toFixed(0) }} %</small>
 </div>
 </template>
 <style scoped>
+.progress-bar {
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+}
+
 small {
   display: inline-block;
   margin-left: 5px;
