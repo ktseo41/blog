@@ -275,7 +275,17 @@ const books = [
   {
     name: "소프트 스킬",
     startedAt: "2024-01",
-    progressValue: (40 / 100) * 100,
+    progressValue: (343 / 581) * 100,
+    logs: [
+      {
+        date: "2024-03-24",
+        progressValue: (40 / 100) * 100,
+      },
+      {
+        date: "2024-04-14",
+        progressValue: (343 / 581) * 100,
+      },
+    ],
   },
   {
     name: "일곱 해의 마지막",
@@ -286,27 +296,77 @@ const books = [
   {
     name: "세상을 어떻게 이해할 것인가",
     startedAt: "2024-03",
-    progressValue: (10 / 100) * 100,
+    progressValue: (76 / 279) * 100,
+    logs: [
+      {
+        date: "2024-03-24",
+        progressValue: (10 / 100) * 100,
+      },
+      {
+        date: "2024-04-14",
+        progressValue: (76 / 279) * 100,
+      },
+    ],
   },
   {
     name: "우리 본성의 선한 천사",
     startedAt: "2024-03",
-    progressValue: (5 / 100) * 100,
+    progressValue: (126 / 1180) * 100,
+    logs: [
+      {
+        date: "2024-03-24",
+        progressValue: (5 / 100) * 100,
+      },
+      {
+        date: "2024-04-14",
+        progressValue: (126 / 1180) * 100,
+      },
+    ],
   },
   {
     name: "그렇게 작가가 된다",
     startedAt: "2024-03",
-    progressValue: (46 / 241) * 100,
+    progressValue: (52 / 241) * 100,
+    logs: [
+      {
+        date: "2024-03-24",
+        progressValue: (46 / 241) * 100,
+      },
+      {
+        date: "2024-04-14",
+        progressValue: (52 / 241) * 100,
+      },
+    ],
   },
   {
     name: "10개의 시점으로 보는 영화감상법",
     startedAt: "2024-03",
-    progressValue: (84 / 237) * 100,
+    progressValue: (194 / 237) * 100,
+    logs: [
+      {
+        date: "2024-03-24",
+        progressValue: (84 / 237) * 100,
+      },
+      {
+        date: "2024-04-14",
+        progressValue: (194 / 237) * 100,
+      },
+    ],
   },
   {
     name: "슬픈 세상의 기쁜 말",
     startedAt: "2024-03",
-    progressValue: (20 / 100) * 100,
+    progressValue: (128 / 263) * 100,
+    logs: [
+      {
+        date: "2024-04-04",
+        progressValue: (20 / 100) * 100,
+      },
+      {
+        date: "2024-04-14",
+        progressValue: (128 / 263) * 100,
+      },
+    ],
   },
 ];
 
