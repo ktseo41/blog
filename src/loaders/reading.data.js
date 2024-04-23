@@ -275,7 +275,7 @@ const books = [
   {
     name: "소프트 스킬",
     startedAt: "2024-01",
-    progressValue: (343 / 581) * 100,
+    progressValue: (366 / 581) * 100,
     logs: [
       {
         date: "2024-03-24",
@@ -284,6 +284,10 @@ const books = [
       {
         date: "2024-04-14",
         progressValue: (343 / 581) * 100,
+      },
+      {
+        date: "2024-04-24",
+        progressValue: (366 / 581) * 100,
       },
     ],
   },
@@ -311,7 +315,7 @@ const books = [
   {
     name: "우리 본성의 선한 천사",
     startedAt: "2024-03",
-    progressValue: (126 / 1180) * 100,
+    progressValue: (226 / 1180) * 100,
     logs: [
       {
         date: "2024-03-24",
@@ -320,6 +324,10 @@ const books = [
       {
         date: "2024-04-14",
         progressValue: (126 / 1180) * 100,
+      },
+      {
+        date: "2024-04-24",
+        progressValue: (226 / 1180) * 100,
       },
     ],
   },
@@ -356,7 +364,7 @@ const books = [
   {
     name: "슬픈 세상의 기쁜 말",
     startedAt: "2024-03",
-    progressValue: (128 / 263) * 100,
+    progressValue: (200 / 263) * 100,
     logs: [
       {
         date: "2024-04-04",
@@ -365,6 +373,10 @@ const books = [
       {
         date: "2024-04-14",
         progressValue: (128 / 263) * 100,
+      },
+      {
+        date: "2024-04-17",
+        progressValue: (200 / 263) * 100,
       },
     ],
   },
