@@ -9,6 +9,9 @@ const { Layout } = DefaultTheme
 
 <template>
   <Layout>
+    <template #doc-after>
+      <Comment v-if="!frontmatter.disableComment" :key="page.relativePath"></Comment>
+    </template>
     <template #doc-footer-before>
       <template v-if="frontmatter.feArticle">
         <br>
@@ -17,7 +20,6 @@ const { Layout } = DefaultTheme
               rel="noreferrer">Korean FE Article</a>을 구독해주세요.</p>
         </blockquote>
       </template>
-      <Comment v-if="!frontmatter.disableComment" :key="page.relativePath"></Comment>
     </template>
   </Layout>
 </template>
