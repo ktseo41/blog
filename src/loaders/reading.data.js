@@ -140,6 +140,7 @@ const books = [
     name: "깨끗한 존경",
     startedAt: "2022-06",
     progressValue: (153 / 243) * 100,
+    inProgress: false,
   },
   {
     name: "H마트에서 울다",
