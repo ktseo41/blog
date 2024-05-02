@@ -276,7 +276,8 @@ const books = [
   {
     name: "소프트 스킬",
     startedAt: "2024-01",
-    progressValue: (366 / 581) * 100,
+    progressValue: (450 / 581) * 100,
+    inProgress: false,
     logs: [
       {
         date: "2024-03-24",
@@ -290,6 +291,10 @@ const books = [
         date: "2024-04-24",
         progressValue: (366 / 581) * 100,
       },
+      {
+        date: "2024-05-02",
+        progressValue: (450 / 581) * 100,
+      }
     ],
   },
   {
