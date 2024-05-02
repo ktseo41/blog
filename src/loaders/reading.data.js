@@ -315,7 +315,7 @@ const books = [
   {
     name: "우리 본성의 선한 천사",
     startedAt: "2024-03",
-    progressValue: (288 / 1180) * 100,
+    progressValue: (318 / 1180) * 100,
     logs: [
       {
         date: "2024-03-24",
@@ -333,6 +333,10 @@ const books = [
         date: "2024-04-28",
         progressValue: (288 / 1180) * 100,
       },
+      {
+        date: "2024-05-02",
+        progressValue: (318 / 1180) * 100,
+      }
     ],
   },
   {
