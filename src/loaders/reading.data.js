@@ -294,7 +294,7 @@ const books = [
       {
         date: "2024-05-02",
         progressValue: (450 / 581) * 100,
-      }
+      },
     ],
   },
   {
@@ -342,7 +342,7 @@ const books = [
       {
         date: "2024-05-02",
         progressValue: (318 / 1180) * 100,
-      }
+      },
     ],
   },
   {
@@ -400,6 +400,17 @@ const books = [
       {
         date: "2024-04-17",
         progressValue: (200 / 263) * 100,
+      },
+    ],
+  },
+  {
+    name: "원숭이도 이해하는 자본론",
+    startedAt: "2024-04",
+    progressValue: (98 / 317) * 100,
+    logs: [
+      {
+        date: "2024-05-19",
+        progressValue: (98 / 317) * 100,
       },
     ],
   },
