@@ -25,6 +25,16 @@ const books = [
     name: "불안의 책",
     startedAt: "2020-11",
     progressValue: 13,
+    logs: [
+      {
+        date: "2023-03-24",
+        progressValue: 13,
+      },
+      {
+        date: "2024-05-19",
+        progressValue: 28,
+      }
+    ]
   },
   {
     name: "리얼리티 버블",
