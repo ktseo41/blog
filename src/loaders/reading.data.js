@@ -414,6 +414,17 @@ const books = [
       },
     ],
   },
+  {
+    name: "1페이지 한국사 365",
+    startedAt: "2024-04",
+    progressValue: (15 / 365) * 100,
+    logs: [
+      {
+        date: "2024-05-19",
+        progressValue: (15 / 365) * 100,
+      },
+    ],
+  },
 ];
 
 const loadBook = async (bookName) => {
