@@ -24,7 +24,7 @@ const books = [
   {
     name: "불안의 책",
     startedAt: "2020-11",
-    progressValue: 13,
+    progressValue: 28,
     logs: [
       {
         date: "2023-03-24",
