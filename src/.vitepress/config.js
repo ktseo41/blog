@@ -263,6 +263,15 @@ export default {
               },
             ],
           },
+          {
+            text: "구글 엔지니어는 이렇게 일한다",
+            items: [
+              {
+                text: "챕터 8 - 스타일 가이드와 규칙",
+                link: "/study/google-engineer/chapter8",
+              },
+            ],
+          },
         ],
       },
       { text: "📟 Vim", items: [{ text: "vim", link: "/vim" }] },
