@@ -278,6 +278,10 @@ export default {
                 text: "챕터 9 - 코드 리뷰",
                 link: "/study/google-engineer/chapter9",
               },
+              {
+                text: "챕터 10 - 문서자료",
+                link: "/study/google-engineer/chapter10",
+              },
             ],
           },
         ],
