@@ -2,15 +2,15 @@
 
 <small>작성일: 2024. 06. 11.</small>
 
-![집중력을 되찾기 위한 시도](https://private-user-images.githubusercontent.com/6429885/338619825-33b97015-2c7a-4c08-883b-c445d68ba0c3.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTgxMTU3NTksIm5iZiI6MTcxODExNTQ1OSwicGF0aCI6Ii82NDI5ODg1LzMzODYxOTgyNS0zM2I5NzAxNS0yYzdhLTRjMDgtODgzYi1jNDQ1ZDY4YmEwYzMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDYxMSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA2MTFUMTQxNzM5WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NjNiZDU4YmQxZDg0MWIyNTQ4ZTZlMzc5ZWNjZWU0M2Y0NWVjOGFiODAzYjQ4ODk5ZmI1MTM4M2M0Yzc0ZTgwZCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.Wu1sVp0h52AYLIoBWKZAJmrQOtcNTodYFM9otWM8om0)
+![집중력을 되찾기 위한 시도](https://imgur.com/xfIS6Ho.png)
 
 <br />
 
 일하는 중에도 수많은 알림이 온다. jira, slack, bitbucket, confluence, google calendar, 카카오톡, gmail, instagram 등등.. 이런 방해는 이미 많이 알려진 개념이다. 하지만 익히 알고 있다고해서 제어하기가 쉬워지는건 아니다. 점점 알림을 더 자주 확인하면서 집중력이 분산되는게 힘들게 느껴졌고, 생산성도 낮추면서 자괴감도 들고 있었다. 마침 읽고있던 <소프트스킬>이라는 책의 저자는 생산성을 높이기위해 뽀모도로와 같은 시도를 하고 있었고 기계적으로 이를 따르면서 생산량을 측정하고 생산성을 높이고 있었다. 먼저 뽀모도로를 시도해봤다.
 
 <div class="lg:grid-2">
-<img src="https://private-user-images.githubusercontent.com/6429885/338618370-1b6016a0-3361-48b6-919d-cf2df79b5aa3.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTgxMTY2NTcsIm5iZiI6MTcxODExNjM1NywicGF0aCI6Ii82NDI5ODg1LzMzODYxODM3MC0xYjYwMTZhMC0zMzYxLTQ4YjYtOTE5ZC1jZjJkZjc5YjVhYTMuanBnP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDYxMSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA2MTFUMTQzMjM3WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZGIyMTk3ZmI2ZjZhNmJiMzdkY2ZkMjViMTJjMDMyMmNlM2E2MGE4NzRmMjNhM2ZmMzBhMWFlYzJhMWVlYzMzZSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.5M2K5kek7uGH9hHfdybTEjkIjH0MitBeEgdaMMjT4YE" alt="뽀모도로 기법 4월" />
-<img src="https://private-user-images.githubusercontent.com/6429885/338618389-136d4f16-7d08-4e19-82c0-d384e040bff5.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTgxMTY2NTcsIm5iZiI6MTcxODExNjM1NywicGF0aCI6Ii82NDI5ODg1LzMzODYxODM4OS0xMzZkNGYxNi03ZDA4LTRlMTktODJjMC1kMzg0ZTA0MGJmZjUuanBnP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDYxMSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA2MTFUMTQzMjM3WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9OThlM2I0OTc4ZGI0MWQ3YjYxNTk3ZjRkZDlkMTJjNTUyNjc4NTkzZTI3MGE2MDcwOGQyMzBjMTEzZDk3MDhkMSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.dqEZPXe3llDSOA9Q_329aPs3E7t5YD1WNbIEU_j4dWs" alt="뽀모도로 기법 5월" />
+<img src="https://imgur.com/aYf2wtr.png" alt="뽀모도로 기법 4월" />
+<img src="https://imgur.com/nJf1ET3.png" alt="뽀모도로 기법 5월" />
 </div>
 
 뽀모도로만으로도 집중력을 좀 더 오래 유지할 수 있었다. 그리고 업무가 아닌 독서를 하거나 FEArticle 번역, 리뷰와 같은 일상 상황에서도 사용했다. 뽀모도로 기법도 그 자체가 좋다고도 하지만, 업무 외 다른 작업을 하지 않기로한 스스로와 약속이기도 했다. 갑자기 저녁에 비가 오는지 확인하고 싶어진다던가, 카톡 답을 하고 싶어지는 경우가 많은데, 잠깐동안의 충동인데 집중력에 악영향이 컸다.
