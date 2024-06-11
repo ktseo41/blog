@@ -133,6 +133,10 @@ export default {
         text: "📝️ 글",
         items: [
           {
+            text: "도둑맞은 집중력을 되찾기 위한 시도",
+            link: "/posts/dealing-with-digital-distractions-at-work",
+          },
+          {
             text: "4년전 웹 개발을 해보기로 결심한 이유",
             link: "/posts/why-i-decided-to-try-web-development-four-years-ago",
           },

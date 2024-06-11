@@ -1,0 +1,38 @@
+# 도둑맞은 집중력을 되찾기 위한 시도
+
+<small>작성일: 2024. 06. 11.</small>
+
+![집중력을 되찾기 위한 시도](https://private-user-images.githubusercontent.com/6429885/338619825-33b97015-2c7a-4c08-883b-c445d68ba0c3.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTgxMTU3NTksIm5iZiI6MTcxODExNTQ1OSwicGF0aCI6Ii82NDI5ODg1LzMzODYxOTgyNS0zM2I5NzAxNS0yYzdhLTRjMDgtODgzYi1jNDQ1ZDY4YmEwYzMucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDYxMSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA2MTFUMTQxNzM5WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NjNiZDU4YmQxZDg0MWIyNTQ4ZTZlMzc5ZWNjZWU0M2Y0NWVjOGFiODAzYjQ4ODk5ZmI1MTM4M2M0Yzc0ZTgwZCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.Wu1sVp0h52AYLIoBWKZAJmrQOtcNTodYFM9otWM8om0)
+
+<br />
+
+일하는 중에도 수많은 알림이 온다. jira, slack, bitbucket, confluence, google calendar, 카카오톡, gmail, instagram 등등.. 이런 방해는 이미 많이 알려진 개념이다. 하지만 익히 알고 있다고해서 제어하기가 쉬워지는건 아니다. 점점 알림을 더 자주 확인하면서 집중력이 분산되는게 힘들게 느껴졌고, 생산성도 낮추면서 자괴감도 들고 있었다. 마침 읽고있던 <소프트스킬>이라는 책의 저자는 생산성을 높이기위해 뽀모도로와 같은 시도를 하고 있었고 기계적으로 이를 따르면서 생산량을 측정하고 생산성을 높이고 있었다. 먼저 뽀모도로를 시도해봤다.
+
+<div class="lg:grid-2">
+<img src="https://private-user-images.githubusercontent.com/6429885/338618370-1b6016a0-3361-48b6-919d-cf2df79b5aa3.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTgxMTY2NTcsIm5iZiI6MTcxODExNjM1NywicGF0aCI6Ii82NDI5ODg1LzMzODYxODM3MC0xYjYwMTZhMC0zMzYxLTQ4YjYtOTE5ZC1jZjJkZjc5YjVhYTMuanBnP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDYxMSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA2MTFUMTQzMjM3WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZGIyMTk3ZmI2ZjZhNmJiMzdkY2ZkMjViMTJjMDMyMmNlM2E2MGE4NzRmMjNhM2ZmMzBhMWFlYzJhMWVlYzMzZSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.5M2K5kek7uGH9hHfdybTEjkIjH0MitBeEgdaMMjT4YE" alt="뽀모도로 기법 4월" />
+<img src="https://private-user-images.githubusercontent.com/6429885/338618389-136d4f16-7d08-4e19-82c0-d384e040bff5.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTgxMTY2NTcsIm5iZiI6MTcxODExNjM1NywicGF0aCI6Ii82NDI5ODg1LzMzODYxODM4OS0xMzZkNGYxNi03ZDA4LTRlMTktODJjMC1kMzg0ZTA0MGJmZjUuanBnP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDYxMSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA2MTFUMTQzMjM3WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9OThlM2I0OTc4ZGI0MWQ3YjYxNTk3ZjRkZDlkMTJjNTUyNjc4NTkzZTI3MGE2MDcwOGQyMzBjMTEzZDk3MDhkMSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.dqEZPXe3llDSOA9Q_329aPs3E7t5YD1WNbIEU_j4dWs" alt="뽀모도로 기법 5월" />
+</div>
+
+뽀모도로만으로도 집중력을 좀 더 오래 유지할 수 있었다. 그리고 업무가 아닌 독서를 하거나 FEArticle 번역, 리뷰와 같은 일상 상황에서도 사용했다. 뽀모도로 기법도 그 자체가 좋다고도 하지만, 업무 외 다른 작업을 하지 않기로한 스스로와 약속이기도 했다. 갑자기 저녁에 비가 오는지 확인하고 싶어진다던가, 카톡 답을 하고 싶어지는 경우가 많은데, 잠깐동안의 충동인데 집중력에 악영향이 컸다.
+
+또 뽀모도로별 하고 있는 업무를 적고 예상 뽀모양도 적고있었는데, 이를 통해서 통계가 쌓이고 시각화가 돼서 시간이 지난 뒤 스스로 평가를 할 수 있는 다른 좋은점도 있었다.
+
+그래도 집중을 유지하다가 스마트폰에 뜬 알람을 보면 눈이 가게 마련이라 이것도 너무 참기 힘들었다. iOS의 집중모드를 사용하면서 필수적인 알람만 오도록 설정했다. 필수적인 알람이란 '전화' 딱 한개였다. 그럼 슬랙에서 긴급한 답을 요하는 메세지도 알림을 못받게되는데, 이는 알림이 오면 Dock에서 앱 아이콘이 점프하는 듯한 애니메이션을 보여주는데, 이 알림을 이용했다. 우측 상단에 메세지와 함께 나타나는 알림에 비해서 집중력 분산이 훨씬 덜했다. 이 집중모드는 기기간 공유가 돼서 맥북과 아이폰 애플워치에서 모두 알람이 안울리게 됐다. 시간은 9시 ~ 5시
+
+이 시도를 하기전 내 생산성을 특별히 측정하고 있지는 않았다. 그래서 정성적이고 후향적인 평가밖에 할 수 없지만, 확실히 일에 집중하는 시간과 머리를 식히는 시간을 구분할 수 있게됐고, 집중하는 시간동안에는 일만 할 수 있게 됐다.
+
+<style scoped lang="scss">
+img[alt="집중력을 되찾기 위한 시도"] {
+  border-radius: 10px;
+  aspect-ratio: 16/5;
+  min-height: 160px;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+.lg\:grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+</style>
