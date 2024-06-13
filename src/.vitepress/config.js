@@ -286,6 +286,10 @@ export default {
                 text: "챕터 10 - 문서자료",
                 link: "/study/google-engineer/chapter10",
               },
+              {
+                text: "챕터 11 - 테스트 개요",
+                link: "/study/google-engineer/chapter11",
+              },
             ],
           },
         ],
