@@ -59,6 +59,10 @@ export default {
         collapsed: true,
         items: [
           {
+            text: "웹 컴포넌트 성공 사례",
+            link: "/fe-article/the-web-component-success-story",
+          },
+          {
             text: "웹의 흥망성쇠",
             link: "/fe-article/the-wax-and-the-wane-of-the-web",
           },
