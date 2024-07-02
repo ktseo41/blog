@@ -2,7 +2,7 @@
 
 <small>작성일: 2024. 06. 11.</small>
 
-![집중력을 되찾기 위한 시도](https://imgur.com/m5XNF8P.png)
+![집중력을 되찾기 위한 시도](https://imgur.com/4AdpNdT.png)
 
 <br />
 
