@@ -33,8 +33,8 @@ const books = [
       {
         date: "2024-05-19",
         progressValue: 28,
-      }
-    ]
+      },
+    ],
   },
   {
     name: "리얼리티 버블",
@@ -416,22 +416,63 @@ const books = [
   {
     name: "원숭이도 이해하는 자본론",
     startedAt: "2024-04",
-    progressValue: (98 / 317) * 100,
+    progressValue: (307 / 317) * 100,
     logs: [
       {
         date: "2024-05-19",
         progressValue: (98 / 317) * 100,
+      },
+      {
+        date: "2024-07-02",
+        progressValue: (307 / 317) * 100,
       },
     ],
   },
   {
     name: "1페이지 한국사 365",
     startedAt: "2024-04",
-    progressValue: (15 / 365) * 100,
+    progressValue: (34 / 365) * 100,
     logs: [
       {
         date: "2024-05-19",
         progressValue: (15 / 365) * 100,
+      },
+      {
+        date: "2024-07-02",
+        progressValue: (34 / 365) * 100,
+      },
+    ],
+  },
+  {
+    name: "구글 엔지니어는 이렇게 일한다",
+    startedAt: "2024-06",
+    progressValue: (5 / 25) * 100,
+    logs: [
+      {
+        date: "2024-07-02",
+        progressValue: (5 / 25) * 100,
+      },
+    ],
+  },
+  {
+    name: "지지 않는다는 말",
+    startedAt: "2024-06",
+    progressValue: (184 / 291) * 100,
+    logs: [
+      {
+        date: "2024-07-02",
+        progressValue: (184 / 291) * 100,
+      },
+    ],
+  },
+  {
+    name: "세계의 끝 여자친구",
+    startedAt: "2024-06",
+    progressValue: (91 / 315) * 100,
+    logs: [
+      {
+        date: "2024-07-02",
+        progressValue: (91 / 315) * 100,
       },
     ],
   },
