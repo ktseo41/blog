@@ -21,6 +21,25 @@ const dateDescSorted = Object.entries(groupByYear)
 
     return bAt - aAt
   })])
+  .map(([year, books]) => {
+    return [
+      year,
+      books.map(
+        book => ({
+          ...book,
+          startedAt: new Date(book.startedAt),
+          endAt: book.endAt ? new Date(book.endAt) : null
+        })
+      )
+    ]
+    // console.log(book)
+
+    // return {
+    //   ...book,
+    //   startedAt: new Date(book.startedAt),
+    //   endAt: book.endAt ? new Date(book.endAt) : null
+    // }
+  })
 </script>
 
 # 📚 책
@@ -29,7 +48,7 @@ const dateDescSorted = Object.entries(groupByYear)
   <section class="reading" v-for="([year, books], idx) in dateDescSorted">
     <hr v-if="idx !== 0" />
     <h1>{{ year }}년</h1>
-    <BookAndProgress v-for="book in books" :key="name" v-bind="book" />
+    <BookAndProgress v-for="book in books" :key="book.name" v-bind="book" />
   </section>
 </Suspense>
 
