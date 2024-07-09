@@ -64,12 +64,3 @@ outline: [2, 3]
 ## 느낀 점
 
 - 코드 주석 외에 작성해야할 어떤 문서가 있을지 구체적인 상상이 안간다. Next.js나 CloudFlare, Claude의 문서를 떠올리면 될까? 아니면 기타 NPM 패키지들? 그런 문서를 우리 회사에서 작성해야하나? 최근에는 기술자문이 생겼다.
-
-<style scoped lang="scss">
-.comment {
-    padding-left: 1.25rem;
-    color: var(--vp-c-indigo-1);
-    font-size: 14px;
-    margin: 0 0 16px;
-}
-</style>

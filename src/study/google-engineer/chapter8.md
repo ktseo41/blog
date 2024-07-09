@@ -145,12 +145,3 @@ outline: [2, 3]
 
 - 사람은 결국 맥락을 최대 7개정도 이해한다고 한다. 이런 맥락을 style때문에 잃고싶지 않은 것이다. 일관되게 되면 패턴은 넘어갈 수 있다. 그래서 일관성이 중요하다고 생각한다. 어떤 식으로 맞추느냐는 의미없다. 맞추는 것 자체가 의미있다.
 - 에러처리. 200, 400. 하지만 일관성을 지키면 된다.
-
-<style scoped lang="scss">
-.comment {
-    padding-left: 1.25rem;
-    color: var(--vp-c-indigo-1);
-    font-size: 14px;
-    margin: 0 0 16px;
-}
-</style>

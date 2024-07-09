@@ -118,20 +118,3 @@ public void fullNameShouldCombineFirstAndLastNames() {
 ## 느낀 점
 
 - Playwright 등을 이용해 테스트하는 것이 좋은 테스트 사례일 수 있을 것 같다. `placeholder가 '이름을 입력하세요'인 input을 찾아서 입력하고. '확인' 버튼을 클릭하면, 페이지에 입력한 이름이 나타난다.` 내부 로직은 상관안하는 방식이기도 하므로 공개 API를 이용해 테스트하는 것, 메서드가 아니라 행위를 테스트하는 것을 모두 담고있는 것 같다.
-
-
-<style scoped lang="scss">
-.underline {
-  text-decoration: underline;
-  text-decoration-style: wavy;
-  text-underline-offset: 3px;
-  text-decoration-color: var(--vp-c-indigo-1);
-}
-
-.comment {
-    padding-left: 1.25rem;
-    color: var(--vp-c-indigo-1);
-    font-size: 14px;
-    margin: 0 0 16px;
-}
-</style>

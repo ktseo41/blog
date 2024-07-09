@@ -1,3 +1,17 @@
 :root {
   ---vp-font-family-base: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
+
+.underline {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--vp-c-indigo-1);
+}
+
+.comment {
+    padding-left: 1.25rem;
+    color: var(--vp-c-indigo-1);
+    font-size: 14px;
+    margin: 0 0 16px;
+}
