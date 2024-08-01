@@ -59,6 +59,10 @@ export default {
         collapsed: true,
         items: [
           {
+            text: "자바스크립트 엔진과 런타임의 차이점은 무엇인가요?",
+            link: "/fe-article/javascript-engines-runtimes",
+          },
+          {
             text: "웹 컴포넌트 성공 사례",
             link: "/fe-article/the-web-component-success-story",
           },
