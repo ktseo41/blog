@@ -49,4 +49,4 @@ ECMAScript는 구현이 어디에 내장되어 있든 반드시 준수해야 하
 ###### 3. [SpiderMonkey - Firefox의 자바스크립트 엔진](https://spidermonkey.dev/)
 ###### 4. [JavaScriptCore - Safari의 자바스크립트 엔진](https://docs.webkit.org/Deep%20Dive/JSC/JavaScriptCore.html)
 ###### 5. [HTML의 살아있는 표준 - 이벤트 루프](https://html.spec.whatwg.org/multipage/webappapis.html#event-loops)
-###### 6. [Node.js - 이벤트 루프, 타이머 그리고 process.nextTic()](https://nodejs.org/en/learn/asynchronous-work/event-loop-timers-and-nexttick#what-is-the-event-loop)
+###### 6. [Node.js - 이벤트 루프, 타이머 그리고 process.nextTick()](https://nodejs.org/en/learn/asynchronous-work/event-loop-timers-and-nexttick#what-is-the-event-loop)
