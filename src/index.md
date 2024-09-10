@@ -8,14 +8,14 @@ disableComment: true
 
 <script setup>
 function monthDiff(d1, d2) {
-    var months;
+    let months;
     months = (d2.getFullYear() - d1.getFullYear()) * 12;
     months -= d1.getMonth();
     months += d2.getMonth();
     return months <= 0 ? 0 : months;
 }
 
-const monthDiffs = monthDiff(new Date(2020, 7), new Date());
+const monthDiffs = monthDiff(new Date(2020, 7), new Date(2024, 7));
 const years = Math.floor(monthDiffs / 12);
 const months = monthDiffs % 12;
 </script>
