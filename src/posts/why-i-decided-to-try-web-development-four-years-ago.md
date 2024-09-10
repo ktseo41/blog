@@ -31,8 +31,6 @@
 - 무언가를 조금씩 만들어보고 싶다. 거기서부터 재미를 붙이고 싶다.
 - 나만의 업무, 자기계발 루틴을 만들어가고 싶다. 
 
-<div class="dull">(고민중)</div>
-
 <style scoped lang="scss">
 .dull {
   color: rgba(128, 128, 128, 0.8);
