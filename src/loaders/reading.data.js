@@ -397,6 +397,7 @@ const books = [
   {
     name: "슬픈 세상의 기쁜 말",
     startedAt: "2024-03",
+    endAt: "2024-07",
     progressValue: (263 / 263) * 100,
     logs: [
       {
@@ -416,7 +417,8 @@ const books = [
   {
     name: "원숭이도 이해하는 자본론",
     startedAt: "2024-04",
-    progressValue: (307 / 317) * 100,
+    endAt: "2024-07",
+    progressValue: (317 / 317) * 100,
     logs: [
       {
         date: "2024-05-19",
@@ -457,7 +459,8 @@ const books = [
   {
     name: "지지 않는다는 말",
     startedAt: "2024-06",
-    progressValue: (184 / 291) * 100,
+    endAt: "2024-07",
+    progressValue: (291 / 291) * 100,
     logs: [
       {
         date: "2024-07-02",
@@ -468,13 +471,112 @@ const books = [
   {
     name: "세계의 끝 여자친구",
     startedAt: "2024-06",
-    progressValue: (91 / 315) * 100,
+    endAt: "2024-07",
+    progressValue: (315 / 315) * 100,
     logs: [
       {
         date: "2024-07-02",
         progressValue: (91 / 315) * 100,
       },
     ],
+  },
+  {
+    name: "서사의 위기",
+    startedAt: "2024-07",
+    progressValue: (60 / 100) * 100,
+    inProgress: false,
+  },
+  {
+    name: "나의 문화유산 답사기 일본편 1",
+    startedAt: "2024-07",
+    endAt: "2024-07",
+    progressValue: (60 / 100) * 100,
+    inProgress: false,
+  },
+  {
+    name: "나의 문화유산 답사기 일본편 2",
+    startedAt: "2024-07",
+    endAt: "2024-08",
+    progressValue: (40 / 100) * 100,
+    inProgress: false,
+  },
+  {
+    name: "나의 문화유산 답사기 일본편 3",
+    startedAt: "2024-07",
+    endAt: "2024-08",
+    progressValue: (30 / 100) * 100,
+    inProgress: false,
+  },
+  {
+    name: "이야기 일본사",
+    startedAt: "2024-07",
+    endAt: "2024-07",
+    progressValue: (15 / 100) * 100,
+    inProgress: false,
+  },
+  {
+    name: "일본사 여행",
+    startedAt: "2024-07",
+    endAt: "2024-08",
+    progressValue: (20 / 100) * 100,
+    inProgress: false,
+  },
+  {
+    name: "이즈의 무희 천 마리 학 호수",
+    startedAt: "2024-07",
+    endAt: "2024-07",
+    progressValue: (10 / 100) * 100,
+  },
+  {
+    name: "수역",
+    startedAt: "2024-08",
+    endAt: "2024-08",
+    progressValue: (100 / 100) * 100,
+  },
+  {
+    name: "역사의 쓸모",
+    startedAt: "2024-08",
+    endAt: "2024-08",
+    progressValue: (45 / 100) * 100,
+    inProgress: false,
+  },
+  {
+    name: "청춘유감",
+    startedAt: "2024-08",
+    endAt: "2024-09",
+    progressValue: (100 / 100) * 100,
+  },
+  {
+    name: "동경일일",
+    startedAt: "2024-08",
+    endAt: "2024-09",
+    progressValue: (100 / 100) * 100,
+  },
+  {
+    name: "사물의 소멸",
+    startedAt: "2024-09",
+    progressValue: (20 / 100) * 100,
+  },
+  {
+    name: "아무튼, SF게임",
+    startedAt: "2024-09",
+    endAt: "2024-09",
+    progressValue: (100 / 100) * 100,
+  },
+  {
+    name: "동네서점 베스트 컬렉션 김연수",
+    startedAt: "2024-09",
+    progressValue: (50 / 100) * 100,
+  },
+  {
+    name: "느리게 사는 것의 의미",
+    startedAt: "2024-09",
+    progressValue: (91 / 290) * 100,
+  },
+  {
+    name: "역사 문해력 수업",
+    startedAt: "2024-09",
+    progressValue: (66 / 365) * 100,
   },
 ];
 
