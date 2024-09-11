@@ -571,12 +571,29 @@ const books = [
   {
     name: "느리게 사는 것의 의미",
     startedAt: "2024-09",
-    progressValue: (91 / 290) * 100,
+    progressValue: (116 / 290) * 100,
+    inProgress: false,
+    logs: [
+      {
+        date: "2024-09-10",
+        progressValue: (91 / 290) * 100,
+      },
+      {
+        date: "2024-09-10",
+        progressValue: (116 / 290) * 100,
+      },
+    ],
   },
   {
     name: "역사 문해력 수업",
     startedAt: "2024-09",
     progressValue: (66 / 365) * 100,
+    logs: [
+      {
+        date: "2024-09-10",
+        progressValue: (66 / 365) * 100,
+      },
+    ],
   },
 ];
 
