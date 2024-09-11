@@ -598,11 +598,15 @@ const books = [
   {
     name: "역사 문해력 수업",
     startedAt: "2024-09",
-    progressValue: (66 / 365) * 100,
+    progressValue: (122 / 365) * 100,
     logs: [
       {
         date: "2024-09-10",
         progressValue: (66 / 365) * 100,
+      },
+      {
+        date: "2024-09-11",
+        progressValue: (122 / 365) * 100,
       },
     ],
   },
