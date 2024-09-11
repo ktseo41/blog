@@ -566,7 +566,18 @@ const books = [
   {
     name: "동네서점 베스트 컬렉션 김연수",
     startedAt: "2024-09",
-    progressValue: (50 / 100) * 100,
+    endAt: "2024-09",
+    progressValue: (100 / 100) * 100,
+    logs: [
+      {
+        date: "2024-09-10",
+        progressValue: (75 / 100) * 100,
+      },
+      {
+        date: "2024-09-11",
+        progressValue: (100 / 100) * 100,
+      },
+    ],
   },
   {
     name: "느리게 사는 것의 의미",
