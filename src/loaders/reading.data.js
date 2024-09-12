@@ -397,7 +397,6 @@ const books = [
   {
     name: "슬픈 세상의 기쁜 말",
     startedAt: "2024-03",
-    endAt: "2024-07",
     progressValue: (263 / 263) * 100,
     logs: [
       {
@@ -599,6 +598,7 @@ const books = [
     name: "역사 문해력 수업",
     startedAt: "2024-09",
     progressValue: (122 / 365) * 100,
+    inProgress: false,
     logs: [
       {
         date: "2024-09-10",
@@ -607,6 +607,10 @@ const books = [
       {
         date: "2024-09-11",
         progressValue: (122 / 365) * 100,
+      },
+      {
+        date: "2024-09-12",
+        progressValue: (124 / 365) * 100,
       },
     ],
   },
