@@ -614,6 +614,21 @@ const books = [
       },
     ],
   },
+  {
+    name: "지적 대화를 위한 넓고 얕은 지식 - 철학, 과학, 종교, 예술, 신비",
+    startedAt: "2024-09",
+    progressValue: (137 / 372) * 100,
+    logs: [
+      {
+        date: "2024-09-12",
+        progressValue: (80 / 372) * 100,
+      },
+      {
+        date: "2024-09-13",
+        progressValue: (137 / 372) * 100,
+      },
+    ],
+  },
 ];
 
 const loadBook = async (bookName) => {
