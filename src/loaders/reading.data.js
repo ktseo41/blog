@@ -617,7 +617,7 @@ const books = [
   {
     name: "지적 대화를 위한 넓고 얕은 지식 - 철학, 과학, 종교, 예술, 신비",
     startedAt: "2024-09",
-    progressValue: (137 / 372) * 100,
+    progressValue: (372 / 372) * 100,
     logs: [
       {
         date: "2024-09-12",
@@ -630,6 +630,10 @@ const books = [
       {
         date: "2024-09-14",
         progressValue: (215 / 372) * 100,
+      },
+      {
+        date: "2024-09-18",
+        progressValue: (372 / 372) * 100,
       },
     ],
   },
