@@ -640,11 +640,15 @@ const books = [
   {
     name: "한국단편문학선 1",
     startedAt: "2024-09",
-    progressValue: (5 / 100) * 100,
+    progressValue: (1 / 19) * 100,
     logs: [
       {
         date: "2024-09-13",
         progressValue: (5 / 100) * 100,
+      },
+      {
+        date: "2024-09-16",
+        progressValue: (1 / 19) * 100,
       },
     ],
   },
