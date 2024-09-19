@@ -650,16 +650,20 @@ const books = [
         date: "2024-09-16",
         progressValue: (1 / 19) * 100,
       },
+      {
+        date: "2024-09-19",
+        progressValue: (2 / 19) * 100,
+      },
     ],
   },
   {
     name: "지적 대화를 위한 넓고 얕은 지식 - 제로",
     startedAt: "2024-09",
-    progressValue: (169 / 553) * 100,
+    progressValue: (216 / 553) * 100,
     logs: [
       {
         date: "2024-09-19",
-        progressValue: (169 / 553) * 100,
+        progressValue: (216 / 553) * 100,
       },
     ],
   },
