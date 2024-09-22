@@ -640,7 +640,7 @@ const books = [
   {
     name: "한국단편문학선 1",
     startedAt: "2024-09",
-    progressValue: (1 / 19) * 100,
+    progressValue: (4 / 19) * 100,
     logs: [
       {
         date: "2024-09-13",
@@ -654,16 +654,35 @@ const books = [
         date: "2024-09-19",
         progressValue: (2 / 19) * 100,
       },
+      {
+        date: "2024-09-22",
+        progressValue: (4 / 19) * 100,
+      },
     ],
   },
   {
     name: "지적 대화를 위한 넓고 얕은 지식 - 제로",
     startedAt: "2024-09",
-    progressValue: (216 / 553) * 100,
+    progressValue: (346 / 553) * 100,
     logs: [
       {
         date: "2024-09-19",
         progressValue: (216 / 553) * 100,
+      },
+      {
+        date: "2024-09-22",
+        progressValue: (346 / 553) * 100,
+      },
+    ],
+  },
+  {
+    name: "유리알 유희 1",
+    startedAt: "2024-09",
+    progressValue: (98 / 420) * 100,
+    logs: [
+      {
+        date: "2024-09-22",
+        progressValue: (98 / 420) * 100,
       },
     ],
   },
