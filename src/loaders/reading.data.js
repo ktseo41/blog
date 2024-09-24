@@ -663,7 +663,7 @@ const books = [
   {
     name: "지적 대화를 위한 넓고 얕은 지식 - 제로",
     startedAt: "2024-09",
-    progressValue: (346 / 553) * 100,
+    progressValue: (462 / 553) * 100,
     logs: [
       {
         date: "2024-09-19",
