@@ -673,6 +673,10 @@ const books = [
         date: "2024-09-22",
         progressValue: (346 / 553) * 100,
       },
+      {
+        date: "2024-09-22",
+        progressValue: (462 / 553) * 100,
+      },
     ],
   },
   {
