@@ -688,6 +688,21 @@ const books = [
         date: "2024-09-22",
         progressValue: (98 / 420) * 100,
       },
+      {
+        date: "2024-09-25",
+        progressValue: (158 / 420) * 100,
+      },
+    ],
+  },
+  {
+    name: "서점 일기",
+    startedAt: "2024-09",
+    progressValue: (46 / 436) * 100,
+    logs: [
+      {
+        date: "2024-09-25",
+        progressValue: (46 / 436) * 100,
+      },
     ],
   },
 ];
