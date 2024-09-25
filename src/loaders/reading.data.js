@@ -682,7 +682,7 @@ const books = [
   {
     name: "유리알 유희 1",
     startedAt: "2024-09",
-    progressValue: (98 / 420) * 100,
+    progressValue: (189 / 420) * 100,
     logs: [
       {
         date: "2024-09-22",
@@ -690,18 +690,18 @@ const books = [
       },
       {
         date: "2024-09-25",
-        progressValue: (158 / 420) * 100,
+        progressValue: (189 / 420) * 100,
       },
     ],
   },
   {
     name: "서점 일기",
     startedAt: "2024-09",
-    progressValue: (46 / 436) * 100,
+    progressValue: (61 / 436) * 100,
     logs: [
       {
         date: "2024-09-25",
-        progressValue: (46 / 436) * 100,
+        progressValue: (61 / 436) * 100,
       },
     ],
   },
