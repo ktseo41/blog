@@ -705,6 +705,17 @@ const books = [
       },
     ],
   },
+  {
+    name: "귀한 서점에 누추하신 분이",
+    startedAt: "2024-09",
+    progressValue: (100 / 100) * 100,
+    logs: [
+      {
+        date: "2024-09-25",
+        progressValue: (100 / 100) * 100,
+      },
+    ],
+  },
 ];
 
 const loadBook = async (bookName) => {
