@@ -218,10 +218,10 @@ export default {
             text: "일랜시아 루트 계산기",
             link: "https://github.com/ktseo41/route-calculator",
           },
-          {
-            text: "Movie Kin",
-            link: "/projects/movie-kin",
-          },
+          // {
+          //   text: "Movie Kin",
+          //   link: "/projects/movie-kin",
+          // },
         ],
       },
       {
@@ -301,6 +301,10 @@ export default {
               {
                 text: "챕터 12 - 단위 테스트",
                 link: "/study/google-engineer/chapter12",
+              },
+              {
+                text: "챕터 13 - 테스트 대역",
+                link: "/study/google-engineer/chapter13",
               },
             ],
           },
