@@ -790,6 +790,17 @@ const books = [
       },
     ],
   },
+  {
+    name: "세상에서 가장 짧은 한국사",
+    startedAt: "2024-10-08",
+    progressValue: (56 / 374) * 100,
+    logs: [
+      {
+        date: "2024-10-08",
+        progressValue: (56 / 374) * 100,
+      },
+    ],
+  },
 ];
 
 const loadBook = async (bookName) => {
