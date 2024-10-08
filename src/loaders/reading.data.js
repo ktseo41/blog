@@ -721,6 +721,7 @@ const books = [
         progressValue: (436 / 436) * 100,
       },
     ],
+    comment: "",
   },
   {
     name: "귀한 서점에 누추하신 분이",
@@ -751,7 +752,9 @@ const books = [
   {
     name: "옛날 영화, 이 좋은 걸 이제 알았다니",
     startedAt: "2024-09",
+    endAt: "2024-10",
     progressValue: (104 / 243) * 100,
+    inProgress: false,
     logs: [
       {
         date: "2024-09-29",
@@ -769,8 +772,23 @@ const books = [
   },
   {
     name: "사랑의 생애",
-    startedAt: "2024-10",
-    progressValue: 0,
+    startedAt: "2024-10-04",
+    endAt: "2024-10-08",
+    progressValue: (292 / 292) * 100,
+    logs: [
+      {
+        date: "2024-10-04",
+        progressValue: (112 / 292) * 100,
+      },
+      {
+        date: "2024-10-07",
+        progressValue: (210 / 292) * 100,
+      },
+      {
+        date: "2024-10-08",
+        progressValue: (292 / 292) * 100,
+      },
+    ],
   },
 ];
 
