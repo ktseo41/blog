@@ -1,8 +1,9 @@
+/// <reference path="typedefs.js" />
 import axios from "axios";
 import { loadEnv } from "vitepress";
 const env = loadEnv("", process.cwd());
 
-const books = [
+const bookLogs = [
   {
     name: "모래알만 한 진실이라도",
     startedAt: "2020-05",
@@ -803,7 +804,11 @@ const books = [
   },
 ];
 
-const loadBook = async (bookName) => {
+/**
+ * @param {BookLog} bookLog
+ * @returns {BookLog & (Book | {})}
+ */
+const loadBook = async (bookLog) => {
   try {
     const {
       data: {
@@ -813,14 +818,22 @@ const loadBook = async (bookName) => {
       method: "get",
       url: `https://dapi.kakao.com/v3/search/book`,
       params: {
-        query: `"${bookName}"`,
+        query: `"${bookLog.name}"`,
+        target: "title",
       },
       headers: {
         Authorization: `KakaoAK ${env.VITE_APP_KAKAO_API_KEY}`,
       },
     });
 
-    return book;
+    if (!book) {
+      return bookLog;
+    }
+
+    return {
+      ...bookLog,
+      ...book,
+    };
   } catch (error) {
     console.error(error);
     return {};
@@ -828,34 +841,32 @@ const loadBook = async (bookName) => {
 };
 
 /**
- * @param {Object} book
- * @param {Array<string>} book.authors
- * @param {string} book.thumbnail
- * @param {string} book.url
+ * @param {BookLog & (Book | {})} book
+ * @returns
  */
-const parseBook = (book) => {
+const normalizeBookInfo = (book) => {
+  if (!book.title) {
+    return {
+      ...book,
+      authors: "",
+      thumbnail: "https://placehold.co/120x174",
+      url: `https://google.com/search?q=${book?.name}`,
+    };
+  }
+
   return {
-    authors: book?.authors ? book.authors.join(", ") : "",
-    thumbnail: book?.thumbnail
-      ? book.thumbnail
-      : "https://via.placeholder.com/120x174?text=책",
-    url: book?.url ? book.url : `https://google.com/search?q=${book?.title}`,
+    ...book,
+    authors: book.authors.join(", "),
   };
 };
 
 export default {
   async load() {
-    const _books = await Promise.all(
-      books.map(async (book) => {
-        return {
-          ...book,
-          ...parseBook(await loadBook(book.name)),
-        };
-      })
-    );
+    const bookInfos = await Promise.all(bookLogs.map(loadBook));
+    const normalizedBookInfos = bookInfos.map(normalizeBookInfo);
 
     return {
-      books: _books,
+      books: normalizedBookInfos,
     };
   },
 };
