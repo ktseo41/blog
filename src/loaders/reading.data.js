@@ -722,7 +722,6 @@ const bookLogs = [
         progressValue: (436 / 436) * 100,
       },
     ],
-    comment: "",
   },
   {
     name: "귀한 서점에 누추하신 분이",
@@ -799,6 +798,17 @@ const bookLogs = [
       {
         date: "2024-10-08",
         progressValue: (56 / 374) * 100,
+      },
+    ],
+  },
+  {
+    name: "목소리들",
+    startedAt: "2024-10-08",
+    progressValue: (1 / 10) * 100,
+    logs: [
+      {
+        date: "2024-10-08",
+        progressValue: (1 / 10) * 100,
       },
     ],
   },
