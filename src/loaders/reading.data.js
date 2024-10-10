@@ -793,7 +793,7 @@ const bookLogs = [
   {
     name: "세상에서 가장 짧은 한국사",
     startedAt: "2024-10-08",
-    progressValue: (56 / 374) * 100,
+    progressValue: (146 / 374) * 100,
     logs: [
       {
         date: "2024-10-08",
@@ -803,16 +803,24 @@ const bookLogs = [
         date: "2024-10-09",
         progressValue: (82 / 374) * 100,
       },
+      {
+        date: "2024-10-10",
+        progressValue: (146 / 374) * 100,
+      },
     ],
   },
   {
     name: "목소리들",
     startedAt: "2024-10-08",
-    progressValue: (1 / 10) * 100,
+    progressValue: (118 / 240) * 100,
     logs: [
       {
         date: "2024-10-08",
         progressValue: (1 / 10) * 100,
+      },
+      {
+        date: "2024-10-10",
+        progressValue: (118 / 240) * 100,
       },
     ],
   },
