@@ -811,6 +811,10 @@ const bookLogs = [
         date: "2024-10-11",
         progressValue: (205 / 374) * 100,
       },
+      {
+        date: "2024-10-11",
+        progressValue: (302 / 374) * 100,
+      },
     ],
   },
   {
@@ -829,6 +833,34 @@ const bookLogs = [
       {
         date: "2024-10-11",
         progressValue: (162 / 240) * 100,
+      },
+    ],
+  },
+  {
+    name: "영화 인문학 콘서트",
+    startedAt: "2024-10-13",
+    endAt: "2024-10-14",
+    progressValue: (102 / 187) * 100,
+    inProgress: false,
+    logs: [
+      {
+        date: "2024-10-13",
+        progressValue: (32 / 187) * 100,
+      },
+      {
+        date: "2024-10-14",
+        progressValue: (102 / 187) * 100,
+      },
+    ],
+  },
+  {
+    name: "OTT로 만나는 명작 영화 51선",
+    startedAt: "2024-10-13",
+    progressValue: (6 / 51) * 100,
+    logs: [
+      {
+        date: "2024-10-14",
+        progressValue: (6 / 51) * 100,
       },
     ],
   },
