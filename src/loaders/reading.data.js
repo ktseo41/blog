@@ -793,7 +793,8 @@ const bookLogs = [
   {
     name: "세상에서 가장 짧은 한국사",
     startedAt: "2024-10-08",
-    progressValue: (205 / 374) * 100,
+    endAt: "2024-10-16",
+    progressValue: (374 / 374) * 100,
     logs: [
       {
         date: "2024-10-08",
@@ -812,8 +813,12 @@ const bookLogs = [
         progressValue: (205 / 374) * 100,
       },
       {
-        date: "2024-10-11",
+        date: "2024-10-15",
         progressValue: (302 / 374) * 100,
+      },
+      {
+        date: "2024-10-16",
+        progressValue: (374 / 374) * 100,
       },
     ],
   },
@@ -861,6 +866,32 @@ const bookLogs = [
       {
         date: "2024-10-14",
         progressValue: (6 / 51) * 100,
+      },
+      {
+        date: "2024-10-16",
+        progressValue: (10 / 51) * 100,
+      },
+    ],
+  },
+  {
+    name: "지적 대화를 위한 넓고 얕은 지식 1",
+    startedAt: "2024-10-16",
+    progressValue: (3 / 100) * 100,
+    logs: [
+      {
+        date: "2024-10-16",
+        progressValue: (3 / 100) * 100,
+      },
+    ],
+  },
+  {
+    name: "보이지 않는 경제학",
+    startedAt: "2024-10-16",
+    progressValue: (0 / 100) * 100,
+    logs: [
+      {
+        date: "2024-10-16",
+        progressValue: (0 / 100) * 100,
       },
     ],
   },
