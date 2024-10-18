@@ -866,7 +866,7 @@ const bookLogs = [
   {
     name: "OTT로 만나는 명작 영화 51선",
     startedAt: "2024-10-13",
-    progressValue: (6 / 51) * 100,
+    progressValue: (15 / 51) * 100,
     logs: [
       {
         date: "2024-10-14",
@@ -875,6 +875,10 @@ const bookLogs = [
       {
         date: "2024-10-16",
         progressValue: (10 / 51) * 100,
+      },
+      {
+        date: "2024-10-18",
+        progressValue: (15 / 51) * 100,
       },
     ],
   },
