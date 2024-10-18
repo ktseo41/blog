@@ -825,7 +825,8 @@ const bookLogs = [
   {
     name: "목소리들",
     startedAt: "2024-10-08",
-    progressValue: (162 / 240) * 100,
+    endAt: "2024-10-18",
+    progressValue: (240 / 240) * 100,
     logs: [
       {
         date: "2024-10-08",
@@ -838,6 +839,10 @@ const bookLogs = [
       {
         date: "2024-10-11",
         progressValue: (162 / 240) * 100,
+      },
+      {
+        date: "2024-10-18",
+        progressValue: (240 / 240) * 100,
       },
     ],
   },
