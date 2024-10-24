@@ -931,6 +931,17 @@ const bookLogs = [
       },
     ],
   },
+  {
+    name: "전국 책방 여행기",
+    startedAt: "2024-10-22",
+    progressValue: (300 / 300) * 100,
+    logs: [
+      {
+        date: "2024-10-24",
+        progressValue: (300 / 300) * 100,
+      },
+    ],
+  },
 ];
 
 /**
