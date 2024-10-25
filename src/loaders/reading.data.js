@@ -885,6 +885,7 @@ const bookLogs = [
   {
     name: "지적 대화를 위한 넓고 얕은 지식 1",
     startedAt: "2024-10-16",
+    inProgress: false,
     progressValue: (3 / 100) * 100,
     logs: [
       {
@@ -915,7 +916,7 @@ const bookLogs = [
   {
     name: "죄와 벌 1",
     startedAt: "2024-10-19",
-    progressValue: (368 / 502) * 100,
+    progressValue: (434 / 502) * 100,
     logs: [
       {
         date: "2024-10-19",
@@ -929,11 +930,16 @@ const bookLogs = [
         date: "2024-10-22",
         progressValue: (368 / 502) * 100,
       },
+      {
+        date: "2024-10-25",
+        progressValue: (434 / 502) * 100,
+      },
     ],
   },
   {
     name: "전국 책방 여행기",
     startedAt: "2024-10-22",
+    endAt: "2024-10-24",
     progressValue: (300 / 300) * 100,
     logs: [
       {
