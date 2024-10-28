@@ -897,7 +897,7 @@ const bookLogs = [
   {
     name: "보이지 않는 경제학",
     startedAt: "2024-10-16",
-    progressValue: (194 / 349) * 100,
+    progressValue: (233 / 349) * 100,
     logs: [
       {
         date: "2024-10-16",
@@ -914,6 +914,10 @@ const bookLogs = [
       {
         date: "2024-10-27",
         progressValue: (194 / 349) * 100,
+      },
+      {
+        date: "2024-10-28",
+        progressValue: (233 / 349) * 100,
       },
     ],
   },
