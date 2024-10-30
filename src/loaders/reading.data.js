@@ -897,7 +897,7 @@ const bookLogs = [
   {
     name: "보이지 않는 경제학",
     startedAt: "2024-10-16",
-    progressValue: (233 / 349) * 100,
+    progressValue: (330 / 349) * 100,
     logs: [
       {
         date: "2024-10-16",
@@ -918,6 +918,10 @@ const bookLogs = [
       {
         date: "2024-10-28",
         progressValue: (233 / 349) * 100,
+      },
+      {
+        date: "2024-10-29",
+        progressValue: (330 / 349) * 100,
       },
     ],
   },
@@ -964,7 +968,7 @@ const bookLogs = [
   {
     name: "죄와 벌 2",
     startedAt: "2024-10-27",
-    progressValue: (103 / 499) * 100,
+    progressValue: (153 / 499) * 100,
     logs: [
       {
         date: "2024-10-27",
@@ -973,6 +977,10 @@ const bookLogs = [
       {
         date: "2024-10-28",
         progressValue: (103 / 499) * 100,
+      },
+      {
+        date: "2024-10-29",
+        progressValue: (153 / 499) * 100,
       },
     ],
   },
