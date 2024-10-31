@@ -6,6 +6,7 @@ import ProgressBar from "../components/ProgressBar.vue";
 import StreakOnDay from "../components/StreakOnDay.vue";
 import Callout from "../components/Callout.vue";
 import GradientUnderbar from "../components/GradientUnderbar.vue";
+import GoldPurchasingPowerChart from "../components/GoldPurchasingPowerChart.vue";
 import "./custom.scss";
 
 export default {
@@ -19,5 +20,6 @@ export default {
     ctx.app.component("StreakOnDay", StreakOnDay);
     ctx.app.component("Callout", Callout);
     ctx.app.component("GradientUnderbar", GradientUnderbar);
+    ctx.app.component("GoldPurchasingPowerChart", GoldPurchasingPowerChart);
   },
 };

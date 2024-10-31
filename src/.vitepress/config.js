@@ -141,6 +141,10 @@ export default {
         text: "📝️ 글",
         items: [
           {
+            text: "대한민국 중위 가구의 금 구매력 (2021-2023)",
+            link: "/posts/how-much-gold-can-korean-family-buy",
+          },
+          {
             text: "도둑맞은 집중력을 되찾기 위한 시도",
             link: "/posts/dealing-with-digital-distractions-at-work",
           },
