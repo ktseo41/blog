@@ -50,11 +50,43 @@ const goldPrices = {
   2023: 2535512.4,
 }
 
+const dollarPrices = {
+  2012: 1070.6,
+  2013: 1055.4,
+  2014: 1099.3,
+  2015: 1172.5,
+  2016: 1207.7,
+  2017: 1070.5,
+  2018: 1115.7,
+  2019: 1156.4,
+  2020: 1086.3,
+  2021: 1188.8,
+  2022: 1264.5,
+  2023: 1288.0
+};
+
+const sp500PurchasingPowerData = {
+  "2012": 21.64,
+  "2013": 19.97,
+  "2014": 18.60,
+  "2015": 16.88,
+  "2016": 16.41,
+  "2017": 15.55,
+  "2018": 14.83,
+  "2019": 13.38,
+  "2020": 12.35,
+  "2021": 10.04,
+  "2022": 9.73,
+  "2023": 9.50
+}
+
 const chartData = computed(() => {
   return Object.keys(medianIncome).map((year) => ({
     year,
     purchasingPower: +(medianIncome[year] / goldPrices[year]).toFixed(2),
     medianIncome: +(medianIncome[year] / 10000000).toFixed(2),
+    // dollarPurchasingPower: +(medianIncome[year] / dollarPrices[year] / 10000).toFixed(2),
+    // sp500PurchasingPower: sp500PurchasingPowerData[year]
   }))
 })
 
@@ -71,6 +103,9 @@ const getChartOption = () => {
   const years = chartData.value.map((item) => item.year)
   const purchasingPower = chartData.value.map((item) => item.purchasingPower)
   const medianIncomeValues = chartData.value.map((item) => item.medianIncome)
+  // const dollarPurchasingPower = chartData.value.map((item) => item.dollarPurchasingPower)
+  // const sp500PurchasingPower = chartData.value.map((item) => item.sp500PurchasingPower)
+
 
   return {
     backgroundColor,
@@ -82,9 +117,20 @@ const getChartOption = () => {
           color: invertedTextColor
         }
       },
+      formatter: (params, _, f) => {
+        if (params.seriesName === '중위 소득') {
+          return `${params.seriesName}<br />${params.marker}${params.name}<span style="float: right; margin-left: 20px">${params.value * 1000} 만원`
+        }
+
+        if (params.seriesName === '금 구매력') {
+          return `${params.seriesName}<br />${params.marker}${params.name}<span style="float: right; margin-left: 20px">${params.value} oz`
+        }
+
+        return `${params.seriesName}<br>${params.marker}${params.name}<span style="float: right; margin-left: 20px"><b>${params.value}</b></span>`
+      }
     },
     legend: {
-      data: ['금 구매력', '중위 소득'],
+      data: ['중위 소득', '금 구매력'],
       bottom: 0,
       textStyle: {
         color: textColor,
@@ -110,11 +156,11 @@ const getChartOption = () => {
     yAxis: [
       {
         type: 'value',
-        name: '금 구매력 (Troy Ounce)',
+        name: '중위 소득',
         position: 'left',
         axisLabel: {
           color: textColor,
-          formatter: '{value} oz',
+          formatter: '{value} 천만원',
         },
         axisLine: {
           lineStyle: {
@@ -124,11 +170,11 @@ const getChartOption = () => {
       },
       {
         type: 'value',
-        name: '중위 소득 (천만원)',
+        name: '금 구매력',
         position: 'right',
         axisLabel: {
           color: textColor,
-          formatter: '{value}',
+          formatter: '{value} oz',
         },
         splitLine: {
           show: false,
@@ -142,22 +188,10 @@ const getChartOption = () => {
     ],
     series: [
       {
-        name: '금 구매력',
-        type: 'line',
-        data: purchasingPower,
-        yAxisIndex: 0,
-        itemStyle: {
-          color: '#FFD700',
-        },
-        lineStyle: {
-          width: 2,
-        },
-      },
-      {
         name: '중위 소득',
         type: 'line',
         data: medianIncomeValues,
-        yAxisIndex: 1,
+        yAxisIndex: 0,
         itemStyle: {
           color: '#82ca9d',
         },
@@ -165,20 +199,56 @@ const getChartOption = () => {
           width: 2,
         },
       },
+      {
+        name: '금 구매력',
+        type: 'line',
+        data: purchasingPower,
+        yAxisIndex: 1,
+        itemStyle: {
+          color: '#FFD700',
+        },
+        lineStyle: {
+          width: 2,
+        },
+      },
+      // {
+      //   name: '달러 구매력',
+      //   type: 'line',
+      //   data: dollarPurchasingPower,
+      //   yAxisIndex: 1,
+      //   itemStyle: {
+      //     color: '#5470C6',
+      //   },
+      //   lineStyle: {
+      //     width: 2,
+      //   },
+      // },
+      // {
+      //   name: 'S&P 500 구매력',
+      //   type: 'line',
+      //   data: sp500PurchasingPower,
+      //   yAxisIndex: 1,
+      //   itemStyle: {
+      //     color: '#CC3A42',
+      //   },
+      //   lineStyle: {
+      //     width: 2,
+      //   },
+      // },
     ],
   }
 }
 
 const initChart = async () => {
   if (!chartRef.value) return
-  
+
   // 이미 로드된 ECharts가 있는지 확인
   if (typeof window.echarts === 'undefined') {
     // ECharts 스크립트 동적 로드
     const script = document.createElement('script')
     script.src = 'https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js'
     script.async = true
-    
+
     await new Promise((resolve, reject) => {
       script.onload = resolve
       script.onerror = reject
