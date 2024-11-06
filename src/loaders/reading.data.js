@@ -973,7 +973,8 @@ const bookLogs = [
   {
     name: "죄와 벌 2",
     startedAt: "2024-10-27",
-    progressValue: (376 / 499) * 100,
+    endAt: "2024-11-06",
+    progressValue: (499 / 499) * 100,
     logs: [
       {
         date: "2024-10-27",
@@ -996,8 +997,12 @@ const bookLogs = [
         progressValue: (334 / 499) * 100,
       },
       {
-        date: "2024-11-01",
+        date: "2024-11-03",
         progressValue: (376 / 499) * 100,
+      },
+      {
+        date: "2024-11-06",
+        progressValue: (499 / 499) * 100,
       },
     ],
   },
