@@ -141,7 +141,7 @@ export default {
         text: "📝️ 글",
         items: [
           {
-            text: "대한민국 중위 가구의 금 구매력 (2021-2023)",
+            text: "대한민국 중위 가구의 금 구매력 (2012-2023)",
             link: "/posts/how-much-gold-can-korean-family-buy",
           },
           {
