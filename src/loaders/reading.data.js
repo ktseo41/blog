@@ -1015,6 +1015,25 @@ const bookLogs = [
         date: "2024-11-01",
         progressValue: (83 / 445) * 100,
       },
+      {
+        date: "2024-11-06",
+        progressValue: (111 / 445) * 100,
+      },
+    ],
+  },
+  {
+    name: "작은 땅의 야수들",
+    startedAt: "2024-11-07",
+    progressValue: (97 / 603) * 100,
+    logs: [
+      {
+        date: "2024-11-06",
+        progressValue: (56 / 603) * 100,
+      },
+      {
+        date: "2024-11-07",
+        progressValue: (97 / 603) * 100,
+      },
     ],
   },
 ];
