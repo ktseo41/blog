@@ -20,72 +20,40 @@ const chartRef = ref<HTMLElement | null>(null)
 const chart = ref<any | null>(null)
 
 const medianIncome = {
-  2012: 33600000,
-  2013: 36000000,
-  2014: 38000000,
-  2015: 39220000,
-  2016: 40000000,
-  2017: 43000000,
-  2018: 44560000,
-  2019: 45650000,
-  2020: 46520000,
-  2021: 48940000,
-  2022: 50980000,
-  2023: 53610000,
+  2012: 65740,
+  2013: 68220,
+  2014: 67360,
+  2015: 71000,
+  2016: 73520,
+  2017: 74810,
+  2018: 75790,
+  2019: 81210,
+  2020: 79560,
+  2021: 79260,
+  2022: 77540,
+  2023: 80610,
 }
 
 const goldPrices = {
-  2012: 1879336.7,
-  2013: 1545491.0,
-  2014: 1332782.8,
-  2015: 1311776.5,
-  2016: 1449117.6,
-  2017: 1421773.8,
-  2018: 1395056.8,
-  2019: 1625477.6,
-  2020: 2085669.1,
-  2021: 2059236.1,
-  2022: 2322615.3,
-  2023: 2535512.4,
-}
-
-const dollarPrices = {
-  2012: 1070.6,
-  2013: 1055.4,
-  2014: 1099.3,
-  2015: 1172.5,
-  2016: 1207.7,
-  2017: 1070.5,
-  2018: 1115.7,
-  2019: 1156.4,
-  2020: 1086.3,
-  2021: 1188.8,
-  2022: 1264.5,
-  2023: 1288.0
-};
-
-const sp500PurchasingPowerData = {
-  "2012": 21.64,
-  "2013": 19.97,
-  "2014": 18.60,
-  "2015": 16.88,
-  "2016": 16.41,
-  "2017": 15.55,
-  "2018": 14.83,
-  "2019": 13.38,
-  "2020": 12.35,
-  "2021": 10.04,
-  "2022": 9.73,
-  "2023": 9.50
+  2012: 1669.0,
+  2013: 1411.2,
+  2014: 1266.4,
+  2015: 1160.1,
+  2016: 1250.8,
+  2017: 1257.2,
+  2018: 1268.5,
+  2019: 1392.6,
+  2020: 1769.6,
+  2021: 1798.6,
+  2022: 1800.1,
+  2023: 1940.5,
 }
 
 const chartData = computed(() => {
   return Object.keys(medianIncome).map((year) => ({
     year,
     purchasingPower: +(medianIncome[year] / goldPrices[year]).toFixed(2),
-    medianIncome: +(medianIncome[year] / 10000000).toFixed(2),
-    // dollarPurchasingPower: +(medianIncome[year] / dollarPrices[year] / 10000).toFixed(2),
-    // sp500PurchasingPower: sp500PurchasingPowerData[year]
+    medianIncome: +(medianIncome[year]).toFixed(2),
   }))
 })
 
@@ -102,9 +70,6 @@ const getChartOption = () => {
   const years = chartData.value.map((item) => item.year)
   const purchasingPower = chartData.value.map((item) => item.purchasingPower)
   const medianIncomeValues = chartData.value.map((item) => item.medianIncome)
-  // const dollarPurchasingPower = chartData.value.map((item) => item.dollarPurchasingPower)
-  // const sp500PurchasingPower = chartData.value.map((item) => item.sp500PurchasingPower)
-
 
   return {
     backgroundColor,
@@ -159,7 +124,7 @@ const getChartOption = () => {
         position: 'left',
         axisLabel: {
           color: textColor,
-          formatter: '{value} 천만원',
+          formatter: '{value} 달러',
         },
         axisLine: {
           lineStyle: {
@@ -210,30 +175,6 @@ const getChartOption = () => {
           width: 2,
         },
       },
-      // {
-      //   name: '달러 구매력',
-      //   type: 'line',
-      //   data: dollarPurchasingPower,
-      //   yAxisIndex: 1,
-      //   itemStyle: {
-      //     color: '#5470C6',
-      //   },
-      //   lineStyle: {
-      //     width: 2,
-      //   },
-      // },
-      // {
-      //   name: 'S&P 500 구매력',
-      //   type: 'line',
-      //   data: sp500PurchasingPower,
-      //   yAxisIndex: 1,
-      //   itemStyle: {
-      //     color: '#CC3A42',
-      //   },
-      //   lineStyle: {
-      //     width: 2,
-      //   },
-      // },
     ],
   }
 }
