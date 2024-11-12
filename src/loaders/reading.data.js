@@ -1009,7 +1009,7 @@ const bookLogs = [
   {
     name: "장하준의 경제학 강의",
     startedAt: "2024-11-01",
-    progressValue: (136 / 445) * 100,
+    progressValue: (171 / 445) * 100,
     logs: [
       {
         date: "2024-11-01",
@@ -1023,12 +1023,16 @@ const bookLogs = [
         date: "2024-11-08",
         progressValue: (136 / 445) * 100,
       },
+      {
+        date: "2024-11-12",
+        progressValue: (171 / 445) * 100,
+      },
     ],
   },
   {
     name: "작은 땅의 야수들",
     startedAt: "2024-11-06",
-    progressValue: (278 / 603) * 100,
+    progressValue: (386 / 603) * 100,
     logs: [
       {
         date: "2024-11-06",
@@ -1045,6 +1049,10 @@ const bookLogs = [
       {
         date: "2024-11-11",
         progressValue: (278 / 603) * 100,
+      },
+      {
+        date: "2024-11-12",
+        progressValue: (386 / 603) * 100,
       },
     ],
   },
