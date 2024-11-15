@@ -1060,6 +1060,17 @@ const bookLogs = [
       },
     ],
   },
+  {
+    name: "헤르만 헤세의 책이라는 세계",
+    startedAt: "2024-11-13",
+    progressValue: (51 / 325) * 100,
+    logs: [
+      {
+        date: "2024-11-13",
+        progressValue: (51 / 325) * 100,
+      },
+    ],
+  },
 ];
 
 /**
