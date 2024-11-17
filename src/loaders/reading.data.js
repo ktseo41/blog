@@ -1027,6 +1027,10 @@ const bookLogs = [
         date: "2024-11-12",
         progressValue: (171 / 445) * 100,
       },
+      {
+        date: "2024-11-17",
+        progressValue: (304 / 445) * 100,
+      },
     ],
   },
   {
