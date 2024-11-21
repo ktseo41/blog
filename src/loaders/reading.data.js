@@ -1009,7 +1009,7 @@ const bookLogs = [
   {
     name: "장하준의 경제학 강의",
     startedAt: "2024-11-01",
-    progressValue: (171 / 445) * 100,
+    progressValue: (374 / 445) * 100,
     logs: [
       {
         date: "2024-11-01",
@@ -1030,6 +1030,10 @@ const bookLogs = [
       {
         date: "2024-11-17",
         progressValue: (304 / 445) * 100,
+      },
+      {
+        date: "2024-11-17",
+        progressValue: (374 / 445) * 100,
       },
     ],
   },
@@ -1076,11 +1080,15 @@ const bookLogs = [
   {
     name: "헤르만 헤세의 책이라는 세계",
     startedAt: "2024-11-13",
-    progressValue: (51 / 325) * 100,
+    progressValue: (86 / 325) * 100,
     logs: [
       {
         date: "2024-11-13",
         progressValue: (51 / 325) * 100,
+      },
+      {
+        date: "2024-11-21",
+        progressValue: (86 / 325) * 100,
       },
     ],
   },
