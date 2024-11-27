@@ -1080,7 +1080,7 @@ const bookLogs = [
   {
     name: "헤르만 헤세의 책이라는 세계",
     startedAt: "2024-11-13",
-    progressValue: (86 / 325) * 100,
+    progressValue: (118 / 325) * 100,
     logs: [
       {
         date: "2024-11-13",
@@ -1089,6 +1089,21 @@ const bookLogs = [
       {
         date: "2024-11-21",
         progressValue: (86 / 325) * 100,
+      },
+      {
+        date: "2024-11-27",
+        progressValue: (118 / 325) * 100,
+      },
+    ],
+  },
+  {
+    name: "프롬프트 엔지니어의 업무일지",
+    startedAt: "2024-11-27",
+    progressValue: (87 / 362) * 100,
+    logs: [
+      {
+        date: "2024-11-27",
+        progressValue: (87 / 362) * 100,
       },
     ],
   },
