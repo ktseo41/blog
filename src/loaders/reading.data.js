@@ -1080,7 +1080,7 @@ const bookLogs = [
   {
     name: "헤르만 헤세의 책이라는 세계",
     startedAt: "2024-11-13",
-    progressValue: (118 / 325) * 100,
+    progressValue: (150 / 325) * 100,
     logs: [
       {
         date: "2024-11-13",
@@ -1094,6 +1094,10 @@ const bookLogs = [
         date: "2024-11-27",
         progressValue: (118 / 325) * 100,
       },
+      {
+        date: "2024-12-03",
+        progressValue: (150 / 325) * 100,
+      },
     ],
   },
   {
@@ -1104,6 +1108,21 @@ const bookLogs = [
       {
         date: "2024-11-27",
         progressValue: (87 / 362) * 100,
+      },
+    ],
+  },
+  {
+    name: "소수의 고독",
+    startedAt: "2024-12-02",
+    progressValue: (170 / 415) * 100,
+    logs: [
+      {
+        date: "2024-12-02",
+        progressValue: (130 / 415) * 100,
+      },
+      {
+        date: "2024-12-03",
+        progressValue: (170 / 415) * 100,
       },
     ],
   },
