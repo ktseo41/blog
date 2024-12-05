@@ -1114,7 +1114,7 @@ const bookLogs = [
   {
     name: "소수의 고독",
     startedAt: "2024-12-02",
-    progressValue: (170 / 415) * 100,
+    progressValue: (415 / 415) * 100,
     logs: [
       {
         date: "2024-12-02",
@@ -1123,6 +1123,14 @@ const bookLogs = [
       {
         date: "2024-12-03",
         progressValue: (170 / 415) * 100,
+      },
+      {
+        date: "2024-12-04",
+        progressValue: (287 / 415) * 100,
+      },
+      {
+        date: "2024-12-05",
+        progressValue: (415 / 415) * 100,
       },
     ],
   },
