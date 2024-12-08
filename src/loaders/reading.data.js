@@ -1160,6 +1160,39 @@ const bookLogs = [
       },
     ],
   },
+  {
+    name: "한국단편문학선 2",
+    startedAt: "2024-12-08",
+    progressValue: (26 / 383) * 100,
+    logs: [
+      {
+        date: "2024-12-08",
+        progressValue: (26 / 383) * 100,
+      },
+    ],
+  },
+  {
+    name: "두려움은 소문일 뿐이다",
+    startedAt: "2024-12-08",
+    progressValue: (62 / 355) * 100,
+    logs: [
+      {
+        date: "2024-12-08",
+        progressValue: (62 / 355) * 100,
+      },
+    ],
+  },
+  {
+    name: "연년세세",
+    startedAt: "2024-12-08",
+    progressValue: (44 / 183) * 100,
+    logs: [
+      {
+        date: "2024-12-08",
+        progressValue: (44 / 183) * 100,
+      },
+    ],
+  },
 ];
 
 /**
