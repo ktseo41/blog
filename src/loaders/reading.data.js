@@ -664,6 +664,7 @@ const bookLogs = [
   {
     name: "지적 대화를 위한 넓고 얕은 지식 - 제로",
     startedAt: "2024-09",
+    endAt: "2024-09-24",
     progressValue: (553 / 553) * 100,
     logs: [
       {
@@ -675,16 +676,17 @@ const bookLogs = [
         progressValue: (346 / 553) * 100,
       },
       {
-        date: "2024-09-22",
+        date: "2024-09-24",
         progressValue: (553 / 553) * 100,
       },
     ],
   },
   {
     name: "유리알 유희 1",
-    startedAt: "2024-09",
-    progressValue: (189 / 420) * 100,
     inProgress: false,
+    startedAt: "2024-09-22",
+    endAt: "2024-09-26",
+    progressValue: (189 / 420) * 100,
     logs: [
       {
         date: "2024-09-22",
@@ -702,7 +704,8 @@ const bookLogs = [
   },
   {
     name: "서점 일기",
-    startedAt: "2024-09",
+    startedAt: "2024-09-25",
+    endAt: "2024-10-05",
     progressValue: (436 / 436) * 100,
     logs: [
       {
@@ -725,7 +728,8 @@ const bookLogs = [
   },
   {
     name: "귀한 서점에 누추하신 분이",
-    startedAt: "2024-09",
+    startedAt: "2024-09-26",
+    endAt: "2024-09-26",
     progressValue: (100 / 100) * 100,
     logs: [
       {
@@ -736,7 +740,8 @@ const bookLogs = [
   },
   {
     name: "사브리나",
-    startedAt: "2024-09",
+    startedAt: "2024-09-26",
+    endAt: "2024-09-29",
     progressValue: (203 / 203) * 100,
     logs: [
       {
@@ -866,6 +871,8 @@ const bookLogs = [
   {
     name: "OTT로 만나는 명작 영화 51선",
     startedAt: "2024-10-13",
+    endAt: "2024-10-18",
+    inProgress: false,
     progressValue: (15 / 51) * 100,
     logs: [
       {
@@ -1009,6 +1016,7 @@ const bookLogs = [
   {
     name: "장하준의 경제학 강의",
     startedAt: "2024-11-01",
+    endAt: "2024-11-18",
     progressValue: (374 / 445) * 100,
     logs: [
       {
@@ -1032,7 +1040,7 @@ const bookLogs = [
         progressValue: (304 / 445) * 100,
       },
       {
-        date: "2024-11-17",
+        date: "2024-11-18",
         progressValue: (374 / 445) * 100,
       },
     ],
@@ -1080,6 +1088,7 @@ const bookLogs = [
   {
     name: "헤르만 헤세의 책이라는 세계",
     startedAt: "2024-11-13",
+    endAt: "2024-12-03",
     progressValue: (211 / 325) * 100,
     logs: [
       {
@@ -1103,17 +1112,34 @@ const bookLogs = [
   {
     name: "프롬프트 엔지니어의 업무일지",
     startedAt: "2024-11-27",
-    progressValue: (87 / 362) * 100,
+    progressValue: (290 / 362) * 100,
     logs: [
       {
         date: "2024-11-27",
         progressValue: (87 / 362) * 100,
+      },
+      {
+        date: "2024-12-05",
+        progressValue: (165 / 362) * 100,
+      },
+      {
+        date: "2024-12-07",
+        progressValue: (222 / 362) * 100,
+      },
+      {
+        date: "2024-12-08",
+        progressValue: (260 / 362) * 100,
+      },
+      {
+        date: "2024-12-09",
+        progressValue: (290 / 362) * 100,
       },
     ],
   },
   {
     name: "소수의 고독",
     startedAt: "2024-12-02",
+    endAt: "2024-12-05",
     progressValue: (415 / 415) * 100,
     logs: [
       {
