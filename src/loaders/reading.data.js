@@ -1174,22 +1174,31 @@ const bookLogs = [
   {
     name: "두려움은 소문일 뿐이다",
     startedAt: "2024-12-08",
-    progressValue: (62 / 355) * 100,
+    progressValue: (94 / 355) * 100,
     logs: [
       {
         date: "2024-12-08",
-        progressValue: (62 / 355) * 100,
+        progressValue: (94 / 355) * 100,
+      },
+      {
+        date: "2024-12-10",
+        progressValue: (121 / 355) * 100,
       },
     ],
   },
   {
     name: "연년세세",
     startedAt: "2024-12-08",
-    progressValue: (44 / 183) * 100,
+    endAt: "2024-12-10",
+    progressValue: (183 / 183) * 100,
     logs: [
       {
         date: "2024-12-08",
         progressValue: (44 / 183) * 100,
+      },
+      {
+        date: "2024-12-10",
+        progressValue: (183 / 183) * 100,
       },
     ],
   },
