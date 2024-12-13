@@ -1184,6 +1184,10 @@ const bookLogs = [
         date: "2024-12-10",
         progressValue: (121 / 355) * 100,
       },
+      {
+        date: "2024-12-13",
+        progressValue: (164 / 355) * 100,
+      },
     ],
   },
   {
@@ -1199,6 +1203,30 @@ const bookLogs = [
       {
         date: "2024-12-10",
         progressValue: (183 / 183) * 100,
+      },
+    ],
+  },
+  {
+    name: "인문학 거저보기 서양철학편",
+    inProgress: false,
+    startedAt: "2024-12-13",
+    endAt: "2024-12-13",
+    progressValue: (40 / 380) * 100,
+    logs: [
+      {
+        date: "2024-12-13",
+        progressValue: (40 / 380) * 100,
+      },
+    ],
+  },
+  {
+    name: "사는 게 힘드냐고 니체가 물었다",
+    startedAt: "2024-12-13",
+    progressValue: (70 / 266) * 100,
+    logs: [
+      {
+        date: "2024-12-13",
+        progressValue: (70 / 266) * 100,
       },
     ],
   },
