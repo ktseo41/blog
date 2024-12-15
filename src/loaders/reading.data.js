@@ -1188,6 +1188,10 @@ const bookLogs = [
         date: "2024-12-13",
         progressValue: (164 / 355) * 100,
       },
+      {
+        date: "2024-12-15",
+        progressValue: (200 / 355) * 100,
+      },
     ],
   },
   {
@@ -1227,6 +1231,10 @@ const bookLogs = [
       {
         date: "2024-12-13",
         progressValue: (70 / 266) * 100,
+      },
+      {
+        date: "2024-12-15",
+        progressValue: (122 / 266) * 100,
       },
     ],
   },
