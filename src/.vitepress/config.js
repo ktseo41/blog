@@ -312,6 +312,15 @@ export default {
               },
             ],
           },
+          {
+            text: "Anthropic Courses",
+            items: [
+              {
+                text: "프롬프트 엔지니어링 인터랙티브 튜토리얼",
+                link: "/study/anthropic-courses/prompt-engineering-interactive-tutorial",
+              },
+            ],
+          },
         ],
       },
       { text: "📟 Vim", items: [{ text: "vim", link: "/vim" }] },
