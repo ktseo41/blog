@@ -1226,6 +1226,7 @@ const bookLogs = [
   {
     name: "사는 게 힘드냐고 니체가 물었다",
     startedAt: "2024-12-13",
+    endAt: "2024-12-18",
     progressValue: (70 / 266) * 100,
     logs: [
       {
@@ -1239,6 +1240,14 @@ const bookLogs = [
       {
         date: "2024-12-16",
         progressValue: (199 / 266) * 100,
+      },
+      {
+        date: "2024-12-17",
+        progressValue: (244 / 266) * 100,
+      },
+      {
+        date: "2024-12-18",
+        progressValue: (266 / 266) * 100,
       },
     ],
   },
