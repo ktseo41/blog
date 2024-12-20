@@ -1017,6 +1017,7 @@ const bookLogs = [
     name: "장하준의 경제학 강의",
     startedAt: "2024-11-01",
     endAt: "2024-11-18",
+    inProgress: false,
     progressValue: (374 / 445) * 100,
     logs: [
       {
@@ -1049,7 +1050,7 @@ const bookLogs = [
     name: "작은 땅의 야수들",
     startedAt: "2024-11-06",
     endAt: "2024-11-17",
-    progressValue: (540 / 603) * 100,
+    progressValue: (603 / 603) * 100,
     logs: [
       {
         date: "2024-11-06",
@@ -1087,6 +1088,7 @@ const bookLogs = [
   },
   {
     name: "헤르만 헤세의 책이라는 세계",
+    inProgress: false,
     startedAt: "2024-11-13",
     endAt: "2024-12-03",
     progressValue: (211 / 325) * 100,
@@ -1174,7 +1176,8 @@ const bookLogs = [
   {
     name: "두려움은 소문일 뿐이다",
     startedAt: "2024-12-08",
-    progressValue: (94 / 355) * 100,
+    endAt: "2024-12-20",
+    progressValue: (355 / 355) * 100,
     logs: [
       {
         date: "2024-12-08",
@@ -1191,6 +1194,18 @@ const bookLogs = [
       {
         date: "2024-12-15",
         progressValue: (200 / 355) * 100,
+      },
+      {
+        date: "2024-12-18",
+        progressValue: (251 / 355) * 100,
+      },
+      {
+        date: "2024-12-19",
+        progressValue: (286 / 355) * 100,
+      },
+      {
+        date: "2024-12-20",
+        progressValue: (355 / 355) * 100,
       },
     ],
   },
@@ -1248,6 +1263,18 @@ const bookLogs = [
       {
         date: "2024-12-18",
         progressValue: (266 / 266) * 100,
+      },
+    ],
+  },
+  {
+    name: "자유로부터의 도피",
+    startedAt: "2024-12-18",
+    endAt: "2024-12-18",
+    progressValue: (28 / 341) * 100,
+    logs: [
+      {
+        date: "2024-12-18",
+        progressValue: (28 / 341) * 100,
       },
     ],
   },
