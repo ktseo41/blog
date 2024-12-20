@@ -32,13 +32,6 @@ const dateDescSorted = Object.entries(groupByYear)
         })
       )
     ]
-    // console.log(book)
-
-    // return {
-    //   ...book,
-    //   startedAt: new Date(book.startedAt),
-    //   endAt: book.endAt ? new Date(book.endAt) : null
-    // }
   })
 </script>
 
