@@ -1242,7 +1242,7 @@ const bookLogs = [
     name: "사는 게 힘드냐고 니체가 물었다",
     startedAt: "2024-12-13",
     endAt: "2024-12-18",
-    progressValue: (70 / 266) * 100,
+    progressValue: (266 / 266) * 100,
     logs: [
       {
         date: "2024-12-13",
@@ -1270,7 +1270,7 @@ const bookLogs = [
     name: "자유로부터의 도피",
     startedAt: "2024-12-18",
     endAt: "2024-12-18",
-    progressValue: (28 / 341) * 100,
+    progressValue: (39 / 341) * 100,
     logs: [
       {
         date: "2024-12-18",
@@ -1285,7 +1285,7 @@ const bookLogs = [
   {
     name: "참을 수 없이 불안할 때, 에리히 프롬",
     startedAt: "2024-12-21",
-    progressValue: (57 / 265) * 100,
+    progressValue: (94 / 265) * 100,
     logs: [
       {
         date: "2024-12-21",
