@@ -1276,6 +1276,25 @@ const bookLogs = [
         date: "2024-12-18",
         progressValue: (28 / 341) * 100,
       },
+      {
+        date: "2024-12-23",
+        progressValue: (39 / 341) * 100,
+      },
+    ],
+  },
+  {
+    name: "참을 수 없이 불안할 때, 에리히 프롬",
+    startedAt: "2024-12-21",
+    progressValue: (57 / 265) * 100,
+    logs: [
+      {
+        date: "2024-12-21",
+        progressValue: (57 / 265) * 100,
+      },
+      {
+        date: "2024-12-23",
+        progressValue: (94 / 265) * 100,
+      },
     ],
   },
 ];
