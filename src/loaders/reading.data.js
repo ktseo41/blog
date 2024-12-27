@@ -1269,7 +1269,8 @@ const bookLogs = [
   {
     name: "자유로부터의 도피",
     startedAt: "2024-12-18",
-    endAt: "2024-12-18",
+    endAt: "2024-12-27",
+    inProgress: false,
     progressValue: (39 / 341) * 100,
     logs: [
       {
@@ -1280,12 +1281,18 @@ const bookLogs = [
         date: "2024-12-23",
         progressValue: (39 / 341) * 100,
       },
+      {
+        date: "2024-12-27",
+        progressValue: (48 / 341) * 100,
+      },
     ],
   },
   {
     name: "참을 수 없이 불안할 때, 에리히 프롬",
     startedAt: "2024-12-21",
-    progressValue: (94 / 265) * 100,
+    endAt: "2024-12-27",
+    inProgress: false,
+    progressValue: (130 / 265) * 100,
     logs: [
       {
         date: "2024-12-21",
@@ -1294,6 +1301,14 @@ const bookLogs = [
       {
         date: "2024-12-23",
         progressValue: (94 / 265) * 100,
+      },
+      {
+        date: "2024-12-24",
+        progressValue: (127 / 265) * 100,
+      },
+      {
+        date: "2024-12-27",
+        progressValue: (130 / 265) * 100,
       },
     ],
   },
