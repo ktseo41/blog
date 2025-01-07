@@ -1312,6 +1312,65 @@ const bookLogs = [
       },
     ],
   },
+  {
+    name: "타자철학",
+    startedAt: "2024-12-27",
+    inProgress: false,
+    endAt: "2025-01-03",
+    progressValue: (48 / 597) * 100,
+    logs: [
+      {
+        date: "2024-12-27",
+        progressValue: (39 / 597) * 100,
+      },
+      {
+        date: "2024-12-28",
+        progressValue: (48 / 597) * 100,
+      },
+      {
+        date: "2024-12-29",
+        progressValue: (56 / 597) * 100,
+      },
+    ],
+  },
+  {
+    name: "우리는 왜 끊임없이 곁눈질을 하는가",
+    startedAt: "2025-01-03",
+    progressValue: (75 / 415) * 100,
+    logs: [
+      {
+        date: "2025-01-03",
+        progressValue: (32 / 415) * 100,
+      },
+      {
+        date: "2025-01-05",
+        progressValue: (34 / 415) * 100,
+      },
+      {
+        date: "2025-01-06",
+        progressValue: (56 / 415) * 100,
+      },
+      {
+        date: "2025-01-07",
+        progressValue: (75 / 415) * 100,
+      },
+    ],
+  },
+  {
+    name: "두 얼굴의 사나이",
+    startedAt: "2025-01-05",
+    progressValue: (72 / 163) * 100,
+    logs: [
+      {
+        date: "2025-01-05",
+        progressValue: (32 / 163) * 100,
+      },
+      {
+        date: "2025-01-06",
+        progressValue: (72 / 163) * 100,
+      },
+    ],
+  },
 ];
 
 /**
