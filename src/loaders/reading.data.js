@@ -1379,6 +1379,17 @@ const bookLogs = [
     endAt: "2025-02-13",
     progressValue: (10 / 10) * 100,
   },
+  {
+    name: "내 삶에 예술을 들일 때, 니체",
+    startedAt: "2025-02-16",
+    progressValue: (66 / 209) * 100,
+    logs: [
+      {
+        date: "2025-02-16",
+        progressValue: (66 / 209) * 100,
+      },
+    ],
+  },
 ];
 
 /**
