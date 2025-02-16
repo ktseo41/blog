@@ -1335,7 +1335,9 @@ const bookLogs = [
   },
   {
     name: "우리는 왜 끊임없이 곁눈질을 하는가",
+    inProgress: false,
     startedAt: "2025-01-03",
+    endAt: "2025-01-07",
     progressValue: (75 / 415) * 100,
     logs: [
       {
@@ -1370,6 +1372,12 @@ const bookLogs = [
         progressValue: (72 / 163) * 100,
       },
     ],
+  },
+  {
+    name: "17회 황순원문학상 수상작품집",
+    startedAt: "2025-01-15",
+    endAt: "2025-02-13",
+    progressValue: (10 / 10) * 100,
   },
 ];
 
