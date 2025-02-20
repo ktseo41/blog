@@ -1390,6 +1390,21 @@ const bookLogs = [
       },
     ],
   },
+  {
+    name: "사월의 미, 칠월의 솔",
+    startedAt: "2025-02-17",
+    progressValue: (3 / 11) * 100,
+    logs: [
+      {
+        date: "2025-02-17",
+        progressValue: (2 / 11) * 100,
+      },
+      {
+        date: "2025-02-19",
+        progressValue: (3 / 11) * 100,
+      },
+    ],
+  },
 ];
 
 /**
