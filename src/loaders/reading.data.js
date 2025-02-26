@@ -1361,6 +1361,7 @@ const bookLogs = [
   {
     name: "두 얼굴의 사나이",
     startedAt: "2025-01-05",
+    inProgress: false,
     progressValue: (72 / 163) * 100,
     logs: [
       {
@@ -1382,18 +1383,29 @@ const bookLogs = [
   {
     name: "내 삶에 예술을 들일 때, 니체",
     startedAt: "2025-02-16",
-    progressValue: (66 / 209) * 100,
+    endAt: "2025-02-26",
+    inProgress: false,
+    progressValue: (90 / 209) * 100,
     logs: [
       {
         date: "2025-02-16",
         progressValue: (66 / 209) * 100,
+      },
+      {
+        date: "2025-02-22",
+        progressValue: (84 / 209) * 100,
+      },
+      {
+        date: "2025-02-26",
+        progressValue: (90 / 209) * 100,
       },
     ],
   },
   {
     name: "사월의 미, 칠월의 솔",
     startedAt: "2025-02-17",
-    progressValue: (3 / 11) * 100,
+    endAt: "2025-02-26",
+    progressValue: (11 / 11) * 100,
     logs: [
       {
         date: "2025-02-17",
@@ -1402,6 +1414,14 @@ const bookLogs = [
       {
         date: "2025-02-19",
         progressValue: (3 / 11) * 100,
+      },
+      {
+        date: "2025-02-20",
+        progressValue: (5 / 11) * 100,
+      },
+      {
+        date: "2025-02-26",
+        progressValue: (11 / 11) * 100,
       },
     ],
   },
