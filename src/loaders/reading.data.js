@@ -1425,6 +1425,22 @@ const bookLogs = [
       },
     ],
   },
+  {
+    name: "목양면 방화 사건 전말기",
+    startedAt: "2025-03-01",
+    endAt: "2025-03-12",
+    progressValue: (169 / 169) * 100,
+    logs: [
+      {
+        date: "2025-03-01",
+        progressValue: (20 / 169) * 100,
+      },
+      {
+        date: "2025-03-12",
+        progressValue: (169 / 169) * 100,
+      },
+    ],
+  },
 ];
 
 /**
