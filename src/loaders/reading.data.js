@@ -1441,6 +1441,21 @@ const bookLogs = [
       },
     ],
   },
+  {
+    name: "파도가 바다의 일이라면",
+    startedAt: "2025-03-13",
+    progressValue: (54 / 287) * 100,
+    logs: [
+      {
+        date: "2025-03-14",
+        progressValue: (34 / 287) * 100,
+      },
+      {
+        date: "2025-03-15",
+        progressValue: (54 / 287) * 100,
+      },
+    ],
+  },
 ];
 
 /**
