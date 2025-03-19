@@ -1461,6 +1461,21 @@ const bookLogs = [
       },
     ],
   },
+  {
+    name: "나의 한국 현대사",
+    startedAt: "2025-03-18",
+    progressValue: (119 / 418) * 100,
+    logs: [
+      {
+        date: "2025-03-18",
+        progressValue: (53 / 418) * 100,
+      },
+      {
+        date: "2025-03-19",
+        progressValue: (119 / 418) * 100,
+      },
+    ],
+  },
 ];
 
 /**
