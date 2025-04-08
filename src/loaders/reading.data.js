@@ -1476,6 +1476,34 @@ const bookLogs = [
       },
     ],
   },
+  {
+    name: "이효석문학상 수상작품집 2023",
+    startedAt: "2025-03-23",
+    endAt: "2025-03-27",
+    inProgress: false,
+    progressValue: (2 / 13) * 100,
+    logs: [
+      {
+        date: "2025-03-27",
+        progressValue: (2 / 13) * 100,
+      },
+    ],
+  },
+  {
+    name: "생각에 관한 생각",
+    startedAt: "2025-04-07",
+    progressValue: (65 / 611) * 100,
+    logs: [
+      {
+        date: "2025-04-07",
+        progressValue: (39 / 611) * 100,
+      },
+      {
+        date: "2025-04-08",
+        progressValue: (65 / 611) * 100,
+      },
+    ],
+  },
 ];
 
 /**
