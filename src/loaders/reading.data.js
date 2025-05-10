@@ -1486,6 +1486,18 @@ const bookLogs = [
         date: "2025-04-10",
         progressValue: (245 / 418) * 100,
       },
+      {
+        date: "2025-04-23",
+        progressValue: (250 / 418) * 100,
+      },
+      {
+        date: "2025-04-24",
+        progressValue: (276 / 418) * 100,
+      },
+      {
+        date: "2025-05-09",
+        progressValue: (324 / 418) * 100,
+      },
     ],
   },
   {
@@ -1513,6 +1525,18 @@ const bookLogs = [
       {
         date: "2025-04-08",
         progressValue: (65 / 611) * 100,
+      },
+    ],
+  },
+  {
+    name: "무진 기행",
+    startedAt: "2025-05-10",
+    endAt: "2025-05-10",
+    progressValue: (34 / 34) * 100,
+    logs: [
+      {
+        date: "2025-05-10",
+        progressValue: (34 / 34) * 100,
       },
     ],
   },
