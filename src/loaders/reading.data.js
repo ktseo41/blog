@@ -1464,7 +1464,8 @@ const bookLogs = [
   {
     name: "나의 한국 현대사",
     startedAt: "2025-03-18",
-    progressValue: (245 / 418) * 100,
+    endAt: "2025-05-14",
+    progressValue: (418 / 418) * 100,
     logs: [
       {
         date: "2025-03-18",
@@ -1497,6 +1498,14 @@ const bookLogs = [
       {
         date: "2025-05-09",
         progressValue: (324 / 418) * 100,
+      },
+      {
+        date: "2025-05-11",
+        progressValue: (364 / 418) * 100,
+      },
+      {
+        date: "2025-05-14",
+        progressValue: (418 / 418) * 100,
       },
     ],
   },
