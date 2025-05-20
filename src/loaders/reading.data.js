@@ -1549,6 +1549,40 @@ const bookLogs = [
       },
     ],
   },
+  {
+    name: "시절일기",
+    startedAt: "2025-05-18",
+    progressValue: (121 / 333) * 100,
+    logs: [
+      {
+        date: "2025-05-18",
+        progressValue: (60 / 333) * 100,
+      },
+      {
+        date: "2025-05-20",
+        progressValue: (121 / 333) * 100,
+      },
+      {
+        date: "2025-05-21",
+        progressValue: (138 / 333) * 100,
+      },
+    ],
+  },
+  {
+    name: "우리가 빛의 속도로 갈 수 없다면",
+    startedAt: "2025-05-20",
+    progressValue: (55 / 335) * 100,
+    logs: [
+      {
+        date: "2025-05-20",
+        progressValue: (5 / 335) * 100,
+      },
+      {
+        date: "2025-05-21",
+        progressValue: (55 / 335) * 100,
+      },
+    ],
+  },
 ];
 
 /**
