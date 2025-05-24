@@ -1571,7 +1571,8 @@ const bookLogs = [
   {
     name: "우리가 빛의 속도로 갈 수 없다면",
     startedAt: "2025-05-20",
-    progressValue: (55 / 335) * 100,
+    endAt: "2025-05-23",
+    progressValue: (335 / 335) * 100,
     logs: [
       {
         date: "2025-05-20",
@@ -1579,7 +1580,11 @@ const bookLogs = [
       },
       {
         date: "2025-05-21",
-        progressValue: (55 / 335) * 100,
+        progressValue: (143 / 335) * 100,
+      },
+      {
+        date: "2025-05-23",
+        progressValue: (335 / 335) * 100,
       },
     ],
   },
