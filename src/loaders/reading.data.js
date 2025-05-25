@@ -1552,7 +1552,9 @@ const bookLogs = [
   {
     name: "시절일기",
     startedAt: "2025-05-18",
-    progressValue: (121 / 333) * 100,
+    endAt: "2025-05-25",
+    inProgress: false,
+    progressValue: (170 / 333) * 100,
     logs: [
       {
         date: "2025-05-18",
@@ -1565,6 +1567,10 @@ const bookLogs = [
       {
         date: "2025-05-21",
         progressValue: (138 / 333) * 100,
+      },
+      {
+        date: "2025-05-25",
+        progressValue: (170 / 333) * 100,
       },
     ],
   },
