@@ -1594,6 +1594,21 @@ const bookLogs = [
       },
     ],
   },
+  {
+    name: "무지와 편견의 세계사",
+    startedAt: "2025-05-25",
+    progressValue: (77 / 506) * 100,
+    logs: [
+      {
+        date: "2025-05-25",
+        progressValue: (16 / 506) * 100,
+      },
+      {
+        date: "2025-05-28",
+        progressValue: (77 / 506) * 100,
+      },
+    ],
+  },
 ];
 
 /**
