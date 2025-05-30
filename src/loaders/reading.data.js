@@ -1597,7 +1597,9 @@ const bookLogs = [
   {
     name: "무지와 편견의 세계사",
     startedAt: "2025-05-25",
-    progressValue: (77 / 506) * 100,
+    endAt: "2025-05-30",
+    inProgress: false,
+    progressValue: (90 / 506) * 100,
     logs: [
       {
         date: "2025-05-25",
@@ -1606,6 +1608,21 @@ const bookLogs = [
       {
         date: "2025-05-28",
         progressValue: (77 / 506) * 100,
+      },
+      {
+        date: "2025-05-30",
+        progressValue: (90 / 506) * 100,
+      },
+    ],
+  },
+  {
+    name: "나는 유령작가입니다",
+    startedAt: "2025-05-26",
+    progressValue: (1 / 10) * 100,
+    logs: [
+      {
+        date: "2025-05-26",
+        progressValue: (1 / 10) * 100,
       },
     ],
   },
