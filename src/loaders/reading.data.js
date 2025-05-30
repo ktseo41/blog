@@ -1618,11 +1618,15 @@ const bookLogs = [
   {
     name: "나는 유령작가입니다",
     startedAt: "2025-05-26",
-    progressValue: (1 / 10) * 100,
+    progressValue: (2 / 9) * 100,
     logs: [
       {
         date: "2025-05-26",
-        progressValue: (1 / 10) * 100,
+        progressValue: (1 / 9) * 100,
+      },
+      {
+        date: "2025-05-29",
+        progressValue: (2 / 9) * 100,
       },
     ],
   },
