@@ -1630,6 +1630,32 @@ const bookLogs = [
       },
     ],
   },
+  {
+    name: "세계사 최대한 쉽게 설명해 드립니다",
+    startedAt: "2025-05-30",
+    progressValue: (80 / 343) * 100,
+    logs: [
+      {
+        date: "2025-05-30",
+        progressValue: (30 / 343) * 100,
+      },
+      {
+        date: "2025-05-31",
+        progressValue: (80 / 343) * 100,
+      },
+    ],
+  },
+  {
+    name: "파견자들",
+    startedAt: "2025-05-31",
+    progressValue: (36 / 430) * 100,
+    logs: [
+      {
+        date: "2025-05-31",
+        progressValue: (36 / 430) * 100,
+      },
+    ],
+  },
 ];
 
 /**
