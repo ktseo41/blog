@@ -1375,7 +1375,7 @@ const bookLogs = [
     ],
   },
   {
-    name: "17회 황순원문학상 수상작품집",
+    name: "황순원문학상 수상작품집 2017",
     startedAt: "2025-01-15",
     endAt: "2025-02-13",
     progressValue: (10 / 10) * 100,
