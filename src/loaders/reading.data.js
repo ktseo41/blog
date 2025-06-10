@@ -1618,6 +1618,8 @@ const bookLogs = [
   {
     name: "나는 유령작가입니다",
     startedAt: "2025-05-26",
+    endAt: "2025-05-30",
+    inProgress: false,
     progressValue: (2 / 9) * 100,
     logs: [
       {
@@ -1628,12 +1630,16 @@ const bookLogs = [
         date: "2025-05-29",
         progressValue: (2 / 9) * 100,
       },
+      {
+        date: "2025-05-30",
+        progressValue: (3 / 9) * 100,
+      },
     ],
   },
   {
     name: "세계사 최대한 쉽게 설명해 드립니다",
     startedAt: "2025-05-30",
-    progressValue: (80 / 343) * 100,
+    progressValue: (125 / 343) * 100,
     logs: [
       {
         date: "2025-05-30",
@@ -1643,16 +1649,64 @@ const bookLogs = [
         date: "2025-05-31",
         progressValue: (80 / 343) * 100,
       },
+      {
+        date: "2025-06-10",
+        progressValue: (125 / 343) * 100,
+      },
     ],
   },
   {
     name: "파견자들",
     startedAt: "2025-05-31",
-    progressValue: (36 / 430) * 100,
+    endAt: "2025-06-08",
+    progressValue: (430 / 430) * 100,
     logs: [
       {
         date: "2025-05-31",
         progressValue: (36 / 430) * 100,
+      },
+      {
+        date: "2025-06-03",
+        progressValue: (220 / 430) * 100,
+      },
+      {
+        date: "2025-06-08",
+        progressValue: (430 / 430) * 100,
+      },
+    ],
+  },
+  {
+    name: "종의 기원",
+    author: "정유정",
+    startedAt: "2025-06-06",
+    progressValue: (210 / 378) * 100,
+    logs: [
+      {
+        date: "2025-06-06",
+        progressValue: (80 / 378) * 100,
+      },
+      {
+        date: "2025-06-08",
+        progressValue: (130 / 378) * 100,
+      },
+      {
+        date: "2025-06-10",
+        progressValue: (210 / 378) * 100,
+      },
+    ],
+  },
+  {
+    name: "만화로 보는 두 번 봐도 재미있는 스펙터클 영화사",
+    startedAt: "2025-06-08",
+    progressValue: (81 / 177) * 100,
+    logs: [
+      {
+        date: "2025-06-08",
+        progressValue: (60 / 177) * 100,
+      },
+      {
+        date: "2025-06-10",
+        progressValue: (81 / 177) * 100,
       },
     ],
   },
@@ -1672,7 +1726,7 @@ const loadBook = async (bookLog) => {
       method: "get",
       url: `https://dapi.kakao.com/v3/search/book`,
       params: {
-        query: `"${bookLog.name}"`,
+        query: `"${bookLog.name}"${bookLog.author ? ` ${bookLog.author}` : ""}`,
         target: "title",
       },
       headers: {
