@@ -1653,6 +1653,10 @@ const bookLogs = [
         date: "2025-06-10",
         progressValue: (125 / 343) * 100,
       },
+      {
+        date: "2025-06-12",
+        progressValue: (178 / 343) * 100,
+      },
     ],
   },
   {
@@ -1707,6 +1711,10 @@ const bookLogs = [
       {
         date: "2025-06-10",
         progressValue: (81 / 177) * 100,
+      },
+      {
+        date: "2025-06-11",
+        progressValue: (104 / 177) * 100,
       },
     ],
   },
