@@ -1639,7 +1639,8 @@ const bookLogs = [
   {
     name: "세계사 최대한 쉽게 설명해 드립니다",
     startedAt: "2025-05-30",
-    progressValue: (125 / 343) * 100,
+    endAt: "2025-06-15",
+    progressValue: (343 / 343) * 100,
     logs: [
       {
         date: "2025-05-30",
@@ -1656,6 +1657,10 @@ const bookLogs = [
       {
         date: "2025-06-12",
         progressValue: (178 / 343) * 100,
+      },
+      {
+        date: "2025-06-15",
+        progressValue: (343 / 343) * 100,
       },
     ],
   },
@@ -1683,6 +1688,8 @@ const bookLogs = [
     name: "종의 기원",
     author: "정유정",
     startedAt: "2025-06-06",
+    endAt: "2025-06-15",
+    inProgress: false,
     progressValue: (210 / 378) * 100,
     logs: [
       {
@@ -1702,7 +1709,8 @@ const bookLogs = [
   {
     name: "만화로 보는 두 번 봐도 재미있는 스펙터클 영화사",
     startedAt: "2025-06-08",
-    progressValue: (81 / 177) * 100,
+    endAt: "2025-06-17",
+    progressValue: (177 / 177) * 100,
     logs: [
       {
         date: "2025-06-08",
@@ -1715,6 +1723,21 @@ const bookLogs = [
       {
         date: "2025-06-11",
         progressValue: (104 / 177) * 100,
+      },
+      {
+        date: "2025-06-17",
+        progressValue: (177 / 177) * 100,
+      },
+    ],
+  },
+  {
+    name: "실크로드 세계사",
+    startedAt: "2025-06-17",
+    progressValue: (59 / 872) * 100,
+    logs: [
+      {
+        date: "2025-06-17",
+        progressValue: (59 / 872) * 100,
       },
     ],
   },
