@@ -1741,6 +1741,41 @@ const bookLogs = [
       },
     ],
   },
+  {
+    name: "식탁 위의 세계사",
+    startedAt: "2025-06-18",
+    progressValue: (4 / 10) * 100,
+    logs: [
+      {
+        date: "2025-06-21",
+        progressValue: (4 / 10) * 100,
+      },
+    ],
+  },
+  {
+    name: "거꾸로 읽는 세계사",
+    startedAt: "2025-06-20",
+    progressValue: (171 / 386) * 100,
+    logs: [
+      {
+        date: "2025-06-27",
+        progressValue: (171 / 386) * 100,
+      },
+    ],
+  },
+  {
+    name: "밤은 노래한다",
+    startedAt: "2025-06-25",
+    endAt: "2025-06-27",
+    inProgress: false,
+    progressValue: (1 / 20) * 100,
+    logs: [
+      {
+        date: "2025-06-26",
+        progressValue: (1 / 20) * 100,
+      },
+    ],
+  },
 ];
 
 /**
