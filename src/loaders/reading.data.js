@@ -1733,33 +1733,48 @@ const bookLogs = [
   {
     name: "실크로드 세계사",
     startedAt: "2025-06-17",
-    progressValue: (59 / 872) * 100,
+    endAt: "2025-07-01",
+    inProgress: false,
+    progressValue: (120 / 872) * 100,
     logs: [
       {
         date: "2025-06-17",
         progressValue: (59 / 872) * 100,
+      },
+      {
+        date: "2025-07-01",
+        progressValue: (120 / 872) * 100,
       },
     ],
   },
   {
     name: "식탁 위의 세계사",
     startedAt: "2025-06-18",
-    progressValue: (4 / 10) * 100,
+    progressValue: (137 / 187) * 100,
     logs: [
       {
         date: "2025-06-21",
         progressValue: (4 / 10) * 100,
+      },
+      {
+        date: "2025-07-07",
+        progressValue: (137 / 187) * 100,
       },
     ],
   },
   {
     name: "거꾸로 읽는 세계사",
     startedAt: "2025-06-20",
-    progressValue: (171 / 386) * 100,
+    endAt: "2025-07-03",
+    progressValue: (386 / 386) * 100,
     logs: [
       {
         date: "2025-06-27",
         progressValue: (171 / 386) * 100,
+      },
+      {
+        date: "2025-07-03",
+        progressValue: (386 / 386) * 100,
       },
     ],
   },
@@ -1773,6 +1788,51 @@ const bookLogs = [
       {
         date: "2025-06-26",
         progressValue: (1 / 20) * 100,
+      },
+    ],
+  },
+  {
+    name: "각각의 계절",
+    startedAt: "2025-06-29",
+    progressValue: (66 / 242) * 100,
+    logs: [
+      {
+        date: "2025-06-29",
+        progressValue: (2 / 10) * 100,
+      },
+      {
+        date: "2025-07-01",
+        progressValue: (66 / 242) * 100,
+      },
+    ],
+  },
+  {
+    name: "극장에는 항상 상훈이형이 있다",
+    startedAt: "2025-06-29",
+    progressValue: (40 / 273) * 100,
+    logs: [
+      {
+        date: "2025-06-29",
+        progressValue: (30 / 273) * 100,
+      },
+      {
+        date: "2025-07-08",
+        progressValue: (40 / 273) * 100,
+      },
+    ],
+  },
+  {
+    name: "현대 사상 입문",
+    startedAt: "2025-07-03",
+    progressValue: (132 / 244) * 100,
+    logs: [
+      {
+        date: "2025-07-03",
+        progressValue: (40 / 244) * 100,
+      },
+      {
+        date: "2025-07-08",
+        progressValue: (132 / 244) * 100,
       },
     ],
   },
