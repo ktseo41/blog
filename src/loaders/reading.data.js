@@ -1794,7 +1794,9 @@ const bookLogs = [
   {
     name: "각각의 계절",
     startedAt: "2025-06-29",
-    progressValue: (66 / 242) * 100,
+    endAt: "2025-07-13",
+    inProgress: false,
+    progressValue: (100 / 242) * 100,
     logs: [
       {
         date: "2025-06-29",
@@ -1804,11 +1806,17 @@ const bookLogs = [
         date: "2025-07-01",
         progressValue: (66 / 242) * 100,
       },
+      {
+        date: "2025-07-13",
+        progressValue: (100 / 242) * 100,
+      },
     ],
   },
   {
     name: "극장에는 항상 상훈이형이 있다",
     startedAt: "2025-06-29",
+    endAt: "2025-07-11",
+    inProgress: false,
     progressValue: (40 / 273) * 100,
     logs: [
       {
@@ -1833,6 +1841,29 @@ const bookLogs = [
       {
         date: "2025-07-08",
         progressValue: (132 / 244) * 100,
+      },
+    ],
+  },
+  {
+    name: "머더봇 다이어리: 시스템 통제불능",
+    startedAt: "2025-07-09",
+    endAt: "2025-07-11",
+    progressValue: (100 / 100) * 100,
+    logs: [
+      {
+        date: "2025-07-11",
+        progressValue: (100 / 100) * 100,
+      },
+    ],
+  },
+  {
+    name: "머더봇 다이어리: 인공 상태",
+    startedAt: "2025-07-09",
+    progressValue: (182 / 225) * 100,
+    logs: [
+      {
+        date: "2025-07-13",
+        progressValue: (182 / 225) * 100,
       },
     ],
   },
