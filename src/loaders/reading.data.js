@@ -1859,11 +1859,32 @@ const bookLogs = [
   {
     name: "머더봇 다이어리: 인공 상태",
     startedAt: "2025-07-09",
-    progressValue: (182 / 225) * 100,
+    endAt: "2025-07-13",
+    progressValue: (225 / 225) * 100,
     logs: [
       {
         date: "2025-07-13",
-        progressValue: (182 / 225) * 100,
+        progressValue: (225 / 225) * 100,
+      },
+    ],
+  },
+  {
+    name: "머더봇 다이어리: 로그 프로토콜",
+    startedAt: "2025-07-13",
+    endAt: "2025-07-15",
+    progressValue: (100 / 100) * 100,
+    logs: [
+      {
+        date: "2025-07-13",
+        progressValue: (20 / 100) * 100,
+      },
+      {
+        date: "2025-07-14",
+        progressValue: (70 / 100) * 100,
+      },
+      {
+        date: "2025-07-15",
+        progressValue: (100 / 100) * 100,
       },
     ],
   },
