@@ -1888,6 +1888,22 @@ const bookLogs = [
       },
     ],
   },
+  {
+    name: "머더봇 다이어리: 탈출 전략",
+    startedAt: "2025-07-15",
+    endAt: "2025-07-16",
+    progressValue: (100 / 100) * 100,
+    logs: [
+      {
+        date: "2025-07-15",
+        progressValue: (50 / 100) * 100,
+      },
+      {
+        date: "2025-07-16",
+        progressValue: (100 / 100) * 100,
+      },
+    ],
+  },
 ];
 
 /**
