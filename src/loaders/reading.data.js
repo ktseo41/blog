@@ -1904,6 +1904,49 @@ const bookLogs = [
       },
     ],
   },
+  {
+    name: "모르는 사람들",
+    startedAt: "2025-07-15",
+    progressValue: (12 / 100) * 100,
+    logs: [
+      {
+        date: "2025-07-15",
+        progressValue: (6 / 100) * 100,
+      },
+      {
+        date: "2025-07-21",
+        progressValue: (12 / 100) * 100,
+      },
+    ],
+  },
+  {
+    name: "프로젝트 헤일메리",
+    startedAt: "2025-07-16",
+    endAt: "2025-07-22",
+    progressValue: (100 / 100) * 100,
+  },
+  {
+    name: "솔라리스",
+    startedAt: "2025-07-22",
+    progressValue: (42 / 447) * 100,
+    logs: [
+      {
+        date: "2025-07-22",
+        progressValue: (42 / 447) * 100,
+      },
+    ],
+  },
+  {
+    name: "사피엔스",
+    startedAt: "2025-07-22",
+    progressValue: (41 / 593) * 100,
+    logs: [
+      {
+        date: "2025-07-22",
+        progressValue: (41 / 593) * 100,
+      },
+    ],
+  },
 ];
 
 /**
