@@ -1991,8 +1991,8 @@ const loadBook = async (bookLog) => {
       method: "get",
       url: `https://dapi.kakao.com/v3/search/book`,
       params: {
-        query: `"${bookLog.name}"${bookLog.author ? ` ${bookLog.author}` : ""}`,
-        target: "title",
+        query: `${bookLog.name}${bookLog.author ? ` ${bookLog.author}` : ""}`,
+        target: bookLog.author ? "" : "title",
       },
       headers: {
         Authorization: `KakaoAK ${env.VITE_APP_KAKAO_API_KEY}`,
