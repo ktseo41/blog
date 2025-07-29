@@ -1934,6 +1934,14 @@ const bookLogs = [
         date: "2025-07-22",
         progressValue: (42 / 447) * 100,
       },
+      {
+        date: "2025-07-27",
+        progressValue: (106 / 447) * 100,
+      },
+      {
+        date: "2025-07-29",
+        progressValue: (212 / 447) * 100,
+      },
     ],
   },
   {
@@ -1944,6 +1952,26 @@ const bookLogs = [
       {
         date: "2025-07-22",
         progressValue: (41 / 593) * 100,
+      },
+      {
+        date: "2025-07-27",
+        progressValue: (186 / 593) * 100,
+      },
+      {
+        date: "2025-07-29",
+        progressValue: (218 / 593) * 100,
+      },
+    ],
+  },
+  {
+    name: "선물",
+    author: "루이스 하이드",
+    startedAt: "2025-07-29",
+    progressValue: (64 / 631) * 100,
+    logs: [
+      {
+        date: "2025-07-29",
+        progressValue: (64 / 631) * 100,
       },
     ],
   },
