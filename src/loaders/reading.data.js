@@ -1928,7 +1928,7 @@ const bookLogs = [
   {
     name: "솔라리스",
     startedAt: "2025-07-22",
-    progressValue: (212 / 447) * 100,
+    progressValue: (384 / 447) * 100,
     logs: [
       {
         date: "2025-07-22",
@@ -1942,12 +1942,16 @@ const bookLogs = [
         date: "2025-07-29",
         progressValue: (212 / 447) * 100,
       },
+      {
+        date: "2025-08-07",
+        progressValue: (384 / 447) * 100,
+      },
     ],
   },
   {
     name: "사피엔스",
     startedAt: "2025-07-22",
-    progressValue: (218 / 593) * 100,
+    progressValue: (324 / 593) * 100,
     logs: [
       {
         date: "2025-07-22",
@@ -1960,6 +1964,10 @@ const bookLogs = [
       {
         date: "2025-07-29",
         progressValue: (218 / 593) * 100,
+      },
+      {
+        date: "2025-08-07",
+        progressValue: (234 / 593) * 100,
       },
     ],
   },
