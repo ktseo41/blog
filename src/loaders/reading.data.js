@@ -1951,7 +1951,7 @@ const bookLogs = [
   {
     name: "사피엔스",
     startedAt: "2025-07-22",
-    progressValue: (324 / 593) * 100,
+    progressValue: (509 / 593) * 100,
     logs: [
       {
         date: "2025-07-22",
@@ -1969,12 +1969,18 @@ const bookLogs = [
         date: "2025-08-07",
         progressValue: (234 / 593) * 100,
       },
+      {
+        date: "2025-08-19",
+        progressValue: (509 / 593) * 100,
+      }
     ],
   },
   {
     name: "선물",
     author: "루이스 하이드",
     startedAt: "2025-07-29",
+    endAt: "2025-07-31",
+    inProgress: false,
     progressValue: (64 / 631) * 100,
     logs: [
       {
