@@ -1951,7 +1951,8 @@ const bookLogs = [
   {
     name: "사피엔스",
     startedAt: "2025-07-22",
-    progressValue: (509 / 593) * 100,
+    endAt: "2025-08-26",
+    progressValue: (593 / 593) * 100,
     logs: [
       {
         date: "2025-07-22",
@@ -1972,7 +1973,11 @@ const bookLogs = [
       {
         date: "2025-08-19",
         progressValue: (509 / 593) * 100,
-      }
+      },
+      {
+        date: "2025-08-26",
+        progressValue: (593 / 593) * 100,
+      },
     ],
   },
   {
@@ -1989,6 +1994,45 @@ const bookLogs = [
       },
     ],
   },
+  {
+    name: "하룻밤에 읽는 세계사",
+    startedAt: "2025-08-19",
+    endAt: "2025-08-26",
+    inProgress: false,
+    progressValue: (63 / 391) * 100,
+    logs: [
+      {
+        date: "2025-08-19",
+        progressValue: (23 / 391) * 100,
+      },
+      {
+        date: "2025-08-26",
+        progressValue: (63 / 391) * 100,
+      },
+    ],
+  },
+  {
+    name: "지옥보다 더 아래",
+    startedAt: "2025-08-26",
+    progressValue: (61 / 230) * 100,
+    logs: [
+      {
+        date: "2025-08-26",
+        progressValue: (61 / 230) * 100,
+      },
+    ],
+  },
+  {
+    name: "사랑이라니 선영아",
+    startedAt: "2025-08-26",
+    progressValue: (30 / 133) * 100,
+    logs: [
+      {
+        date: "2025-08-26",
+        progressValue: (30 / 133) * 100,
+      },
+    ],
+  }
 ];
 
 /**
