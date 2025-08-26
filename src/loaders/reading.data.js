@@ -1928,7 +1928,7 @@ const bookLogs = [
   {
     name: "솔라리스",
     startedAt: "2025-07-22",
-    progressValue: (384 / 447) * 100,
+    progressValue: (447 / 447) * 100,
     logs: [
       {
         date: "2025-07-22",
