@@ -2032,6 +2032,30 @@ const bookLogs = [
         progressValue: (30 / 133) * 100,
       },
     ],
+  },
+  {
+    name: "세계를 움직인 열 가지 프레임",
+    startedAt: "2025-08-26",
+    endAt: "2025-09-02",
+    inProgress: false,
+    progressValue: (40/376) * 100,
+    logs: [
+      {
+        date: "2025-09-01",
+        progressValue: (40 / 376) * 100,
+      },
+    ]
+  },
+  {
+    name: "시민의 교양",
+    startedAt: "2025-09-03",
+    progressValue: (4 / 100) * 100,
+    logs: [
+      {
+        date: "2025-09-03",
+        progressValue: (4 / 100) * 100,
+      },
+    ],
   }
 ];
 
