@@ -2014,22 +2014,32 @@ const bookLogs = [
   {
     name: "지옥보다 더 아래",
     startedAt: "2025-08-26",
-    progressValue: (61 / 230) * 100,
+    endAt: "2025-09-17",
+    progressValue: (230 / 230) * 100,
     logs: [
       {
         date: "2025-08-26",
         progressValue: (61 / 230) * 100,
+      },
+      {
+        date: "2025-09-17",
+        progressValue: (230 / 230) * 100,
       },
     ],
   },
   {
     name: "사랑이라니 선영아",
     startedAt: "2025-08-26",
-    progressValue: (30 / 133) * 100,
+    endAt: "2025-09-09",
+    progressValue: (133 / 133) * 100,
     logs: [
       {
         date: "2025-08-26",
         progressValue: (30 / 133) * 100,
+      },
+      {
+        date: "2025-09-09",
+        progressValue: (133 / 133) * 100,
       },
     ],
   },
@@ -2038,25 +2048,29 @@ const bookLogs = [
     startedAt: "2025-08-26",
     endAt: "2025-09-02",
     inProgress: false,
-    progressValue: (40/376) * 100,
+    progressValue: (40 / 376) * 100,
     logs: [
       {
         date: "2025-09-01",
         progressValue: (40 / 376) * 100,
       },
-    ]
+    ],
   },
   {
     name: "시민의 교양",
     startedAt: "2025-09-03",
-    progressValue: (4 / 100) * 100,
+    progressValue: (64 / 352) * 100,
     logs: [
       {
         date: "2025-09-03",
-        progressValue: (4 / 100) * 100,
+        progressValue: (30 / 352) * 100,
+      },
+      {
+        date: "2025-09-17",
+        progressValue: (64 / 352) * 100,
       },
     ],
-  }
+  },
 ];
 
 /**
