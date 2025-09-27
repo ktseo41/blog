@@ -2059,7 +2059,7 @@ const bookLogs = [
   {
     name: "시민의 교양",
     startedAt: "2025-09-03",
-    progressValue: (64 / 352) * 100,
+    progressValue: (97 / 352) * 100,
     logs: [
       {
         date: "2025-09-03",
@@ -2068,6 +2068,40 @@ const bookLogs = [
       {
         date: "2025-09-17",
         progressValue: (64 / 352) * 100,
+      },
+      {
+        date: "2025-09-21",
+        progressValue: (97 / 352) * 100,
+      },
+    ],
+  },
+  {
+    name: "에세이 만드는 법",
+    startedAt: "2025-09-21",
+    progressValue: (108 / 175) * 100,
+    logs: [
+      {
+        date: "2025-09-21",
+        progressValue: (44 / 175) * 100,
+      },
+      {
+        date: "2025-09-27",
+        progressValue: (108 / 175) * 100,
+      },
+    ],
+  },
+  {
+    name: "(EBS 다큐프라임) 자본주의 사용설명서",
+    startedAt: "2025-09-25",
+    progressValue: (100 / 343) * 100,
+    logs: [
+      {
+        date: "2025-09-25",
+        progressValue: (70 / 343) * 100,
+      },
+      {
+        date: "2025-09-27",
+        progressValue: (100 / 343) * 100,
       },
     ],
   },
