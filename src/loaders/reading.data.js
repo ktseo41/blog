@@ -2099,7 +2099,9 @@ const bookLogs = [
   {
     name: "(EBS 다큐프라임) 자본주의 사용설명서",
     startedAt: "2025-09-25",
-    progressValue: (100 / 343) * 100,
+    endAt: "2025-10-04",
+    inProgress: false,
+    progressValue: (144 / 343) * 100,
     logs: [
       {
         date: "2025-09-25",
@@ -2108,6 +2110,21 @@ const bookLogs = [
       {
         date: "2025-09-27",
         progressValue: (100 / 343) * 100,
+      },
+      {
+        date: "2025-10-04",
+        progressValue: (144 / 343) * 100,
+      },
+    ],
+  },
+  {
+    name: "30개 도시로 읽는 세계사",
+    startedAt: "2025-10-04",
+    progressValue: (28 / 349) * 100,
+    logs: [
+      {
+        date: "2025-10-04",
+        progressValue: (28 / 349) * 100,
       },
     ],
   },
