@@ -2078,7 +2078,9 @@ const bookLogs = [
   {
     name: "에세이 만드는 법",
     startedAt: "2025-09-21",
-    progressValue: (108 / 175) * 100,
+    endAt: "2025-10-04",
+    inProgress: false,
+    progressValue: (119 / 175) * 100,
     logs: [
       {
         date: "2025-09-21",
@@ -2087,6 +2089,10 @@ const bookLogs = [
       {
         date: "2025-09-27",
         progressValue: (108 / 175) * 100,
+      },
+      {
+        date: "2025-10-04",
+        progressValue: (119 / 175) * 100,
       },
     ],
   },
