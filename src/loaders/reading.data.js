@@ -2126,6 +2126,21 @@ const bookLogs = [
         date: "2025-10-04",
         progressValue: (28 / 349) * 100,
       },
+      {
+        date: "2025-10-11",
+        progressValue: (60 / 349) * 100,
+      },
+    ],
+  },
+  {
+    name: "채권투자 처음공부",
+    startedAt: "2025-10-24",
+    progressValue: (76 / 289) * 100,
+    logs: [
+      {
+        date: "2025-10-24",
+        progressValue: (76 / 289) * 100,
+      },
     ],
   },
 ];
