@@ -2141,6 +2141,25 @@ const bookLogs = [
         date: "2025-10-24",
         progressValue: (76 / 289) * 100,
       },
+      {
+        date: "2025-10-25",
+        progressValue: (157 / 289) * 100,
+      },
+    ],
+  },
+  {
+    name: "지적 대화를 위한 넓고 얕은 지식 - 무한",
+    startedAt: "2025-10-24",
+    progressValue: (81 / 289) * 100,
+    logs: [
+      {
+        date: "2025-10-24",
+        progressValue: (30 / 350) * 100,
+      },
+      {
+        date: "2025-10-25",
+        progressValue: (81 / 350) * 100,
+      },
     ],
   },
 ];
