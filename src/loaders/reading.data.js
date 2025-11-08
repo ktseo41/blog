@@ -2135,7 +2135,8 @@ const bookLogs = [
   {
     name: "채권투자 처음공부",
     startedAt: "2025-10-24",
-    progressValue: (76 / 289) * 100,
+    endAt: "2025-10-30",
+    progressValue: (289 / 289) * 100,
     logs: [
       {
         date: "2025-10-24",
@@ -2145,12 +2146,18 @@ const bookLogs = [
         date: "2025-10-25",
         progressValue: (157 / 289) * 100,
       },
+      {
+        date: "2025-10-30",
+        progressValue: (289 / 289) * 100,
+      },
     ],
   },
   {
     name: "지적 대화를 위한 넓고 얕은 지식 - 무한",
     startedAt: "2025-10-24",
-    progressValue: (81 / 289) * 100,
+    endAt: "2025-11-07",
+    inProgress: false,
+    progressValue: (100 / 289) * 100,
     logs: [
       {
         date: "2025-10-24",
@@ -2159,6 +2166,36 @@ const bookLogs = [
       {
         date: "2025-10-25",
         progressValue: (81 / 350) * 100,
+      },
+      {
+        date: "2025-11-07",
+        progressValue: (100 / 350) * 100,
+      },
+    ],
+  },
+  {
+    name: "60초 소설가",
+    startedAt: "2025-10-30",
+    progressValue: (3 / 10) * 100,
+    logs: [
+      {
+        date: "2025-10-30",
+        progressValue: (3 / 10) * 100,
+      },
+    ],
+  },
+  {
+    name: "박 회계사의 완벽한 재무제표 활용법",
+    startedAt: "2025-11-02",
+    progressValue: (138 / 412) * 100,
+    logs: [
+      {
+        date: "2025-11-02",
+        progressValue: (11 / 412) * 100,
+      },
+      {
+        date: "2025-11-08",
+        progressValue: (138 / 412) * 100,
       },
     ],
   },
