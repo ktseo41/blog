@@ -2199,6 +2199,32 @@ const bookLogs = [
       },
     ],
   },
+  {
+    name: "읽으면 진짜 재무제표 보이는 책",
+    startedAt: "2025-11-08",
+    progressValue: (40 / 100) * 100,
+    logs: [
+      {
+        date: "2025-11-08",
+        progressValue: (40 / 100) * 100,
+      },
+    ],
+  },
+  {
+    name: "파인더스 키퍼스",
+    startedAt: "2025-11-08",
+    progressValue: (100 / 100) * 100,
+    logs: [
+      {
+        date: "2025-11-08",
+        progressValue: (20 / 100) * 100,
+      },
+      {
+        date: "2025-11-13",
+        progressValue: (100 / 100) * 100,
+      },
+    ],
+  },
 ];
 
 /**
