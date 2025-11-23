@@ -2187,6 +2187,8 @@ const bookLogs = [
   {
     name: "박 회계사의 완벽한 재무제표 활용법",
     startedAt: "2025-11-02",
+    endAt: "2025-11-08",
+    inProgress: false,
     progressValue: (138 / 412) * 100,
     logs: [
       {
@@ -2202,6 +2204,8 @@ const bookLogs = [
   {
     name: "읽으면 진짜 재무제표 보이는 책",
     startedAt: "2025-11-08",
+    endAt: "2025-11-21",
+    inProgress: false,
     progressValue: (40 / 100) * 100,
     logs: [
       {
@@ -2213,6 +2217,7 @@ const bookLogs = [
   {
     name: "파인더스 키퍼스",
     startedAt: "2025-11-08",
+    endAt: "2025-11-13",
     progressValue: (100 / 100) * 100,
     logs: [
       {
@@ -2224,6 +2229,24 @@ const bookLogs = [
         progressValue: (100 / 100) * 100,
       },
     ],
+  },
+  {
+    name: "엔드 오브 왓치",
+    startedAt: "2025-11-13",
+    progressValue: (50 / 100) * 100,
+    logs: [
+      {
+        date: "2025-11-23",
+        progressValue: (50 / 100) * 100,
+      },
+    ],
+  },
+  {
+    name: "어나더 경제사. 1, 자본주의",
+    startedAt: "2025-11-21",
+    endAt: "2025-11-23",
+    inProgress: false,
+    progressValue: (21 / 390) * 100,
   },
 ];
 
