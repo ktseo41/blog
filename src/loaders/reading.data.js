@@ -2233,11 +2233,16 @@ const bookLogs = [
   {
     name: "엔드 오브 왓치",
     startedAt: "2025-11-13",
-    progressValue: (50 / 100) * 100,
+    endAt: "2025-12-04",
+    progressValue: (100 / 100) * 100,
     logs: [
       {
         date: "2025-11-23",
         progressValue: (50 / 100) * 100,
+      },
+      {
+        date: "2025-12-04",
+        progressValue: (100 / 100) * 100,
       },
     ],
   },
@@ -2247,6 +2252,22 @@ const bookLogs = [
     endAt: "2025-11-23",
     inProgress: false,
     progressValue: (21 / 390) * 100,
+  },
+  {
+    name: "달러 자산 1억으로 평생 월급 완성하라",
+    startedAt: "2025-12-04",
+    progressValue: (236 / 329) * 100,
+  },
+  {
+    name: "광기와 우연의 역사",
+    startedAt: "2025-12-20",
+    progressValue: (48 / 340) * 100,
+    logs: [
+      {
+        date: "2025-12-20",
+        progressValue: (48 / 340) * 100,
+      },
+    ],
   },
 ];
 
