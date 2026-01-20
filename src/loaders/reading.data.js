@@ -2282,11 +2282,15 @@ const bookLogs = [
   {
     name: "자본주의 어디서 와서 어디로 가는가",
     startedAt: "2026-01-19",
-    progressValue: (24 / 543) * 100,
+    progressValue: (106 / 543) * 100,
     logs: [
       {
         date: "2026-01-19",
         progressValue: (24 / 543) * 100,
+      },
+      {
+        date: "2026-01-19",
+        progressValue: (106 / 543) * 100,
       },
     ],
   },
