@@ -2292,8 +2292,23 @@ const bookLogs = [
         date: "2026-01-19",
         progressValue: (106 / 543) * 100,
       },
+      {
+        date: "2026-01-25",
+        progressValue: (168 / 543) * 100,
+      },
     ],
   },
+  {
+    name: "30분 회계학",
+    startedAt: "2026-01-25",
+    progressValue: (5 / 151) * 100,
+    logs: [
+      {
+        date: "2026-01-25",
+        progressValue: (5 / 151) * 100,
+      },
+    ],
+  }
 ];
 
 /**
